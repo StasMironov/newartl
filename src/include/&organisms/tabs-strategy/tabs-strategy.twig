@@ -1,0 +1,22 @@
+{% if delay is not defined %}
+	{% set delay = 0.2 %}
+{% endif %}
+<div class="tabs{% if tabs.layout %} tabs--layout-{{ tabs.layout }}{% endif %}{{ tabs.horizontal ? ' tabs--horizontal' : '' }}"
+	 data-tabs>
+	<div class="tabs__content">
+		<div class="swiper-container" data-slider>
+			<div class="swiper-wrapper">
+				{% for tab in tabs.items %}
+					<div class="tabs__item swiper-slide" data-fade-in-up
+						 data-delay="{{ (loop.index0 / 28)|round(2, 'floor') }}">
+						{% view '@tab' with {
+							tab: tab|merge({
+								attr: attr~"data-tab="~loop.index
+							})
+						} %}
+					</div>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,27 @@
+<div class="card-benefit{% if card.layout %} card-benefit--layout-{{card.layout}}{% endif %}" >
+    {% if card.quote %}
+        <div class="card-benefit__quote">
+            {{ card.quote }}
+        </div>
+    {% endif %}
+
+    {% if card.title %}
+        <h2 class="card-benefit__title h1">
+            {{ card.title }}
+        </h2>
+    {% endif %}
+
+    {% if card.image %}
+        <div class="card-benefit__image">
+            {% view '@image' with {
+                image: card.image
+            } %}
+        </div>
+    {% endif %}
+
+    {% if card.desc %}
+        <div class="card-benefit__desc">
+           {{ card.desc }}
+        </div>
+    {% endif %}
+</div>

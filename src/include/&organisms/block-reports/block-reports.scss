@@ -1,0 +1,78 @@
+.block-reports {
+	$root: &;
+	&__wrapper {		
+		display: flex;
+		flex-wrap: wrap;
+		@include media-breakpoint-up(lg) {
+			flex-wrap: nowrap;
+		}
+		
+	}	
+	&__left {	
+		@include media-breakpoint-up(sm) {
+			width: 100%;
+			margin-bottom: rem(34);
+		}		
+		@include media-breakpoint-up(md) {
+			width: rem(257);
+			margin-bottom: rem(48);
+		}
+		@include media-breakpoint-up(lg) {
+			width: rem(257);
+			margin-right: rem(191);
+		}
+	}
+	&__right {
+		@include media-breakpoint-up(md) {
+			width: 100%;
+		}
+
+		@include media-breakpoint-up(lg) {	
+			width: rem(888);
+			display: flex;
+			justify-content: space-between;
+			margin-top: rem(-6);
+		}
+	}
+
+	&__heading{
+		margin-bottom: rem(0);
+		@include media-breakpoint-only(lg) {	
+			margin-top: rem(-16);
+		}
+	}
+
+	&__item{		
+		@include media-breakpoint-up(sm) {
+			&:not(:last-child){
+				margin-bottom: rem(8);
+			}
+		}
+		@include media-breakpoint-up(md) {					
+			width:100%;
+			margin-top: rem(8);
+			&:not(:last-child){
+				margin-right: 0;
+			}
+		}	
+		@include media-breakpoint-up(lg) {	
+			width:50%;
+			margin-top: 0;
+			&:not(:last-child){
+				margin-right: rem(8);
+			}
+		}
+		.card-features{
+			height: rem(300);
+			@include media-breakpoint-up(md) {
+				height: rem(334);	
+			}
+			&__text{
+				@include media-breakpoint-only(sm) {
+					margin-top: rem(40);	
+				}
+			}
+		}
+	}
+
+}

@@ -1,0 +1,42 @@
+<div class="modal-director" data-wrap-scroll >
+	<div class="modal-director__wrapper" data-ps>
+		<div class="modal-director__left">
+			{% if modal_director.img %}
+				<div class="modal-director__img">
+					{% if modal_director.img.tab or modal_director.img.mob %}
+						{% view '@image-adaptive' with {
+									image: modal_director.img
+							} %}
+					{% else %}          
+						{% view '@image' with {
+              image: modal_director.img|merge({disable_lazy: true})
+            } %}              
+					{% endif %}
+				</div>
+			{% endif %}
+		</div>
+
+		<div class="modal-director__right">
+			{% if modal_director.description %}
+				<div class="modal-director__description">
+					{% if modal_director.title %}
+						<div class="modal-director__title h3">
+							{{ modal_director.title  }}
+						</div>
+					{% endif %}
+					{% if modal_director.subtitle %}
+						<div class="modal-director__subtitle">
+							{{ modal_director.subtitle  }}
+						</div>
+					{% endif %}
+
+					{% for item in modal_director.description %}
+						<div class="modal-director__text">
+							{{ item }}
+						</div>
+					{% endfor %}
+				</div>
+			{% endif %}
+		</div>
+	</div>
+</div>

@@ -1,0 +1,63 @@
+.submenu {
+	&__container {
+		display: flex;
+		align-items: flex-start;
+		padding-top: rem(166);
+		padding-bottom: rem(80);
+		height: rem(492);
+	}
+
+	&__info {
+		width: 25%;
+		padding-right: rem(40);
+		margin-right: 8.3333%;
+	}
+
+	&__title {
+		&:not(:last-child) {
+			margin-bottom: rem(24);
+		}
+	}
+
+	&__text {
+		color: rgba($color-black, 0.4);
+	}
+
+	&__list {
+		columns: 2;
+		padding-top: rem(4);
+		column-gap: rem(148);
+	}
+
+	&__item {
+		max-width: rem(300);
+		padding: rem(8) 0;
+		break-inside: avoid;
+	}
+
+	&__link {
+		color: $color-black;
+		@include defaultTransition(color);
+
+		// @include touchLessHover {
+		// 	color: rgba($color-black, 0.4);
+		// }
+
+		&--active {
+			color: rgba($color-black, 0.4);
+		}
+
+		&.no-hover {
+			color: rgba($color-black, 0.4);
+		}
+
+		&.is-hover {
+			color: rgba($color-black,1);
+		}
+	}
+
+	&[data-item] {
+		opacity: 0;
+		transform: translateY(#{rem(20)});
+	}
+}

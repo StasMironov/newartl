@@ -1,0 +1,46 @@
+.page-transition {
+	//position: absolute;
+	//top: 0;
+	//bottom: 0;
+	//left: 0;
+	//right: 0;
+	//background-color: $color-dark;
+	//z-index: 3000;
+	//transform: translateY(100%);
+
+	&-overlay {
+		position: fixed;
+		width: rem(342);
+		height: rem(342);
+        border-radius: 50%;
+        opacity: 0;
+        left: 50%;
+       // top: 50%;
+        bottom: 0;
+        z-index: 3000;
+        pointer-events: none;
+        // transform: translateX(-50%);
+        background-color: $color-green;
+        will-change: transform;
+        //transform: scale(0.3);
+
+        @include media-breakpoint-down(md) {
+			width: rem(200);
+		    height: rem(200);
+		}
+
+		&__path {
+			//fill: $color-red-velvet
+		}
+	}
+}
+
+// .button-test {
+// 	position: fixed;
+// 	bottom: 30px;
+// 	right: 30px;
+// 	z-index: 3000;
+// 	cursor: pointer;
+// 	background-color: $color-red-velvet;
+// 	padding: 10px;
+// }

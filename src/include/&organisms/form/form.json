@@ -1,0 +1,21 @@
+{
+	"contacts_form": {
+		"id": "form-1",
+		"name": "form-1",
+		"method": "POST",
+		"action": "/ajax/contacts/?repo=atol-education.frontend&status=success",
+		"attr": "data-ajax-form",
+		"title": "Связаться с нами",
+		"text": "Заполните форму и наш менеджер с вами свяжется",
+		"fields": [
+			{
+				"input": true,
+				"id": "form-1-input-1",
+				"name": "form-1-input-1",
+				"placeholder": "Имя*",
+				"theme": "light",
+				"required": true
+			}
+		]
+	}
+}

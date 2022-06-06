@@ -1,0 +1,16 @@
+{% extends "layouts::_page.twig" %}
+
+{% block content %}
+
+	{% view '&hero-default' with {
+        hero_default: hero_default
+    } %}
+
+
+	<div class="mb-lg-120 mb-md-80 mb-80">
+		{% view '&block-docs' with {
+			block_docs: block_docs
+		} %}
+	</div>
+
+{% endblock %}

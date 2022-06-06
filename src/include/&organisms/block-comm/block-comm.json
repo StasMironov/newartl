@@ -1,0 +1,21 @@
+{
+	"block_comm": {
+		"bg": "gray",
+		"title": "Контакты для прессы",
+		"items": [
+			{
+				"img": {
+					"src": "tmp/press/img2.jpg",
+					"alt": "img"
+				},
+				"name": "Камола Сабирова",
+				"position": "Руководитель Пресс-службы",
+				"email": {
+					"title": "E-mail",
+					"text": "kamola.sobirova@artelelectronics.com",
+					"href": "kamola.sobirova@artelelectronics.com"
+				}
+			}
+		]
+	}
+}

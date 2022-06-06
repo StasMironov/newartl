@@ -1,0 +1,28 @@
+<div class="block-training" {% if block.scroll_target %}id="{{block.scroll_target}}"{% endif %} data-fade-in-up>
+    <div class="block-training__container container">
+        <div class="block-training__wrp">
+            {% if block.factoids %}
+                <div class="block-training__factoids">
+                    {% for factoid in block.factoids %}
+                        <div class="block-training__factoid">
+                            {% view '^factoid' with {
+                                factoid: factoid
+                            } %}
+                        </div>
+                    {% endfor %}
+                </div>
+            {% endif %}
+            <div class="block-training__right">
+                {% if block.accordions %}
+                    {% for accordion in block.accordions %}
+                        <div class="block-training__accordion">
+                            {% view '@accordion' with {
+                                accordion: accordion
+                            } %}
+                        </div>
+                    {% endfor %}
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>

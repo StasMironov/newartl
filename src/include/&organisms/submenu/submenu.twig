@@ -1,0 +1,28 @@
+<div class="submenu">
+	<div class="submenu__container container">
+		{% if submenu.title or submenu.text %}
+			<div class="submenu__info">
+				{% if submenu.title %}
+					<p class="submenu__title h2" data-item>{{ submenu.title }}</p>
+				{% endif %}
+				{% if submenu.text %}
+					<p class="submenu__text text-body" data-item>{{ submenu.text }}</p>
+				{% endif %}
+			</div>
+			{% if submenu.links %}
+				<ul class="submenu__list" data-items>
+					{% for link in submenu.links %}
+						<li class="submenu__item" data-item>
+							{% if link.active %}
+								<span class="submenu__link submenu__link--active" data-link>{{ link.text }}</span>
+							{% else %}
+								<a href="{{ link.href }}"
+								   class="submenu__link"{% if link.external %} target="_blank" rel="nofollow"{% endif %} data-link>{{ link.text }}</a>
+							{% endif %}
+						</li>
+					{% endfor %}
+				</ul>
+			{% endif %}
+		{% endif %}
+	</div>
+</div>

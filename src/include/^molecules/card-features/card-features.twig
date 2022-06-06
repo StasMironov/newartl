@@ -1,0 +1,42 @@
+{% set delay = 0 %}
+{% if card.delay %}
+	{% set delay = card.delay %}
+{% endif %}
+<div class="card-features{% if card.theme %} bg-{{ card.theme }}{% endif %} {% if card.layout %}card-features--layout-{{card.layout}}{% endif %}">
+	{% if card.href %}
+		<a class="card-features__link" href="{{ card.href }}">{{ card.href }}</a>
+	{% endif %}
+	<div class="card-features__inner">
+		{% if card.title %}
+			<div class="card-features__title">{{ card.title }}</div>
+		{% endif %}
+		{% if card.date %}
+			<div class="card-features__date">
+				{% if card.date.month %}
+					<span class="card-features__month">
+						{{ card.date.month }}
+					</span>
+				{% endif %}
+				{% if card.date.day %}
+					<span class="card-features__day">
+						{{ card.date.day }}
+					</span>
+				{% endif %}
+			</div>
+		{% endif %}
+		{% if card.text %}
+			<div class="card-features__text">{{ card.text }}</div>
+		{% endif %}
+	</div>
+	{% if card.icon %}
+		<div class="card-features__icon">
+			<span>{% svg '24/arrow-up-right' %}</span>
+		</div>
+	{% endif %}
+	{% if card.action %}
+		{% view '@button' with {
+			button: card.action
+		} %}
+	{% endif %}
+	<div class="card-features__circle"{% if delay %} style="--delay: {{ delay }}"{% endif %}></div>
+</div>

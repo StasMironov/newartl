@@ -1,0 +1,26 @@
+{
+	"hero_default": {
+		"title": "Миссия компании",
+		"image": {
+			"src": "tmp/default-hero/hero-1.jpg",
+			"alt": "image alt",
+			"fill": true,
+			"tab": {
+				"srcset": [
+					{
+						"scale": "1",
+						"src": "tmp/default-hero/hero-tab.jpg"
+					}
+				]
+			},
+			"mob": {
+				"srcset": [
+					{
+						"scale": "1",
+						"src": "tmp/default-hero/hero-mob.jpg"
+					}
+				]
+			}
+		}
+	}
+}

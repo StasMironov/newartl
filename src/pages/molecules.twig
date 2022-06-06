@@ -1,0 +1,89 @@
+{% extends "layouts::_page.twig" %}
+
+{% block content %}
+	<!--<editor-fold desc="page styles">-->
+	<style>
+		.card-list-molecules {
+			display: flex;
+			flex-wrap: wrap;
+		}
+
+		.card-list-molecules__item {
+			width: 100%;
+		}
+
+		@media (min-width: 990px) {
+			.card-list-molecules__item {
+				width: 33.3333%;
+			}
+		}
+
+		@media (max-width: 989px) and (min-width: 640px) {
+			.card-list-molecules__item {
+				width: 50%;
+			}
+
+			.card-list-molecules.card-list-molecules--md-50 .card-list-molecules__item {
+				width: 100%;
+			}
+		}
+	</style>
+	<!--</editor-fold>-->
+	<div class="pt-128">
+		<div class="py-24 container">
+			<div class="my-32" style="max-width: 600px">
+				{% view '^card-news' %}
+			</div>
+		</div>
+
+		<div class="py-24 container">
+			<div class="my-32">
+				{% view '^card-strategy' %}
+			</div>
+		</div>
+		<div class="py-24 bg-gray container">
+			<div class="my-56" data-fade-in-up>
+				{% view '^card-features' %}
+			</div>
+			<div class="my-56" data-fade-in-up>
+				{% view '^card-features' with {
+					"card": {
+						"theme": "black",
+						"href": "#!",
+						"title": "Инвесторам",
+						"text": "Мы строим доверительные отношения с заинтересован&shy;ными сторонами"
+					}
+				}%}
+			</div>
+			<div class="my-56" data-fade-in-up>
+				{% view '^card-features' with {
+					"card": {
+						"href": "#!!",
+						"title": "ESG",
+						"text": "Высокие стандарты ESG — приоритет в нашей Группе"
+					}
+				}%}
+			</div>
+			<div class="my-56" data-fade-in-up>
+				{% view '^factoid' with {
+					"factoid": {
+						"text": "80",
+						"after": {
+							"txt": "млн"
+						},
+						"before": "≈$",
+						"label": "финансовые показатели",
+					}
+				}%}
+			</div>
+		</div>
+		<div class="py-24 bg-gray container">
+			{% view '&block-appeal' %}
+		</div>
+		<div class="py-24 bg-gray container">
+			{% view '&block-appeal' with {
+				block_appeal:block_appeal2
+			} %}
+		</div>
+	</div>
+{% endblock %}

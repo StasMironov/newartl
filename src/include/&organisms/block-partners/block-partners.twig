@@ -1,0 +1,25 @@
+<div class="block-partners" data-fade-in-up>
+    <div class="block-partners__container container">
+        <div class="block-partners__wrapper">
+            <div class="block-partners__left">
+                {% if block_partners.title %}
+                    <h2 class="block-partners__title h2">{{ block_partners.title }}</h2>
+                {% endif %}
+            </div>
+            <div class="block-partners__right">
+                {% if block_partners.cards %}
+                    <div class="block-partners__items">
+                        {% for card in block_partners.cards %}
+                            <div class="block-partners__item">
+                                {% view "^card-partner" with {
+                                    card: card
+                                } %}
+                            </div>
+                        {% endfor %}
+                    </div>
+                {% endif %}
+                
+            </div>
+        </div>
+    </div>
+</div>

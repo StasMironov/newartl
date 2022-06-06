@@ -1,0 +1,17 @@
+.icon-text {
+	$root: &;
+
+	&--white {
+		& {
+			color: $color-white;
+		}
+	}
+
+	&__icon {
+		margin-bottom: rem(16);
+	}
+
+	&__text {
+		max-width: rem(160);
+	}
+}

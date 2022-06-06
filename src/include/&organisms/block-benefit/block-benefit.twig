@@ -1,0 +1,40 @@
+<div class="block-benefit {% if block_benefit.bg %} bg-{{ block_benefit.bg }}{% else %} bg-white{% endif %}"  data-tab-container>
+    <div class="block-benefit__container container">
+          <div class="block-benefit__wrapper" data-tabs-wrap>
+            <div class="block-benefit__left">
+                {% if block_benefit.tabs %}
+                    <div class="block-benefit-tabs">
+                            <div class="block-benefit-tabs__tab">
+                                {% view '&tabs' with {
+                                    tabs: block_benefit.tabs
+                                }%}
+                            </div>
+                    </div>
+                {% endif %}
+            </div>
+            <div class="block-benefit__right">
+                <div class="block-benefit__contents">
+                    {% if block_benefit.tabs_content %}
+                            <div class="block-benefit__tabs-content">
+                                {% for item in block_benefit.tabs_content %}
+                                    <div class="block-benefit__pane{{ item.active ? ' is-active' }}" data-tab-pane="{{ loop.index }}">
+                                        {% if item.cards %}
+                                            <div class="block-benefit__cards">
+                                                {% for card in item.cards %}
+                                                    <div class="block-benefit__card">
+                                                        {% view '^card-benefit' with {
+                                                            card: card
+                                                        }%}
+                                                    </div>
+                                                {% endfor %}
+                                            </div>
+                                        {% endif %}
+                                    </div>
+                                {% endfor %}
+                            </div>
+                        {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

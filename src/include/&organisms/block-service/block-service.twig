@@ -1,0 +1,81 @@
+<div class="block-service" {% if block_service.url %} data-url={{ block_service.url }} {% endif %} data-service-wrap >
+    <div class="block-service__header">
+            <div class="container block-service__header-container">
+                 {% if block_service.title %}
+                <h2 class="block-service__title h2" data-fade-in-up>
+                    {{ block_service.title }}
+                </h2>
+            {% endif %}
+            <div class="block-service__box">
+                {% if block_service.form %}
+                    <div class="block-service__form" data-fade-in-up>
+                        {% view '&search-form' with {
+                            form: block_service.form
+                        } %}
+                    </div>
+                {% endif %}
+                {% if block_service.select %}
+                  
+                    <div class="block-service__select {% if block_service.select.color %} color {% endif %} {% if block_service.select.fill %}block-service--fill{% endif %}">
+                        {% view '@filter-select' with {
+                            filter_select: block_service.select
+                        } %}
+                    </div>
+			
+                {% endif %}
+            </div>
+            </div>
+           
+    </div>
+    <div class="block-service__container">
+        <div class="block-service__wrapper" data-fade-in-up>
+            <div class="block-service__left container" data-wrp-service>
+                {% if block_service.items %}
+                    <div class="block-service__items">
+                        {% for card in block_service.items %}
+                            {% if card.products|length > 0 %}
+                                <div class="block-service__item" {% if card.city %} data-id={{ card.city }} {% endif %} {% if card.products %} data-products={{ card.products }} {% endif %}>
+                                    {% view "^card-service" with {
+                                        card: card
+                                    } %}
+                                </div>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                {% endif %}
+                {% if block_service.nosearch %}
+                    <div class="block-service__nosearch h3" data-nosearch>
+                        {{block_service.nosearch}}
+                    </div>
+                {% endif %}
+            </div>
+            <div class="block-service__right">
+                <div class="block-service__wrp">
+                    <div class="block-service__view" data-trigger-list>
+                        <div class="block-service__txt">
+                            Список
+                        </div>
+                        <div class="block-service__icon">
+                            {% view '@icon' with {
+								icon: block_service.icon_list
+							} %}
+                        </div>
+                    </div>
+                    <div class="block-service__view block-service__view show" data-trigger-map>
+                        <div class="block-service__txt">
+                            Карта
+                        </div>
+                        <div class="block-service__icon">
+                            {% view '@icon' with {
+								icon: block_service.icon_map
+							} %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="block-service__map" data-wrp-map>
+                {% view '&map' %}
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,28 @@
+.block-facilities {
+	overflow: hidden;
+	&__tabs {
+		margin-bottom: rem(16);
+		padding-left: 31%;
+
+		@include media-breakpoint-down(md) {
+			margin-bottom: rem(48);
+			margin-left: rem(-29);
+			padding-left: 0;
+		}
+
+		@include media-breakpoint-down(sm) {
+			margin-left: 0;
+		}
+	}
+
+	&__pane {
+		opacity: 0;
+		&:not(.is-active) {
+			display: none;
+		}
+
+		&:first-child {
+			opacity: 1;
+		}
+	}
+}

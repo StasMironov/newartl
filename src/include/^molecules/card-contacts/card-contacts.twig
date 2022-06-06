@@ -1,0 +1,39 @@
+<div class="card-contacts">
+    {% if card.icon %}
+        <div class="card-contacts__map">
+            {% view '@icon' with {
+                icon: card.icon
+            } %}
+        </div> 
+    {% endif %}
+    <div class="card-contacts__content">
+         {% if card.title %}
+            <h2 class="card-contacts__title h1">
+                {{ card.title }}
+            </h2>
+         {% endif %}
+          {% if card.phone %}
+            <a href="tel:{% if card.phone.href %}{{card.phone.href}}{% endif %}" class="card-contacts__phone">
+                {{ card.phone.text }}
+            </a>
+         {% endif %}
+         
+        <div class="card-contacts__box">
+            {% if card.email %}
+                <a href="mailto:{% if card.email.href %}{{card.email.href}}{% endif %}" class="card-contacts__email">
+                    {{ card.email.text }}
+                </a>
+            {% endif %}
+            {% if card.action %}
+                <div class="card-contacts__action" data-action>
+                    {% view '@button' with {
+                        button: card.action
+                    } %}
+                </div>
+            {% endif %}
+        </div>
+
+
+        
+    </div>
+</div>

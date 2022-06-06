@@ -1,0 +1,50 @@
+<div class="table">
+    <div class="table-left">
+        <table>
+            {% if table.left.caption %}
+                <tr>
+                    {% for item in  table.left.caption %}
+                        <th>
+                            {{item}}
+                        </th>
+                    {% endfor %}
+                </tr>
+            {% endif %}
+            {% if table.main.rows %}
+                {% for item in table.left.rows %}
+                    <tr>
+                        <td>
+                            {{item}}
+                        </td>
+                    </tr>
+                {% endfor %}  
+            {% endif %}
+        </table>
+    </div>
+    <div class="table-main__wrap">
+        <div class="table-main" data-table-viewport>
+            <table class="table-main__content" data-table-content>
+                {% if table.main.caption %}
+                    <tr>
+                        {% for item in  table.main.caption %}
+                            <th>
+                                {{item}}
+                            </th>
+                        {% endfor %}
+                    </tr>
+                {% endif %}
+                {% if table.main.rows %}
+                    {% for row in  table.main.rows %}
+                        <tr>
+                            {% for item in  row %}
+                                <td>
+                                    {{item}}
+                                </td>
+                            {% endfor %}
+                        </tr>
+                    {% endfor %}  
+                {% endif %}
+            </table>
+        </div>
+    </div>
+</div>

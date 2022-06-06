@@ -1,0 +1,343 @@
+.modal {
+	$b: #{&};
+	display: none;
+	position: relative;
+
+	&.is-open {
+		display: block;
+	}
+
+	
+
+	&__overlay {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		z-index: 100;
+		background-color: rgba($color-black, 0.85);
+
+		#{$b}.is-warning & {
+			background-color: rgba($color-black, 0.6);
+		}
+
+		#{$b}--adress & {
+			overflow-y: auto;
+			align-items: flex-start;
+		}
+
+		#{$b}--director & {
+			display: block;
+      z-index: 130;
+		}
+
+		#{$b}--location &,
+		#{$b}--basket & {
+			background-color: transparent;
+		}
+
+		&:focus {
+			outline: none;
+		}
+	}
+
+	&__inner {
+		width: 100%;
+		height: 100%;
+	}
+
+	&__container {
+		position: relative;
+		background-color: transparent;
+		box-sizing: border-box;
+		width: rem(600);
+
+		@include media-breakpoint-down(md) {
+			width: rem(576);
+		}
+
+		@include media-breakpoint-down(sm) {
+			width: rem(328);
+		}
+
+		#{$b}--media & {
+			@include media-breakpoint-up(md) {
+			    width: rem(664);
+    			height: rem(374);
+			}
+
+			@include media-breakpoint-up(lg) {
+				max-width: rem(1112);
+				width: 100%;
+				height: rem(626);
+			}
+		}
+
+		#{$b}--partners &, #{$b}--director & {
+			width: 100%;
+		}
+
+		#{$b}--resume & {
+			width: rem(876);
+			height: 91vh;
+			background-color: $color-white;
+
+			@include media-breakpoint-down(md) {
+				width: 100%;
+    			height: 100vh;
+			}
+		}
+
+		#{$b}.is-warning &,
+		#{$b}--right & {
+			margin-left: auto;
+			min-width: rem(714);
+			height: 100vh;
+
+			@include media-breakpoint-down(md) {
+				min-width: initial;
+				width: 100vw;
+			}	
+
+			@include media-breakpoint-down(sm) {
+				width: 100vw;
+			}	
+		}
+	}
+
+	&__inner {
+		max-height: 100%;
+
+		#{$b}--description & {
+			overflow-y: auto;
+		}
+
+		#{$b}--partners &, #{$b}--director & {
+			display: flex;
+			justify-content: center;
+		}
+	}
+
+	&__close {
+	//	@include button-reset;
+		position: absolute;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: rem(17);
+		height: rem(17);
+		z-index: 1;
+		top: rem(52);
+		right: rem(56);
+		background-color: transparent;
+		border: none;
+		cursor: pointer;
+
+		@include media-breakpoint-down(sm) {
+			top: rem(16);
+			right: rem(16);
+		}
+
+		#{$b}--basket & {
+			@include media-breakpoint-up(md) {
+				display: none;
+			}
+		}
+
+		#{$b}--form & {
+			top: rem(48);
+			right: rem(40);
+
+			@include media-breakpoint-down(md) {
+				top: rem(24);
+				right: rem(24);
+			}
+		}
+
+		#{$b}--description & {
+			width: rem(40);
+			height: rem(40);
+			border-radius: 50%;
+			//background-color: $color-grey;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			top: rem(32);
+			right: rem(16);
+
+			@include media-breakpoint-up(md) {
+				top: rem(24);
+				right: rem(32);
+			}
+
+			@include media-breakpoint-up(lg) {
+				top: rem(24);
+				right: rem(20);
+			}
+
+			&:hover {
+				//background-color: $color-red-velvet;
+				color: $color-white;
+			}
+
+		}
+
+		#{$b}--partners &, #{$b}--director & {
+			width: rem(20);
+			height: rem(20);
+			top: rem(50);
+			right: rem(57);
+
+			@include media-breakpoint-down(md) {
+				top: rem(47);
+				right: rem(50);
+			}
+
+			@include media-breakpoint-down(sm) {
+				top: rem(16);
+				right: rem(16);
+			}
+		}
+
+		&:after, &:before {
+			position: absolute;
+			content: "";
+			height: 100%;
+			width: 1px;
+			background-color: $color-white;
+			right: 0;
+			left: 0;
+			top: 0;
+			bottom: 0;
+			margin: auto;
+			@include defaultTransition(background-color);
+
+			#{$b}--partners & {
+				width: 2px;
+				background-color: $color-black;
+			}
+
+			#{$b}--director & {
+				width: 2px;
+				background-color: $color-white;
+				@include media-breakpoint-up(lg) {					
+					background-color: $color-black;
+				}
+			}
+
+			#{$b}--resume & {
+				width: 2px;
+			}
+
+			#{$b}--right & {
+				width: 2px;
+			}
+		}
+
+		#{$b}--partners & {
+			@include touchLessHover {
+				&:after, &:before {
+					background-color: rgba($color-black, 0.6);
+				}
+			}
+		}
+
+		&:after {
+			transform: rotate(45deg);
+		}
+
+		&:before {
+			transform: rotate(-45deg);
+		}
+
+		#{$b}.is-warning & {
+			width: rem(24);
+			height: rem(24);
+			top: rem(44);
+			right: rem(50);
+			outline: none;
+
+			@include media-breakpoint-down(sm) {
+				right: rem(32);
+			}
+			@media only screen and (min-width: 480px) and (max-width: 767px) {
+				right: rem(16);
+			}
+		}
+
+
+		#{$b}--right & {
+			width: rem(20);
+			height: rem(20);
+			right: rem(60);
+
+
+			@include media-breakpoint-down(md) {
+				right: rem(55)x;
+				top: rem(49);
+			}
+
+			@include media-breakpoint-down(sm) {
+				right: rem(26);
+				top: rem(26);
+			}
+
+			
+		}
+    // &__container {
+    //     max-width: rem(876);
+    // }
+
+
+		
+	}
+}
+
+/**************************\
+  Demo Animation Style
+\**************************/
+@keyframes mmfadeIn {
+	from { opacity: 0; }
+	to { opacity: 1; }
+}
+
+@keyframes mmfadeOut {
+	from { opacity: 1; }
+	to { opacity: 0; }
+}
+
+@keyframes mmslideIn {
+	from { transform: translateY(15%); }
+	to { transform: translateY(0); }
+}
+
+@keyframes mmslideOut {
+	from { transform: translateY(0); }
+	to { transform: translateY(-10%); }
+}
+
+
+.modal[aria-hidden="false"] .modal__overlay {
+	animation: mmfadeIn .3s cubic-bezier(0.0, 0.0, 0.2, 1);
+}
+
+.modal[aria-hidden="false"] .modal__container {
+	animation: mmslideIn .3s cubic-bezier(0, 0, .2, 1);
+}
+
+.modal[aria-hidden="true"] .modal__overlay {
+	animation: mmfadeOut .3s cubic-bezier(0.0, 0.0, 0.2, 1);
+}
+
+.modal[aria-hidden="true"] .modal__container {
+	animation: mmslideOut .3s cubic-bezier(0, 0, .2, 1);
+}
+
+.modal .modal__container,
+.modal .modal__overlay {
+	will-change: transform;
+}

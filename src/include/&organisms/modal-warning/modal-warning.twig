@@ -1,0 +1,13 @@
+<div class="modal-warning">
+    {% if modal.title %}
+        <div class="modal-warning__title">{{modal.title}}</div>
+    {% endif %}
+    {% if modal.desc %}
+        <div class="modal-warning__desc">{{modal.desc}}</div>
+    {% endif %}
+    {% if modal.action %}
+        {% view '@button' with {
+            button: modal.action
+        } %}
+    {% endif %}
+</div>

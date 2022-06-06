@@ -1,0 +1,10 @@
+{
+	"modal_partner": {
+		"description": "Test2",
+		"img": {
+			"src": "./tmp/partners/samsung.png",
+			"alt": "logo",
+			"disable_lazy": true
+		}
+	}
+}

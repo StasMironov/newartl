@@ -1,0 +1,111 @@
+.modal-resume {
+    background: $color-green;
+    height: 100%;
+    width: 100%;
+   
+
+    &__wrapper {
+        padding: rem(80) rem(160) rem(64) rem(104);
+        color: $color-white;
+    
+        @include media-breakpoint-down(md) {
+            padding: rem(80) rem(112);
+        }
+    
+        @include media-breakpoint-down(sm) {
+            padding: rem(64) rem(16);
+        }
+    }
+
+   
+    &__inner {
+        height: 100%;
+    }
+
+    &__info {
+        margin-top: rem(18);
+    }
+
+    &__title {
+        color: $color-white;
+        margin-bottom: rem(46);
+
+        @include media-breakpoint-down(sm) {
+            font-size: rem(24);
+        }
+    }
+
+    &__select {
+        margin-bottom: rem(28);
+    }
+
+    &__article {
+        margin-bottom: rem(20);
+
+        @include media-breakpoint-down(sm) {
+            font-size: rem(16);
+        }
+    }
+
+    &__block {
+        background-color: $color-white;
+        border-radius: rem(8);
+        padding: rem(32) rem(40);
+        min-height: rem(284);
+
+        @include media-breakpoint-down(sm) {
+            padding: rem(32);
+            min-height: rem(260);
+        }
+    }
+
+    &__formats {
+        display: flex;
+        align-items: center;
+        margin-bottom: rem(8);
+    }
+
+    &__format {
+        color: rgba($color-black, 0.4);
+        font-size: rem(24);
+
+        @include media-breakpoint-down(sm) {
+            font-size: rem(20);
+        }
+
+        &:not(:last-child){
+            margin-right: rem(18);
+        }
+    }
+
+    &__text {
+        max-width: rem(271);
+        width: 100%;
+        color: rgba($color-black, 0.4);
+        margin-bottom: rem(32);
+
+        @include media-breakpoint-down(sm) {
+            margin-bottom: rem(24);
+        }
+    }
+
+    .form__agreement {
+        margin-bottom: 56px;
+    }
+
+    .form__title {
+        margin-bottom: rem(46);
+
+        @include media-breakpoint-down(sm) {
+            margin-bottom: rem(32);
+        }
+    }
+    
+    .form__info {
+        margin-bottom: 0;       
+    }
+
+    .file-wrapper {
+        color: $color-black;
+    }
+}

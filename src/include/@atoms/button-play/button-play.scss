@@ -1,0 +1,86 @@
+.button-play {
+    $root: &;
+
+	position: absolute;
+	width: rem(193);
+	height: rem(193);
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+
+    @include media-breakpoint-down(md) {
+        width: rem(200);
+	    height: rem(200);
+    }
+
+    @include media-breakpoint-down(sm) {
+        width: rem(160);
+	    height: rem(160);
+    }
+
+    @include touchLessHover {
+        #{$root}__btn .icon {
+           color: darken($color-green, 5%);
+        }
+
+        .circle {
+        	animation-play-state: paused;
+        }
+    }
+
+	&__icon {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		margin: auto;
+		cursor: pointer;
+		clip-path: inset(51% 0 0 0 round 0 0 0 0);
+
+		&--back {
+			clip-path: inset(0 0 51% 0 round 0 0 0 0 );
+			.circle {
+                color: white;
+			}
+		}
+
+		.circle {
+			transform-origin: center;
+			animation: moveCircle 10s linear infinite;
+		}
+	}
+
+	&__btn {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		width: rem(86);
+		height: rem(86);
+		margin: auto;
+
+        @include media-breakpoint-down(sm) {
+            width: rem(70);
+            height: rem(70);
+        }
+      
+        .icon {
+            color: $color-green;
+            @include defaultTransition(color);
+        }
+	}
+}
+
+//  Animation 
+
+@keyframes moveCircle {
+	from {
+	  transform: rotate(0deg);
+	}
+  
+	to {
+		transform: rotate(360deg);
+	}
+  }

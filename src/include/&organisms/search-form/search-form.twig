@@ -1,0 +1,11 @@
+<form{% if form.id %} id="{{ form.id }}"{% endif %}{% if form.action %} action="{{ form.action }}"{% endif %}{% if form.method %} method="{{ form.method }}"{% endif %}
+	class="search-form"{% if form.attr %} {{ form.attr }}{% endif %}>
+	{% if form.field %}
+		<div class="search-form__field">
+			{% view '@field' with {
+				field: form.field
+			} %}
+		</div>
+	{% endif %}
+	<div class="search-form__result" data-result></div>
+</form>

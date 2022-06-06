@@ -1,0 +1,26 @@
+<div class="strategy {% if strategy.bg %} bg-{{ strategy.bg }}{% else %} bg-white{% endif %}">
+	<div class="strategy__container container">
+		{% if strategy.lead %}
+			<h2 class="h1 strategy__lead" data-fade-in-up>
+				{% if strategy.colored %} <span class="strategy__colored">{{ strategy.colored }}</span> {% endif %}
+				{{ strategy.lead }}
+			</h2>
+		{% endif %}
+
+		{% if strategy.icon or strategy.text %}
+			<div class="strategy__bottom">
+				{% if strategy.icon %}
+					<div class="strategy__icon" data-fade-in-up data-delay="0.5">
+						{% view '@icon-text' with {
+							icon: strategy.icon
+						} %}
+					</div>
+				{% endif %}
+
+				{% if strategy.text %}
+					<p class="strategy__text" data-fade-in-up data-delay="0.5">{{ strategy.text }}</p>
+				{% endif %}
+			</div>
+		{% endif %}
+	</div>
+</div>

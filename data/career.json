@@ -1,0 +1,1389 @@
+{
+  "title": "Карьера",
+  "header": {
+    "transparent": true,
+    "logo": {
+      "href": "main.html",
+      "name": "logos/main-logo",
+      "size": "fit"
+    },
+    "navigation": [
+      {
+        "text": "О группе",
+        "submenu": {
+          "title": "О группе",
+          "text": "Общая информация для инвесторов в формате отчетов, графиков и документов",
+          "links": [
+            {
+              "href": "javascript:void(0);",
+              "text": "Общая информация для инвесторов"
+            },
+            {
+              "href": "javascript:void(0);",
+              "text": "Презентации"
+            },
+            {
+              "href": "javascript:void(0);",
+              "text": "Соблюдение требований корпоративного управления"
+            },
+            {
+              "href": "javascript:void(0);",
+              "text": "Структура компании"
+            },
+            {
+              "href": "javascript:void(0);",
+              "text": "Совет директоров"
+            },
+            {
+              "href": "javascript:void(0);",
+              "text": "Руководство"
+            }
+          ]
+        }
+      },
+      {
+        "text": "Инвесторам",
+        "submenu": {
+          "title": "Инвесторам",
+          "text": "Общая информация для инвесторов в формате отчетов, графиков и документов",
+          "links": [
+            {
+              "href": "javascript:void(0);",
+              "text": "Общая информация для инвесторов"
+            },
+            {
+              "text": "Результаты и отчеты",
+              "active": true
+            },
+            {
+              "href": "javascript:void(0);",
+              "text": "Презентации"
+            },
+            {
+              "href": "javascript:void(0);",
+              "text": "Соблюдение требований корпоративного управления"
+            },
+            {
+              "href": "javascript:void(0);",
+              "text": "Структура компании"
+            },
+            {
+              "href": "javascript:void(0);",
+              "text": "Совет директоров"
+            },
+            {
+              "href": "javascript:void(0);",
+              "text": "Руководство"
+            },
+            {
+              "href": "javascript:void(0);",
+              "text": "Корпоративное управление"
+            },
+            {
+              "href": "javascript:void(0);",
+              "text": "Внутренние документы"
+            },
+            {
+              "href": "javascript:void(0);",
+              "text": "Каталог продукции"
+            },
+            {
+              "href": "javascript:void(0);",
+              "text": "Контакты для инвесторов"
+            }
+          ]
+        }
+      },
+      {
+        "href": "javascript:void(0);",
+        "text": "Партнерам"
+      },
+      {
+        "href": "javascript:void(0);",
+        "text": "Устойчивое развитие"
+      },
+      {
+        "href": "javascript:void(0);",
+        "text": "Пресс-центр"
+      },
+      {
+        "text": "Карьера",
+        "active": true
+      },
+      {
+        "href": "javascript:void(0);",
+        "text": "Контакты"
+      }
+    ],
+    "lang": {
+      "action": {
+        "text": "Ру",
+        "title": "Ру"
+      },
+      "items": [
+        {
+          "href": "javascript:void(0);",
+          "text": "En",
+          "title": "En"
+        },
+        {
+          "href": "javascript:void(0);",
+          "text": "Оʻz",
+          "title": "Оʻz"
+        }
+      ]
+    }
+  },
+  "hero_default": {
+    "layout": "6",
+    "breadcrumbs": {
+      "theme": "white",
+      "items": [
+        {
+          "text": "На главную",
+          "href": "main.html"
+        }
+      ]
+    },
+    "title": "Карьера в Artel",
+    "image": {
+      "src": "tmp/default-hero/hero-сareer.jpg",
+      "alt": "image alt",
+      "fill": true,
+      "tab": {
+        "srcset": [
+          {
+            "scale": "1",
+            "src": "tmp/default-hero/hero-career-tab.jpg"
+          }
+        ]
+      },
+      "mob": {
+        "srcset": [
+          {
+            "scale": "1",
+            "src": "tmp/default-hero/hero-сareer-mob.jpg"
+          }
+        ]
+      }
+    }
+  },
+  "block_nav": {
+    "desc": "1 февраля в отеле Hilton компания Artel подписала меморандум о спонсорстве с платформой бесплатного онлайн-образования&nbsp;Khan Academy Uzbek.",
+    "bg": "green",
+    "icon": {
+      "name": "logos/decor",
+      "size": "fit"
+    },
+    "tabs": {
+      "layout": "3",
+      "items": [
+        {
+          "href": true,
+          "scroll_to": "#work",
+          "text": "Работа в Artel",
+          "title": "Работа в Artel",
+          "active": "true",
+          "theme": "white"
+        },
+        {
+          "href": true,
+          "scroll_to": "#training",
+          "text": "Развитие сотрудников",
+          "title": "Развитие сотрудников",
+          "theme": "white"
+        },
+        {
+          "href": true,
+          "scroll_to": "#stories",
+          "text": "Истории успеха",
+          "title": "Истории успеха",
+          "theme": "white"
+        },
+        {
+          "href": true,
+          "scroll_to": "#culture",
+          "text": "Корпоративная культура",
+          "title": "Корпоративная культура",
+          "theme": "white"
+        },
+        {
+          "href": true,
+          "scroll_to": "#tren",
+          "text": "Тренинг",
+          "title": "Тренинг",
+          "theme": "white"
+        }
+      ]
+    },
+    "action": [
+      {
+        "href": "#job",
+        "text": "Вакансии",
+        "title": "Вакансии",
+        "theme": "white",
+        "scroll_to": true,
+        "icon": {
+          "name": "24/arrow-up-right"
+        }
+      },
+      {
+        "href": "#student",
+        "text": "Я студент",
+        "title": "Я студент",
+        "theme": "outline-white",
+        "scroll_to": true,
+        "icon": {
+          "name": "24/arrow-up-right"
+        }
+      }
+    ]
+  },
+  "block_innovation": {
+    "title": "Artel в цифрах",
+    "theme": "dark",
+    "layout": "2",
+    "factoids": [
+      {
+        "text": "10",
+        "label": "лет на рынке"
+      },
+      {
+        "text": "8 271",
+        "label": "сотрудников по всему миру"
+      },
+      {
+        "text": "30",
+        "after": {
+          "txt": "%"
+        },
+        "label": "женщин в компании"
+      },
+      {
+        "text": "21",
+        "label": "национальность в компании"
+      },
+      {
+        "text": "11",
+        "label": "городов присутствия по стране"
+      },
+      {
+        "text": "29",
+        "label": "средний возраст сотрудников"
+      }
+    ]
+  },
+  "block_career_cards": {
+    "heading": "Работа в Artel — это ",
+    "items": [
+      {
+        "text": "Работа в крупной, стабильной компании и достойная заработная плата",
+        "icon": {
+          "name": "104/company",
+          "size": "104"
+        }
+      },
+      {
+        "text": "Дружная, сплочённая и эффективная команда",
+        "icon": {
+          "name": "104/team",
+          "size": "104"
+        }
+      },
+      {
+        "text": "Быстрый карьерный рост",
+        "icon": {
+          "name": "104/time",
+          "size": "104"
+        }
+      },
+      {
+        "text": "Обучение и оплачиваемая стажировка",
+        "icon": {
+          "name": "104/study-icon",
+          "size": "104"
+        }
+      },
+      {
+        "text": "Возможность профессионального и духовного роста",
+        "icon": {
+          "name": "104/grow",
+          "size": "104"
+        }
+      },
+      {
+        "text": "Полноценное здоровое питание за счёт компании",
+        "icon": {
+          "name": "104/apple",
+          "size": "104"
+        }
+      }
+    ],
+    "scroll_target": "work"
+  },
+  "block_training": {
+    "factoids": [
+      {
+        "text": "226",
+        "label": "проведенных треннингов"
+      }
+    ],
+    "accordions": [
+      {
+        "title": "Направления тренингов",
+        "content": "<ul><li>Технические навыки</li><li>Навыки коммуникации</li><li>Тим билдинги​</li><li>Психология​</li><li>Обратная связь через опросники</li></ul>"
+      },
+      {
+        "title": "Тренинги сотрудникам финансового блока",
+        "content": "<div>Test2</div>"
+      },
+      {
+        "title": "Тренинги сотрудникам отдела продаж",
+        "content": "<div>Test3</div>"
+      }
+    ],
+    "scroll_target": "tren"
+  },
+  "slider_comment": {
+    "title": "Истории успеха ",
+    "arrows_theme": "white",
+    "items": [
+      {
+        "icon": {
+          "name": "104/quote",
+          "size": "fit"
+        },
+        "name": "Дильшод Бобомуродов",
+        "job": "Инженер, проектировщик",
+        "avatar": {
+          "src": "tmp/slider-comment/1.jpg",
+          "alt": "img"
+        },
+        "desc_read_more": {
+          "base": "<p>Здравствуйте!​ 1</p><p>Меня зовут Дильшод Бобомуродов, я директор завода Artel по производству газовых плит и мини-печей. В компанию Artel я пришел работать одиннадцать лет назад, когда учился на четвертом курсе плит и мини-печей. В компанию Artel я пришел работать одиннадцать лет назад, когда учился на четвертом курстского финансового института.</p>",
+          "items": [
+            "В то время компания проводила конкурс среди студентов и по итогам конкурса выбрала тех, кто показал лучший результат. Свою работу в компании я начал в качестве помощника бухгалтера.",
+            "Artel Electronics была основана в 2011 году, и мы являемся одним из ведущих производителей на рынке бытовой электротехники и сохраняем хорошую репутацию в Узбекистане и во всем мире."
+          ],
+          "link": {
+            "text": "Читать далее"
+          }
+        },
+        "factoid": {
+          "text": "11",
+          "label": "лет в Artel"
+        }
+      },
+      {
+        "icon": {
+          "name": "104/quote",
+          "size": "fit"
+        },
+        "name": "Дильшод",
+        "job": "Инженер",
+        "avatar": {
+          "src": "tmp/slider-comment/1.jpg",
+          "alt": "img"
+        },
+        "desc_read_more": {
+          "base": "<p>Здравствуйте!​ 2</p><p>Меня зовут Дильшод Бобомуродов, я директор завода Artel по производству газовых плит и мини-печей. В компанию Artel я пришел работать одиннадцать лет назад, когда учился на четвертом курсе плит и мини-печей. В компанию Artel я пришел работать.</p>",
+          "items": [
+            "В то время компания проводила конкурс среди студентов и по итогам конкурса выбрала тех, кто показал лучший результат. Свою работу в компании я начал в качестве помощника бухгалтера.",
+            "Artel Electronics была основана в 2011 году, и мы являемся одним из ведущих производителей на рынке бытовой электротехники и сохраняем хорошую репутацию в Узбекистане и во всем мире."
+          ],
+          "link": {
+            "text": "Читать далее"
+          }
+        },
+        "factoid": {
+          "text": "12",
+          "label": "лет в Artel"
+        }
+      },
+      {
+        "icon": {
+          "name": "104/quote",
+          "size": "fit"
+        },
+        "name": "Дильшод Бобомуродов",
+        "job": "Инженер, проектировщик",
+        "avatar": {
+          "src": "tmp/slider-comment/1.jpg",
+          "alt": "img"
+        },
+        "desc_read_more": {
+          "base": "<p>Здравствуйте!​ 3</p><p>Меня зовут Дильшод Бобомуродов, я директор завода Artel по производству газовых плит и мини-печей. В компанию Artel я пришел работать одиннадцать лет назад, когда учился на четвертом курсе плит и мини-печей. В компанию Artel я пришел работать одиннадцать лет назад, когда учился на четвертом курстского финансового института.</p>"
+        },
+        "factoid": {
+          "text": "11",
+          "label": "лет в Artel"
+        }
+      },
+      {
+        "icon": {
+          "name": "104/quote",
+          "size": "fit"
+        },
+        "name": "Дильшод",
+        "job": "Инженер",
+        "avatar": {
+          "src": "tmp/slider-comment/1.jpg",
+          "alt": "img"
+        },
+        "desc_read_more": {
+          "base": "<p>Здравствуйте!​ 2</p><p>Меня зовут Дильшод Бобомуродов, я директор завода Artel по производству газовых плит и мини-печей. В компанию Artel я пришел работать одиннадцать лет назад, когда учился на четвертом курсе плит и мини-печей. В компанию Artel я пришел работать.</p>",
+          "items": [
+            "В то время компания проводила конкурс среди студентов и по итогам конкурса выбрала тех, кто показал лучший результат. Свою работу в компании я начал в качестве помощника бухгалтера.",
+            "Artel Electronics была основана в 2011 году, и мы являемся одним из ведущих производителей на рынке бытовой электротехники и сохраняем хорошую репутацию в Узбекистане и во всем мире."
+          ],
+          "link": {
+            "text": "Читать далее"
+          }
+        },
+        "factoid": {
+          "text": "15",
+          "label": "лет в Artel"
+        }
+      },
+      {
+        "icon": {
+          "name": "104/quote",
+          "size": "fit"
+        },
+        "name": "Дильшод Бобомуродов",
+        "job": "Инженер, проектировщик",
+        "avatar": {
+          "src": "tmp/slider-comment/1.jpg",
+          "alt": "img"
+        },
+        "desc_read_more": {
+          "base": "<p>Здравствуйте!​ </p><p>Меня зовут Дильшод Бобомуродов, я директор завода Artel по производству газовых плит и мини-печей.</p>"
+        },
+        "factoid": {
+          "text": "19",
+          "label": "лет в Artel"
+        }
+      },
+      {
+        "icon": {
+          "name": "104/quote",
+          "size": "fit"
+        },
+        "name": "Дильшод",
+        "job": "Инженер",
+        "avatar": {
+          "src": "tmp/slider-comment/1.jpg",
+          "alt": "img"
+        },
+        "desc_read_more": {
+          "base": "<p>Здравствуйте!​ </p><p>Меня зовут Дильшод Бобомуродов, я директор завода Artel по производству газовых плит и мини-печей.</p>"
+        },
+        "factoid": {
+          "text": "5",
+          "label": "лет в Artel"
+        }
+      },
+      {
+        "icon": {
+          "name": "104/quote",
+          "size": "fit"
+        },
+        "name": "Дильшод Бобомуродов",
+        "job": "Инженер, проектировщик",
+        "avatar": {
+          "src": "tmp/slider-comment/1.jpg",
+          "alt": "img"
+        },
+        "desc_read_more": {
+          "base": "<p>Здравствуйте!​ </p><p>Меня зовут Дильшод Бобомуродов, я директор завода Artel по производству газовых плит и мини-печей.</p>"
+        },
+        "factoid": {
+          "text": "11",
+          "label": "лет в Artel"
+        }
+      },
+      {
+        "icon": {
+          "name": "104/quote",
+          "size": "fit"
+        },
+        "name": "Дильшод",
+        "job": "Инженер",
+        "avatar": {
+          "src": "tmp/slider-comment/1.jpg",
+          "alt": "img"
+        },
+        "desc_read_more": {
+          "base": "<p>Здравствуйте!​ </p><p>Меня зовут Дильшод Бобомуродов, я директор завода Artel по производству газовых плит и мини-печей.</p>"
+        },
+        "factoid": {
+          "text": "12",
+          "label": "лет в Artel"
+        }
+      }
+    ],
+    "scroll_target": "stories"
+  },
+  "block_event": {
+    "title": "Корпоративная культура",
+    "desc": "Artel делает акцент на развитие корпоративной культуры, развитие и обучение людей, карьерный рост и социальную защиту",
+    "slider": {
+      "items": [
+        {
+          "article": "Заключение партнерских отношений с «Baku Electronics» в&nbsp;Азербайджане",
+          "href": "test.html",
+          "img": {
+            "src": "tmp/press/img8.jpg",
+            "alt": "img"
+          },
+          "icon": {
+            "name": "24/pic"
+          },
+          "qty": "33"
+        },
+        {
+          "article": "2",
+          "href": "test2.html",
+          "img": {
+            "src": "tmp/card-news/news2.jpg",
+            "alt": "img"
+          },
+          "icon": {
+            "name": "24/pic"
+          },
+          "qty": "30"
+        },
+        {
+          "article": "3",
+          "href": "test.html",
+          "img": {
+            "src": "tmp/press/img1.jpg",
+            "alt": "img"
+          },
+          "icon": {
+            "name": "24/pic"
+          },
+          "qty": "33"
+        },
+        {
+          "article": "4",
+          "href": "test2.html",
+          "img": {
+            "src": "tmp/card-news/news2.jpg",
+            "alt": "img"
+          },
+          "icon": {
+            "name": "24/pic"
+          },
+          "qty": "30"
+        },
+        {
+          "article": "5",
+          "href": "test.html",
+          "img": {
+            "src": "tmp/press/img1.jpg",
+            "alt": "img"
+          },
+          "icon": {
+            "name": "24/pic"
+          },
+          "qty": "33"
+        }
+      ]
+    },
+    "scroll_target": "culture"
+  },
+  "slider": {
+    "title": "Почему мы работаем со&nbsp;студентами и&nbsp;выпускниками?​",
+    "arrows_theme": "white",
+    "bg": "gray",
+    "layout": "2",
+    "items": [
+      {
+        "article": "Понимая свою ответственность и заботясь о подготовке специалистов «для себя», Artel охотно идет на взаимодействие с вузами.",
+        "img": {
+          "src": "tmp/slider-сareer/1.jpg",
+          "alt": "img"
+        }
+      },
+      {
+        "article": "Студенты же приобретают необходимые им практические знания, реальный опыт командной работы и коммуникаций в проектах, успешно защищают дипломы на базе компании.",
+        "img": {
+          "src": "tmp/slider-сareer/2.jpg",
+          "alt": "img"
+        }
+      },
+      {
+        "article": "3",
+        "img": {
+          "src": "tmp/press/img1.jpg",
+          "alt": "img"
+        }
+      },
+      {
+        "article": "4",
+        "href": "test2.html",
+        "img": {
+          "src": "tmp/card-news/news2.jpg",
+          "alt": "img"
+        }
+      },
+      {
+        "article": "5",
+        "img": {
+          "src": "tmp/press/img1.jpg",
+          "alt": "img"
+        }
+      },
+      {
+        "article": "6",
+        "href": "test2.html",
+        "img": {
+          "src": "tmp/card-news/news2.jpg",
+          "alt": "img"
+        }
+      }
+    ]
+  },
+  "slider_comment2": {
+    "title": "Истории студентов",
+    "arrows_theme": "white",
+    "items": [
+      {
+        "quote": "Программа «Next generation» 1",
+        "icon": {
+          "name": "104/quote",
+          "size": "fit"
+        },
+        "name": "Дильшод Бобомуродов",
+        "job": "Инженер, проектировщик",
+        "avatar": {
+          "src": "tmp/slider-comment/1.jpg",
+          "alt": "img"
+        },
+        "desc_read_more": {
+          "base": "<p>Здравствуйте!​ 2</p><p>Меня зовут Дильшод Бобомуродов, я директор завода Artel по производству газовых плит и мини-печей. В компанию Artel я пришел работать одиннадцать лет назад, когда учился на четвертом курсе плит и мини-печей. В компанию Artel я пришел работать.</p>"
+        },
+        "factoid": {
+          "text": "11",
+          "label": "лет в Artel"
+        }
+      },
+      {
+        "quote": "Программа «Next generation» 2",
+        "icon": {
+          "name": "104/quote",
+          "size": "fit"
+        },
+        "name": "Абдулла Зафаров",
+        "job": "Инженер, проектировщик",
+        "avatar": {
+          "src": "tmp/slider-comment/1.jpg",
+          "alt": "img"
+        },
+        "desc_read_more": {
+          "base": "<p>Здравствуйте!​ 2</p><p>Меня зовут Дильшод Бобомуродов, я директор завода Artel по производству газовых плит и мини-печей. В компанию Artel я пришел работать одиннадцать лет назад, когда учился на четвертом курсе плит и мини-печей. В компанию Artel я пришел работать.</p>",
+          "items": [
+            "В то время компания проводила конкурс среди студентов и по итогам конкурса выбрала тех, кто показал лучший результат. Свою работу в компании я начал в качестве помощника бухгалтера.",
+            "Artel Electronics была основана в 2011 году, и мы являемся одним из ведущих производителей на рынке бытовой электротехники и сохраняем хорошую репутацию в Узбекистане и во всем мире."
+          ],
+          "link": {
+            "text": "Читать далее"
+          }
+        },
+        "factoid": {
+          "text": "12",
+          "label": "лет в Artel"
+        }
+      },
+      {
+        "quote": "Программа «Next generation» 3",
+        "icon": {
+          "name": "104/quote",
+          "size": "fit"
+        },
+        "name": "Дильшод Бобомуродов",
+        "job": "Инженер, проектировщик",
+        "avatar": {
+          "src": "tmp/slider-comment/1.jpg",
+          "alt": "img"
+        },
+        "desc_read_more": {
+          "base": "<p>Здравствуйте!​ 3</p><p>Меня зовут Дильшод Бобомуродов, я директор завода Artel по производству газовых плит и мини-печей. В компанию Artel я пришел работать одиннадцать лет назад, когда учился на четвертом курсе плит и мини-печей. В компанию Artel я пришел работать одиннадцать лет назад, когда учился на четвертом курстского финансового института.</p>"
+        },
+        "factoid": {
+          "text": "11",
+          "label": "лет в Artel"
+        }
+      },
+      {
+        "icon": {
+          "name": "104/quote",
+          "size": "fit"
+        },
+        "name": "Дильшод",
+        "job": "Инженер",
+        "avatar": {
+          "src": "tmp/slider-comment/1.jpg",
+          "alt": "img"
+        },
+        "desc_read_more": {
+          "base": "<p>Здравствуйте!​ 3</p><p>Меня зовут Дильшод Бобомуродов, я директор завода Artel по производству газовых плит и мини-печей. В компанию Artel я пришел работать одиннадцать лет назад, когда учился на четвертом курсе плит и мини-печей. В компанию Artel я пришел работать одиннадцать лет назад, когда учился на четвертом курстского финансового института.</p>"
+        },
+        "factoid": {
+          "text": "15",
+          "label": "лет в Artel"
+        }
+      },
+      {
+        "icon": {
+          "name": "104/quote",
+          "size": "fit"
+        },
+        "name": "Дильшод Бобомуродов",
+        "job": "Инженер, проектировщик",
+        "avatar": {
+          "src": "tmp/slider-comment/1.jpg",
+          "alt": "img"
+        },
+        "desc_read_more": {
+          "base": "<p>Здравствуйте!​ 3</p><p>Меня зовут Дильшод Бобомуродов, я директор завода Artel по производству газовых плит и мини-печей. В компанию Artel я пришел работать одиннадцать лет назад, когда учился.</p>"
+        },
+        "factoid": {
+          "text": "19",
+          "label": "лет в Artel"
+        }
+      },
+      {
+        "icon": {
+          "name": "104/quote",
+          "size": "fit"
+        },
+        "name": "Дильшод",
+        "job": "Инженер",
+        "avatar": {
+          "src": "tmp/slider-comment/1.jpg",
+          "alt": "img"
+        },
+        "desc_read_more": {
+          "base": "<p>Здравствуйте!​ 3</p><p>Меня зовут Дильшод Бобомуродов, я директор завода Artel по производству газовых плит и мини-печей. В компанию Artel я пришел работать одиннадцать лет назад, когда учился на четвертом курсе плит и мини-печей. В компанию Artel я пришел работать одиннадцать лет назад, когда учился на четвертом курстского финансового института.  В компанию Artel я пришел работать одиннадцать лет назад, когда учился на четвертом курстского финансового института.</p>"
+        },
+        "factoid": {
+          "text": "5",
+          "label": "лет в Artel"
+        }
+      },
+      {
+        "icon": {
+          "name": "104/quote",
+          "size": "fit"
+        },
+        "name": "Дильшод Бобомуродов",
+        "job": "Инженер, проектировщик",
+        "avatar": {
+          "src": "tmp/slider-comment/1.jpg",
+          "alt": "img"
+        },
+        "desc_read_more": {
+          "base": "<p>Здравствуйте!​ 3</p><p>Меня зовут Дильшод Бобомуродов, я директор завода Artel по производству газовых плит и мини-печей. В компанию Artel я пришел работать одиннадцать лет назад, когда учился на четвертом курсе плит и мини-печей. В компанию Artel я пришел работать одиннадцать лет назад, когда учился на четвертом курстского финансового института.</p>"
+        },
+        "factoid": {
+          "text": "11",
+          "label": "лет в Artel"
+        }
+      },
+      {
+        "icon": {
+          "name": "104/quote",
+          "size": "fit"
+        },
+        "name": "Дильшод",
+        "job": "Инженер",
+        "avatar": {
+          "src": "tmp/slider-comment/1.jpg",
+          "alt": "img"
+        },
+        "desc_read_more": {
+          "base": "<p>Здравствуйте!​ 3</p><p>Меня зовут Дильшод Бобомуродов, я директор завода Artel по производству газовых плит и мини-печей.</p>"
+        },
+        "factoid": {
+          "text": "12",
+          "label": "лет в Artel"
+        }
+      }
+    ],
+    "scroll_target": "student"
+  },
+  "block_offers": {
+    "title": "Вакансии",
+    "selects": [
+      {
+        "fill": true,
+        "fields": [
+          {
+            "select": true,
+            "id": "filter-form-select-1",
+            "name": "filter-form-select-1",
+            "attr": "data-form-select",
+            "placeholder": "Город",
+            "options": [
+              {
+                "value": "All",
+                "text": "Город",
+                "selected": "selected"
+              },
+              {
+                "value": "Город 1",
+                "text": "Город 1"
+              },
+              {
+                "value": "Город 2",
+                "text": "Город 2"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "fill": true,
+        "fields": [
+          {
+            "select": true,
+            "id": "filter-form-select-2",
+            "name": "filter-form-select-2",
+            "attr": "data-form-select",
+            "placeholder": "Направления",
+            "options": [
+              {
+                "value": "All",
+                "text": "Направления",
+                "selected": "selected"
+              },
+              {
+                "value": "Направление 1",
+                "text": "Направление 1"
+              },
+              {
+                "value": "Направление 2",
+                "text": "Направление 2"
+              },
+              {
+                "value": "Направление 3",
+                "text": "Направление 3"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "items": [
+      {
+        "href": "javascript:vpoid(0);",
+        "text": "Главный технолог",
+        "label": "Ташкент",
+        "icon": {
+          "name": "24/arrow-up-right",
+          "size": "24"
+        }
+      },
+      {
+        "href": "javascript:vpoid(0);",
+        "text": "Менеджер проектов по внедрению ПО",
+        "label": "Ташкент",
+        "icon": {
+          "name": "24/arrow-up-right",
+          "size": "24"
+        }
+      },
+      {
+        "href": "javascript:vpoid(0);",
+        "text": "Менеджер по экспортным продажам",
+        "label": "Ташкент",
+        "icon": {
+          "name": "24/arrow-up-right",
+          "size": "24"
+        }
+      },
+      {
+        "href": "javascript:vpoid(0);",
+        "text": "Экономист",
+        "label": "Ташкент",
+        "icon": {
+          "name": "24/arrow-up-right",
+          "size": "24"
+        }
+      }
+    ],
+    "action": {
+      "text": "Больше вакансий",
+      "title": "Больше вакансий",
+      "theme": "green"
+    },
+    "scroll_target": "job"
+  },
+  "block_information": {
+    "title": "Работать с Artel",
+    "desc": "Расскажите о себе и начните работать с нами в&nbsp;ближайшее время",
+    "bg": "green",
+    "image": {
+      "src": "tmp/block-information/img1.jpg",
+      "alt": "image alt"
+    },
+    "action": [
+      {
+        "href": "javascript:void(0);",
+        "text": "Онлайн-заявка",
+        "attr": "data-modal-career='modal-career'",
+        "title": "Онлайн-заявка",
+        "theme": "white",
+        "icon": {
+          "name": "24/arrow-up-right"
+        }
+      },
+      {
+        "href": "javascript:void(0);",
+        "text": "Отправить резюме",
+        "title": "Отправить резюме",
+        "theme": "outline-white",
+        "attr": "data-modal-resume='modal-resume'",
+        "icon": {
+          "name": "24/file"
+        }
+      }
+    ]
+  },
+  "block_contacts": {
+    "title": "Контакты HR",
+    "bg": "gray",
+    "layout": "4",
+    "tabs": {
+      "items": [
+        {
+          "text": "Узбекистан",
+          "attr": "data-attr",
+          "active": "true"
+        },
+        {
+          "text": "Россия",
+          "href": "javascript:void(0);",
+          "attr": "data-attr"
+        },
+        {
+          "text": "Украина",
+          "href": "javascript:void(0);",
+          "attr": "data-attr"
+        },
+        {
+          "text": "Казахстан",
+          "href": "javascript:void(0);",
+          "attr": "data-attr"
+        },
+        {
+          "text": "Кыргызстан",
+          "href": "javascript:void(0);",
+          "attr": "data-attr"
+        },
+        {
+          "text": "Азербайджан",
+          "href": "javascript:void(0);",
+          "attr": "data-attr"
+        }
+      ]
+    },
+    "tabs_content": [
+      {
+        "active": true,
+        "card": {
+          "phone": {
+            "text": "+998 (78) 888-05-05",
+            "href": "tel:+998(78)888-05-05"
+          },
+          "email": {
+            "text": "hr@artelgroup.org",
+            "href": "hr@artelgroup.org"
+          },
+          "icon": {
+            "name": "logos/contacts/map",
+            "size": "fit"
+          },
+          "action": {
+            "href": "javascript:void(0);",
+            "text": "Связаться с нами",
+            "title": "Связаться с нами",
+            "icon": {
+              "name": "24/arrow-up-right"
+            },
+            "attr": "data-btn-handler"
+          }
+        }
+      },
+      {
+        "card": {
+          "phone": {
+            "text": "+998 (71) 123-00-07",
+            "href": "tel:+998(71)123-45-67"
+          },
+          "email": {
+            "text": "hr@artelgroup.org",
+            "href": "hr@artelgroup.org"
+          },
+          "icon": {
+            "name": "logos/contacts/rus",
+            "size": "fit"
+          },
+          "action": {
+            "href": "javascript:void(0);",
+            "text": "Связаться с нами",
+            "title": "Связаться с нами",
+            "icon": {
+              "name": "24/arrow-up-right"
+            },
+            "attr": "data-btn-handler"
+          }
+        }
+      },
+      {
+        "card": {
+          "phone": {
+            "text": "+998 (77) 123-75-77",
+            "href": "tel:+998(71)123-45-67"
+          },
+          "email": {
+            "text": "hr@artelgroup.org",
+            "href": "hr@artelgroup.org"
+          },
+          "icon": {
+            "name": "logos/contacts/uk",
+            "size": "fit"
+          },
+          "action": {
+            "href": "javascript:void(0);",
+            "text": "Связаться с нами",
+            "title": "Связаться с нами",
+            "icon": {
+              "name": "24/arrow-up-right"
+            },
+            "attr": "data-btn-handler"
+          }
+        }
+      },
+      {
+        "card": {
+          "phone": {
+            "text": "+998 (55) 123-55-67",
+            "href": "tel:+998(71)123-45-67"
+          },
+          "email": {
+            "text": "hr@artelgroup.org",
+            "href": "hr@artelgroup.org"
+          },
+          "icon": {
+            "name": "logos/contacts/kaz",
+            "size": "fit"
+          },
+          "action": {
+            "href": "javascript:void(0);",
+            "text": "Связаться с нами",
+            "title": "Связаться с нами",
+            "icon": {
+              "name": "24/arrow-up-right"
+            },
+            "attr": "data-btn-handler"
+          }
+        }
+      },
+      {
+        "card": {
+          "phone": {
+            "text": "+998 (55) 123-55-67",
+            "href": "tel:+998(71)123-45-67"
+          },
+          "email": {
+            "text": "hr@artelgroup.org",
+            "href": "hr@artelgroup.org"
+          },
+          "icon": {
+            "name": "logos/contacts/kyr",
+            "size": "fit"
+          },
+          "action": {
+            "href": "javascript:void(0);",
+            "text": "Связаться с нами",
+            "title": "Связаться с нами",
+            "icon": {
+              "name": "24/arrow-up-right"
+            },
+            "attr": "data-btn-handler"
+          }
+        }
+      },
+      {
+        "card": {
+          "phone": {
+            "text": "+998 (55) 123-55-67",
+            "href": "tel:+998(71)123-45-67"
+          },
+          "email": {
+            "text": "hr@artelgroup.org",
+            "href": "hr@artelgroup.org"
+          },
+          "icon": {
+            "name": "logos/contacts/azb",
+            "size": "fit"
+          },
+          "action": {
+            "href": "javascript:void(0);",
+            "text": "Связаться с нами",
+            "title": "Связаться с нами",
+            "icon": {
+              "name": "24/arrow-up-right"
+            },
+            "attr": "data-btn-handler"
+          }
+        }
+      }
+    ],
+    "tabs_content2": [
+      {
+        "active": true,
+        "cards": [
+          {
+            "title": "Телеграм-бот",
+            "text": "@RabotaArtel_Bot",
+            "href": "https://t.me/HR_Artel",
+            "external": true
+          },
+          {
+            "title": "Телеграм-канал",
+            "text": "t.me/HR_Artel",
+            "href": "https://t.me/HR_Artel",
+            "external": true
+          },
+          {
+            "title": "Instagram",
+            "text": "Artel_career",
+            "href": "https://instagram.com",
+            "external": true
+          },
+          {
+            "title": "Facebook",
+            "text": "ArtelCareer",
+            "href": "https://fb.com",
+            "external": true
+          }
+        ]
+      },
+      {
+        "cards": [
+          {
+            "title": "Телеграм-бот",
+            "text": "@RabotaArtel_Bot",
+            "href": "https://t.me/HR_Artel",
+            "external": true
+          },
+          {
+            "title": "Телеграм-канал",
+            "text": "t.me/HR_Artel",
+            "href": "https://t.me/HR_Artel",
+            "external": true
+          },
+          {
+            "title": "Instagram",
+            "text": "Artel_career",
+            "href": "https://instagram.com",
+            "external": true
+          },
+          {
+            "title": "Facebook",
+            "text": "ArtelCareer",
+            "href": "https://fb.com",
+            "external": true
+          }
+        ]
+      },
+      {
+        "cards": [
+          {
+            "title": "Телеграм-бот",
+            "text": "@RabotaArtel_Bot",
+            "href": "https://t.me/HR_Artel",
+            "external": true
+          },
+          {
+            "title": "Телеграм-канал",
+            "text": "t.me/HR_Artel",
+            "href": "https://t.me/HR_Artel",
+            "external": true
+          },
+          {
+            "title": "Instagram",
+            "text": "Artel_career",
+            "href": "https://instagram.com",
+            "external": true
+          },
+          {
+            "title": "Facebook",
+            "text": "ArtelCareer",
+            "href": "https://fb.com",
+            "external": true
+          }
+        ]
+      },
+      {
+        "cards": [
+          {
+            "title": "Телеграм-бот",
+            "text": "@RabotaArtel_Bot",
+            "href": "https://t.me/HR_Artel",
+            "external": true
+          },
+          {
+            "title": "Телеграм-канал",
+            "text": "t.me/HR_Artel",
+            "href": "https://t.me/HR_Artel",
+            "external": true
+          },
+          {
+            "title": "Instagram",
+            "text": "Artel_career",
+            "href": "https://instagram.com",
+            "external": true
+          },
+          {
+            "title": "Facebook",
+            "text": "ArtelCareer",
+            "href": "https://fb.com",
+            "external": true
+          }
+        ]
+      },
+      {
+        "cards": [
+          {
+            "title": "Телеграм-бот",
+            "text": "@RabotaArtel_Bot",
+            "href": "https://t.me/HR_Artel",
+            "external": true
+          },
+          {
+            "title": "Телеграм-канал",
+            "text": "t.me/HR_Artel",
+            "href": "https://t.me/HR_Artel",
+            "external": true
+          },
+          {
+            "title": "Instagram",
+            "text": "Artel_career",
+            "href": "https://instagram.com",
+            "external": true
+          },
+          {
+            "title": "Facebook",
+            "text": "ArtelCareer",
+            "href": "https://fb.com",
+            "external": true
+          }
+        ]
+      },
+      {
+        "cards": [
+          {
+            "title": "Телеграм-бот",
+            "text": "@RabotaArtel_Bot",
+            "href": "https://t.me/HR_Artel",
+            "external": true
+          },
+          {
+            "title": "Телеграм-канал",
+            "text": "t.me/HR_Artel",
+            "href": "https://t.me/HR_Artel",
+            "external": true
+          },
+          {
+            "title": "Instagram",
+            "text": "Artel_career",
+            "href": "https://instagram.com",
+            "external": true
+          },
+          {
+            "title": "Facebook",
+            "text": "ArtelCareer",
+            "href": "https://fb.com",
+            "external": true
+          }
+        ]
+      }
+    ]
+  },
+  "contacts_form": {
+    "id": "form-1",
+    "name": "form-1",
+    "method": "POST",
+    "action": "/ajax/contacts/?repo=artel.frontend&status=success",
+    "attr": "data-ajax-form data-scroll-target data-scroll-contacts",
+    "title": "Связаться с нами",
+    "bg": "green",
+    "fields": [
+      {
+        "input": true,
+        "id": "form-1-input-1",
+        "name": "form-1-input-1",
+        "theme": "white",
+        "required": true,
+        "label": "ФИО"
+      },
+      {
+        "input": true,
+        "id": "form-1-input-2",
+        "name": "form-1-input-2",
+        "theme": "white",
+        "required": true,
+        "label": "Компания"
+      },
+      {
+        "input": true,
+        "id": "form-1-input-3",
+        "name": "form-1-input-3",
+        "theme": "white",
+        "required": true,
+        "type": "tel",
+        "label": "Телефон",
+        "mask_list": [
+          "+998-##-###-####",
+          "+7(###)###-##-##",
+          "+380(##)###-##-##",
+          "+7(6##)###-##-##",
+          "+992-##-###-####",
+          "+994-##-###-##-##",
+          "+996-###-######"
+        ]
+      },
+      {
+        "textarea": true,
+        "id": "form-1-textarea-1",
+        "name": "form-1-textarea-1",
+        "theme": "white",
+        "label": "Сообщение"
+      }
+    ],
+    "agreement": [
+      {
+        "checkbox": true,
+        "id": "form-1-checkbox-1",
+        "name": "form-1-checkbox-1",
+        "text": "Я согласен/на с <a href='javascript:void(0);' class='link-content' target='_blank'>политикой конфиденциальности</a> и&nbsp;даю добро на обработку <a href='javascript:void(0);' class='link-content' target='_blank'>моих персональных данных</a>",
+        "required": true,
+        "theme": "white"
+      }
+    ],
+    "submit": {
+      "type": "submit",
+      "text": "Отправить",
+      "title": "Отправить",
+      "theme": "white",
+      "icon": {
+        "name": "24/arrow-up-right"
+      }
+    }
+  }
+}

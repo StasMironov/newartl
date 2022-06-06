@@ -1,0 +1,63 @@
+.card-msg {
+	height: 100%;
+	background-color: white;
+
+	@include media-breakpoint-up(sm) {
+		padding-top: rem(32);
+		padding-right: rem(16);
+		padding-bottom: rem(65);
+		padding-left: rem(16);
+	}
+
+	@include media-breakpoint-up(md) {
+		padding-top: rem(39);
+		padding-right: rem(40);
+		padding-bottom: rem(178);
+		padding-left: rem(112);
+	}
+
+	@include media-breakpoint-up(lg) {
+		padding-bottom: rem(160);
+	}
+
+	&__title {
+		margin-bottom: rem(24);
+		font-weight: 500;
+
+		@include media-breakpoint-up(sm) {
+			max-width: rem(230);
+			font-size: rem(24);
+			line-height: rem(31);
+		}
+
+		@include media-breakpoint-up(md) {
+			width: 100%;
+			max-width: rem(500);
+			font-size: rem(32);
+			line-height: rem(42);
+		}
+
+		@include media-breakpoint-up(lg) {
+			max-width: initial;
+		}
+	}
+
+	&__icon {
+		width: rem(104);
+
+		@include media-breakpoint-up(sm) {
+			width: rem(80);
+			margin-bottom: rem(32);
+		}
+
+		@include media-breakpoint-up(md) {
+			width: rem(104);
+			margin-bottom: rem(42);
+		}
+
+		.icon {
+			width: 100%;
+			height: 100%;
+		}
+	}
+}

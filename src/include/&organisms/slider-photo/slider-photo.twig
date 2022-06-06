@@ -1,0 +1,28 @@
+<div class="slider-photo" data-slider-photo-wrap>
+		<div class="swiper-container" data-slider-photo data-fade-in-up>
+			<div class="swiper-wrapper">
+				{% for slide in slider.items %}
+					<div class="swiper-slide">
+                        <div class="slider-photo__img">
+                            {% view '@image' with {
+                                image: slide.img|merge({
+								disable_lazy: true
+							})
+                            } %}
+                        </div>
+					</div>
+				{% endfor %}
+			</div>
+		</div>
+        {% if slider.items|length > 1 %}
+            <div class="slider-photo__navigation">
+                <div class="slider-photo__pag">
+                    {% view '@nav-pag' %}
+                </div>
+                
+                <div class="slider-photo__nav" data-fade-in-up>
+                    {% view '@nav-arrows' %}
+                </div>
+            </div>
+        {% endif %}
+</div>

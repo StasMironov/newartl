@@ -1,0 +1,18 @@
+<div class="features {% if features.layout %}features--layout-{{features.layout}}{% endif %}">
+	<div class="features__container container">
+		{% if features.title %}
+			<h2 class="features__title" data-fade-in-up>{{ features.title }}</h2>
+		{% endif %}
+		<div class="features__items">
+			{% for item in features.items %}
+				<div class="features__item" data-fade-in-up data-delay="{{ (0.2 + loop.index0 / 5)|round(2, 'floor') }}">
+					{% view '^card-features' with {
+						card: item|merge({
+							delay: (0.2 + loop.index0 / 5)|round(2, 'floor')
+						})
+					} %}
+				</div>
+			{% endfor %}
+		</div>
+	</div>
+</div>

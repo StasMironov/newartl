@@ -1,0 +1,268 @@
+.block-product {
+	overflow: hidden;
+	color: $color-white;
+	background-color: $color-black;
+
+	&__inner {
+		position: relative;
+
+		@include media-breakpoint-only(sm) {
+			padding-top: rem(72);
+			padding-bottom: rem(64);
+		}
+		@include media-breakpoint-only(md) {
+			padding-top: rem(112);
+			padding-bottom: rem(140);
+		}
+
+		@include media-breakpoint-up(lg) {
+			padding-bottom: rem(120);
+
+			@media (hover: none) and (pointer: coarse) {
+				padding-top: rem(112);
+			}
+		}
+	}
+
+	&__top {
+		@include media-breakpoint-up(lg) {
+			position: absolute;
+			top: rem(112);
+			left: 0;
+			z-index: 100;
+			width: 100%;
+			.container {
+				display: flex;
+				align-items: flex-start;
+			}
+		}
+	}
+
+	&__title {
+		@include media-breakpoint-up(lg) {
+			width: 33.33%;
+		}
+	}
+
+	&__progress {
+		position: relative;
+		width: 66.66%;
+		height: 1px;
+		background-color: rgba($color-white, 0.3);
+
+		span {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 0;
+			height: 100%;
+			background-color: $color-white;
+		}
+
+		@include media-breakpoint-down(md) {
+			display: none;
+		}
+
+		@media (hover: none) and (pointer: coarse) {
+			display: none;
+		}
+	}
+
+	&__content {
+		width: 100%;
+	}
+
+	.section {
+		position: relative;
+		@include media-breakpoint-only(sm) {
+			margin-top: rem(40);
+		}
+		@include media-breakpoint-only(md) {
+			margin-top: rem(80);
+		}
+		@media (hover: none) and (pointer: coarse) {
+			@include media-breakpoint-up(lg) {
+				&:not(:first-child) {
+					margin-top: rem(96);
+				}
+			}
+		}
+		&__top {
+			@include media-breakpoint-up(lg) {
+				padding-top: rem(150);
+
+				@media (hover: none) and (pointer: coarse) {
+					padding-top: 0;
+				}
+			}
+		}
+		&__title {
+			position: absolute;
+			z-index: 2;
+			max-width: rem(600);
+			font-size: rem(44);
+			line-height: 1.1;
+			@include media-breakpoint-up(md) {
+				font-size: rem(88);
+				
+			}
+
+			@include media-breakpoint-up(lg) {
+				position: relative;
+				left: 34.7%;
+				@media (hover: none) and (pointer: coarse) {
+					position: absolute;
+				}
+			}
+
+			@include media-breakpoint-down(md) {
+				left: auto;
+			}
+
+
+			
+		}
+
+		&__image {
+			width: rem(320);
+			height: rem(212);
+			object-fit: cover;
+			position: relative;
+
+			@include media-breakpoint-up(md) {
+				width: rem(550);
+				height: rem(360);
+			}
+
+			@include media-breakpoint-up(lg) {
+				position: absolute;
+				z-index: 1;
+				margin-left: 33.33%;
+
+				@media (hover: none) and (pointer: coarse) {
+					position: relative;
+				}
+			}
+
+			&:after {
+				content: "";
+				position: absolute;
+				top: 0;
+				left: 0;
+				bottom: 0;
+				right: 0;
+				background-color: rgba($color-black, 0.2);
+			}
+		}
+
+		&__content {
+			margin-top: rem(48);
+
+			@include media-breakpoint-up(md) {
+				max-width: rem(450);
+			}
+
+			@include media-breakpoint-up(lg) {
+				display: flex;
+				max-width: initial;
+				@media (hover: none) and (pointer: coarse) {
+					margin-top: rem(24);
+				}
+			}
+		}
+
+		&__text {
+			@include media-breakpoint-up(lg) {
+				width: 33.33%;
+			}
+		}
+
+		&__features {
+			@include media-breakpoint-only(sm) {
+				margin-top: rem(48);
+			}
+			@include media-breakpoint-only(md) {
+				margin-top: rem(56);
+			}
+			@include media-breakpoint-up(lg) {
+				width: 66.66%;
+				padding-left: rem(340);
+			}
+
+			.user-text {
+				p {
+					margin-bottom: rem(24);
+					opacity: 0.4;
+				}
+				ul li {
+					position: relative;
+
+					@include media-breakpoint-only(sm) {
+						padding-left: rem(24);
+					}
+
+					&::before {
+						position: absolute;
+						top: rem(8);
+						left: rem(-24);
+						width: rem(8);
+						height: rem(8);
+						background-color: $color-white;
+						border-radius: 50%;
+						content: '';
+
+						@include media-breakpoint-only(sm) {
+							left: 0;
+						}
+					}
+
+					+ li {
+						margin-top: rem(24);
+					}
+				}
+			}
+		}
+
+		&__features-title {
+			margin-bottom: rem(24);
+			opacity: 0.4;
+		}
+
+		&__features-list {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+
+		&__features-item {
+			position: relative;
+
+			@include media-breakpoint-only(sm) {
+				padding-left: rem(24);
+			}
+
+			@include media-breakpoint-up(md) {
+				max-width: rem(450);
+			}
+
+			&::before {
+				position: absolute;
+				top: rem(8);
+				left: rem(-24);
+				width: rem(8);
+				height: rem(8);
+				background-color: $color-white;
+				border-radius: 50%;
+				content: '';
+
+				@include media-breakpoint-only(sm) {
+					left: 0;
+				}
+			}
+
+			+ .section__features-item {
+				margin-top: rem(16);
+			}
+		}
+	}
+}

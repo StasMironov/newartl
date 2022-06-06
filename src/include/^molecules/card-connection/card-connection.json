@@ -1,0 +1,28 @@
+{
+	"card": {
+		"avatar": {
+			"src": "tmp/press/img2.jpg",
+			"alt": "img"
+		},
+		"name": "Yuldashev Xusan Lutfullayevich",
+		"location": {
+			"country": "Kazakhstan",
+			"icon": {
+				"name": "24/location",
+				"size": "24"
+			}
+		},
+		"comm": [
+			{
+				"title": "E-mail",
+				"text": "kamola.sobirova@artelelectronics.com",
+				"href": "mailto:kamola.sobirova@artelelectronics.com"
+			},
+			{
+				"title": "Телефон",
+				"text": "+998 (71) 123-45-67",
+				"href": "tel:+998(71)123-45-67"
+			}
+		]
+	}
+}

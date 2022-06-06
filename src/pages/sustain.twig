@@ -1,0 +1,35 @@
+{% extends "layouts::_page.twig" %}
+
+{% block content %}
+	{% view '&hero-default' %}
+	{% view '&block-nav' %}
+
+	<div class="mb-64 mb-md-120">
+		{% view '&block-image' %}
+	</div>
+
+	<div class="mb-64 mb-md-112">
+		{% view '&block-icons' %}
+	</div>
+
+	<div class="mb-64 mb-md-120 pt-64 pb-40 pt-md-112 pb-md-120 bg-green">
+		{% view '&block-innovation' %}
+	</div>
+
+	<div class="mb-64 mb-md-80 mb-lg-48">
+		{% view '&block-social-initiatives' %}
+	</div>
+
+	<div class="mb-64 mb-md-112">
+		{% view '&slider-press' with {
+			slider_press: slider
+		} %}
+	</div>
+
+	<div class="mb-64 mb-md-120">
+		{% view '&slider-docs' with {
+			slider: sliderDocs
+		} %}
+	</div>
+
+{% endblock %}

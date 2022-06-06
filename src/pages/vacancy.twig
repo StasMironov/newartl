@@ -1,0 +1,16 @@
+{% extends "layouts::_page.twig" %}
+
+{% block content %}
+	<div class="">
+		{% view '&hero-default' with {
+			hero_default: hero_default
+		} %}
+	</div>
+	<div class="mb-64 mb-md-120">
+		{% view '&block-vacancy' %}
+	</div>
+
+	<div class="mb-64 mb-md-120">
+		{% view '&block-career-cards' %}
+	</div>
+{% endblock %}

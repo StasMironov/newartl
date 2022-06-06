@@ -1,0 +1,35 @@
+<div class="block-data">
+    <div class="block-data__container {% if block.container %} container {% endif %}">
+        {% if block.factoids %}
+            {% set count = 0 %}
+			{% set res = [] %}
+			{% set items = [] %}
+
+			{% for item in block.factoids %}
+					{% if count <= 1 %}
+						{% set items = items|merge([item]) %}
+						{% set count = count + 1 %}
+					{% else %}
+						{% set res = res|merge([items]) %}
+						{% set items = []  %}
+						{% set items = items|merge([item]) %}
+						{% set count = 1 %}
+					{% endif %}
+			{% endfor %}
+
+			{% set res = res|merge([items]) %}
+
+			{% for elem in res %}
+				<div class="block-data__wrap">
+					{% for card in elem %}
+						<div class="block-data__factoid">
+                            {% view '^factoid' with {
+                                factoid: card
+                            } %}
+						</div>
+					{% endfor %}
+				</div>
+			{% endfor %}
+        {% endif %}
+    </div>
+</div>

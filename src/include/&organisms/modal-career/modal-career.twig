@@ -1,0 +1,38 @@
+<div class="modal-career">
+    <div class="modal-career__wrapper" data-modal-ps>
+        {% if modal.title %}
+            <div class="modal-career__title h1">
+                {{modal.title}}
+            </div>
+        {% endif %}
+        {% if modal.form %}
+            <form id="{{modal.form.id}}" class="modal-career__form" {% if modal.form.method %} method="{{ modal.form.method }}"{% endif %} data-parsley-validate action="{{modal.form.action}}" {% if modal.attr %}{{modal.attr}}{% endif %} data-ajax-form novalidate="novalidate">
+                <div class="modal-career__inner" >
+                    {% if modal.form.tabs %}
+                        {% for card in modal.form.tabs %}
+                            {% if card.pag %}
+                                {{ card.pag }}
+                            {% endif %}
+                                <section>
+                                    {% if card.component and card.data %}
+                                        <div>
+                                            {% view card.component with {card: card.data} %}
+                                        </div>
+                                    {% endif %}
+                                </section>
+                        {% endfor %}
+                    {% endif %}
+                    {% if modal.form.fields %}
+                        {% for field in modal.form.fields %}
+                            {% view '@field' with {
+                                field: field
+                            } %}
+                        {% endfor %}
+                    {% endif %}
+                </div>
+                {# <div class="modal-career__answer" data-form-answer></div> #}
+            </form>
+        {% endif %}
+       
+    </div>
+</div>

@@ -1,0 +1,17 @@
+{
+	"card": {
+		"suptitle": "Стратегия взаимодействия",
+		"title": "Вносим вклад в общество <br> и ценим сотрудников",
+		"factoid": {
+			"text": "11,5",
+			"after": {
+				"txt": "млн"
+			},
+			"label": "произведено техники <br> за 2020 г."
+		},
+		"image": {
+			"src": "tmp/card-strategy/strategy-1.png",
+			"alt": "image alt"
+		}
+	}
+}

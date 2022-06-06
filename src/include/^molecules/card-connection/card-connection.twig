@@ -1,0 +1,43 @@
+<div class="card-connection">
+	<div class="card-connection__grid">
+		{% if card.avatar  %}
+			<div class="card-connection__avatar">
+				{% view '@image' with {
+                    image: card.avatar
+                } %}
+			</div>
+		{% endif %}
+		{% if card.name  %}
+			<div class="card-connection__name">
+				<div class="card-connection__txt h3">
+					{{ card.name }}
+				</div>
+			</div>
+		{% endif %}
+		{% if card.location  %}
+			<div class="card-connection__country">
+				<div class="card-connection__icon">
+					{% view '@icon' with {
+                        icon: card.location.icon
+                    } %}
+				</div>
+
+				<div class="card-connection__location">
+					{{ card.location.country }}
+				</div>
+			</div>
+		{% endif %}
+		{% if card.comm %}
+			<div class="card-connection__comm">
+				{% for item in card.comm %}
+					<div class="card-connection__item">
+						<div class="card-connection__title">
+							{{item.title}}
+						</div>
+						<a class="card-connection__link h3" href="{{item.href}}">{{item.text}}</a>
+					</div>
+				{% endfor %}
+			</div>
+		{% endif %}
+	</div>
+</div>

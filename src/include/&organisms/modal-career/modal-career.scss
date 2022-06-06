@@ -1,0 +1,126 @@
+.modal-career {
+	height: 100%;
+	
+
+
+	
+	background-color: $color-green;
+
+	&__wrapper {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		height: calc(var(--vh, 1vh) * 100);
+		padding: rem(80) rem(172) rem(64) rem(104);
+		//overflow: scroll;
+
+		@include media-breakpoint-down(md) {
+			padding: rem(80) rem(108) rem(80) rem(108);
+		}
+
+		@include media-breakpoint-down(sm) {
+			padding: rem(64) rem(16) rem(64);
+		}
+	}
+
+	&__form {
+		flex: 1;
+		
+
+		
+	}
+
+	&__answer {
+		display: none;
+		max-width: rem(400);
+		width: 100%;
+		margin-right: auto;
+		color: $color-white;
+
+		& > :last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	&__inner {
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+	}
+
+	&__action {
+		display: flex;
+		justify-content: space-between;
+		margin-top: auto;
+	}
+
+	&__steps {
+		width: 100%;
+		min-height: auto;
+		background-color: gray;
+	}
+
+	&__content {
+		display: flex;
+		flex: 1;
+		flex-direction: column;
+	}
+
+	&__tab {
+		display: flex;
+		flex: 1;
+		flex-direction: column;
+		//border: 1px solid;
+	}
+
+	&__title {
+		margin-bottom: rem(46);
+		color: $color-white;
+		white-space: nowrap;
+
+		@include media-breakpoint-down(sm) {
+			margin-bottom: rem(37);
+		}
+	}
+
+
+	.progress-step{
+		background: $color-white;
+		width: 0%;
+		height: 1px;
+		position: absolute;
+		bottom: rem(-1);
+		@include defaultTransition(width);
+
+	}
+
+
+	.ps__thumb-y:before, .ps__rail-y:before {
+		@include media-breakpoint-down(sm) {
+			top: rem(64);
+			bottom: rem(64);
+		}
+	
+	}
+
+	@supports (-webkit-touch-callout: none) {
+		.ps__thumb-y:before, .ps__rail-y:before {
+			@include media-breakpoint-down(sm) {
+				bottom: rem(0);
+			}
+		}
+	}
+
+	&.is-sent .modal-career__answer {
+		display: block;
+	}
+
+	&.is-sent .modal-career__inner{
+		display: none;
+	}
+
+	&.is-sent .modal-career__title {
+		display: none;
+	}
+	
+}

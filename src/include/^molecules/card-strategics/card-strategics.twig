@@ -1,0 +1,33 @@
+<div class="card-strategics">
+    <div class="card-strategics__wrapper">
+        <div class="card-strategics__left">
+            {% if card.title %}
+                <h2 class="card-strategics__title h2">
+                    {{ card.title }}
+                </h2>
+            {% endif %}
+            {% if card.quote %}
+                <div class="card-strategics__quote">
+                    {{ card.quote }}
+                </div>
+            {% endif %}
+            
+        </div>
+        <div class="card-strategics__right">
+            {% if card.icon %}
+                <div class="card-strategics__img">
+                    {% view '@icon' with {
+                        icon: {
+                            name: "24/magnifier"
+                        }
+                    } %}
+                </div>
+            {% endif %}
+            {% if card.text %}
+                <div class="card-strategics__text">
+                    {{ card.text }}
+                </div>
+            {% endif %}
+        </div>
+    </div>
+</div>

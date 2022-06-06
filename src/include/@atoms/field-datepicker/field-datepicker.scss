@@ -1,0 +1,299 @@
+.datepicker {
+	$root: &;
+
+	color: $color-black;
+
+	&--white {
+		color: $color-white;
+
+		.datepicker__icon {
+			color: $color-white;
+		}
+	}
+
+	&__input {
+		@include visually-hidden;
+	}
+
+	&__roll {
+		position: relative;
+		@include defaultTransition(background-color);
+
+		#{$root}.is-active & {
+			@include media-breakpoint-down(sm) {
+				position: fixed;
+				z-index: 10;
+				display: flex;
+				flex-direction: column;
+				justify-content: flex-end;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background-color: rgba($color-black, 0.3);
+			}
+		}
+
+		//@include media-breakpoint-up(md) {
+		//	.ps__rail-y {
+		//		display: none;
+		//	}
+		//}
+		//@include media-breakpoint-down(sm) {
+		//	.ps__rail-y {
+		//		right: rem(8) !important;
+		//
+		//		&:before {
+		//			top: rem(24);
+		//			bottom: rem(24);
+		//		}
+		//	}
+		//
+		//	.ps__thumb-y {
+		//		&:before {
+		//			top: rem(24);
+		//			bottom: rem(24);
+		//		}
+		//	}
+		//}
+	}
+
+	&__toggle {
+		position: relative;
+		display: flex;
+		align-items: flex-end;
+		//height: rem(42);
+		height: rem(64);
+		padding-bottom: rem(16);
+		border-bottom: 1px solid rgba($color-black, 0.4);
+		cursor: pointer;
+		@include defaultTransition(border-color);
+
+		@include touchLessHover {
+			border-color: $color-black;
+		}
+
+		@include media-breakpoint-down(sm) {
+			height: rem(55);
+			padding-bottom: rem(13);
+		}
+
+		#{$root}--white & {
+			border-color: rgba($color-white, 0.6);
+
+			@include touchLessHover {
+				border-color: $color-white;
+			}
+		}
+
+		#{$root}.filled & {
+			padding-bottom: rem(8);
+		}
+	}
+
+	&__placeholder {
+		display: block;
+		width: calc(100% - #{rem(48)});
+		white-space: nowrap;
+		overflow: hidden;
+		pointer-events: none;
+
+		&.rendered {
+			color: $color-white;
+		}
+	}
+
+	&__icon {
+		display: block;
+		width: rem(24);
+		height: rem(24);
+		flex-shrink: 0;
+		margin-left: auto;
+		pointer-events: none;
+
+		
+	}
+
+	&__box {
+		width: 100%;
+		height: 0;
+		min-height: 0;
+		background-color: $color-white;
+		border-radius: rem(8);
+		overflow: hidden;
+
+		@include media-breakpoint-up(md) {
+			position: absolute;
+			z-index: 10;
+			left: 0;
+			top: calc(100% + #{rem(8)});
+		}
+		@include media-breakpoint-down(sm) {
+			overflow-y: auto;
+			overflow-x: hidden;
+		//	margin-top: rem(104);
+		}
+	}
+
+	&__content {
+		position: relative;
+		width: 100%;
+		padding: rem(40) rem(16) rem(56);
+		flex-shrink: 0;
+
+		@include media-breakpoint-up(md) {
+			padding: rem(24) rem(24) rem(40);
+			height: rem(380);
+		}
+		@include media-breakpoint-down(sm) {
+			&:after {
+				position: absolute;
+				top: rem(8);
+				left: calc(50% - #{rem(32)});
+				width: rem(64);
+				height: rem(4);
+				border-radius: rem(4);
+				background-color: rgba($color-black, 0.4);
+				content: "";
+			}
+		}
+	}
+
+	&__base {
+		margin-bottom: rem(40);
+		color: $color-black;
+
+		@include media-breakpoint-up(md) {
+			display: flex;
+			align-items: flex-start;
+			justify-content: space-between;
+		}
+	}
+
+	&__side {
+		@include media-breakpoint-up(md) {
+			width: calc(50% - #{rem(28)});
+		}
+		@include media-breakpoint-down(sm) {
+			&:not(:last-child) {
+				margin-bottom: rem(40);
+			}
+		}
+	}
+
+	&__title {
+		margin-bottom: rem(24);
+
+		@include media-breakpoint-up(md) {
+			margin-bottom: rem(28);
+		}
+	}
+
+	&__field-select {
+		position: absolute;
+		display: none;
+		top: 0;
+		left: 0;
+		color: rgba($color-black, 0.4);
+		font-size: rem(14); // TODO на мобиле должно быть 12. Возможно, ошибка в макете
+		line-height: 1.4;
+		font-weight: 500;
+
+		#{$root}.filled & {
+			display: block;
+		}
+
+		#{$root}--white & {
+			color: rgba($color-white, 0.4);
+		}
+	}
+
+	&__select {
+		margin-bottom: rem(24);
+
+		.select2-container {
+			min-width: auto;
+		}
+
+		.select2-container:not(.select2-container--disabled) .select2-selection .select2-selection__rendered {
+			color: $color-black;
+		}
+	}
+
+	&__actions {
+		display: flex;
+	}
+
+	&__action {
+		&:not(:last-child) {
+			margin-right: rem(16);
+		}
+	}
+
+	&__months {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	&__month {
+		margin-bottom: rem(8);
+
+		@include media-breakpoint-up(md) {
+			width: 33.3333%;
+
+			@include last-row(3) {
+				margin-bottom: 0;
+			}
+		}
+		@include media-breakpoint-down(sm) {
+			width: 16.6666%;
+
+			@include last-row(6) {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	&__label {
+		display: block;
+	}
+
+	&__radio {
+		@include visually-hidden;
+	}
+
+	&__caption {
+		display: block;
+		color: rgba($color-black, 0.4);
+		cursor: pointer;
+		width: rem(40);
+		@include text-body;
+		@include defaultTransition(color);
+
+		@include media-breakpoint-up(md) {
+			#{$root}__month:nth-child(3n + 2) & {
+				margin-left: auto;
+				margin-right: auto;
+			}
+
+			#{$root}__month:nth-child(3n + 3) & {
+				margin-left: auto;
+			}
+		}
+
+		#{$root}__radio:checked ~ & {
+			color: $color-black;
+		}
+
+		#{$root}__radio:disabled ~ & {
+			color: rgba($color-black, 0.15);
+			cursor: not-allowed;
+		}
+	}
+
+	&__checkbox {
+		margin-top: rem(-20);
+		margin-bottom: rem(24);
+	}
+}

@@ -1,0 +1,553 @@
+{
+  "title": "Контакты",
+  "header": {
+    "logo": {
+      "href": "main.html",
+      "name": "logos/main-logo",
+      "size": "fit"
+    },
+    "navigation": [
+      {
+        "text": "О группе",
+        "submenu": {
+          "title": "О группе",
+          "text": "Общая информация для инвесторов в формате отчетов, графиков и документов",
+          "links": [
+            {
+              "href": "javascript:void(0);",
+              "text": "Общая информация для инвесторов"
+            },
+            {
+              "href": "javascript:void(0);",
+              "text": "Презентации"
+            },
+            {
+              "href": "javascript:void(0);",
+              "text": "Соблюдение требований корпоративного управления"
+            },
+            {
+              "href": "javascript:void(0);",
+              "text": "Структура компании"
+            },
+            {
+              "href": "javascript:void(0);",
+              "text": "Совет директоров"
+            },
+            {
+              "href": "javascript:void(0);",
+              "text": "Руководство"
+            }
+          ]
+        }
+      },
+      {
+        "text": "Инвесторам",
+        "submenu": {
+          "title": "Инвесторам",
+          "text": "Общая информация для инвесторов в формате отчетов, графиков и документов",
+          "links": [
+            {
+              "href": "javascript:void(0);",
+              "text": "Общая информация для инвесторов"
+            },
+            {
+              "text": "Результаты и отчеты",
+              "active": true
+            },
+            {
+              "href": "javascript:void(0);",
+              "text": "Презентации"
+            },
+            {
+              "href": "javascript:void(0);",
+              "text": "Соблюдение требований корпоративного управления"
+            },
+            {
+              "href": "javascript:void(0);",
+              "text": "Структура компании"
+            },
+            {
+              "href": "javascript:void(0);",
+              "text": "Совет директоров"
+            },
+            {
+              "href": "javascript:void(0);",
+              "text": "Руководство"
+            },
+            {
+              "href": "javascript:void(0);",
+              "text": "Корпоративное управление"
+            },
+            {
+              "href": "javascript:void(0);",
+              "text": "Внутренние документы"
+            },
+            {
+              "href": "javascript:void(0);",
+              "text": "Каталог продукции"
+            },
+            {
+              "href": "javascript:void(0);",
+              "text": "Контакты для инвесторов"
+            }
+          ]
+        }
+      },
+      {
+        "href": "javascript:void(0);",
+        "text": "Партнерам"
+      },
+      {
+        "href": "javascript:void(0);",
+        "text": "Устойчивое развитие"
+      },
+      {
+        "href": "javascript:void(0);",
+        "text": "Пресс-центр"
+      },
+      {
+        "text": "Карьера",
+        "active": true
+      },
+      {
+        "href": "javascript:void(0);",
+        "text": "Контакты"
+      }
+    ],
+    "lang": {
+      "action": {
+        "text": "Ру",
+        "title": "Ру"
+      },
+      "items": [
+        {
+          "href": "javascript:void(0);",
+          "text": "En",
+          "title": "En"
+        },
+        {
+          "href": "javascript:void(0);",
+          "text": "Оʻz",
+          "title": "Оʻz"
+        }
+      ]
+    }
+  },
+  "block_contacts": {
+    "title": "Контакты для партнёров",
+    "bg": "gray",
+    "breadcrumbs": {
+      "items": [
+        {
+          "href": "./",
+          "text": "Главная"
+        }
+      ]
+    },
+    "tabs": {
+      "items": [
+        {
+          "text": "Узбекистан",
+          "attr": "data-attr",
+          "active": "true"
+        },
+        {
+          "text": "Россия",
+          "href": "javascript:void(0);",
+          "attr": "data-attr"
+        },
+        {
+          "text": "Украина",
+          "href": "javascript:void(0);",
+          "attr": "data-attr"
+        },
+        {
+          "text": "Казахстан",
+          "href": "javascript:void(0);",
+          "attr": "data-attr"
+        },
+        {
+          "text": "Кыргызстан",
+          "href": "javascript:void(0);",
+          "attr": "data-attr"
+        },
+        {
+          "text": "Азербайджан",
+          "href": "javascript:void(0);",
+          "attr": "data-attr"
+        }
+      ]
+    },
+    "tabs_content": [
+      {
+        "active": true,
+        "card": {
+          "phone": {
+            "text": "+998 (71) 123-45-67",
+            "href": "tel:+998(71)123-45-67"
+          },
+          "email": {
+            "text": "info@artel.uz",
+            "href": "info@artel.uz"
+          },
+          "icon": {
+            "name": "logos/contacts/map",
+            "size": "fit"
+          },
+          "action": {
+            "href": "javascript:void(0);",
+            "text": "Связаться с нами",
+            "title": "Связаться с нами",
+            "icon": {
+              "name": "24/arrow-up-right"
+            },
+            "attr": "data-btn-handler"
+          }
+        }
+      },
+      {
+        "card": {
+          "phone": {
+            "text": "+998 (71) 123-00-07",
+            "href": "tel:+998(71)123-45-67"
+          },
+          "email": {
+            "text": "info@artel2.ru",
+            "href": "info@artel.uz"
+          },
+          "icon": {
+            "name": "logos/contacts/rus",
+            "size": "fit"
+          },
+          "action": {
+            "href": "javascript:void(0);",
+            "text": "Связаться с нами",
+            "title": "Связаться с нами",
+            "icon": {
+              "name": "24/arrow-up-right"
+            },
+            "attr": "data-btn-handler"
+          }
+        }
+      },
+      {
+        "card": {
+          "phone": {
+            "text": "+998 (77) 123-75-77",
+            "href": "tel:+998(71)123-45-67"
+          },
+          "email": {
+            "text": "info@artel.uk",
+            "href": "info@artel.uz"
+          },
+          "icon": {
+            "name": "logos/contacts/uk",
+            "size": "fit"
+          },
+          "action": {
+            "href": "javascript:void(0);",
+            "text": "Связаться с нами",
+            "title": "Связаться с нами",
+            "icon": {
+              "name": "24/arrow-up-right"
+            },
+            "attr": "data-btn-handler"
+          }
+        }
+      },
+      {
+        "card": {
+          "phone": {
+            "text": "+998 (55) 123-55-67",
+            "href": "tel:+998(71)123-45-67"
+          },
+          "email": {
+            "text": "info@artel.kaz",
+            "href": "info@artel.uz"
+          },
+          "icon": {
+            "name": "logos/contacts/kaz",
+            "size": "fit"
+          },
+          "action": {
+            "href": "javascript:void(0);",
+            "text": "Связаться с нами",
+            "title": "Связаться с нами",
+            "icon": {
+              "name": "24/arrow-up-right"
+            },
+            "attr": "data-btn-handler"
+          }
+        }
+      },
+      {
+        "card": {
+          "phone": {
+            "text": "+998 (55) 123-55-67",
+            "href": "tel:+998(71)123-45-67"
+          },
+          "email": {
+            "text": "info@artel.kyr",
+            "href": "info@artel.kyr"
+          },
+          "icon": {
+            "name": "logos/contacts/kyr",
+            "size": "fit"
+          },
+          "action": {
+            "href": "javascript:void(0);",
+            "text": "Связаться с нами",
+            "title": "Связаться с нами",
+            "icon": {
+              "name": "24/arrow-up-right"
+            },
+            "attr": "data-btn-handler"
+          }
+        }
+      },
+      {
+        "card": {
+          "phone": {
+            "text": "+998 (55) 123-55-67",
+            "href": "tel:+998(71)123-45-67"
+          },
+          "email": {
+            "text": "info@artel.azb",
+            "href": "info@artel.azb"
+          },
+          "icon": {
+            "name": "logos/contacts/azb",
+            "size": "fit"
+          },
+          "action": {
+            "href": "javascript:void(0);",
+            "text": "Связаться с нами",
+            "title": "Связаться с нами",
+            "icon": {
+              "name": "24/arrow-up-right"
+            },
+            "attr": "data-btn-handler"
+          }
+        }
+      }
+    ],
+    "tabs_content2": [
+      {
+        "active": true,
+        "cards": [
+          {
+            "title": "Отдел продаж",
+            "text": "export@artelelectronics.com",
+            "href": "sales@artel.uz"
+          },
+          {
+            "title": "Отдел кадров",
+            "text": "hr@artelelectronics.com",
+            "href": "hr@artel.uz"
+          },
+          {
+            "title": "Отдел аналитики",
+            "text": "analytics@artel.uz",
+            "href": "analytics@artel.uz"
+          },
+          {
+            "title": "Отдел закупок",
+            "text": "purchasing@artel.uz",
+            "href": "purchasing@artel.uz"
+          }
+        ]
+      },
+      {
+        "cards": [
+          {
+            "title": "Отдел продаж 2",
+            "text": "sales@artel.uz",
+            "href": "sales@artel.uz"
+          },
+          {
+            "title": "Отдел кадров 2",
+            "text": "hr@artel.uz",
+            "href": "hr@artel.uz"
+          },
+          {
+            "title": "Отдел аналитики 2",
+            "text": "analytics@artel.uz",
+            "href": "analytics@artel.uz"
+          },
+          {
+            "title": "Отдел закупок 2",
+            "text": "purchasing@artel.uz",
+            "href": "purchasing@artel.uz"
+          }
+        ]
+      },
+      {
+        "cards": [
+          {
+            "title": "Отдел продаж 3",
+            "text": "sales@artel.uz",
+            "href": "sales@artel.uz"
+          },
+          {
+            "title": "Отдел кадров 3",
+            "text": "hr@artel.uz",
+            "href": "hr@artel.uz"
+          },
+          {
+            "title": "Отдел аналитики 3",
+            "text": "analytics@artel.uz",
+            "href": "analytics@artel.uz"
+          },
+          {
+            "title": "Отдел закупок 3",
+            "text": "purchasing@artel.uz",
+            "href": "purchasing@artel.uz"
+          }
+        ]
+      },
+      {
+        "cards": [
+          {
+            "title": "Отдел продаж 4",
+            "text": "sales@artel.uz",
+            "href": "sales@artel.uz"
+          },
+          {
+            "title": "Отдел кадров 4",
+            "text": "hr@artel.uz",
+            "href": "hr@artel.uz"
+          },
+          {
+            "title": "Отдел аналитики 4",
+            "text": "analytics@artel.uz",
+            "href": "analytics@artel.uz"
+          },
+          {
+            "title": "Отдел закупок 4",
+            "text": "purchasing@artel.uz",
+            "href": "purchasing@artel.uz"
+          }
+        ]
+      },
+      {
+        "cards": [
+          {
+            "title": "Отдел продаж 4",
+            "text": "sales@artel.kyr",
+            "href": "sales@artel.kyr"
+          },
+          {
+            "title": "Отдел кадров 4",
+            "text": "hr@artel.kyr",
+            "href": "hr@artel.kyr"
+          },
+          {
+            "title": "Отдел аналитики 4",
+            "text": "analytics@artel.kyr",
+            "href": "analytics@artel.kyr"
+          },
+          {
+            "title": "Отдел закупок 4",
+            "text": "purchasing@artel.kyr",
+            "href": "purchasing@artel.kyr"
+          }
+        ]
+      },
+      {
+        "cards": [
+          {
+            "title": "Отдел продаж 4",
+            "text": "sales@artel.azb",
+            "href": "sales@artel.azb"
+          },
+          {
+            "title": "Отдел кадров 4",
+            "text": "hr@artel.azb",
+            "href": "hr@artel.azb"
+          },
+          {
+            "title": "Отдел аналитики 4",
+            "text": "analytics@artel.azb",
+            "href": "analytics@artel.azb"
+          },
+          {
+            "title": "Отдел закупок 4",
+            "text": "purchasing@artel.azb",
+            "href": "purchasing@artel.azb"
+          }
+        ]
+      }
+    ]
+  },
+  "contacts_form": {
+    "id": "form-1",
+    "name": "form-1",
+    "method": "POST",
+    "action": "/ajax/contacts/?repo=artel.frontend&status=success",
+    "attr": "data-ajax-form data-scroll-target data-scroll-contacts",
+    "title": "Связаться с нами",
+    "bg": "green",
+    "fields": [
+      {
+        "input": true,
+        "id": "form-1-input-1",
+        "name": "form-1-input-1",
+        "theme": "white",
+        "required": true,
+        "label": "ФИО"
+      },
+      {
+        "input": true,
+        "id": "form-1-input-2",
+        "name": "form-1-input-2",
+        "theme": "white",
+        "required": true,
+        "label": "Компания"
+      },
+      {
+        "input": true,
+        "id": "form-1-input-3",
+        "name": "form-1-input-3",
+        "theme": "white",
+        "required": true,
+        "type": "tel",
+        "label": "Телефон",
+        "mask_list": [
+          "+998-##-###-####",
+          "+7(###)###-##-##",
+          "+380(##)###-##-##",
+          "+7(6##)###-##-##",
+          "+992-##-###-####",
+          "+994-##-###-##-##",
+          "+996-###-######"
+        ]
+      },
+      {
+        "textarea": true,
+        "id": "form-1-textarea-1",
+        "name": "form-1-textarea-1",
+        "theme": "white",
+        "label": "Сообщение"
+      }
+    ],
+    "agreement": [
+      {
+        "checkbox": true,
+        "id": "form-1-checkbox-1",
+        "name": "form-1-checkbox-1",
+        "text": "Я согласен/на с <a href='javascript:void(0);' class='link-content' target='_blank'>политикой конфиденциальности</a> и&nbsp;даю добро на обработку <a href='javascript:void(0);' class='link-content' target='_blank'>моих персональных данных</a>",
+        "required": true,
+        "theme": "white"
+      }
+    ],
+    "submit": {
+      "type": "submit",
+      "text": "Отправить",
+      "title": "Отправить",
+      "theme": "white",
+      "icon": {
+        "name": "24/arrow-up-right"
+      }
+    }
+  }
+}

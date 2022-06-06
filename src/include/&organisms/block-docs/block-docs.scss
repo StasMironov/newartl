@@ -1,0 +1,224 @@
+.block-docs {
+	$root: &;
+
+	&__container {
+		overflow: hidden;
+	}
+
+    &__cards {
+		@include media-breakpoint-up(lg) {
+			display: flex;
+			flex-wrap: wrap;
+			margin-right: rem(-8);
+            margin-top: rem(-8);
+		}
+	}
+
+	&__card {
+        margin-top: rem(8);
+		// @include media-breakpoint-down(md) {
+		// 	+ #{$root}__item {
+		// 		margin-top: rem(8);
+		// 	}
+		// }
+		@include media-breakpoint-up(lg) {
+			width: 33.33%;
+			padding-right: rem(8);
+		}
+	}
+
+    &__pane {
+		display: none;
+
+		&.is-active {
+			display: block;
+		}
+
+		opacity: 0;
+
+		&:first-child {
+			opacity: 1;
+		}
+	}
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        margin-bottom: rem(76);
+
+		#{$root}--layout-3 & {
+			justify-content: space-between;
+		}
+
+		@include media-breakpoint-down(md) {
+			flex-wrap: wrap;
+		}
+
+		@include media-breakpoint-down(sm) {
+			margin-bottom: rem(47);
+		}
+
+		#{$root}--layout-2 & , #{$root}--layout-3 & {
+			margin-bottom: rem(62);
+
+			@include media-breakpoint-down(sm) {
+				margin-bottom: rem(48);
+			}
+	
+		}
+    }
+
+	&__title{
+		width: rem(390);
+		&--oneline{
+			width: 100%;
+			@include media-breakpoint-down(md) {
+				width: 100%;
+				margin-bottom: rem(16);
+			}
+			@include media-breakpoint-down(lg) {
+				width: 50%;
+				margin-bottom: rem(16);
+			}
+		}
+	}
+    &__tabs {
+        display: inline-block;
+		width: 100%;		
+    }
+
+	&__no-results {
+		text-align: center;
+		padding: rem(207) 0;
+		font-weight: 500;
+		color: rgba($color-black, 0.4);
+
+		@include media-breakpoint-down(md) {
+			padding: rem(130) 0;
+		}
+
+		@include media-breakpoint-down(sm) {
+			padding: rem(80) 0;
+		}
+	}
+
+	&__offset-left {
+		&-3 {
+			padding-left: 31%;
+
+			@include media-breakpoint-down(md) {
+				padding-left: 0%;
+			}
+		}
+
+		&-1 {
+			padding-left: 6%;
+
+			@include media-breakpoint-down(md) {
+				padding-left: 0%;
+			}
+		}
+	} 
+
+	&__form {
+		margin-left: auto;
+		width: 50%;
+
+		@include media-breakpoint-down(md) {
+			width: 100%;
+			margin-top: rem(37);
+		}
+
+		@include media-breakpoint-down(sm) {
+			margin-top: rem(24);
+		}
+	}
+
+	&__select {
+
+		@include media-breakpoint-down(sm) {
+			overflow: hidden;
+		}
+
+		.filter-select__field {
+			width: 37%;
+
+			#{$root}--layout-2 &{
+				width: 100%;
+			}
+			#{$root}--layout-3 & {
+				width: rem(328);
+			}
+		}
+
+		.filter-select__field {
+			&:first-child {
+				@include media-breakpoint-down(md) {
+					width: 41%;
+				}
+
+				@include media-breakpoint-down(sm) {
+					width: 100%;
+				}
+			}
+	
+			&:last-child {
+				margin-left: 13%;
+
+				#{$root}--layout-2 &, #{$root}--layout-3 & {
+					margin-left: 0;
+				}
+
+				@include media-breakpoint-down(md) {
+					width: 50%;
+					margin-left: 0;
+
+					#{$root}--layout-2 &, #{$root}--layout-3 & {
+						width: 100%;
+					}
+				}
+
+				@include media-breakpoint-down(sm) {
+					width: 100%;
+				}
+			}
+
+			&:not(:last-child){
+				@include media-breakpoint-down(sm) {
+					margin-bottom: rem(19);
+				}
+			}
+		}
+
+		.filter-select {
+			@include media-breakpoint-down(sm) {
+				flex-direction: column;
+			}
+			#{$root}--layout-3 & {
+				width: rem(328);
+				@include media-breakpoint-down(md) {
+					margin-top: rem(26);
+				}
+
+				@include media-breakpoint-down(lg) {
+					margin-top: rem(0);
+				}
+				
+			}
+		}
+
+		&--fill {
+			width: 100%;
+		}
+
+		#{$root}--layout-2 & {
+			max-width: rem(328);
+
+
+			@include media-breakpoint-down(md) {
+				margin-bottom: rem(47);
+			}
+		}
+	}
+
+}

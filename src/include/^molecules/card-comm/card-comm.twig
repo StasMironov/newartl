@@ -1,0 +1,35 @@
+<div class="card-comm">
+	<div class="card-comm__person">
+		{% if card.img %}
+			<div class="card-comm__avatar">
+				{% view '@image' with {
+                    image: card.img
+                } %}
+			</div>
+			<div class="card-comm__box">
+				{% if card.name %}
+					<div class="card-comm__name h3">
+						{{card.name}}
+					</div>
+				{% endif %}
+				{% if card.position %}
+					<div class="card-comm__position">
+						{{card.position}}
+					</div>
+				{% endif %}
+			</div>
+		{% endif %}
+	</div>
+	{% if card.comm %}
+		<div class="card-comm__wrp">
+			{% for item in card.comm %}
+				<div class="card-comm__comm">
+					<div class="card-comm__title">
+						{{item.title}}
+					</div>
+					<a class="card-comm__email h3" href="{{item.href}}">{{item.text}}</a>
+				</div>
+			{% endfor %}
+		</div>
+	{% endif %}
+</div>

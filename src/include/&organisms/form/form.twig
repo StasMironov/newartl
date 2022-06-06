@@ -1,0 +1,89 @@
+<form {% if form.id %} id="{{ form.id }}"{% endif %}
+	{% if form.name %} name="{{ form.name }}"{% endif %}
+	{% if form.action %} action="{{ form.action }}"{% endif %}
+	{% if form.method %} method="{{ form.method }}"{% endif %}
+	class="form {% if form.layout %}form--layout-{{form.layout}}{% endif %} {% if form.mob_layout %} form--mob-layout {% endif %} {% if form.bg %} bg-{{ form.bg }}{% else %} bg-white{% endif %}"
+	{% if form.attr %} {{ form.attr }}{% endif %}
+	data-parsley-validate
+	
+>
+		<div class="form__container container">
+			{% if form.title or form.text %}
+				<div class="form__info">
+					{% if form.title %}
+						<p class="form__title h1" data-fade-in-up>{{ form.title }}</p>
+					{% endif %}
+					{% if form.text %}
+						<p class="form__text">{{ form.text }}</p>
+					{% endif %}
+				</div>
+			{% endif %}
+			<div class="form__content" data-fade-in-up>
+				<div class="form__fields">
+					{% for field in form.fields %}
+						<div class="form__field{% if field.textarea %} form__field--fit{% endif %}" data-fade-in-up data-delay="{{ (0.2 + loop.index0 / 5)|round(2, 'floor') }}">
+							{% view '@field' with {
+								field: field
+							} %}
+						</div>
+					{% endfor %}
+				</div>
+				{% if form.info.block %}
+					
+
+				<div class="form__block">
+					{% if form.info.block.article %}
+						<div class="form__article">
+							{{ form.info.block.article }}
+						</div>
+					{% endif %}
+
+					{% if form.info.block.formats %}
+						<div class="form__formats">
+							{% for format in form.info.block.formats %}
+								<div class="form__format">
+									{{ format }}
+								</div>
+							{% endfor %}
+						</div>
+					{% endif %}
+
+					{% if form.info.block.text %}
+						<div class="form__text" data-filetextres>
+							{{form.info.block.text }}
+						</div>
+					{% endif %}
+
+					{% for field in form.info.block.fields %}
+						<div class="form__field{% if field.textarea %} form__field--fit{% endif %}" data-fade-in-up data-delay="{{ (0.2 + loop.index0 / 5)|round(2, 'floor') }}">
+							{% view '@field' with {
+								field: field
+							} %}
+						</div>
+					{% endfor %}
+				</div>
+
+
+
+
+				{% endif %}
+				{% if form.agreement %}
+					{% for check in form.agreement %}
+						<div class="form__agreement">
+							{% view '@field' with {
+								field: check
+							} %}
+						</div>
+					{% endfor %}
+				{% endif %}
+				{% if form.submit %}
+					<div class="form__submit">
+						{% view '@button' with {
+							button: form.submit
+						} %}
+					</div>
+				{% endif %}
+			</div>
+			<div class="form__answer" data-form-answer></div>
+		</div>
+</form>

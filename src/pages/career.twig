@@ -1,0 +1,78 @@
+{% extends "layouts::_page.twig" %}
+
+{% block content %}
+
+	{% view '&hero-default' with {
+        hero_default: hero_default
+    } %}
+
+    {% view '&block-nav' with {
+        block_nav: block_nav
+    } %}
+
+    <div class="mt-md-112 mt-64 mb-56 mb-md-112 mb-lg-88">
+		{% view '&block-innovation' with {
+            block_innovation: block_innovation
+        } %}
+	</div>
+
+    <div class="mb-64 mb-md-112">
+		{% view '&block-career-cards' with {
+            block_career_cards: block_career_cards
+        } %}
+	</div>
+
+    <div class="mt-lg-112 mb-48 mb-lg-112 mb-md-56 mb-lg-56">
+		{% view '&block-chart' %}
+	</div>
+
+    <div class="mt-lg-112 mb-64 mb-md-120 mb-lg-56">
+        {% view '&block-training' with {
+            block: block_training
+        } %}
+    </div>
+
+    <div class="pt-64 pt-md-112 pb-lg-112 pb-md-128 pb-64 bg-white" >
+		{% view '&slider-comment' with {
+            slider: slider_comment
+        } %}
+	</div>
+
+    <div class="mt-md-112 mt-64 mb-48 mb-lg-112 mb-md-56 mb-lg-56">
+		{% view '&block-event' with {
+            block_event: block_event
+        } %}
+	</div>
+
+    <div class="pt-16 pt-md-64">
+		{% view '&slider-press' with {
+            slider_press: slider
+        } %}
+	</div>
+
+    <div class="pt-64 pt-md-112 pb-lg-112 pb-md-128 pb-64 bg-white" >
+		{% view '&slider-comment' with {
+            slider: slider_comment2
+        } %}
+	</div>
+
+    <div class="mt-md-112 mt-64 mb-48 mb-lg-112 mb-md-56 mb-lg-56">
+		{% view '&block-offers' %}
+	</div>
+
+    <div class="mt-lg-96 mt-md-80 mt-64 mb-md-120 mb-64">
+        {% view '&block-information' with {
+            block_information: block_information
+        } %}
+    </div>
+
+    {% view '&block-contacts' with {
+        block_contacts: block_contacts
+    } %}
+
+    {% view '&form' with {
+        form: contacts_form
+    }%}
+
+{% endblock %}
+

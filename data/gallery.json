@@ -1,0 +1,67 @@
+{
+	"title": "Галерея",
+	"breadcrumbs": {
+		"items": [
+			{
+				"href": "./",
+				"text": "Главная"
+			},
+			{
+				"href": "./",
+				"text": "Результаты поиска"
+			}
+		]
+	},
+	"news_detail": {
+		"title_hidden": "Заключение партнерских отношений с&nbsp;«Baku Electronics» в &nbsp;Азербайджане",
+		"layout": "2",
+		"before": "<h2>Заключение партнерских отношений с&nbsp;«Baku&nbsp;Electronics» в&nbsp;Азербайджане</h2><img src='tmp/main-hero/hero-3.jpg' alt='alt image'><p>Artel заключил <a href='javascript:void(0);'>партнерское соглашение</a> с&nbsp;Baku&nbsp;Electronics в Азербайджане.</p><p>Компания Artel и Baku Electronics подписали соглашение на поставку продукции в Азербайджан с&nbsp;ожидаемым объемом экспорта к концу года $500 000</p><a href='javascript:void(0);'>Ссылка</a>",
+		"slider": {
+			"title": "Приобрести продукцию",
+			"items": [
+				{
+					"href": "#",
+					"img": {
+						"src": "tmp/card-news/news5.jpg",
+						"alt": "logo"
+					}
+				},
+				{
+					"href": "#",
+					"img": {
+						"src": "tmp/slider-photo/1.png",
+						"alt": "logo"
+					}
+				},
+				{
+					"href": "#",
+					"img": {
+						"src": "tmp/slider-photo/2.png",
+						"alt": "logo"
+					}
+				},
+				{
+					"href": "#",
+					"img": {
+						"src": "tmp/card-news/news5.jpg",
+						"alt": "logo"
+					}
+				},
+				{
+					"href": "#",
+					"img": {
+						"src": "tmp/slider-photo/1.png",
+						"alt": "logo"
+					}
+				},
+				{
+					"href": "#",
+					"img": {
+						"src": "tmp/slider-photo/2.png",
+						"alt": "logo"
+					}
+				}
+			]
+		}
+	}
+}

@@ -1,0 +1,67 @@
+<div class="map {% if map.layout %}map--layout-{{map.layout}}{% endif %} " {% if map.noClick %}data-noclick{% endif %} data-map{% if map.url %} data-url="{{ map.url }}"{% endif %} {% if map.zoom %} data-zoom{% endif %} data-fade-in-up>
+	{% if map.heading or map.tabs %}
+		<div class="map__top">
+			<div class="map__container container">
+				{% if map.heading %}
+					<p class="map__heading h2" data-fade-in-up>{{ map.heading }}</p>
+				{% endif %}
+				{% if map.tabs %}
+					<div class="map__tabs">
+						<div class="swiper-container" data-map-tabs>
+							<div class="swiper-wrapper">
+								{% for tab in  map.tabs.items %}
+									<div class="swiper-slide map__slide" data-fade-in-up
+						 			data-delay="{{ (loop.index0 / 16)|round(2, 'floor') }}">
+										{% view '@tab' with {
+											tab: tab
+										} %}
+									</div>
+								{% endfor %}
+							</div>
+						</div>
+					</div>
+				{% endif %}
+			</div>
+		</div>
+	{% endif %}
+	<div class="map__box">
+		<div class="map__controls">
+			<button type="button" class="map__control" data-zoom-in>
+				{% view '@icon' with {
+					icon: {
+						name: "24/plus"
+					}
+				} %}
+			</button>
+			<button type="button" class="map__control" data-zoom-out>
+				{% view '@icon' with {
+					icon: {
+						name: "24/minus"
+					}
+				} %}
+			</button>
+		</div>
+		<div class="map__init" data-map-init></div>
+	</div>
+	<div class="map__card {% if map.card_bg %}map__card--{{map.card_bg}}{% endif %}" data-card-wrap>
+		{% view '^card-map' %}
+	</div>
+	{% if map.legend %}
+		<div class="map__legend">
+			<div class="map__container container">
+				<div class="map__items">
+					{% for item in map.legend %}
+						<div class="map__item">
+							<div class="map__icon color-{% if item.theme %}{{ item.theme }}{% else %}black{% endif %}">
+								{% view '@icon' with {
+									icon: item.icon
+								} %}
+							</div>
+							<p class="map__text">{{ item.text }}</p>
+						</div>
+					{% endfor %}
+				</div>
+			</div>
+		</div>
+	{% endif %}
+</div>

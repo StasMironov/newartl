@@ -1,0 +1,44 @@
+<div {% if block_innovation.scroll_target %}id="{{block_innovation.scroll_target}}"{% endif %} class="block-innovation {% if block_innovation.layout %}block-innovation--layout-{{block_innovation.layout}}{% endif %}{% if block_innovation.theme %} block-innovation--{{block_innovation.theme}}{% endif %}">
+	<div class="block-innovation__wrapper container">
+		<div class="block-innovation__left" data-fade-in-up>
+			{% if block_innovation.title  %}
+				<h2>{{ block_innovation.title  }}</h2>
+			{% endif %}
+		</div>
+		<div class="block-innovation__right" data-fade-in-up>
+
+			{% if block_innovation.factoids %}
+				{% set count = 0 %}
+				{% set res = [] %}
+				{% set items = [] %}
+
+				{% for item in block_innovation.factoids %}
+					{% if count <= 1 %}
+						{% set items = items|merge([item]) %}
+						{% set count = count + 1 %}
+					{% else %}
+						{% set res = res|merge([items]) %}
+						{% set items = []  %}
+						{% set items = items|merge([item]) %}
+						{% set count = 1 %}
+					{% endif %}
+				{% endfor %}
+
+				{% set res = res|merge([items]) %}
+
+				{% for elem in res %}
+					<div class="block-innovation__row">
+						{% for card in elem %}
+							<div class="block-innovation__factoid">
+								{% view '^factoid' with {
+                                            factoid: card
+                                        } %}
+								<div class="block-innovation__factoid-border" style="--delay: {{ (0.2 + loop.index0 / 5)|round(2, 'floor') }}"></div>
+							</div>
+						{% endfor %}
+					</div>
+				{% endfor %}
+			{% endif %}
+		</div>
+	</div>
+</div>

@@ -1,0 +1,41 @@
+<div {% if slider.scroll_target %}id="{{slider.scroll_target}}"{% endif %} class="slider-docs" data-slider-docs>
+	<div class="container slider-docs__container">
+		{% if slider.heading or slider.field %}
+			<div class="slider-docs__top">
+				{% if slider.heading %}
+					<p class="slider-docs__heading h2 {% if slider.heading_fullwidth %} slider-docs__heading-fullwidth {% endif %}">{{ slider.heading }}</p>
+				{% endif %}
+				{% if slider.field %}
+					<div class="slider-docs__field">
+						{% view '@field' with {
+							field: slider.field
+						} %}
+					</div>
+				{% endif %}
+			</div>
+		{% endif %}
+		<div class="slider-docs__content">
+			<div class="swiper-container" data-slider>
+				<div class="swiper-wrapper">
+					{% for card in slider.items %}
+						<div class="slider-docs__slide swiper-slide" {% if card.year %} data-year="{{ card.year }}" {% endif %}>
+							{% view '^card-features' with {
+								card: card
+							} %}
+						</div>
+					{% endfor %}
+				</div>
+			</div>
+      {% if slider.button %}				  
+        <div class="slider-docs__link" data-fade-in-up>
+            {% view '@button' with {
+						  button: slider.button
+					  } %}
+        </div>
+      {% endif %}
+			<div class="slider-docs__arrows">
+				{% view '@nav-arrows' %}
+			</div>
+		</div>
+	</div>
+</div>

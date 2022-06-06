@@ -1,0 +1,13 @@
+<div class="slider-period" data-slider-period-wrap>
+		<div class="swiper-container" data-slider-period data-fade-in-up>
+			<div class="swiper-wrapper">
+				{% for slide in slider.items %}
+					<div class="swiper-slide">
+                        <div class="slider-photo__txt">
+                            {{ slide.year }}
+                        </div>
+					</div>
+				{% endfor %}
+			</div>
+		</div>
+</div>

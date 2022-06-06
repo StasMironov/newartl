@@ -1,0 +1,37 @@
+<div class="work-card" data-work-card>
+    {% if card.field_company %}
+        <div class="form__field" data-fade-in-up data-delay="{{ (0.2 + loop.index0 / 5)|round(2, 'floor') }}">
+            {% view '@field' with {
+                field: card.field_company
+            } %}
+        </div>
+    {% endif %}
+    {% if card.field_post %}
+        <div class="form__field" data-fade-in-up data-delay="{{ (0.2 + loop.index0 / 5)|round(2, 'floor') }}">
+            {% view '@field' with {
+                field: card.field_post
+            } %}
+        </div>
+    {% endif %}
+    {% if card.datepicker %}
+        {% view '@field' with {
+            field: card.datepicker
+        } %}
+    {% endif %}
+    {% if card.agreement %}
+        {% for check in card.agreement %}
+            <div class="form__agreement">
+                {% view '@field' with {
+                    field: check
+                } %}
+            </div>
+        {% endfor %}
+    {% endif %}
+    {% if card.delete %}
+        <div class="work-card__actions">
+            <div class="work-card__delete" {% if card.delete.attr %} {{ card.delete.attr }} {% endif %}>
+                {{ card.delete.text }}
+            </div>
+        </div>
+    {% endif %}
+</div>

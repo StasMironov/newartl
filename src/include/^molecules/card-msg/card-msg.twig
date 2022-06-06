@@ -1,0 +1,20 @@
+<div class="card-msg">
+    {% if card.icon  %}
+        <div class="card-msg__icon" data-fade-in-up>
+            {% view '@icon' with {
+                icon: card.icon
+            } %}
+        </div>
+    {% endif %}
+    {% if card.title  %}
+        <div class="card-msg__title" data-fade-in-up data-delay="0.5">
+            {{ card.title }}
+        </div>
+    {% endif %}  
+    
+    {% if block_appeal.msg.read_more %}
+        {% view '^read-more' with {
+            card: block_appeal.msg.read_more
+        }%}
+    {% endif %}
+</div>

@@ -1,0 +1,36 @@
+.result {
+	display: flex;
+	align-items: center;
+
+	&__block {
+		display: flex;
+		align-items: center;
+
+        @include media-breakpoint-up(sm) {
+            margin-right: rem(18);
+		}
+
+        @include media-breakpoint-up(md) {
+            margin-right: rem(8);
+		}
+	}
+
+	&__num,
+	&__symbol {
+		color: $color-green;
+		font-weight: 500;
+
+		@include media-breakpoint-up(sm) {
+			font-size: rem(20);
+		}
+
+		@include media-breakpoint-up(md) {
+			font-size: rem(24);
+		}
+	}
+
+	&__sort {
+		padding-top: rem(4);
+		color: $color-green;
+	}
+}

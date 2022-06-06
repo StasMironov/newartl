@@ -1,0 +1,31 @@
+<div class="news-detail {% if news_detail.layout %}news-detail--layout-{{news_detail.layout}}{% endif %}">
+    <div class="news-detail__container container">
+        {% if news_detail.title_hidden %}
+            <h1 class="visually-hidden">{{ news_detail.title_hidden }}</h1>
+        {% endif %}
+
+        {% if news_detail.intro %}
+            {% view '&block-intro' with {
+                block_intro: news_detail.intro
+            } %}
+        {% endif %}
+        <div class="news-detail__content user-text" data-animate-user-text>
+            {% if news_detail.before %}
+                {{ news_detail.before }}
+            {% endif %}
+            {% if news_detail.table %}
+                {% view '^table' with {
+					table: news_detail.table
+				} %}
+            {% endif %}
+            {% if news_detail.slider %}
+                {% view '&slider-photo' with {
+                    slider: news_detail.slider
+                } %}
+            {% endif %}
+            {% if news_detail.after %}
+                {{ news_detail.after }}
+            {% endif %}
+        </div>
+    </div>
+</div>

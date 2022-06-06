@@ -1,0 +1,53 @@
+.read-more {
+	width: 100%;
+
+    @include media-breakpoint-up(md) {
+        max-width: rem(505);
+    }
+
+    @include media-breakpoint-up(lg) {
+        max-width: rem(500);
+    }
+
+    // max-width: 505px;
+
+	&__hidden {
+		display: none;
+		padding-top: rem(22);
+		padding-bottom: rem(24);
+	}
+
+	&__btn {
+		margin-top: rem(22);
+		padding: 0;
+		color: rgba($color-black, 0.4);
+		background-color: transparent;
+		border: none;
+		@include defaultTransition(color);
+
+		&:hover {
+			color: rgba($color-black, 1);
+		}
+	}
+
+	&__item {
+		&:not(:last-child) {
+			margin-bottom: rem(24);
+		}
+	}
+
+
+	&__fullwidth {
+		width: 100%;
+		@include media-breakpoint-up(md) {
+			max-width:  100%;
+		}
+		@include media-breakpoint-up(lg) {
+				max-width:  100%;
+		}
+
+		.read-more__btn {
+			margin-top: rem(0);
+		}
+	}	
+}

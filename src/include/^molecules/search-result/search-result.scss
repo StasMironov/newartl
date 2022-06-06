@@ -1,0 +1,42 @@
+.search-result {
+	position: relative;
+	background-color: $color-white;
+	box-shadow: 0 rem(5) rem(15) rgba(31, 31, 31, 0.1);
+	border-radius: rem(8);
+	overflow: hidden;
+
+	&__list {
+		position: relative;
+		max-height: rem(220);
+		overflow-x: hidden;
+		overflow-y: auto;
+
+		.ps__rail-y {
+			pointer-events: none;
+			right: rem(8) !important;
+
+			&:before {
+				top: rem(12) !important;
+				bottom: rem(12) !important;
+			}
+		}
+
+		.ps__thumb-y {
+			&:before {
+				top: rem(12) !important;
+				bottom: rem(12) !important;
+			}
+		}
+	}
+
+	&__link {
+		display: block;
+		padding: rem(12) rem(24);
+		color: $color-black;
+		@include defaultTransition(background-color);
+
+		@include touchLessHover {
+			background-color: $color-gray;
+		}
+	}
+}

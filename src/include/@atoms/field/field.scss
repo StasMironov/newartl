@@ -1,0 +1,160 @@
+.field {
+	$root: &;
+
+	display: block;
+	line-height: 1;
+
+	&--hidden {
+		@include visually-hidden;
+	}
+
+	&__label {
+		margin-bottom: rem(8);
+	}
+
+	&__control {
+		position: relative;
+	}
+
+	&--white-2 {
+		.input-search__icon {
+			color: rgba($color-white, $alpha: 0.4);
+		}
+
+		.input-search__reset {
+			color: rgba($color-white, $alpha: 0.4);
+
+			@include touchLessHover {
+				color: rgba($color-white, $alpha: 1);
+			}
+		}
+
+		@include touchLessHover {
+			.input-search__icon {
+				color: rgba($color-white, $alpha: 1);
+			}
+		}
+	}
+
+	&--multi {
+		.select2-container--multi .selection .select2-selection .select2-selection__rendered {
+			//opacity: 0;
+		}
+
+		
+			border-color: white;
+		
+	}
+
+}
+
+// Базовый стиль поведения label
+.input,
+.textarea,
+.input-search {
+	padding-top: rem(20);
+	-webkit-appearance: none;
+
+	@at-root .has-error & {
+		border-color: red !important;
+	}
+
+	& ~ .label {
+		position: absolute;
+		top: rem(18);
+		left: 0;
+		margin: 0;
+		transform-origin: top left;
+		pointer-events: none;
+		will-change: transform;
+		@include defaultTransition(transform);
+		font-size: rem(24);
+
+
+		@include media-breakpoint-down(sm) {
+			font-size: rem(20);
+		}
+		// @include text-default;
+	}
+
+	&::-webkit-input-placeholder,
+	&::-moz-placeholder,
+	&:-moz-placeholder,
+	&::-ms-input-placeholder,
+	&::placeholder {
+		opacity: 0;
+	}
+
+	&::-moz-placeholder {
+		opacity: 0;
+	}
+
+	&:-ms-input-placeholder {
+		color: rgba($color-black, 0);
+	}
+
+	&:focus,
+	&.not-empty,
+	&.filled {
+		~ .label {
+			transform: translateY(-50%) scale(0.58);
+		}
+
+		&::-webkit-input-placeholder,
+		&::-moz-placeholder,
+		&:-moz-placeholder,
+		&::-ms-input-placeholder,
+		&::placeholder {
+			opacity: 1;
+		}
+
+		&::-moz-placeholder {
+			opacity: 1;
+		}
+	}
+
+
+	&--white {
+		&:focus,
+		&.not-empty {
+			& ~ .label {
+				color: rgba($color-white, 0.6);
+			}
+		}
+	}
+
+	&--white-2 {
+		color: rgba($color-white, 1.0);
+
+
+		&:focus {
+			color: rgba($color-white, 1.0);
+		}
+
+		&::placeholder {
+			opacity: 1;
+			color: rgba($color-white, 0.4);
+		}
+
+
+		@include touchLessHover {
+			color: rgba($color-white, 0.4) !important;
+
+			&::placeholder {
+				opacity: 1;
+				color: rgba($color-white, 0.4);
+			}
+		}
+	}
+	
+
+
+	
+}
+
+.textarea {
+	padding-top: 0;
+}
+
+
+//для автозаполнения в хроме

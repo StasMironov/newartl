@@ -1,0 +1,23 @@
+{
+	"socials": {
+		"title": "Title",
+		"items": [
+			{
+				"href": "javascript:void(0);",
+				"title": "facebook",
+				"icon": {
+					"name": "32/socials/fb",
+					"size": "32"
+				}
+			},
+			{
+				"href": "javascript:void(0);",
+				"title": "instagram",
+				"icon": {
+					"name": "32/socials/inst",
+					"size": "32"
+				}
+			}
+		]
+	}
+}

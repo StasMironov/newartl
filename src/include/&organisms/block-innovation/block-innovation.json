@@ -1,0 +1,36 @@
+{
+  "block_innovation": {
+    "title": "R&D и Инновации",
+    "factoids": [
+      {
+        "text": "80",
+        "after": {
+          "txt": "%"
+        },
+        "label": "Контент от Artel Electronics"
+      },
+      {
+        "text": "14",
+        "after": {
+          "txt": "%"
+        },
+        "label": "Контент от Artel Electronics"
+      },
+      {
+        "text": "14",
+        "after": {
+          "txt": "%"
+        },
+        "label": "Контент от Artel Electronics"
+      },
+      {
+        "text": "80",
+        "after": {
+          "txt": "%"
+        },
+        "label": "Контент от Artel Electronics"
+      }
+    ],
+    "scroll_target": "rds"
+  }
+}

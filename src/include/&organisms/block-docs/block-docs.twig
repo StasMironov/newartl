@@ -1,0 +1,67 @@
+<div class="block-docs {% if block_docs.layout %} block-docs--layout-{{block_docs.layout}} {% endif %}" {% if block_docs.tabs %} data-tab-container {% endif %}>
+    <div class="block-docs__container container" {% if block_docs.tabs %} data-tabs-wrap {% endif %}>
+        <div class="block-docs__wrapper">
+            {% if block_docs.filter_select %}
+					<div class="block-docs__select {% if block_docs.filter_select.fill %}block-docs__select--fill{% endif %}">
+						<form  {{block_docs.filter_select.attr}}>
+							{% view '@filter-select' with {
+								filter_select: block_docs.filter_select
+							} %}
+						</form>
+					</div>
+            {% endif %}
+            {% if block_docs.form %}
+                <div class="block-docs__form" data-fade-in-up>
+                    {% view '&search-form' with {
+                        form: block_docs.form
+                    } %}
+				</div>
+			{% endif %}
+			{% if block_docs.tabs %}
+				<div class="block-docs__tabs {% if block_docs.tabs.offset_left %}block-docs__offset-left-{{block_docs.tabs.offset_left}}{% endif %}">
+					{% view '&tabs' with {
+					tabs: block_docs.tabs
+				}%}
+				</div>
+			{% endif %}
+		</div>
+		
+		{% if block_docs.tabs_content %}
+			<div class="block-docs__tabs-content" data-fade-in-up data-delay="0.5">
+				{% for item in block_docs.tabs_content %}
+					<div class="block-docs__pane{{ item.active ? ' is-active' }}" data-tab-pane="{{ loop.index }}">
+						{% if item.cards %}
+							<div class="block-docs__cards">
+								{% for card in item.cards %}
+									<div class="block-docs__card">
+										{% view '^card-features' with {
+                                                card: card
+                                            }%}
+                                        <div class="block-docs__card-border"></div>
+                                    </div>
+                                {% endfor %}
+                            </div>
+                        {% endif %}
+                    </div>
+                {% endfor %}
+            </div>
+        {% endif %}
+        {% if block_docs.items %}
+            <div class="block-docs__cards">
+                {% for card in block_docs.items %}
+                    <div class="block-docs__card" data-fade-in-up data-delay="{{ (0.2 + loop.index0 / 5)|round(2, 'floor') }}">
+                            {% view '^card-features' with {
+                                card: card
+                            }%}
+                        <div class="block-docs__card-border"></div>
+                    </div>
+                {% endfor %}
+            </div>
+        {% endif %}
+        {% if block_docs.no_results and block_docs.items|length < 1 %}
+            <div class="block-docs__no-results h3" data-fade-in-up data-delay="0.5">
+                {{ block_docs.no_results }}
+            </div>
+	    {% endif %}
+    </div>
+</div>

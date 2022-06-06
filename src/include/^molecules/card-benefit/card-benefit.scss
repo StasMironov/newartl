@@ -1,0 +1,104 @@
+.card-benefit {
+	$root: &;
+	position: sticky;
+
+	@include media-breakpoint-up(md) {
+		top: rem(115);
+	}
+
+	&__quote {
+		color: rgba($color-black, 0.4);
+
+		@include media-breakpoint-up(sm) {
+			margin-bottom: rem(17);
+		}
+		@include media-breakpoint-up(md) {
+			margin-bottom: rem(14);
+		}
+	}
+
+	&__image {
+		overflow: hidden;
+		border-radius: rem(8);
+
+		@include media-breakpoint-up(sm) {
+			height: rem(164);
+			margin-bottom: rem(32);
+		}
+		@include media-breakpoint-up(md) {
+			height: rem(334);
+			margin-bottom: rem(48);
+		}
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			background-size: cover;
+
+
+			#{$root}--layout-2 & {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+			}
+		}
+
+		#{$root}--layout-2 & {
+			order: 1;
+			margin-bottom: 0;
+
+			position: relative;
+			height: 11.25rem;
+			overflow: hidden;
+			height: 0;
+			padding-top: 50%;
+			overflow: hidden;
+		}
+	}
+
+	&__title {
+		@include media-breakpoint-up(sm) {
+			margin-bottom: rem(47);
+		}
+		@include media-breakpoint-up(md) {
+			margin-bottom: rem(64);
+		}
+
+		#{$root}--layout-2 & {
+			font-size: rem(32);
+			line-height: rem(44);
+			margin-bottom: rem(44);
+			font-weight: 500;
+
+			@include media-breakpoint-down(sm) {
+				font-size: rem(24);
+				line-height: rem(31);
+				margin-bottom: rem(32);
+			}
+		}
+	}
+
+	&__desc {
+		width: 100%;
+		max-width: rem(389);
+
+		#{$root}--layout-2 & {
+			max-width: rem(475);
+			margin-bottom: rem(48);
+
+			@include media-breakpoint-down(sm) {
+				margin-bottom: rem(32);
+			}
+		}
+	}
+
+	&--layout-2 {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		top: 0;
+	}
+}

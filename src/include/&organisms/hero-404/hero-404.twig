@@ -1,0 +1,37 @@
+<div class="hero-404">
+	<div class="hero-404__images" data-animate-custom>
+		<div class="hero-404__image">
+			{% view '@image' with {
+				"image": {
+					"src": assetsRoot ~ "img/404_1.png",
+					"fill": true
+				}
+			}%}
+		</div>
+		<div class="hero-404__image">
+			{% view '@image' with {
+				"image": {
+					"src": assetsRoot ~ "img/404_2.png",
+					"fill": true
+				}
+			}%}
+		</div>
+	</div>
+    <div class="hero-404__inner container">
+        <div class="hero-404__content">
+			<div class="hero-404__number" data-animate>404</div>
+			{% if hero.text %}
+				<div class="hero-404__text" data-animate>{{ hero.text|raw }}</div>
+			{% endif %}
+			{% if hero.actions %}
+				<div class="hero-404__actions" data-animate>
+					{% for action in hero.actions %}
+						{% view '@button' with {
+							button: action
+						} %}
+					{% endfor %}
+				</div>
+			{% endif %}
+        </div>
+    </div>
+</div>

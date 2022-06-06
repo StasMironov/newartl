@@ -1,0 +1,14 @@
+{% extends "layouts::_page.twig" %}
+
+{% block content %}
+
+    {% view '&hero-default' with {
+        hero_default: hero_default
+    } %}
+
+    <div class="mt-md-112 mt-64 mb-48 mb-lg-112 mb-md-56 mb-lg-56">
+      {% view '&block-offers' %}
+    </div>
+
+
+{% endblock %}

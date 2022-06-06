@@ -1,0 +1,9 @@
+<div class="modal-person">
+    <div class="modal-person__inner" data-modal-ps>
+        {% if modal.form %}
+            {% view '&form' with {
+                form: modal.form
+            } %}
+        {% endif %}
+    </div>
+</div>

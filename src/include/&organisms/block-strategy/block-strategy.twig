@@ -1,0 +1,62 @@
+<div class="block-strategy" data-strategy-slider{% if strategy_slider.autoplay %} data-autoplay="{{ strategy_slider.autoplay }}"{% endif %}>
+	<div class="block-strategy__wrap" data-slider>
+		{% for slide in strategy_slider.slides %}
+			<div class="block-strategy__slide{% if loop.index == 1 %} is-active{% endif %}"
+				data-slide>
+				<div class="block-strategy__shell">
+					<div class="block-strategy__inner">
+						<div class="block-strategy__container container">
+							<div class="block-strategy__content">
+                                <div class="block-strategy__left">
+                                    {% if slide.title %}
+                                        <h2 class="block-strategy__title h2" data-title>{{ slide.title }}</h2>
+                                    {% endif %}
+                                    {% if slide.note %}
+                                        <div class="block-strategy__note" data-note>
+                                            {{ slide.note }}
+                                        </div>
+                                    {% endif %}
+                                </div>
+                                <div class="block-strategy__right">
+                                    <div class="block-strategy__block" data-fade-in-up>
+                                        {% if slide.icon %}
+                                            <div class="block-strategy__img" data-img>
+                                                {% view '@icon' with {
+                                                    icon: slide.icon
+                                                } %}
+                                            </div>
+                                        {% endif %}
+                                    </div>
+                                    {% if slide.text %}
+                                        <div class="block-strategy__text" data-text>{{ slide.text }}</div>
+                                    {% endif %}
+                                </div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		{% endfor %}
+	</div>
+	<div class="block-strategy__bottom">
+		<div class="block-strategy__container container">
+            <div class="block-strategy__box" data-icon="drawCircle">
+                <div class="block-strategy__circle block-strategy__circle--back">
+                    {% view '@icon' with {
+                        icon: strategy_slider.icon_back
+                    } %}
+                </div>
+                <div class="block-strategy__circle">
+                    {% view '@icon' with {
+                        icon: strategy_slider.icon
+                    } %}
+                </div>
+            </div>
+            {% if strategy_slider.slides|length > 1 %}
+                <div class="block-strategy__arrows">
+                    {% view '@nav-arrows' %}
+                </div>
+            {% endif %}
+		</div>
+	</div>
+</div>

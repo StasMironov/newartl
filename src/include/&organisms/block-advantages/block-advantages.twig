@@ -1,0 +1,26 @@
+<div class="block-advantages">
+    <div class="block-advantages__container container">
+        <div class="block-advantages__wrapper">
+            <div class="block-advantages__left">
+                {% if block_advantages.title %}
+                    <h2 class="block-advantages__title h2" data-fade-in-up>
+                        {{block_advantages.title}}
+                    </h2>
+                {% endif %}
+            </div>
+            <div class="block-advantages__right" data-fade-in-up>
+                {% if block_advantages.cards %}
+                    <div class="block-advantages__items">
+                        {% for card in block_advantages.cards %}
+                            <div class="block-advantages__card">
+                                {% view "^card-advantages" with {
+                                    card: card
+                                } %}
+                            </div>
+                        {% endfor %}
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>

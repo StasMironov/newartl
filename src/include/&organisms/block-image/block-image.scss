@@ -1,0 +1,14 @@
+.block__image{
+    @include media-breakpoint-up(sm) {				
+        height: rem(180);
+        width: 100%;			
+    }
+    @include media-breakpoint-up(md) {        
+        height: rem(384);
+        width: 100%;
+    }
+    img{
+        height: 100%;
+        width: 100%;
+    }
+}

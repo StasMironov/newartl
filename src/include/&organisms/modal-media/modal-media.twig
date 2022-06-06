@@ -1,0 +1,7 @@
+<div class="modal-media">
+    {% if video.src %}
+        <video poster="/path/to/poster.jpg" {% if video.id %} id="{{video.id}}" {% endif %} data-video playsinline controls>
+            <source {% if video.src %} src="{{video.src}}" {% endif %} type="video/mp4" />
+        </video>
+    {% endif %}
+</div>

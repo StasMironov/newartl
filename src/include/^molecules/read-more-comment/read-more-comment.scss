@@ -1,0 +1,65 @@
+.read-more-comment {
+  width: 100%;
+
+	&__hidden {
+		display: none;
+		padding-top: rem(22);
+		padding-bottom: rem(24);
+	}
+
+  &__visible {
+    animation: fadeInBlock 0.5s ease-in;
+	}
+
+  &__base p{
+    &:not(:last-child) {
+			margin-bottom: rem(24);
+		}
+  }
+  
+	&__btn {
+		margin-top: rem(22);
+		padding: 0;
+		color: rgba($color-black, 0.4);
+		background-color: transparent;
+		border: none;
+		@include defaultTransition(color);
+
+		&:hover {
+			color: rgba($color-black, 1);
+		}
+	}
+
+	&__item {
+		&:not(:last-child) {
+			margin-bottom: rem(24);
+		}
+    
+    p:not(:last-child) {
+      margin-bottom: rem(24);
+    }
+	}
+}
+
+
+@keyframes fadeInBlock {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+
+  1% {
+    display: block;
+    opacity: 0;
+  }
+
+  50% {
+    display: block;
+    opacity: 0.5;
+  }
+
+  100% {
+    display: block;
+    opacity: 1;
+  }
+}

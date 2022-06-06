@@ -1,0 +1,60 @@
+<div {% if hero_default.scroll_target %}id="{{hero_default.scroll_target}}"{% endif %} class="hero-default {% if hero_default.small %}hero-default--small{% endif %} {% if hero_default.no_overlay %} hero-default--no-overlay{% endif %} {% if hero_default.theme %}hero-default--theme-{{hero_default.theme}}{% endif %}
+					{% if hero_default.no_title %} hero-default--no-title{% endif %}{% if hero_default.layout %} hero-default--layout-{{hero_default.layout}}{% endif %}">
+	{% if hero_default.image %}
+		<div class="hero-default__bg">
+			{% if hero_default.image.tab or hero_default.image.mob %}
+				{% view '@image-adaptive' with {
+                        image: hero_default.image
+                } %}
+			{% else %}
+				{% view '@image' with {
+                    image: hero_default.image
+                } %}
+			{% endif %}
+		</div>
+	{% endif %}
+	<div class="hero-default__container container">
+		{% if hero_default.breadcrumbs %}
+			<div class="hero-default__breadcrumbs">
+				{% view '^breadcrumbs' with {
+                    breadcrumbs: hero_default.breadcrumbs
+                } %}
+			</div>
+		{% endif %}
+		{% if hero_default.title %}
+			{% if hero_default.subtitle %}
+				<div class="hero-default__heading">
+					{% if hero_default.title %}
+						<h1 class="hero-default__title h1 {% if hero_default.title_fullwidth %}hero-default__title--fullwidth{% endif %}" data-fade-in-up>
+							{{ hero_default.title }}
+						</h1>
+					{% endif %}
+					{% if hero_default.subtitle %}
+						<p class="hero-default__subtitle" data-fade-in-up>
+							{{ hero_default.subtitle }}
+						</p>
+					{% endif %}
+				</div>
+
+			{% else %}
+				<h1 class="hero-default__title h1 {% if hero_default.title_fullwidth %}hero-default__title--fullwidth{% endif %}" data-fade-in-up>
+					{{ hero_default.title }}
+				</h1>
+			{% endif %}
+
+		{% endif %}
+		{% if hero_default.desc %}
+			<div class="hero-default__desc" data-fade-in-up>
+				{{ hero_default.desc }}
+			</div>
+		{% endif %}
+
+	</div>
+	{% if hero_default.btn_play %}
+		{% view '@button-play' with {
+            button: {
+                "attr": 'data-modal-video="modal-video-1"'
+            }
+        } %}
+	{% endif %}
+</div>

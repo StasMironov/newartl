@@ -1,0 +1,19 @@
+<div class="result">
+    <div class="result__block">
+        {% if result.num %}
+            <div class="result__num">
+                {{ result.num }}
+            </div>
+        {% endif %}
+        {% if result.symbol %}
+            <div class="result__symbol">
+                {{ result.symbol }}
+            </div>
+        {% endif %}
+    </div>
+    <div class="result__sort">
+        {% view '@icon' with {
+            icon: result.icon
+        } %}
+    </div>
+</div>

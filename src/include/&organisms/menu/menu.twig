@@ -1,0 +1,57 @@
+<div class="menu" data-menu>
+    <div class="menu__container" data-menu-container>
+        <div class="menu__content" >
+				<ul class="menu__list" data-content>
+					{% for item in menu.navigation %}
+						<li class="menu__item" data-link {% if item.attr %}data-trigger {% endif %}>
+							{% if item.href %}
+								<a href="{{ item.href }}"
+								class="menu__link h2"{% if item.external %} target="_blank"{% endif %}>{{ item.text }}</a>
+							{% elseif item.sublist %}
+								<button type="button" class="menu__link menu__link--has-sublist h2" data-toggle>
+									{{ item.text }}
+									{% view '@icon' with {
+										icon: {
+											name: "24/arrow-next-right",
+											size: "24"
+										}
+									} %}
+								</button>
+								<div class="menu__roll" data-submenu="{{loop.index0}}">
+									<div class="menu__wrapper">
+										{% if item.back %}
+											<button class="menu__back" data-back>
+												{% if item.back.icon %}
+													{% view '@icon' with {
+														icon: item.back.icon
+													} %}
+												{% endif %}
+												<span class="menu__txt h2">
+													{{ item.text }}
+												</span>
+											</button>
+										{% endif %}
+										<ul class="menu__sublist" data-sub-wrap>
+											{% for item in item.sublist %}
+												<li class="menu__item" data-sub-item>
+													{% if item.href %}
+														<a href="{{ item.href }}"
+														class="menu__link"{% if item.external %} target="_blank"{% endif %}>{{ item.text }}</a>
+													{% else %}
+														<span class="menu__link menu__link--active">{{ item.text }}</span>
+													{% endif %}
+												</li>
+											{% endfor %}
+										</ul>
+									</div>
+								</div>
+							{% else %}
+								<span class="menu__link menu__link--active h2">{{ item.text }}</span>
+							{% endif %}
+						</li>
+					{% endfor %}
+				</ul>
+        </div>
+    </div>
+    <div class="menu__overlay" data-menu-hide></div>
+</div>

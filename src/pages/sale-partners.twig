@@ -1,0 +1,32 @@
+{% extends "layouts::_page.twig" %}
+
+{% block content %}
+
+    {% view '&hero-default' with {
+        hero_default: hero_default
+    } %}
+
+    <div class="mb-64 mb-md-112">
+        {% view '&block-reach'  with {
+            factoid: block_reach.factoids
+        } %}
+    </div>
+
+    <div class="mb-112 mb-md-112">
+        {% view '&map' with {
+            map: map
+        } %}
+    </div>
+
+    <div class="mb-64 mb-md-112">
+        {% view '&block-connection' with {
+            block_connection: block_connection
+        }%}
+    </div>
+
+    {% view '&form' with {
+        form: contacts_form
+    }%}
+    
+
+{% endblock %}

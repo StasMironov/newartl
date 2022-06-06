@@ -1,0 +1,38 @@
+{
+	"block": {
+		"factoids": [
+			{
+				"text": "80",
+				"after": {
+					"txt": "млн"
+				},
+				"before": "≈$",
+				"label": "финансовые показатели"
+			},
+			{
+				"text": "50",
+				"after": {
+					"txt": "млн"
+				},
+				"before": "≈$",
+				"label": "чистая выручка"
+			},
+			{
+				"text": "20",
+				"after": {
+					"txt": "%"
+				},
+				"before": "≈",
+				"label": "маржа EBITDA"
+			},
+			{
+				"text": "20",
+				"after": {
+					"txt": "%"
+				},
+				"before": "≈",
+				"label": "маржа EBITDA"
+			}
+		]
+	}
+}

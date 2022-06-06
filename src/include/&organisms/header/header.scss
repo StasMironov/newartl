@@ -1,0 +1,471 @@
+.header {
+	$root: &;
+	position: fixed;
+	z-index: 110;
+	top: 0;
+	left: 0;
+	width: 100%;
+	display: block;
+	background-color: transparent;
+	transition: transform 0.4s cubic-bezier(0.475, 0.425, 0, 0.995), background-color 0.3s ease;
+
+	&:before {
+		position: absolute;
+		z-index: 10;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 1px;
+		background-color: rgba($color-black, 0.1);
+		content: "";
+		@include defaultTransition(background-color);
+	}
+
+
+	&--transparent {
+		background-color: transparent;
+
+		.lang-toggle__action {
+			color: $color-white;
+		}
+
+		&:before {
+			background-color: rgba($color-white, 0.4);
+		}
+	}
+
+	@at-root main.dark-slide-is-active &:not(.in-progress):not(.submenu-opened) {
+		background-color: transparent;
+
+		.lang-toggle__action {
+			color: $color-white;
+		}
+
+		&:before {
+			background-color: rgba($color-white, 0.4);
+		}
+	}
+
+	@at-root body .in-progress.header--transparent {
+		background-color: $color-white;
+
+		.lang-toggle__action {
+			color: $color-black;
+		}
+
+		&:before {
+			background-color: rgba($color-black, 0.1);
+		}	
+	}
+
+	@at-root body.is-open &:not(.in-progress):not(.submenu-opened) {
+		.lang-toggle__action {
+			color: $color-black;
+		}
+
+		&:before {
+			background-color: rgba($color-black, 0.1);
+		}	
+	}
+
+	&.is-hide {
+		transform: translateY(-100%);
+	}
+
+	&__logo {
+		position: relative;
+		z-index: 1;
+		display: block;
+		width: rem(80);
+		height: rem(30);
+		color: $color-green;
+		@include defaultTransition(color);
+		z-index: 22;
+
+		#{$root}--transparent & {
+			color: $color-white;
+		}
+
+		@at-root body.dark-slide-is-active .header:not(.in-progress):not(.submenu-opened) & {
+			color: $color-white;
+		}
+
+		@at-root body .in-progress.header--transparent &, .submenu-opened & {
+			color: $color-green;
+		}
+
+		@at-root body.is-open .header:not(.in-progress):not(.submenu-opened) & {
+			color: $color-green ;
+		}
+
+		@include media-breakpoint-up(md) {
+			width: rem(104);
+			height: rem(44);
+		}
+	}
+
+	&__container {
+		position: relative;
+		z-index: 10;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		height: rem(78);
+
+		@include media-breakpoint-up(md) {
+			height: rem(102);
+		}
+	}
+
+	&__navigation {
+		margin-right: rem(40);
+
+		@include media-breakpoint-down(md) {
+			display: none;
+		}
+	}
+
+	&__content {
+		display: flex;
+		align-items: center;
+	}
+
+	&__list {
+		display: flex;
+		align-items: center;
+	}
+
+	&__item {
+		position: relative;
+
+		&:not(:last-child) {
+			margin-right: rem(24);
+		}
+
+		&[data-submenu-trigger]:after {
+			position: fixed;
+			z-index: 0;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: rem(492);
+			background-color: $color-white;
+			content: "";
+			transform: translateY(-101%);
+		}
+
+		@at-root .content-loaded &[data-submenu-trigger]:after {
+			transition: transform 0.4s cubic-bezier(0.475, 0.425, 0, 0.995) 0.3s;
+		}
+
+		#{$root}.submenu-opened &:after {
+			transform: none;
+			transition-delay: 0s;
+		}
+
+		&[data-submenu-trigger]:before {
+			position: absolute;
+			z-index: 1;
+			left: 0;
+			bottom: rem(-36);
+			width: 100%;
+			height: 1px;
+			background-color: transparent;
+			pointer-events: none;
+			content: "";
+			@include defaultTransition(background-color);
+		}
+
+		&.is-active {
+			&:before {
+				background-color: $color-black;
+			}
+		}
+	}
+
+	&__lang {
+		position: relative;
+		z-index: 11;
+	}
+
+	&__toggle {
+		margin-left: rem(28);
+		width: rem(32);
+		height: rem(32);
+		font-size: 0;
+		line-height: rem(32);
+		text-align: center;
+		border: 0;
+		padding: 0;
+		background-color: transparent;
+		color: $color-black;
+		cursor: pointer;
+
+		// span {
+		// 	display: block;
+		// 	width: rem(32);
+		// 	height: 2px;
+		// 	background-color: currentColor;
+
+		// 	&:not(:last-child) {
+		// 		margin-bottom: rem(8);
+		// 	}
+		// }
+
+		span {
+			position: relative;
+			display: block;
+			width: 100%;
+			height: 2px;
+			background-color: currentColor;
+			//transition: all .3s;
+		}
+
+		span + span {
+			margin-top: 8px;
+		}
+
+		$delta: 10px;
+		$duration: 0.4s;
+
+		&.active span:nth-child(1) {
+			animation: ease $duration top forwards;
+		}
+
+		&.not-active span:nth-child(1) {
+			animation: ease $duration top-2 forwards;
+		}
+
+		&.active span:nth-child(2) {
+			animation: ease $duration scaled forwards;
+		}
+
+		&.not-active span:nth-child(2) {
+			animation: ease $duration scaled-2 forwards;
+		}
+
+		&.active span:nth-child(3) {
+			animation: ease $duration bottom forwards;
+		}
+
+		&.not-active span:nth-child(3) {
+			animation: ease $duration bottom-2 forwards;
+		}
+
+		@keyframes top {
+			0% {
+				top: 0;
+				transform: rotate(0);
+			}
+			50% {
+				top: $delta;
+				transform: rotate(0);
+			}
+			100% {
+				top: $delta;
+				transform: rotate(45deg);
+			}
+		}
+
+		@keyframes top-2 {
+			0% {
+				top: $delta;
+				transform: rotate(45deg);
+			}
+			50% {
+				top: $delta;
+				transform: rotate(0deg);
+			}
+			100% {
+				top: 0;
+				transform: rotate(0deg);
+			}
+		}
+
+		@keyframes bottom {
+			0% {
+				bottom: 0;
+				transform: rotate(0);
+			}
+			50% {
+				bottom: $delta;
+				transform: rotate(0);
+			}
+			100% {
+				bottom: $delta;
+				transform: rotate(135deg);
+			}
+		}
+
+		@keyframes bottom-2 {
+			0% {
+				bottom: $delta;
+				transform: rotate(135deg);
+			}
+			50% {
+				bottom: $delta;
+				transform: rotate(0);
+			}
+			100% {
+				bottom: 0;
+				transform: rotate(0);
+			}
+		}
+
+		@keyframes scaled {
+			50% {
+				transform: scale(0);
+			}
+			100% {
+				transform: scale(0);
+			}
+		}
+
+		@keyframes scaled-2 {
+			0% {
+				transform: scale(0);
+			}
+			50% {
+				transform: scale(0);
+			}
+			100% {
+				transform: scale(1);
+			}
+		}
+
+		@include touchLessHover {
+			color: rgba($color-black, 0.4);
+		}
+
+		@include media-breakpoint-up(lg) {
+			display: none;
+		}
+
+		#{$root}--transparent & {
+			color: $color-white;
+		}
+
+		@at-root main.dark-slide-is-active .header:not(.in-progress):not(.submenu-opened) & {
+			color: $color-white;
+		}
+
+		@at-root body .in-progress.header--transparent & {
+			color: $color-black;
+		}
+
+		@at-root body.is-open .header:not(.in-progress):not(.submenu-opened) & {
+			color: $color-black;
+		}
+	}
+
+	&__link {
+		position: relative;
+		z-index: 2;
+		display: block;
+		background-color: transparent;
+		padding: rem(4) 0;
+		color: $color-black;
+		border: 0;
+		@include defaultTransition(color);
+
+		@include touchLessHover {
+			color: rgba($color-black, 0.4);
+		}
+
+		&--active {
+			color: rgba($color-black, 0.4);
+			// pointer-events: none;
+			cursor: auto;
+		}
+
+		#{$root}--transparent & {
+			color: $color-white;
+
+			&--active {
+				color: rgba($color-white, 0.4);
+			}
+
+			@include touchLessHover {
+				color: rgba($color-white, 0.4);
+			}
+		}
+
+		@at-root main.dark-slide-is-active .header:not(.in-progress):not(.submenu-opened) & {
+			color: $color-white;
+
+			&--active {
+				color: rgba($color-white, 0.4);
+			}
+
+			@include touchLessHover {
+				color: rgba($color-white, 0.4);
+			}
+		}
+
+		@at-root body .in-progress.header--transparent &, .header--transparent.submenu-opened & {
+			color: $color-black;
+		}
+
+		@at-root body.is-open {
+			color: $color-black;
+		}
+	}
+
+
+
+	&__sumenus {
+		position: relative;
+		z-index: 9;
+	}
+
+	&__pane {
+		position: fixed;
+		top: 0;
+		left: 0;
+		background-color: $color-white;
+		width: 100%;
+		height: rem(492);
+		transform: translateY(-100%);
+	}
+
+	&__submenu {
+		position: fixed;
+		z-index: 1;
+		top: 0;
+		left: 0;
+		display: none;
+		width: 100%;
+
+		&:before {
+			position: absolute;
+			top: rem(101);
+			left: 0;
+			width: 100%;
+			height: 1px;
+			background-color: transparent;
+			content: "";
+			@include defaultTransition(background-color);
+		}
+
+		#{$root}__item.is-active & {
+			display: block;
+
+			&:before {
+				background-color: rgba($color-black, 0.1);
+			}
+		}
+	}
+
+	&.show-header {
+		background-color: $color-white;
+	}
+
+	.lang-toggle__action {
+		font-weight: 500;
+	}
+
+	&.mf-index {
+		z-index: 100;
+		pointer-events: none;
+	}
+}

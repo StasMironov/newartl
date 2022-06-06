@@ -1,0 +1,25 @@
+<div class="block-appeal {% if block_appeal.bg %} bg-{{ block_appeal.bg }}{% else %} bg-white{% endif %}" data-fade-in-up>
+    <div class="block-appeal__container container">
+        <div class="block-appeal__wrap">
+            <div class="block-appeal__left">
+                <div class="block-appeal__user">
+                    {% if block_appeal.user %}
+                         {% view '^card-user' with {
+                            card: block_appeal.user
+                        }%}
+                    {% endif %}
+                </div>
+            </div>
+
+            <div class="block-appeal__right">
+                <div class="block-appeal__msg">
+                    {% if block_appeal.msg %}
+                        {% view '^card-msg' with {
+                            card: block_appeal.msg
+                        }%}
+                    {% endif %}
+                </div>
+            </div>
+        </div>  
+    </div>
+</div>

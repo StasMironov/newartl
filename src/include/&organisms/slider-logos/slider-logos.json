@@ -1,0 +1,28 @@
+{
+	"slider": {
+		"title": "Приобрести продукцию",
+		"items": [
+			{
+				"href": "#",
+				"icon": {
+					"src": "tmp/catalog/logo3.svg",
+					"alt": "logo"
+				}
+			},
+			{
+				"href": "#",
+				"icon": {
+					"src": "tmp/catalog/catalog.jpg",
+					"alt": "logo"
+				}
+			},
+			{
+				"href": "#",
+				"icon": {
+					"src": "tmp/catalog/logo3.svg",
+					"alt": "logo"
+				}
+			}
+		]
+	}
+}

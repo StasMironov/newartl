@@ -1,0 +1,114 @@
+<div class="card-modal-step" {% if card.attr %} {{ card.attr }}{% endif %} {% if card.url %} data-url="{{ card.url }}"{% endif %}>
+    {% if card.select_city %}  
+        <div class="card-modal-step__select {% if card.select_city.fill %}card-modal-step__select--fill{% endif %}">
+            {% view '@filter-select' with {
+                filter_select: card.select_city
+            } %}
+        </div>
+    {% endif %}
+    {% if card.fields %}
+        {% for field in card.fields %}
+            <div class="form__field{% if field.textarea %} form__field--fit{% endif %}" data-fade-in-up data-delay="{{ (0.2 + loop.index0 / 5)|round(2, 'floor') }}">
+                {% view '@field' with {
+                    field: field
+                } %}
+            </div>
+        {% endfor %}
+    {% endif %}
+    {% if card.select_lng %}  
+        <div class="card-modal-step__select {% if card.select_lng.fill %}card-modal-step__select--fill{% endif %}">
+            {% view '@filter-select' with {
+                filter_select: card.select_lng
+            } %}
+        </div>
+    {% endif %}
+    {% if card.fields_after %}
+        {% for field in card.fields_after %}
+            <div class="form__field{% if field.textarea %} form__field--fit{% endif %}" data-fade-in-up data-delay="{{ (0.2 + loop.index0 / 5)|round(2, 'floor') }}">
+                {% view '@field' with {
+                    field: field
+                } %}
+            </div>
+        {% endfor %}
+    {% endif %}
+
+    {% if card.info %}
+        <div class="card-modal-step__info">
+            {% if card.info.title %}
+                <div class="card-modal-step__title h3">
+                    {{ card.info.title }}
+                </div>
+
+                {% if card.info.block %}
+                    <div class="card-modal-step__block">
+                        {% if card.info.block.article %}
+                            <div class="card-modal-step__article">
+                                {{ card.info.block.article }}
+                            </div>
+                        {% endif %}
+
+                        {% if card.info.block.formats %}
+                            <div class="card-modal-step__formats">
+                               {% for format in card.info.block.formats %}
+                                    <div class="card-modal-step__format">
+                                        {{ format }}
+                                    </div>
+                               {% endfor %}
+                            </div>
+                        {% endif %}
+
+                        {% if card.info.block.text %}
+                            <div class="card-modal-step__text" data-filetextres>
+                                {{ card.info.block.text }}
+                            </div>
+                        {% endif %}
+
+                        {% if card.info.block.field %}
+                            <div class="card-modal-step__button">
+                                {% view '@field' with {
+                                    field: card.info.block.field
+                                } %}
+                            </div>
+                        {% endif %}
+                    </div>
+                {% endif %}
+
+                {% if card.agreement %}
+					{% for check in card.agreement %}
+						<div class="form__agreement">
+							{% view '@field' with {
+								field: check
+							} %}
+						</div>
+					{% endfor %}
+				{% endif %}
+            {% endif %}
+        </div>
+    {% endif %}
+
+    {% if card.component %}
+        <div class="card-modal-step__container" {% if card.attr_container %}{{ card.attr_container }}{% endif %}>
+            {% view card.component with {card: card.data} %}
+        </div>
+        {% if card.trigger %}
+            <div class="card-modal-step__actions">
+                <div class="card-modal-step__trigger" {% if card.actions_attr %}{{ card.actions_attr }}{% endif %}>
+                    {% if card.trigger.button %}
+                        <span class="card-modal-step__btn">
+                        </span>
+                    {% endif %}
+                    {% if card.trigger.text %}
+                        <div class="card-modal-step__txt" >
+                            {{card.trigger.text}}
+                        </div>
+                    {% endif %}
+                </div> 
+                {% if card.delete %}
+                    <div class="card-modal-step__delete" {% if card.delete.attr %} data-btn-delete {% endif %}>
+                        {{ card.delete.text }}
+                    </div>
+                {% endif %}
+            </div>
+        {% endif %}
+    {% endif %}
+</div>

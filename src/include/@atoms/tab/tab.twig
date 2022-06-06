@@ -1,0 +1,35 @@
+{% if tab.href %}
+	
+  {% if tab.active and not tab.scroll_to %}
+		<span
+			class="tab tab--active{% if tab.theme %} tab--{{ tab.theme }}{% endif %}{{ tab.disabled ? ' tab--disabled' : '' }}" {% if tab.attr %} {{ tab.attr }}{% endif %}>
+			<span class="tab__text">{{ tab.text }}</span>
+		</span>
+	{% else %}
+		<a {% if tab.unique %} data-scroll-unique {% endif %} {% if tab.scroll_to and not tab.unique %} data-scroll {% endif %} href="{% if tab.scroll_to %}{{ tab.scroll_to }}{% else %}{{tab.href }}{% endif %}" 
+		   class="tab {% if tab.active %}tab--active{% endif %}{% if tab.theme %} tab--{{ tab.theme }}{% endif %}{{ tab.disabled ? ' tab--disabled' : '' }}" {% if tab.attr %}{{ tab.attr }}{% endif %}>
+			{% if tab.icon %}
+				<span class="tab__icon">
+					{% view '@icon' with {
+						icon: tab.icon
+					} %}
+				</span>
+			{% endif %}
+			<span class="tab__text">{{ tab.text }}</span>
+		</a>
+	{% endif %}
+
+{% else %}
+	<button type="button"
+			class="tab{% if tab.theme %} tab--{{ tab.theme }}{% endif %}{{ tab.disabled ? ' tab--disabled' : '' }}{{ tab.active ? ' tab--active' : '' }}{{ tab.shift ? ' tab--shift' : '' }}"
+			title="{{ tab.text }}" {% if tab.attr %} {{ tab.attr }}{% endif %}{% if tab.disabled %} disabled{% endif %} {% if tab.attr_val %} data-tab-val="{{tab.attr_val}}"{% endif %}>
+		{% if tab.icon %}
+			<span class="tab__icon" data-icon="draw">
+					{% view '@icon' with {
+						icon: tab.icon
+					} %}
+				</span>
+		{% endif %}
+		<span class="tab__text">{{ tab.text }}</span>
+	</button>
+{% endif %}

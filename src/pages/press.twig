@@ -1,0 +1,27 @@
+{% extends "layouts::_page.twig" %}
+
+{% block content %}
+
+	{% view '&hero-default' with {
+        hero_default: hero_default
+    } %}
+
+	{% view '&block-news' with {
+        block: news
+    } %}
+
+	<div class="pt-16 pt-md-64 bg-white">
+		{% view '&slider-press' with {
+            slider_press: slider
+        } %}
+	</div>
+
+	{% view "&block-comm" with {
+        block_comm: block_comm
+    } %}
+
+	{% view "&socials" with {
+        socials: socials
+    } %}
+
+{% endblock %}

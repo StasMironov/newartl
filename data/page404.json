@@ -1,0 +1,18 @@
+{
+  "title": "Страница не найдена",
+  "hero": {
+    "text": "К сожалению, такой страницы не&nbsp;существует.",
+    "actions": [
+      {
+        "type": "button",
+        "href": "javascript:void(0);",
+        "text": "Вернуться на главную",
+        "title": "Вернуться на главную",
+        "attr": " data-some-additional-attributes='' ",
+				"icon": {
+					"name": "24/arrow-up-right"
+				}
+      }
+    ]
+  }
+}

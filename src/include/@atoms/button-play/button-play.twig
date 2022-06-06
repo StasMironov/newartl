@@ -1,0 +1,26 @@
+<button class="button-play" data-fade-in-up data-delay="0.5" {% if button.attr %} {{ button.attr }}{% endif %}>
+    <span class="button-play__icon">
+        {% view '@icon' with {
+            "icon": {
+                "name": "192/symbol",
+                "size": "fit"
+            }
+        } %}
+    </span>
+    <span class="button-play__btn">
+        {% view '@icon' with {
+            "icon": {
+                "name": "88/play",
+                "size": "fit"
+            }
+        } %}
+    </span>
+    <span class="button-play__icon button-play__icon--back">
+        {% view '@icon' with {
+            "icon": {
+                "name": "192/symbol",
+                "size": "fit"
+            }
+        } %}
+    </span>
+</button>

@@ -1,0 +1,19 @@
+$color-white: #fff;
+$color-black: #000;
+$color-green: #00d372;
+$color-gray: #f5f5f5;
+$color-gray-light: #e6e6e6;
+$color-gray-dark: #e0e0e0;
+$color-blue: #242c32;
+$color-blue-2: #1428a0;
+$color-purple: #CE00F8;
+$color-red: #e3350f;
+
+$colors: (
+	'white': $color-white,
+	'black': $color-black,
+	'green': $color-green,
+	'gray': $color-gray,
+	'gray-dark': $color-gray-dark,
+	'purple': $color-purple,
+);

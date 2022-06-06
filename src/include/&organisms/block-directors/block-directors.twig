@@ -1,0 +1,22 @@
+<div {% if block.scroll_target %}id="{{block.scroll_target}}"{% endif %} class="block-directors container">
+	<div class="block-directors__heading">
+		{% if block.title %}
+			<p class="block-directors__title h2" data-fade-in-up>{{ block.title }}</p>
+		{% endif %}
+		{% if block.subtitle %}
+			<p class="block-directors__subtitle" data-fade-in-up>{{ block.subtitle }}</p>
+		{% endif %}
+	</div>
+
+	<div class="block-directors__items">
+		{% for item in block.items %}
+			<div class="block-directors__item" data-fade-in-up data-delay="{{ (0.2 + loop.index0 / 5)|round(2, 'floor') }}">
+				{% view '^card-directors' with {
+            card: item|merge({
+                delay: (0.2 + loop.index0 / 5)|round(2, 'floor')
+            })
+        } %}
+			</div>
+		{% endfor %}
+	</div>
+</div>

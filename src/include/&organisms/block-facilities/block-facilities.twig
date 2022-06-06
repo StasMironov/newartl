@@ -1,0 +1,24 @@
+<div class="block-facilities" data-tab-container>
+    <div class="block-facilities__container container" data-tabs-wrap>
+        <div class="block-facilities__tabs">
+            {% if block_facilities.tabs %}
+                {% view '&tabs' with {
+                    tabs: block_facilities.tabs
+                }%}
+            {% endif %}
+        </div>
+        {% if block_facilities.tabs_content %}
+            <div class="block-facilities__tabs-content">
+                {% for item in block_facilities.tabs_content %}
+                    <div class="block-facilities__pane{{ item.active ? ' is-active' }}" data-tab-pane="{{ loop.index }}" data-fade-in-up-repeat>
+                        {% if item.slider %}
+                            {% view '&slider-facilities' with {
+                                slider: item.slider
+                            } %}
+                        {% endif %}
+                    </div>
+                {% endfor %}
+            </div>
+        {% endif %}
+    </div>
+</div>

@@ -1,0 +1,22 @@
+<a class="card-directors" href="javascript:void(0);" {% if card.attr %} {{ card.attr }} {% endif %}>
+	<div class="card-directors__item">
+		<div class="card-directors__left">
+			{% if card.title %}
+				<div class="card-directors__title h3">{{ card.title }}</div>
+			{% endif %}
+			{% if card.text %}
+				<div class="card-directors__text">{{ card.text }}</div>
+			{% endif %}
+
+		</div>
+		<div class="card-directors__right">
+			{% if card.icon %}
+				<div class="card-directors__icon">
+					<span>{% svg '24/arrow-up-right' %}</span>
+				</div>
+			{% endif %}
+		</div>
+
+	</div>
+
+</a>

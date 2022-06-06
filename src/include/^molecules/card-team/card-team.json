@@ -1,0 +1,10 @@
+{
+  "card": {
+    "title": "Бектемир Муродов",
+    "text": "Председатель Правления",
+    "img": {
+      "src": "tmp/block-team/img1.jpg",
+      "alt": "img"
+    }
+  }
+}

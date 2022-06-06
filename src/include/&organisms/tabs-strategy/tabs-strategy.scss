@@ -1,0 +1,122 @@
+.tabs {
+	$root: &;
+
+	&__item {
+		width: auto;
+
+		&:not(:last-child) {
+			@include media-breakpoint-down(md) {
+				margin-right: rem(4);
+			}
+			@include media-breakpoint-up(lg) {
+				margin-bottom: rem(24);
+			}
+		}
+
+		#{$root}--layout-2 & {
+			margin-right: 0 !important;
+			margin-bottom: 0;
+
+			@include media-breakpoint-up(lg) {
+				&:first-child {
+					.tab--big {
+						border-radius: 0 rem(8) 0 0;
+					}
+				}
+
+				&:last-child {
+					.tab--big {
+						border-radius: 0 0 rem(8) 0;
+					}
+				}
+
+				&:not(:last-child) {
+					margin-bottom: 1px;
+				}
+			}
+			@include media-breakpoint-only(md) {
+				width: rem(332);
+			}
+			@include media-breakpoint-down(md) {
+				&:not(:last-child) {
+					border-right: 1px solid rgba($color-black, 0.1);
+				}
+
+				&:first-child {
+					.tab--big {
+						border-radius: rem(8) 0 0 rem(8);
+					}
+				}
+
+				&:last-child {
+					.tab--big {
+						border-radius: 0 rem(8) rem(8) 0;
+					}
+				}
+			}
+			@include media-breakpoint-down(sm) {
+				width: rem(240);
+			}
+		}
+
+		#{$root}--layout-3 & {
+			margin-right: 0 !important;
+
+			&:not(:last-child) {
+				@include media-breakpoint-down(sm) {
+					margin-right: rem(24) !important;
+				}
+				@include media-breakpoint-up(md) {
+					margin-bottom: rem(24);
+				}
+			}
+
+			.tab {
+				&::before {
+					position: absolute;
+					@include media-breakpoint-down(sm) {
+						position: static;
+						flex-shrink: 0;
+					}
+				}
+			}
+		}
+	}
+
+	.swiper-container {
+		overflow: visible;
+		//@include media-breakpoint-down(sm) {
+		//	padding-left: rem(16);
+		//	padding-right: rem(32);
+		//}
+	}
+
+	.swiper-wrapper {
+		@include media-breakpoint-up(lg) {
+			display: flex;
+			flex-direction: column;
+		}
+	}
+
+	&--layout-2 {
+		.swiper-wrapper {
+			@include media-breakpoint-up(lg) {
+				transform: none !important;
+			}
+		}
+
+		.tab {
+			max-width: none;
+			width: 100%;
+		}
+	}
+
+	&--layout-3 {
+		.swiper-wrapper {
+			@include media-breakpoint-up(md) {
+				display: flex;
+				flex-direction: column;
+			}
+		}
+	}
+}

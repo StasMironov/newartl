@@ -1,0 +1,391 @@
+{
+	"title": "Предприятия",
+	"header": {
+		"transparent": true,
+		"logo": {
+			"href": "main.html",
+			"name": "logos/main-logo",
+			"size": "fit"
+		},
+		"navigation": [
+			{
+				"text": "О группе",
+				"submenu": {
+					"title": "О группе",
+					"text": "Общая информация для инвесторов в формате отчетов, графиков и документов",
+					"links": [
+						{
+							"href": "javascript:void(0);",
+							"text": "Общая информация для инвесторов"
+						},
+						{
+							"href": "javascript:void(0);",
+							"text": "Презентации"
+						},
+						{
+							"href": "javascript:void(0);",
+							"text": "Соблюдение требований корпоративного управления"
+						},
+						{
+							"href": "javascript:void(0);",
+							"text": "Структура компании"
+						},
+						{
+							"href": "javascript:void(0);",
+							"text": "Совет директоров"
+						},
+						{
+							"href": "javascript:void(0);",
+							"text": "Руководство"
+						}
+					]
+				}
+			},
+			{
+				"text": "Инвесторам",
+				"submenu": {
+					"title": "Инвесторам",
+					"text": "Общая информация для инвесторов в формате отчетов, графиков и документов",
+					"links": [
+						{
+							"href": "javascript:void(0);",
+							"text": "Общая информация для инвесторов"
+						},
+						{
+							"text": "Результаты и отчеты",
+							"active": true
+						},
+						{
+							"href": "javascript:void(0);",
+							"text": "Презентации"
+						},
+						{
+							"href": "javascript:void(0);",
+							"text": "Соблюдение требований корпоративного управления"
+						},
+						{
+							"href": "javascript:void(0);",
+							"text": "Структура компании"
+						},
+						{
+							"href": "javascript:void(0);",
+							"text": "Совет директоров"
+						},
+						{
+							"href": "javascript:void(0);",
+							"text": "Руководство"
+						},
+						{
+							"href": "javascript:void(0);",
+							"text": "Корпоративное управление"
+						},
+						{
+							"href": "javascript:void(0);",
+							"text": "Внутренние документы"
+						},
+						{
+							"href": "javascript:void(0);",
+							"text": "Каталог продукции"
+						},
+						{
+							"href": "javascript:void(0);",
+							"text": "Контакты для инвесторов"
+						}
+					]
+				}
+			},
+			{
+				"href": "javascript:void(0);",
+				"text": "Партнерам"
+			},
+			{
+				"href": "javascript:void(0);",
+				"text": "Устойчивое развитие"
+			},
+			{
+				"href": "javascript:void(0);",
+				"text": "Пресс-центр"
+			},
+			{
+				"text": "Карьера",
+				"active": true
+			},
+			{
+				"href": "javascript:void(0);",
+				"text": "Контакты"
+			}
+		],
+		"lang": {
+			"action": {
+				"text": "Ру",
+				"title": "Ру"
+			},
+			"items": [
+				{
+					"href": "javascript:void(0);",
+					"text": "En",
+					"title": "En"
+				},
+				{
+					"href": "javascript:void(0);",
+					"text": "Оʻz",
+					"title": "Оʻz"
+				}
+			]
+		}
+	},
+	"hero_default": {
+		"title": "Предприятия",
+		"image": {
+			"src": "tmp/default-hero/hero-history.jpg",
+			"alt": "image alt",
+			"fill": true,
+			"tab": {
+				"srcset": [
+					{
+						"scale": "1",
+						"src": "tmp/default-hero/hero-history-tab.jpg"
+					}
+				]
+			},
+			"mob": {
+				"srcset": [
+					{
+						"scale": "1",
+						"src": "tmp/default-hero/hero-history-mob.jpg"
+					}
+				]
+			}
+		}
+	},
+	"block_nav": {
+		"bg": "gray",
+		"icon": {
+			"name": "logos/decor",
+			"size": "fit"
+		},
+		"theme": "white",
+		"tabs": {
+			"layout": "3",
+			"items": [
+				{
+					"href": "!#",
+					"text": "Стратегия",
+					"title": "Стратегия",
+					"active": "true"
+				},
+				{
+					"href": "!#",
+					"text": "Миссия компании",
+					"title": "Миссия компании"
+				},
+				{
+					"href": "!#",
+					"text": "История группы",
+					"title": "История группы"
+				},
+				{
+					"href": "!#",
+					"text": "Партнеры",
+					"title": "Партнеры"
+				},
+				{
+					"href": "!#",
+					"text": "Наши продукты",
+					"title": "Наши продукты"
+				},
+				{
+					"href": "!#",
+					"text": "Предприятия",
+					"title": "Предприятия"
+				}
+			]
+		},
+		"layout": "5",
+		"factoids": [
+			{
+				"text": "11,5",
+				"after": {
+					"txt": "млн"
+				},
+				"label": "Произведенная техника за&nbsp;2020 г"
+			},
+			{
+				"text": "8 271",
+				"label": "Общее кол-во сотрудников"
+			},
+			{
+				"text": "9 326",
+				"label": "Общее кол-во сотрудников"
+			},
+			{
+				"before": "+",
+				"text": "60",
+				"after": {
+					"txt": "%"
+				},
+				"label": "Произведенная техника за&nbsp;2019 г"
+			}
+		]
+	},
+	"block_facilities": {
+		"tabs": {
+			"horizontal": true,
+			"items": [
+				{
+					"text": "Производство",
+					"attr": "data-attr",
+					"active": "true",
+					"shift": true
+				},
+				{
+					"text": "Обслуживающие компании",
+					"attr": "data-attr",
+					"shift": true
+				}
+			]
+		},
+		"tabs_content": [
+			{
+				"active": true,
+				"slider": {
+					"items": [
+						{
+							"title": "Завод по производству армированных вилочных шнуров",
+							"location": {
+								"country": "г. Ташкент",
+								"icon": {
+									"name": "24/location",
+									"size": "24"
+								}
+							},
+							"activity": {
+								"label": "Деятельность",
+								"info": "Производство холодильников, стиральных машин, термопластов, решёток, стёкл, пенопласта"
+							},
+							"img": {
+								"src": "tmp/slider-facilities/1.jpg",
+								"alt": "img"
+							},
+							"factoids": [
+								{
+									"text": "2021",
+									"label": "Год основания компании",
+									"attr": "data-counter-nospace"
+								},
+								{
+									"text": "108 454",
+									"after": {
+										"txt": "м",
+										"sup": "2"
+									},
+									"label": "Общая площадь зданий и сооружений"
+								}
+							]
+						},
+						{
+							"title": "Завод по производству 2",
+							"location": {
+								"country": "г. Москва",
+								"icon": {
+									"name": "24/location",
+									"size": "24"
+								}
+							},
+							"activity": {
+								"label": "Деятельность",
+								"info": "производство телевизоров"
+							},
+							"img": {
+								"src": "tmp/slider-facilities/1.jpg",
+								"alt": "img"
+							},
+							"factoids": [
+								{
+									"text": "2013",
+									"label": "Год основания завода"
+								},
+								{
+									"text": "1233",
+									"after": {
+										"txt": "м",
+										"sup": "2"
+									},
+									"label": "Общая площадь"
+								}
+							]
+						}
+					]
+				}
+			},
+			{
+				"slider": {
+					"items": [
+						{
+							"title": "Завод по производству кондиционеров",
+							"location": {
+								"country": "г. Ташкент",
+								"icon": {
+									"name": "24/location",
+									"size": "24"
+								}
+							},
+							"activity": {
+								"label": "Деятельность",
+								"info": "производство промышленных кондиционеров"
+							},
+							"img": {
+								"src": "tmp/slider-facilities/1.jpg",
+								"alt": "img"
+							},
+							"factoids": [
+								{
+									"text": "2012",
+									"label": "Год основания завода"
+								},
+								{
+									"text": "1236",
+									"after": {
+										"txt": "м2"
+									},
+									"label": "Общая площадь"
+								}
+							]
+						},
+						{
+							"title": "Завод по производству 2",
+							"location": {
+								"country": "г. Москва",
+								"icon": {
+									"name": "24/location",
+									"size": "24"
+								}
+							},
+							"activity": {
+								"label": "Деятельность",
+								"info": "производство телевизоров"
+							},
+							"img": {
+								"src": "tmp/slider-facilities/1.jpg",
+								"alt": "img"
+							},
+							"factoids": [
+								{
+									"text": "2013",
+									"label": "Год основания завода"
+								},
+								{
+									"text": "1233",
+									"after": {
+										"txt": "м2"
+									},
+									"label": "Общая площадь"
+								}
+							]
+						}
+					]
+				}
+			}
+		]
+	}
+}

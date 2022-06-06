@@ -1,0 +1,47 @@
+.block-event {
+	&__wrapper {
+		display: flex;
+		justify-content: space-between;
+
+		@include media-breakpoint-down(md) {
+			flex-direction: column;
+		}
+	}
+
+	&__right {
+		width: 67%;
+		max-width: rem(888);
+		padding-top: rem(16);
+
+		@include media-breakpoint-down(md) {
+			width: 100%;
+			padding-top: 0;
+		}
+	}
+
+	&__left {
+		width: 18%;
+
+		@include media-breakpoint-down(md) {
+			width: 100%;
+			margin-bottom: rem(24);
+		}
+	}
+
+	&__desc {
+		max-width: rem(435);
+		margin-bottom: rem(80);
+
+		@include media-breakpoint-down(md) {
+			max-width: rem(440);
+		}
+
+		@include media-breakpoint-down(sm) {
+			margin-bottom: rem(48);
+		}
+	}
+
+	&__title {
+		max-width: rem(300);
+	}
+}

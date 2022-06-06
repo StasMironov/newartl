@@ -1,0 +1,41 @@
+{
+	"hero_news": {
+		"title": "Миссия компании",
+		"image": {
+			"src": "tmp/default-hero/hero-1.jpg",
+			"alt": "image alt",
+			"fill": true,
+			"tab": {
+				"srcset": [
+					{
+						"scale": "1",
+						"src": "tmp/default-hero/hero-tab.jpg"
+					}
+				]
+			},
+			"mob": {
+				"srcset": [
+					{
+						"scale": "1",
+						"src": "tmp/default-hero/hero-mob.jpg"
+					}
+				]
+			}
+		},
+		"breadcrumbs": [
+			{
+				"href": "./",
+				"text": "Главная"
+			},
+			{
+				"current": true,
+				"text": "О нас"
+			}
+		],
+		"date": {
+			"day": "18",
+			"month": "сентября,",
+			"year": "2021"
+		}
+	}
+}

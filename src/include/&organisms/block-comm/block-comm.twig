@@ -1,0 +1,25 @@
+<div {% if block_comm.scroll_target %}id="{{block_comm.scroll_target}}"{% endif %} class="block-comm {% if block_comm.bg %} bg-{{ block_comm.bg }}{% else %} bg-white{% endif %}">
+    <div class="block-comm__container container">
+        {% if block_comm.title %}
+            <h2 class="block-comm__title h2" data-fade-in-up>
+                {{ block_comm.title }}
+            </h2>
+        {% endif %}
+        <div class="block-comm__wrap">
+            {% if block_comm.items %}
+                {% for card in block_comm.items %}
+                    <div class="block-comm__el" data-fade-in-up
+						 data-delay="{{ (loop.index0 / 2.5)|round(2, 'floor') }}">
+                        {% view "^card-comm" with {
+                            card: card
+                        } %}
+                        <div class="block-comm__el-border"></div>
+                    </div>
+                {% endfor %}
+            {% endif %}
+        </div>
+        {% view "^socials" with {
+            socials: block_comm.socials
+        } %}
+    </div>
+</div>

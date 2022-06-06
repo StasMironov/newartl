@@ -1,0 +1,33 @@
+<div class="select-shell">
+	<select {% if field.id %}id="{{ field.id }}"{% endif %}
+			class="select{% if field.class %} {{ field.class }}{% endif %}
+				{% if field.mod %} select--{{field.mod}}{% endif %}
+				{% if field.theme %} select--{{ field.theme }}{% endif %}
+				{% if field.outline_none %} select--outline-none {% endif %}"
+			name="{{ field.name }}"
+			data-select
+			data-select-size="{{ field.size ?: 'default' }}"
+			data-select-theme="{{ field.theme ?: '' }}"
+		{% if field.placeholder %} data-select-placeholder="{{ field.placeholder }}"{% endif %}
+		{% if field.search %} data-select-search="true"{% endif %}
+		{% if field.search_placeholder %} data-search-placeholder="{{ field.search_placeholder }}"{% endif %}
+		{% if field.multiple %} multiple{% endif %}
+		{% if field.required %} data-parsley-trigger="change"  data-parsley-validate-if-empty="true"  data-parsley-minSelect="2" data-field-check required{% endif %}
+		{% if field.disabled %} disabled{% endif %}
+		{% if field.attr %}{{ field.attr }}{% endif %}
+		{% if field.submit %} data-select-submit{% endif %}
+		{% if field.selectAll %} data-select-all{% endif %}>
+		{% if field.placeholder and field.multiple != true %}
+			<option label="{{ field.placeholder }}" data-placeholder></option>
+		{% endif %}
+		{% for option in field.options %}
+			<option value="{{ option.value }}"
+				{% if option.selected %} selected{% endif %}
+				{% if option.attr %} {{ option.attr }} {% endif %}
+				{% if option.disabled %} disabled{% endif %}
+				{% if option.href %} data-href="{{ option.href }}"{% endif %}>
+				{{ option.text }}
+			</option>
+		{% endfor %}
+	</select>
+</div>

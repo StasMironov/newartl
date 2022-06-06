@@ -1,0 +1,26 @@
+<div {% if block.scroll_target %}id="{{block.scroll_target}}"{% endif %} class="block-management container">
+	<div class="block-management__wrapper">
+
+		<div class="block-management__left" data-fade-in-up>
+			{% if block.heading %}
+				<h2 class="block-management__heading h2">{{ block.heading }}</h2>
+			{% endif %}
+		</div>
+
+		{% for description in block.descriptions %}
+			<div class=" block-management__right user-text" data-fade-in-up data-delay="0.3">
+				{% if description.title %}
+					<h2 class="block-management__title h3">
+						{{ description.title }}
+					</h2>
+				{% endif %}
+
+				{% if description.read_more %}
+					{% view '^read-more' with {
+							card: description.read_more
+					}%}
+				{% endif %}
+			</div>
+		{% endfor %}
+	</div>
+</div>

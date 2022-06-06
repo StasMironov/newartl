@@ -1,0 +1,257 @@
+{
+	"title": "Внутренние документы",
+	"hero_default": {
+		"layout": "5",
+		"theme": "black",
+		"breadcrumbs": {
+			"items": [
+				{
+					"text": "Главная",
+					"href": "main.html"
+				},
+				{
+					"text": "Инвесторам",
+					"href": "./"
+				}
+			]
+		},
+		"title": "Внутренние документы"
+	},
+	"block_docs": {
+		"tabs": {
+			"offset_left": "3",
+			"layout": "4",
+			"horizontal": true,
+			"items": [
+				{
+					"text": "RNS",
+					"title": "RNS",
+					"attr": "data-attr",
+					"active": "true",
+					"shift": true
+				},
+				{
+					"text": "Существенные факты",
+					"title": "Существенные факты",
+					"attr": "data-attr",
+					"shift": true
+				}
+			]
+		},
+		"tabs_content": [
+			{
+				"active": true,
+				"cards": [
+					{
+						"layout": "2",
+						"href": "#",
+						"title": "2021 Сведения, направленные на LSE",
+						"text": "0,87 мб",
+						"date": {
+							"month": "Ноябрь",
+							"day": "2021"
+						},
+						"action": {
+							"title": "Скачать",
+							"text": "Скачать",
+							"icon": {
+								"name": "24/download"
+							}
+						}
+					},
+					{
+						"layout": "2",
+						"href": "#",
+						"title": "2021 Сведения, направленные на LSE",
+						"text": "0,87 мб",
+						"date": {
+							"month": "Ноябрь",
+							"day": "2021"
+						},
+						"action": {
+							"title": "Скачать",
+							"text": "Скачать",
+							"icon": {
+								"name": "24/download"
+							}
+						}
+					},
+					{
+						"layout": "2",
+						"href": "#",
+						"title": "2021 Сведения, направленные на LSE",
+						"text": "0,87 мб",
+						"date": {
+							"month": "Ноябрь",
+							"day": "2021"
+						},
+						"action": {
+							"title": "Скачать",
+							"text": "Скачать",
+							"icon": {
+								"name": "24/download"
+							}
+						}
+					},
+					{
+						"layout": "2",
+						"href": "#",
+						"title": "2021 Сведения, направленные на LSE",
+						"text": "0,87 мб",
+						"date": {
+							"month": "Ноябрь",
+							"day": "2021"
+						},
+						"action": {
+							"title": "Скачать",
+							"text": "Скачать",
+							"icon": {
+								"name": "24/download"
+							}
+						}
+					},
+					{
+						"layout": "2",
+						"href": "#",
+						"title": "2021 Сведения, направленные на LSE",
+						"text": "0,87 мб",
+						"date": {
+							"month": "Ноябрь",
+							"day": "2021"
+						},
+						"action": {
+							"title": "Скачать",
+							"text": "Скачать",
+							"icon": {
+								"name": "24/download"
+							}
+						}
+					},
+					{
+						"layout": "2",
+						"href": "#",
+						"title": "2021 Сведения, направленные на LSE",
+						"text": "0,87 мб",
+						"date": {
+							"month": "Ноябрь",
+							"day": "2021"
+						},
+						"action": {
+							"title": "Скачать",
+							"text": "Скачать",
+							"icon": {
+								"name": "24/download"
+							}
+						}
+					}
+				]
+			},
+			{
+				"cards": [
+					{
+						"layout": "2",
+						"href": "#",
+						"title": "2021 Сведения, направленные на LSE",
+						"text": "0,87 мб",
+						"date": {
+							"month": "Ноябрь",
+							"day": "2021"
+						},
+						"action": {
+							"title": "Скачать",
+							"text": "Скачать",
+							"icon": {
+								"name": "24/download"
+							}
+						}
+					},
+					{
+						"layout": "2",
+						"href": "#",
+						"title": "2021 Сведения, направленные на LSE",
+						"text": "0,87 мб",
+						"date": {
+							"month": "Ноябрь",
+							"day": "2021"
+						},
+						"action": {
+							"title": "Скачать",
+							"text": "Скачать",
+							"icon": {
+								"name": "24/download"
+							}
+						}
+					},
+					{
+						"layout": "2",
+						"href": "#",
+						"title": "2021 Сведения, направленные на LSE",
+						"text": "0,87 мб",
+						"date": {
+							"month": "Ноябрь",
+							"day": "2021"
+						},
+						"action": {
+							"title": "Скачать",
+							"text": "Скачать",
+							"icon": {
+								"name": "24/download"
+							}
+						}
+					},
+					{
+						"layout": "2",
+						"href": "#",
+						"title": "2021 Сведения, направленные на LSE",
+						"text": "0,87 мб",
+						"date": {
+							"month": "Ноябрь",
+							"day": "2021"
+						},
+						"action": {
+							"title": "Скачать",
+							"text": "Скачать",
+							"icon": {
+								"name": "24/download"
+							}
+						}
+					},
+					{
+						"layout": "2",
+						"href": "#",
+						"title": "2021 Сведения, направленные на LSE",
+						"text": "0,87 мб",
+						"date": {
+							"month": "Ноябрь",
+							"day": "2021"
+						},
+						"action": {
+							"title": "Скачать",
+							"text": "Скачать",
+							"icon": {
+								"name": "24/download"
+							}
+						}
+					},
+					{
+						"layout": "2",
+						"href": "#",
+						"title": "2021 Сведения, направленные на LSE",
+						"text": "0,87 мб",
+						"date": {
+							"month": "Ноябрь",
+							"day": "2021"
+						},
+						"action": {
+							"title": "Скачать",
+							"text": "Скачать",
+							"icon": {
+								"name": "24/download"
+							}
+						}
+					}
+				]
+			}
+		]
+	}
+}

@@ -1,0 +1,530 @@
+{
+	"title": "Пресс-центр",
+	"header": {
+		"transparent": true,
+		"logo": {
+			"href": "main.html",
+			"name": "logos/main-logo",
+			"size": "fit"
+		},
+		"navigation": [
+			{
+				"text": "О группе",
+				"submenu": {
+					"title": "О группе",
+					"text": "Общая информация для инвесторов в формате отчетов, графиков и документов",
+					"links": [
+						{
+							"href": "javascript:void(0);",
+							"text": "Общая информация для инвесторов"
+						},
+						{
+							"href": "javascript:void(0);",
+							"text": "Презентации"
+						},
+						{
+							"href": "javascript:void(0);",
+							"text": "Соблюдение требований корпоративного управления"
+						},
+						{
+							"href": "javascript:void(0);",
+							"text": "Структура компании"
+						},
+						{
+							"href": "javascript:void(0);",
+							"text": "Совет директоров"
+						},
+						{
+							"href": "javascript:void(0);",
+							"text": "Руководство"
+						}
+					]
+				}
+			},
+			{
+				"text": "Инвесторам",
+				"submenu": {
+					"title": "Инвесторам",
+					"text": "Общая информация для инвесторов в формате отчетов, графиков и документов",
+					"links": [
+						{
+							"href": "javascript:void(0);",
+							"text": "Общая информация для инвесторов"
+						},
+						{
+							"text": "Результаты и отчеты",
+							"active": true
+						},
+						{
+							"href": "javascript:void(0);",
+							"text": "Презентации"
+						},
+						{
+							"href": "javascript:void(0);",
+							"text": "Соблюдение требований корпоративного управления"
+						},
+						{
+							"href": "javascript:void(0);",
+							"text": "Структура компании"
+						},
+						{
+							"href": "javascript:void(0);",
+							"text": "Совет директоров"
+						},
+						{
+							"href": "javascript:void(0);",
+							"text": "Руководство"
+						},
+						{
+							"href": "javascript:void(0);",
+							"text": "Корпоративное управление"
+						},
+						{
+							"href": "javascript:void(0);",
+							"text": "Внутренние документы"
+						},
+						{
+							"href": "javascript:void(0);",
+							"text": "Каталог продукции"
+						},
+						{
+							"href": "javascript:void(0);",
+							"text": "Контакты для инвесторов"
+						}
+					]
+				}
+			},
+			{
+				"href": "javascript:void(0);",
+				"text": "Партнерам"
+			},
+			{
+				"href": "javascript:void(0);",
+				"text": "Устойчивое развитие"
+			},
+			{
+				"href": "javascript:void(0);",
+				"text": "Пресс-центр"
+			},
+			{
+				"text": "Карьера",
+				"active": true
+			},
+			{
+				"href": "javascript:void(0);",
+				"text": "Контакты"
+			}
+		],
+		"lang": {
+			"action": {
+				"text": "Ру",
+				"title": "Ру"
+			},
+			"items": [
+				{
+					"href": "javascript:void(0);",
+					"text": "En",
+					"title": "En"
+				},
+				{
+					"href": "javascript:void(0);",
+					"text": "Оʻz",
+					"title": "Оʻz"
+				}
+			]
+		}
+	},
+	"hero_default": {
+		"layout": "6",
+		"breadcrumbs": {
+			"theme": "white",
+			"items": [
+				{
+					"text": "На главную",
+					"href": "main.html"
+				}
+			]
+		},
+		"desc": "Artel осуществляет взаимодействие с&nbsp;прессой и прочими СМИ на протяжении долгих лет",
+		"title": "Пресс-центр",
+		"image": {
+			"src": "tmp/default-hero/hero-press.jpg",
+			"alt": "image alt",
+			"fill": true,
+			"tab": {
+				"srcset": [
+					{
+						"scale": "1",
+						"src": "tmp/default-hero/hero-press-tab.jpg"
+					}
+				]
+			},
+			"mob": {
+				"srcset": [
+					{
+						"scale": "1",
+						"src": "tmp/default-hero/hero-press-mob.jpg"
+					}
+				]
+			}
+		}
+	},
+	"news": {
+		"title": "Новости",
+		"layout": "2",
+		"tabs": {
+			"layout": "4",
+			"horizontal": true,
+			"items": [
+				{
+					"text": "Все новости",
+					"title": "Все новости",
+					"attr": "data-attr",
+					"attr_val": "all",
+					"active": "true",
+					"shift": true
+				},
+				{
+					"text": "События",
+					"title": "События",
+					"attr": "data-attr",
+					"attr_val": "event",
+					"shift": true
+				},
+				{
+					"text": "Социальная ответственность",
+					"title": "Социальная ответственность",
+					"attr": "data-attr",
+					"attr_val": "social",
+					"shift": true
+				}
+			]
+		},
+		"tabs_content": [
+			{
+				"active": true,
+				"cards": [
+					{
+						"href": "#",
+						"date": "1 сен 2021",
+						"title": "Artel и Khan Academy Oʻzbek подписали меморандум",
+						"image": {
+							"src": "tmp/card-news/news1.jpg",
+							"alt": "alt"
+						},
+						"layout": "3"
+					},
+					{
+						"href": "#",
+						"date": "3 мая 2021",
+						"title": "Производственной мощности Artel достаточно для&nbsp;производства продукции",
+						"image": {
+							"src": "tmp/card-news/news2.jpg",
+							"alt": "alt"
+						},
+						"layout": "3"
+					},
+					{
+						"href": "#",
+						"date": "28 янв 2021",
+						"title": "Проводится обучение руководителей",
+						"image": {
+							"src": "tmp/card-news/news3.jpg",
+							"alt": "alt"
+						},
+						"layout": "3"
+					},
+					{
+						"href": "#",
+						"date": "3 мая 2021",
+						"title": "Компания Artel подарила стиральные машины детскому дому «Kichkintoy»",
+						"image": {
+							"src": "tmp/card-news/news4.jpg",
+							"alt": "alt"
+						},
+						"layout": "3"
+					},
+					{
+						"href": "#",
+						"date": "1 сен 2021",
+						"title": "Artel и Khan Academy Oʻzbek подписали меморандум",
+						"image": {
+							"src": "tmp/card-news/news1.jpg",
+							"alt": "alt"
+						},
+						"layout": "3"
+					}
+				]
+			},
+			{
+				"cards": [
+					{
+						"href": "#",
+						"date": "1 сен 2021",
+						"title": "Artel и Khan Academy Oʻzbek подписали меморандум",
+						"image": {
+							"src": "tmp/card-news/news1.jpg",
+							"alt": "alt"
+						},
+						"layout": "3"
+					},
+					{
+						"href": "#",
+						"date": "1 сен 2021",
+						"title": "Artel и Khan Academy Oʻzbek подписали меморандум",
+						"image": {
+							"src": "tmp/card-news/news3.jpg",
+							"alt": "alt"
+						},
+						"layout": "3"
+					},
+					{
+						"href": "#",
+						"date": "1 сен 2021",
+						"title": "Artel и Khan Academy Oʻzbek подписали меморандум",
+						"image": {
+							"src": "tmp/card-news/news2.jpg",
+							"alt": "alt"
+						},
+						"layout": "3"
+					},
+					{
+						"href": "#",
+						"date": "1 сен 2021",
+						"title": "Artel и Khan Academy Oʻzbek подписали меморандум",
+						"image": {
+							"src": "tmp/card-news/news4.jpg",
+							"alt": "alt"
+						},
+						"layout": "3"
+					}
+				]
+			},
+			{
+				"cards": [
+					{
+						"href": "#",
+						"date": "1 сен 2021",
+						"title": "Artel и Khan Academy Oʻzbek подписали меморандум",
+						"image": {
+							"src": "tmp/card-news/news4.jpg",
+							"alt": "alt"
+						},
+						"layout": "3"
+					},
+					{
+						"href": "#",
+						"date": "1 сен 2021",
+						"title": "Artel и Khan Academy Oʻzbek подписали меморандум",
+						"image": {
+							"src": "tmp/card-news/news2.jpg",
+							"alt": "alt"
+						},
+						"layout": "3"
+					},
+					{
+						"href": "#",
+						"date": "1 сен 2021",
+						"title": "Artel и Khan Academy Oʻzbek подписали меморандум",
+						"image": {
+							"src": "tmp/card-news/news3.jpg",
+							"alt": "alt"
+						},
+						"layout": "3"
+					},
+					{
+						"href": "#",
+						"date": "1 сен 2021",
+						"title": "Artel и Khan Academy Oʻzbek подписали меморандум",
+						"image": {
+							"src": "tmp/card-news/news1.jpg",
+							"alt": "alt"
+						},
+						"layout": "3"
+					}
+				]
+			}
+		],
+		"fields": [
+			{
+                "type": "hidden",
+                "name": "news-hidden",
+                "input": true,
+                "id": "news-hidden",
+                "attr":"data-news-field"
+              }
+		],
+		"select": 
+			{
+				"select": true,
+				"id": "filter-form-select-1",
+				"name": "filter-form-select-1",
+				"attr": "data-form-select",
+				"placeholder": "Все года",
+				"options": [
+					{
+						"value": "All",
+						"text": "Все года"
+					},
+					{
+						"value": "2021",
+						"text": "2021"
+					},
+					{
+						"value": "2020",
+						"text": "2020"
+					},
+					{
+						"value": "2019",
+						"text": "2019"
+					},
+					{
+						"value": "2018",
+						"text": "2018"
+					},
+					{
+						"value": "2017",
+						"text": "2017"
+					}
+				]
+			},
+		"action": {
+			"text": "Смотреть все",
+			"theme": "gray"
+		}
+	},
+	"slider": {
+		"title": "Галерея новостей",
+		"arrows_theme": "white",
+		"items": [
+			{
+				"article": "Заключение партнерских отношений с «Baku Electronics» в&nbsp;Азербайджане",
+				"href": "test.html",
+				"img": {
+					"src": "tmp/press/img1.jpg",
+					"alt": "img"
+				},
+				"icon": {
+					"name": "24/pic"
+				},
+				"qty": "33"
+			},
+			{
+				"article": "2",
+				"href": "test2.html",
+				"img": {
+					"src": "tmp/card-news/news2.jpg",
+					"alt": "img"
+				},
+				"icon": {
+					"name": "24/pic"
+				},
+				"qty": "30"
+			},
+			{
+				"article": "3",
+				"href": "test.html",
+				"img": {
+					"src": "tmp/press/img1.jpg",
+					"alt": "img"
+				},
+				"icon": {
+					"name": "24/pic"
+				},
+				"qty": "33"
+			},
+			{
+				"article": "4",
+				"href": "test2.html",
+				"img": {
+					"src": "tmp/card-news/news2.jpg",
+					"alt": "img"
+				},
+				"icon": {
+					"name": "24/pic"
+				},
+				"qty": "30"
+			},
+			{
+				"article": "5",
+				"href": "test.html",
+				"img": {
+					"src": "tmp/press/img1.jpg",
+					"alt": "img"
+				},
+				"icon": {
+					"name": "24/pic"
+				},
+				"qty": "33"
+			}
+		]
+	},
+	"block_comm": {
+		"bg": "gray",
+		"title": "Контакты для прессы",
+		"items": [
+			{
+				"img": {
+					"src": "tmp/press/img2.jpg",
+					"alt": "img"
+				},
+				"name": "Камола Сабирова",
+				"position": "Руководитель пресс-службы",
+				"comm": [
+					{
+						"title": "E-mail",
+						"text": "kamola.sobirova@artelelectronics.com",
+						"href": "mailto:kamola.sobirova@artelelectronics.com"
+					},
+					{
+						"title": "Телефон",
+						"text": "+998 (71) 123-45-67",
+						"href": "tel:+998(71)123-45-67"
+					}
+				]
+			},
+			{
+				"img": {
+					"src": "tmp/press/img3.jpg",
+					"alt": "img"
+				},
+				"name": "Элеанор Крамерс",
+				"position": "Руководитель по&nbsp;международным коммуникациям",
+				"comm": [
+					{
+						"title": "E-mail",
+						"text": "eleanor.kramers@artelelectronics.com",
+						"href": "mailto:eleanor.kramers@artelelectronics.com"
+					},
+					{
+						"title": "Телефон",
+						"text": "+998 (71) 123-45-67",
+						"href": "tel:+998(71)123-45-67"
+					}
+				]
+			}
+		]
+	},
+	"socials": {
+		"bg": "gray",
+		"title": "Официальные страницы в соц. сетях",
+		"items": [
+			{
+				"href": "javascript:void(0);",
+				"title": "facebook",
+				"icon": {
+					"name": "32/socials/fb",
+					"size": "32"
+				}
+			},
+			{
+				"href": "javascript:void(0);",
+				"title": "instagram",
+				"icon": {
+					"name": "32/socials/inst",
+					"size": "32"
+				}
+			}
+		]
+	}
+}

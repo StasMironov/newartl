@@ -1,0 +1,20 @@
+{
+	"slider": {
+		"title": "Галерея новостей",
+		"arrows_theme": "white",
+		"items": [
+			{
+				"article": "Заключение партнерских отношений с «Baku Electronics» в&nbsp;Азербайджане",
+				"href": "test.html",
+				"img": {
+					"src": "tmp/press/img1.jpg",
+					"alt": "img"
+				},
+				"icon": {
+					"name": "24/pic"
+				},
+				"qty": "33"
+			}
+		]
+	}
+}

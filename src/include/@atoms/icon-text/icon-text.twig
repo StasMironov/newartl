@@ -1,0 +1,13 @@
+<div class="icon-text {% if icon.theme %}icon-text--{{icon.theme}}{% endif %}">
+	{% if icon %}
+		<div class="icon-text__icon">
+			{% view '@icon' with {
+				icon: icon
+			} %}
+		</div>
+	{% endif %}
+
+	{% if icon.text %}
+		<p class="text-small icon-text__text">{{ icon.text }}</p>
+	{% endif %}
+</div>

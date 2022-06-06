@@ -1,0 +1,137 @@
+.vacancy {
+	$root: &;
+	&__wrapper {		
+		display: flex;
+		flex-wrap: wrap;
+		position: relative;	
+		
+		@include media-breakpoint-up(sm) {
+			margin-top: rem(32);
+			&:after{
+				content: '';
+				height: 1px;
+				width: 100%;
+				margin-left: 0;
+				margin-top: rem(0);
+				background: rgba($color-black, 0.1);
+			}
+		}
+		@include media-breakpoint-up(md) {
+			margin-top: rem(12);
+			&:after{
+				content: '';
+				height: 1px;
+				width: 100%;
+				margin-left: 0;
+				margin-top: rem(22);
+				background: rgba($color-black, 0.1);
+			}
+		}	
+		@include media-breakpoint-up(lg) {
+			margin-top: rem(20);
+			&:after{
+				content: '';
+				height: 1px;
+				width: 66%;
+				margin-left: 34%;
+				margin-top: rem(16);
+				background: rgba($color-black, 0.1);
+			}
+		}
+		
+	}	
+	&__left {	
+		@include media-breakpoint-up(sm) {
+			width: 100%;
+			border-top: 1px solid rgba($color-black, 0.1);
+			padding-top: rem(29);
+			margin-bottom: rem(29);
+		}		
+		@include media-breakpoint-up(md) {
+			width: 100%;
+			border-top: 1px solid rgba($color-black, 0.1);
+			padding-top: rem(56);
+			margin-bottom: rem(31);
+		}
+		@include media-breakpoint-up(lg) {
+			width: 34%;
+			border: 0;
+			padding-top: rem(48);
+			margin-bottom: 0;
+		}
+	}
+	&__right {			
+		@include media-breakpoint-up(sm) {
+			margin-bottom: rem(40);
+			ul{
+				width: 94%;
+				margin-left: rem(20);
+			}
+		}
+
+		@include media-breakpoint-up(md) {
+			width: 100%;
+			margin-bottom: rem(54);
+			padding-top: rem(0);
+			ul{
+				width:rem(570);
+				margin-left: 0;
+				
+			}
+		}
+
+		@include media-breakpoint-up(lg) {	
+			width: 66%;	
+			margin-bottom: rem(48);
+			border-top: 1px solid rgba($color-black, 0.1);
+			padding-top: rem(50);
+			ul{
+				width:rem(533);
+			}
+		}
+
+	}
+
+	&__title {
+		max-width: rem(400);
+		padding-right: rem(32);
+
+		@include media-breakpoint-down(md) {
+			max-width: initial;
+			padding-right: 0;
+		}
+	}
+
+	.user-text {
+		@include media-breakpoint-up(sm) {
+			ul li{
+				margin-bottom: rem(14.5);			
+				&::before{
+					position: absolute;
+					top: rem(14);
+					left: rem(-16);
+				}
+			}
+		}
+		@include media-breakpoint-up(md) {
+			ul li{
+				margin-bottom: rem(25);
+				&::before{
+					position: absolute;
+					top: rem(12);
+					left: rem(-20);
+				}
+			}
+		}
+		@include media-breakpoint-up(lg) {
+			ul li{
+				margin-bottom: rem(26);
+				&::before{
+					position: absolute;
+					top: rem(12);
+					left: rem(-20);
+				}
+			}
+		}
+	}
+}

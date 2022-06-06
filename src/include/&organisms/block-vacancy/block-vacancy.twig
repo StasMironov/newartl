@@ -1,0 +1,17 @@
+<div class="vacancy container">
+	<div class="vacancy__wrapper">
+		{% for description in vacancy.descriptions %}
+			<div class="vacancy__left" data-fade-in-up>
+				{% if description.title %}
+					<h2 class="vacancy__title h2">{{ description.title }}</h2>
+				{% endif %}
+			</div>
+
+			{% if description.list %}
+				<div class="user-text vacancy__right" data-fade-in-up data-delay="0.3">
+					{{ description.list }}
+				</div>
+			{% endif %}
+		{% endfor %}
+	</div>
+</div>

@@ -1,0 +1,31 @@
+<div class="slider-logos" data-slider-logos-wrap>
+	<div class="slider-logos__inner">
+		{% if slider.title %}
+			<h3 class="slider-logos__title" data-fade-in-up>
+				{{ slider.title }}
+			</h3>
+		{% endif %}
+		<div class="swiper-container" data-slider-logos data-fade-in-up>
+			<div class="swiper-wrapper">
+				{% for slide in slider.items %}
+					<div class="slider-logos__item swiper-slide">
+						{% if slide.href %}
+							<a href="{{ slide.href }}">{{ slide.href }}</a>
+						{% endif %}
+						{% view '@image' with {
+							image: slide.icon|merge({
+								disable_lazy: true
+							})
+						} %}
+					</div>
+				{% endfor %}
+			</div>
+		</div>
+		{% if slider.items|length > 1 %}
+			<div class="slider-logos__nav" data-fade-in-up>
+				{% view '@nav-arrows' %}
+			</div>
+		{% endif %}
+	</div>
+</div>
+

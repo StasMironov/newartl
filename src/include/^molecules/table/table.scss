@@ -1,0 +1,146 @@
+.example {
+	width: 600px;
+	margin: 0 auto;
+	border: 5px solid #d6d6d6;
+}
+.table {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	width: 100%;
+	width: 148%;
+	margin-top: rem(75);
+	margin-left: -16.6%;
+	overflow: hidden;
+	background-color: transparent;
+
+	@include media-breakpoint-down(md) {
+		width: 100vw;
+		margin-left: -8.6%;
+	}
+
+	@include media-breakpoint-down(sm) {
+		margin-top: rem(48);
+	}
+
+	table {
+		position: relative;
+		border-collapse: collapse;
+		border-spacing: 0px;
+		transform: translate(0px, 0px);
+
+		th {
+			position: sticky;
+			top: 0;
+			width: 28%;
+			min-width: rem(200);
+			height: rem(64);
+			padding: rem(10) rem(20);
+			color: $color-white;
+			background-color: $color-green;
+
+			@include media-breakpoint-down(md) {
+				min-width: rem(160);
+			}
+
+			@include media-breakpoint-down(sm) {
+				min-width: rem(117);
+				height: rem(64);
+				padding: rem(5) rem(20);
+			}
+		}
+
+		td {
+			width: 28%;
+			height: rem(64);
+			padding: rem(10) rem(20);
+			border-bottom: 1px solid rgba($color-black, $alpha: 0.1);
+
+			@include media-breakpoint-down(sm) {
+				padding: rem(5) rem(20);
+			}
+
+			&:last-of-type {
+				border-right: none;
+			}
+		}
+
+		tr {
+			background-color: $color-white;
+
+			&:last-child {
+				td {
+					border-bottom: none;
+				}
+			}
+		}
+	}
+
+	&-main {
+		&__wrap {
+			position: relative;
+			-ms-flex: 1;
+			flex: 1;
+			min-width: 0;
+			-webkit-box-flex: 1;
+		}
+
+		&__content {
+			@include media-breakpoint-up(md) {
+				// transform: none !important;
+			}
+		}
+
+		td {
+			@include media-breakpoint-down(sm) {
+				background-color: $color-gray;
+			}
+		}
+
+		table tr:first-of-type {
+			background-color: $color-green;
+		}
+	}
+
+	&-left {
+		position: relative;
+		z-index: 1;
+		width: rem(315);
+
+		@include media-breakpoint-down(sm) {
+			left: initial;
+		}
+
+		@include media-breakpoint-down(md) {
+			width: rem(265);
+		}
+
+		@include media-breakpoint-down(sm) {
+			width: rem(176);
+			box-shadow: 0px rem(1) rem(16) rgba(0, 0, 0, 0.1);
+		}
+
+		table th:first-of-type,
+		td:first-of-type {
+			padding-right: rem(40);
+			padding-left: rem(110);
+
+			@include media-breakpoint-down(md) {
+				padding-right: rem(24);
+				padding-left: rem(64);
+			}
+
+			@include media-breakpoint-down(sm) {
+				padding-left: rem(16);
+			}
+		}
+
+		table td {
+			color: rgba($color-black, 0.4);
+		}
+
+		table tr:first-of-type {
+			background-color: $color-green;
+		}
+	}
+}

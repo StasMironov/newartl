@@ -1,0 +1,243 @@
+{
+	"card": {
+        "field_company": {
+        "input": true,
+        "id": "form-1-input-111",
+        "name": "form-1-input-111",
+        "theme": "white",
+        "label": "Место работы",
+        "attr": "data-work"
+    },
+    "field_post": {
+        "input": true,
+        "id": "form-1-input-222",
+        "name": "form-1-input-222",
+        "theme": "white",
+        "label": "Должность",
+        "attr": "data-post"
+    },
+    "datepicker": {
+        "datepicker": true,
+        "id": "datepicker-2",
+        "name": "datepicker-name-2",
+        "theme": "white",
+        "label": "Время работы",
+        "attr": "data-date-work",
+        "checkbox_date": {
+            "checkbox": true,
+            "id": "date-work-1",
+            "name": "date-work-1",
+            "text": "По настоящее время",
+            "theme": "on-white"
+        },
+        "dropdownStart": {
+            "select": true,
+            "id": "datepicker2-select-888",
+            "name": "datepicker2-select-888",
+            "placeholder": "Выберите год",
+            "size": "small",
+            "attr": "data-datepicker-select-start",
+            "options": [
+                {
+                    "text": "2008",
+                    "value": "2008"
+                },
+                {
+                    "text": "2009",
+                    "value": "2009"
+                },
+                {
+                    "text": "2010",
+                    "value": "2010"
+                },
+                {
+                    "text": "2011",
+                    "value": "2011"
+                },
+                {
+                    "text": "2012",
+                    "value": "2012"
+                },
+                {
+                    "text": "2013",
+                    "value": "2013"
+                },
+                {
+                    "text": "2014",
+                    "value": "2014"
+                },
+                {
+                    "text": "2015",
+                    "value": "2015"
+                },
+                {
+                    "text": "2016",
+                    "value": "2016"
+                },
+                {
+                    "text": "2017",
+                    "value": "2017"
+                },
+                {
+                    "text": "2018",
+                    "value": "2018"
+                },
+                {
+                    "text": "2019",
+                    "value": "2019"
+                },
+                {
+                    "text": "2020",
+                    "value": "2020"
+                },
+                {
+                    "text": "2021",
+                    "value": "2021"
+                },
+                {
+                    "text": "2022",
+                    "value": "2022"
+                }
+            ]
+        },
+        "dropdownEnd": {
+            "select": true,
+            
+            "id": "datepicker2-select-999",
+            "name": "datepicker2-select-999",
+            "placeholder": "Выберите год",
+            "size": "small",
+            "attr": "data-datepicker-select-end",
+            "options": [
+                {
+                    "text": "2008",
+                    "value": "2008"
+                },
+                {
+                    "text": "2009",
+                    "value": "2009"
+                },
+                {
+                    "text": "2010",
+                    "value": "2010"
+                },
+                {
+                    "text": "2011",
+                    "value": "2011"
+                },
+                {
+                    "text": "2012",
+                    "value": "2012"
+                },
+                {
+                    "text": "2013",
+                    "value": "2013"
+                },
+                {
+                    "text": "2014",
+                    "value": "2014"
+                },
+                {
+                    "text": "2015",
+                    "value": "2015"
+                },
+                {
+                    "text": "2016",
+                    "value": "2016"
+                },
+                {
+                    "text": "2017",
+                    "value": "2017"
+                },
+                {
+                    "text": "2018",
+                    "value": "2018"
+                },
+                {
+                    "text": "2019",
+                    "value": "2019"
+                },
+                {
+                    "text": "2020",
+                    "value": "2020"
+                },
+                {
+                    "text": "2021",
+                    "value": "2021"
+                },
+                {
+                    "text": "2022",
+                    "value": "2022"
+                }
+            ]
+        },
+        "startTitle": "Начало",
+        "endTitle": "Окончание",
+        "months": [
+            {
+                "text": "Янв",
+                "value": "jan"
+            },
+            {
+                "text": "Фев",
+                "value": "feb"
+            },
+            {
+                "text": "Мар",
+                "value": "mar"
+            },
+            {
+                "text": "Апр",
+                "value": "apr"
+            },
+            {
+                "text": "Май",
+                "value": "may"
+            },
+            {
+                "text": "Июн",
+                "value": "jun"
+            },
+            {
+                "text": "Июл",
+                "value": "jul"
+            },
+            {
+                "text": "Авг",
+                "value": "aug"
+            },
+            {
+                "text": "Сен",
+                "value": "sep"
+            },
+            {
+                "text": "Окт",
+                "value": "oct"
+            },
+            {
+                "text": "Ноя",
+                "value": "nov"
+            },
+            {
+                "text": "Дек",
+                "value": "dec"
+            }
+        ],
+        "actions": [
+            {
+                "text": "Применить",
+                "attr": "data-datepicker-apply"
+            },
+            {
+                "text": "Отмена",
+                "theme": "outline",
+                "attr": "data-datepicker-reset"
+            }
+        ]
+    },
+    "delete": {
+        "text": "Удалить",
+        "attr": "data-delete-work"
+    }
+    }
+}

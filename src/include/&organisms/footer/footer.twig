@@ -1,0 +1,129 @@
+<footer class="footer" role="contentinfo">
+	<div class="footer__container container">
+		<div class="footer__base">
+			{% if header.logo.href %}
+				<a class="footer__logo" href="{{ header.logo.href }}" data-fade-in-up>
+					{% view '@icon' with {
+						icon: header.logo
+					} %}
+				</a>
+			{% else %}
+				<div class="footer__logo footer__logo--active" data-fade-in-up>
+					{% view '@icon' with {
+						icon: header.logo
+					} %}
+				</div>
+			{% endif %}
+			{% if footer.form %}
+				<form{% if footer.form.id %} id="{{ footer.form.id }}"{% endif %}{% if footer.form.method %} method="{{ footer.form.method }}"{% endif %}{% if footer.form.action %} action="{{ footer.form.action }}"{% endif %}{% if footer.form.name %} name="{{ footer.form.name }}"{% endif %}
+					class="footer__form" {% if footer.form.attr %} {{ footer.form.attr }}{% endif %}data-fade-in-up{% if footer.form.url %} data-search-ajax data-url="{{ footer.form.url }}"{% endif %}>
+					<div class="footer__search">
+						{% view '@field' with {
+							field: footer.form.search|merge({attr: "data-search-ajax-field"})
+						} %}
+						<div class="footer__search-frame" data-search-frame></div>
+					</div>
+				</form>
+			{% endif %}
+			<div class="footer__groups">
+				{% for group in footer.groups %}
+					<div class="footer__group">
+						{% if group.headLink %}
+							{% if group.headLink.active %}
+								<span class="footer__head-link h3 is-active"
+									  data-fade-in-up>{{ group.headLink.text }}</span>
+							{% elseif group.headLink.href  %}
+								<a href="{{ group.headLink.href }}"
+								   class="footer__head-link h3"{% if group.headLink.external %} target="_blank"{% endif %}
+								   data-fade-in-up>{{ group.headLink.text }}</a>
+							{% else %}
+								<span class="footer__head-link footer__head-link--no-hover h3"
+									  data-fade-in-up>{{ group.headLink.text }}</span>
+							{% endif %}
+						{% endif %}
+						<ul class="footer__list">
+							{% for item in group.items %}
+								<li class="footer__item" data-fade-in-up
+									data-delay="{{ (loop.index0 / 10)|round(2, 'floor') }}">
+									{% if item.active %}
+										<span class="footer__link is-active">{{ item.text }}</span>
+									{% else %}
+										<a href="{{ item.href }}"
+										   class="footer__link"{% if item.external %} target="_blank"{% endif %}>{{ item.text }}</a>
+									{% endif %}
+								</li>
+							{% endfor %}
+						</ul>
+					</div>
+				{% endfor %}
+			</div>
+			{% if footer.contacts %}
+				<div class="footer__contacts" data-fade-in-up>
+					{% if footer.contacts.title %}
+						<p class="footer__title">{{ footer.contacts.title }}</p>
+					{% endif %}
+					{% if footer.contacts.items %}
+						<ul class="footer__list">
+							{% for item in footer.contacts.items %}
+								<li class="footer__item">
+									<a href="{{ item.href }}" class="footer__link h2">{{ item.text }}</a>
+								</li>
+							{% endfor %}
+						</ul>
+					{% endif %}
+				</div>
+			{% endif %}
+			<ul class="footer__links footer__links--aside" data-fade-in-up>
+				{% for item in footer.links %}
+					<li class="footer__item">
+						{% if item.active %}
+							<span class="footer__link is-active">{{ item.text }}</span>
+						{% else %}
+							<a href="{{ item.href }}"
+							   class="footer__link"{% if item.external %} target="_blank"{% endif %}>{{ item.text }}</a>
+						{% endif %}
+					</li>
+				{% endfor %}
+			</ul>
+			{% if footer.socials %}
+				<ul class="footer__socials">
+					{% for item in footer.socials %}
+						<li class="footer__item" data-fade-in-up
+							data-delay="{{ (loop.index0 / 10)|round(2, 'floor') }}">
+							<a href="{{ item.href }}" class="footer__link" target="_blank"
+							   rel="nofollow"{% if item.title %} title="{{ item.title }}"{% endif %}>
+								{% view '@icon' with {
+									icon: item.icon
+								} %}
+							</a>
+						</li>
+					{% endfor %}
+				</ul>
+			{% endif %}
+		</div>
+		<div class="footer__bottom">
+			{% if footer.copyright or footer.creator %}
+				{% if footer.copyright %}
+					<p class="footer__copyright text-small">{{ footer.copyright }}</p>
+				{% endif %}
+				{% if footer.creator %}
+					<a href="{{ footer.creator.href }}" class="footer__creator text-small" target="_blank"
+					   rel="nofollow">{{ footer.creator.text }}
+						{% if footer.creator.logo %}
+							{% view '@icon' with {
+								icon: footer.creator.icon
+							} %}
+						{% else %}
+							{% view '@icon' with {
+								icon: {
+									name: "logos/uplab",
+									size: "fit"
+								}
+							} %}
+						{% endif %}
+					</a>
+				{% endif %}
+			{% endif %}
+		</div>
+	</div>
+</footer>

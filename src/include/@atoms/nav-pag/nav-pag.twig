@@ -1,0 +1,13 @@
+ <div class="nav-pag" data-pag>
+    <div class="swiper-wrapper" data-wrap>
+        {% for slide in slider.items %}
+            <div class="swiper-slide">
+                {% if loop.index < 10 %}
+                    0{{ loop.index }}
+                {% else %}
+                    {{ loop.index }}
+                {% endif %}
+            </div>
+        {% endfor %}
+    </div>
+</div>

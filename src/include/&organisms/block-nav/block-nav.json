@@ -1,0 +1,37 @@
+{
+	"block_nav": {
+		"desc": "Мы здесь, чтобы оставаться лидерами на&nbsp;рынке бытовой техники, создавая современную продукцию для каждого дома",
+		"bg": "green",
+		"icon": {
+			"name": "logos/decor",
+			"size": "fit"
+		},
+		"links": [
+			{
+				"active": true,
+				"href": "javascript:void(0);",
+				"text": "Стратегия"
+			},
+			{
+				"href": "javascript:void(0);",
+				"text": "Миссия компании"
+			},
+			{
+				"href": "javascript:void(0);",
+				"text": "История группы"
+			},
+			{
+				"href": "javascript:void(0);",
+				"text": "Партнеры"
+			},
+			{
+				"href": "javascript:void(0);",
+				"text": "Наши продукты"
+			},
+			{
+				"href": "javascript:void(0);",
+				"text": "Предприятия"
+			}
+		]
+	}
+}

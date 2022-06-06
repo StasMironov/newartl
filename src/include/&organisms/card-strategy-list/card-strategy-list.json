@@ -1,0 +1,63 @@
+{
+	"card_list": {
+		"items": [
+			{
+				"suptitle": "Стратегия взаимодействия",
+				"title": "14 фактоида по проекту — стоимость за кВт/ч, экономия энергии, площадь объекта",
+				"factoid": {
+					"text": "11,5",
+					"after": {
+						"txt": "млн"
+					},
+					"label": "произведено техники <br> за 2020 г."
+				},
+				"image": {
+					"src": "tmp/card-strategy/strategy-1.png",
+					"alt": "image alt"
+				}
+			},
+			{
+				"suptitle": "Стратегия взаимодействия",
+				"title": "2",
+				"factoid": {
+					"text": "8 271",
+					"label": "общее кол-во <br> сотрудников"
+				},
+				"image": {
+					"src": "tmp/card-strategy/strategy-2.png",
+					"alt": "image alt"
+				}
+			},
+			{
+				"suptitle": "Стратегия взаимодействия",
+				"title": "3",
+				"factoid": {
+					"text": "1,5",
+					"after": {
+						"txt": "млн"
+					},
+					"label": "произведено автомобилей"
+				},
+				"image": {
+					"src": "tmp/card-strategy/strategy-1.png",
+					"alt": "image alt"
+				}
+			},
+			{
+				"suptitle": "Стратегия взаимодействия",
+				"title": "44 фактоида по проекту — стоимость за кВт/ч, экономия энергии, площадь объекта",
+				"factoid": {
+					"text": "21,5",
+					"after": {
+						"txt": "млн"
+					},
+					"label": "произведено станков"
+				},
+				"image": {
+					"src": "tmp/card-strategy/strategy-2.png",
+					"alt": "image alt"
+				}
+			}
+		]
+	}
+}

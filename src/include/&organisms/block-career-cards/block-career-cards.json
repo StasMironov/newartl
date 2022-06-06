@@ -1,0 +1,58 @@
+{
+	"block_career_cards": {
+		"heading": "Мы предлагаем",
+		"items": [
+			{
+				"text": "Работа в крупной, стабильной компании",
+				"icon": {
+					"name": "104/company",
+					"size": "104"
+				}
+			},
+			{
+				"text": "Дружная, сплочённая и эффективная команда",
+				"icon": {
+					"name": "104/team",
+					"size": "104"
+				}
+			},
+			{
+				"text": "Быстрый карьерный рост",
+				"icon": {
+					"name": "104/time",
+					"size": "104"
+				}
+			},
+			{
+				"text": "Достойная и своевременная заработная плата",
+				"icon": {
+					"name": "104/pay",
+					"size": "104"
+				}
+			},
+			{
+				"text": "Возможность профессионального и духовного роста",
+				"icon": {
+					"name": "104/grow",
+					"size": "104"
+				}
+			},
+			{
+				"text": "Обучение за счет компании",
+				"icon": {
+					"name": "104/study-icon",
+					"size": "104"
+				}
+			}
+		],
+		"button": {
+			"href": "javascript:void(0);",
+			"text": "Работать с Artel",
+			"title": "Работать с Artel",
+			"attr": "data-modal-career='modal-career'",
+			"icon": {
+				"name": "24/arrow-up-right"
+			}
+		}
+	}
+}

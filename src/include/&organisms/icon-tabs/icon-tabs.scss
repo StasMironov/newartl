@@ -1,0 +1,244 @@
+.icon-tabs{
+  $root: &; 
+
+  &__content{
+    display: flex;
+    flex-wrap: wrap;
+    @include media-breakpoint-up(md) {   
+      flex-wrap: wrap;
+    }
+  }
+
+  &__top{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: rem(32);
+    @include media-breakpoint-up(md) {            
+      margin-bottom: rem(80);
+    }
+    @include media-breakpoint-up(lg) {        
+      justify-content: space-between;
+      flex-wrap: nowrap;
+      margin-bottom: rem(56);
+    }
+  }
+
+  &__heading{
+    width: 100%;
+    &:not(:last-child){
+      margin-bottom: rem(24);
+    }
+    @include media-breakpoint-up(md) {            
+      width: 75%;
+      &:not(:last-child){
+        margin-bottom: rem(24);
+      }
+    }
+    @include media-breakpoint-up(lg) { 
+      width: 40%;
+      margin-bottom: 0;
+      margin-top: rem(-8);
+    }
+  }
+
+  &__subtitle{
+    width: 100%;
+
+    margin-right: 0;
+    @include media-breakpoint-up(md) {            
+      width: 75%;
+    }
+    @include media-breakpoint-up(lg) {      
+      width: 33.3333%;
+      margin-right: 16%;
+    }
+  }
+
+  .swiper-container{
+    overflow: visible;
+    align-items: flex-start;
+    margin-left: 0;
+    width: 68%;
+    @include media-breakpoint-up(md) {     
+      width: 84%;
+    }
+    @include media-breakpoint-up(lg) {            
+      width: 100%;
+    }
+  }
+
+  .swiper-wrapper{
+    width: 100%;
+    height: auto;
+    overflow: visible;
+    flex-wrap: nowrap;
+    @include media-breakpoint-up(md) {
+      flex-wrap: nowrap;
+      width: 76%;
+    }
+    @include media-breakpoint-up(lg) {
+      transform: none !important;
+      width: 100%;
+      flex-wrap: wrap;
+    }   
+	}
+
+  &__tabs{      
+    overflow: hidden;
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: rem(48);
+    @include media-breakpoint-up(md) {
+      //width: 100%;
+      flex-wrap: wrap;
+      margin-bottom: rem(80);
+    }
+    @include media-breakpoint-up(lg) {
+      width: 50%;
+      flex-wrap: wrap;
+      margin-bottom: 0;
+    }
+  }
+
+  .swiper-slide{
+    height: auto;
+    padding-right: rem(4);
+    @include media-breakpoint-up(md) {
+      height: auto;
+    }
+    @include media-breakpoint-up(lg) {
+      width: 50%!important;
+      height: rem(164);
+    }
+  }
+
+  &__tab{
+    cursor: pointer;
+    opacity: 0.4!important;
+    transition: 0.3s; 
+    @include touchLessHover {
+      opacity: 1!important;
+    }
+
+    @include media-breakpoint-up(md) {
+      width: rem(296);       
+    }
+    @include media-breakpoint-up(lg) {
+      margin-bottom: rem(48);
+      @include last-row(2) {
+				margin-bottom: 0;
+			}
+    }   
+    &-active{
+      opacity: 1!important;
+    }    
+  }  
+
+  &__icon{
+    color: $color-green; 
+    margin-bottom: rem(12);  
+    @include media-breakpoint-only(sm) {
+      margin-bottom: rem(0); 
+    }
+    svg{
+      @include media-breakpoint-only(sm) {
+        width: rem(80);
+      }
+    } 
+    @at-root .animate & {
+      path {
+        stroke-dasharray: 280;
+        stroke-dashoffset: 280;
+        animation: dash 6.5s ease .5s forwards;
+      }
+    } 
+  }
+
+  &__caption{
+    width: 93%;
+    @include media-breakpoint-up(md) {
+      width: rem(216);
+      padding-right: 0;
+    }
+    @include media-breakpoint-up(lg) {
+      width: rem(232);
+    }
+  }
+
+  &__wrapper{
+    width: 50%;
+    @include media-breakpoint-down(md) {
+      width: 100%;
+    }
+  }
+
+  &__pane{
+    width: 100%;  
+    display: block;
+    &:not(.is-active) {
+      display: none;
+    }
+  }
+
+  &__suptitle{
+    color: rgba($color-black, 0.4);
+    margin-bottom: rem(16);
+  }
+
+  &__title{
+    margin-bottom: rem(32);
+    @include media-breakpoint-up(md) {
+      margin-bottom: rem(50);
+    }
+    @include media-breakpoint-up(lg) {
+      margin-bottom: rem(48);
+    }
+  }
+
+  &__img{    
+    width: rem(664);
+    height: rem(334);
+    margin-bottom: rem(32);
+    border-radius: rem(8);    
+    overflow: hidden;
+    position: relative;
+    overflow: hidden;
+    height: 0;
+    padding-top: 56.25%;
+    overflow: hidden;
+
+
+    @include media-breakpoint-up(sm) {
+      margin-bottom: rem(32);
+      width: 100%;
+    }
+    @include media-breakpoint-up(md) {
+      margin-bottom: rem(50);
+      width: 100%;
+    }
+    @include media-breakpoint-up(lg) {
+      margin-bottom: rem(48);
+      width: rem(664);
+    }
+
+    img {
+      object-fit: cover; 
+      object-position: top center;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__text{
+    width: 100%;
+    @include media-breakpoint-up(md) {
+      width: 75%;
+    }
+    @include media-breakpoint-up(lg) {
+      width: 100%;
+    }
+  }
+}

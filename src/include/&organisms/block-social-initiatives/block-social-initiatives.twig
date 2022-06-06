@@ -1,0 +1,14 @@
+<div {% if block.scroll_target %}id="{{block.scroll_target}}"{% endif %} class="initiatives container">
+	<div class="initiatives__wrapper">
+		<div class="initiatives__left" data-fade-in-up>
+			{% if block.title  %}
+				<h2>{{ block.title  }}</h2>
+			{% endif %}
+		</div>
+		<div class="initiatives__right" data-fade-in-up>
+			{% if block.description %}
+				{{ block.description  }}
+			{% endif %}
+		</div>
+	</div>
+</div>

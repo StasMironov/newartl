@@ -1,0 +1,224 @@
+{
+	"title": "Презентации",
+	"hero_default": {
+		"layout": "4",
+		"theme": "black",
+		"breadcrumbs": {
+			"items": [
+				{
+					"text": "Главная",
+					"href": "main.html"
+				},
+				{
+					"text": "Инвесторам",
+					"href": "./"
+				}
+			]
+		},
+		"title": "Презентации"
+	},
+	"block_docs": {
+		"filter_select": {
+			"fill": true,
+			"fields": [
+				{
+					"select": true,
+					"id": "filter-form-select-1",
+					"name": "filter-form-select-1",
+					"attr": "data-form-select",
+					"placeholder": "Все года",
+					"options": [
+						{
+							"value": "All",
+							"text": "Все года",
+							"selected": "selected"
+						},
+						{
+							"value": "2021",
+							"text": "2021"
+						},
+						{
+							"value": "2020",
+							"text": "2020"
+						},
+						{
+							"value": "2019",
+							"text": "2019"
+						},
+						{
+							"value": "2018",
+							"text": "2018"
+						},
+						{
+							"value": "2017",
+							"text": "2017"
+						}
+					]
+				},
+				{
+					"select": true,
+					"id": "filter-form-select-2",
+					"name": "filter-form-select-2",
+					"attr": "data-form-select",
+					"placeholder": "Все рубрики",
+					"options": [
+						{
+							"value": "All",
+							"text": "Все рубрики",
+							"selected": "selected"
+						},
+						{
+							"value": "Рубрика 1",
+							"text": "Рубрика 1"
+						},
+						{
+							"value": "Рубрика 2",
+							"text": "Рубрика 2"
+						},
+						{
+							"value": "Рубрика 3",
+							"text": "Рубрика 3"
+						},
+						{
+							"value": "Рубрика 4",
+							"text": "Рубрика 4"
+						},
+						{
+							"value": "Рубрика 5",
+							"text": "Рубрика 5"
+						}
+					]
+				}
+			]
+		},
+		"form": {
+			"id": "search-form",
+			"method": "POST",
+			"action": "/",
+			"name": "search-form",
+			"attr": "data-search-form",
+			"field": {
+				"search": true,
+				"id": "search-field",
+				"name": "search-field",
+				"placeholder": "Поиск",
+				"icon": {
+					"name": "24/search"
+				},
+				"url": "ajax/search-result.html",
+				"method": "GET",
+				"reset": {
+					"text": "Очистить",
+					"attr": "data-reset",
+					"icon": {
+						"name": "24/cross"
+					}
+				}
+			}
+		},
+		"items": [
+			{
+				"layout": "2",
+				"href": "#",
+				"title": "2021 Сведения, направленные на LSE",
+				"text": "0,87 мб",
+				"date": {
+					"month": "Ноябрь",
+					"day": "2021"
+				},
+				"action": {
+					"title": "Скачать",
+					"text": "Скачать",
+					"icon": {
+						"name": "24/download"
+					}
+				}
+			},
+			{
+				"layout": "2",
+				"href": "#",
+				"title": "2021 Сведения, направленные на LSE",
+				"text": "0,87 мб",
+				"date": {
+					"month": "Ноябрь",
+					"day": "2021"
+				},
+				"action": {
+					"title": "Скачать",
+					"text": "Скачать",
+					"icon": {
+						"name": "24/download"
+					}
+				}
+			},
+			{
+				"layout": "2",
+				"href": "#",
+				"title": "2021 Сведения, направленные на LSE",
+				"text": "0,87 мб",
+				"date": {
+					"month": "Ноябрь",
+					"day": "2021"
+				},
+				"action": {
+					"title": "Скачать",
+					"text": "Скачать",
+					"icon": {
+						"name": "24/download"
+					}
+				}
+			},
+			{
+				"layout": "2",
+				"href": "#",
+				"title": "2021 Сведения, направленные на LSE",
+				"text": "0,87 мб",
+				"date": {
+					"month": "Ноябрь",
+					"day": "2021"
+				},
+				"action": {
+					"title": "Скачать",
+					"text": "Скачать",
+					"icon": {
+						"name": "24/download"
+					}
+				}
+			},
+			{
+				"layout": "2",
+				"href": "#",
+				"title": "2021 Сведения, направленные на LSE",
+				"text": "0,87 мб",
+				"date": {
+					"month": "Ноябрь",
+					"day": "2021"
+				},
+				"action": {
+					"title": "Скачать",
+					"text": "Скачать",
+					"icon": {
+						"name": "24/download"
+					}
+				}
+			},
+			{
+				"layout": "2",
+				"href": "#",
+				"title": "2021 Сведения, направленные на LSE",
+				"text": "0,87 мб",
+				"date": {
+					"month": "Ноябрь",
+					"day": "2021"
+				},
+				"action": {
+					"title": "Скачать",
+					"text": "Скачать",
+					"icon": {
+						"name": "24/download"
+					}
+				}
+			}
+		]
+	}
+}

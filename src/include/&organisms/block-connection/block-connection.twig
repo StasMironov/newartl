@@ -1,0 +1,28 @@
+<div class="block-connection">
+    <div class="block-connection__container container">
+        <div class="block-connection__wrapper">
+            <div class="block-connection__left">
+                {% if block_connection.title %}
+                    <h2 class="block-connection__title h2" data-fade-in-up>
+                        {{block_connection.title}}
+                    </h2>
+                {% endif %}
+            </div>
+            <div class="block-connection__right">
+                    {% if block_connection.items %}
+                        <div class="block-connection__cards">
+                            {% for card in block_connection.items %}
+                                <div class="block-connection__card" data-fade-in-up data-delay="{{ (loop.index0 / 2.5)|round(2, 'floor') }}">
+                                    {% view '^card-connection' with {
+                                        card: card
+                                    }%}
+                                    <div class="block-connection__border">
+                                    </div>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    {% endif %}
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,13 @@
+<div class="card-strategy-list container" data-strategy-container>
+	<div class="card-strategy-list__inner">
+		<div class="card-strategy-list__items">
+			{% for card in card_list.items %}
+				<div class="card-strategy-list__item" data-card>
+					{% view '^card-strategy' with {
+						card: card
+					} %}
+				</div>
+			{% endfor %}
+		</div>
+	</div>
+</div>

@@ -1,0 +1,109 @@
+{
+	"project_name": "Artel",
+	"page_list": {
+		"Публичные страницы": [
+			{
+				"link": "main",
+				"name": "Главная"
+			},
+			{
+				"link": "mission",
+				"name": "Миссия компании"
+			},
+			{
+				"link": "products",
+				"name": "Наши продукты"
+			},
+			{
+				"link": "contacts",
+				"name": "Контакты"
+			},
+			{
+				"link": "strategy",
+				"name": "Стратегия"
+			},
+			{
+				"link": "page404",
+				"name": "404"
+			},
+			{
+				"link": "press",
+				"name": "Пресс-центр"
+			},
+			{
+				"link": "news",
+				"name": "Новости-детальная"
+			},
+			{
+				"link": "gallery",
+				"name": "Галерея"
+			},
+			{
+				"link": "sale-partners",
+				"name": "Партнёры по продажам"
+			},
+			{
+				"link": "history",
+				"name": "История"
+			},
+			{
+				"link": "docs",
+				"name": "Документы"
+			},
+			{
+				"link": "presentation",
+				"name": "Презентации"
+			},
+			{
+				"link": "reports",
+				"name": "Результаты и отчёты"
+			},
+			{
+				"link": "partners",
+				"name": "Партнёры"
+			},
+			{
+				"link": "facilities",
+				"name": "Предприятия"
+			},
+			{
+				"link": "vacancy",
+				"name": "Вакансия"
+			},
+			{
+				"link": "sustain",
+				"name": "Устойчивое развитие"
+			},
+			{
+				"link": "partners-2",
+				"name": "Партнёрам"
+			},
+			{
+				"link": "career",
+				"name": "Карьера"
+			},
+			{
+				"link": "for-investors",
+				"name": "Инвесторам"
+			}
+		],
+		"Служебные страницы": [
+			{
+				"link": "typography",
+				"name": "Типографика"
+			},
+			{
+				"link": "atoms",
+				"name": "Атомы"
+			},
+			{
+				"link": "molecules",
+				"name": "Молекулы"
+			},
+			{
+				"link": "organisms",
+				"name": "Организмы"
+			}
+		]
+	}
+}

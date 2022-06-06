@@ -1,0 +1,258 @@
+{
+	"title": "Стратегия",
+	"header": {
+		"transparent": true,
+		"logo": {
+			"href": "main.html",
+			"name": "logos/main-logo",
+			"size": "fit"
+		},
+		"navigation": [
+			{
+				"text": "О группе",
+				"submenu": {
+					"title": "О группе",
+					"text": "Общая информация для инвесторов в формате отчетов, графиков и документов",
+					"links": [
+						{
+							"href": "javascript:void(0);",
+							"text": "Общая информация для инвесторов"
+						},
+						{
+							"href": "javascript:void(0);",
+							"text": "Презентации"
+						},
+						{
+							"href": "javascript:void(0);",
+							"text": "Соблюдение требований корпоративного управления"
+						},
+						{
+							"href": "javascript:void(0);",
+							"text": "Структура компании"
+						},
+						{
+							"href": "javascript:void(0);",
+							"text": "Совет директоров"
+						},
+						{
+							"href": "javascript:void(0);",
+							"text": "Руководство"
+						}
+					]
+				}
+			},
+			{
+				"text": "Инвесторам",
+				"submenu": {
+					"title": "Инвесторам",
+					"text": "Общая информация для инвесторов в формате отчетов, графиков и документов",
+					"links": [
+						{
+							"href": "javascript:void(0);",
+							"text": "Общая информация для инвесторов"
+						},
+						{
+							"text": "Результаты и отчеты",
+							"active": true
+						},
+						{
+							"href": "javascript:void(0);",
+							"text": "Презентации"
+						},
+						{
+							"href": "javascript:void(0);",
+							"text": "Соблюдение требований корпоративного управления"
+						},
+						{
+							"href": "javascript:void(0);",
+							"text": "Структура компании"
+						},
+						{
+							"href": "javascript:void(0);",
+							"text": "Совет директоров"
+						},
+						{
+							"href": "javascript:void(0);",
+							"text": "Руководство"
+						},
+						{
+							"href": "javascript:void(0);",
+							"text": "Корпоративное управление"
+						},
+						{
+							"href": "javascript:void(0);",
+							"text": "Внутренние документы"
+						},
+						{
+							"href": "javascript:void(0);",
+							"text": "Каталог продукции"
+						},
+						{
+							"href": "javascript:void(0);",
+							"text": "Контакты для инвесторов"
+						}
+					]
+				}
+			},
+			{
+				"href": "javascript:void(0);",
+				"text": "Партнерам"
+			},
+			{
+				"href": "javascript:void(0);",
+				"text": "Устойчивое развитие"
+			},
+			{
+				"href": "javascript:void(0);",
+				"text": "Пресс-центр"
+			},
+			{
+				"text": "Карьера",
+				"active": true
+			},
+			{
+				"href": "javascript:void(0);",
+				"text": "Контакты"
+			}
+		],
+		"lang": {
+			"action": {
+				"text": "Ру",
+				"title": "Ру"
+			},
+			"items": [
+				{
+					"href": "javascript:void(0);",
+					"text": "En",
+					"title": "En"
+				},
+				{
+					"href": "javascript:void(0);",
+					"text": "Оʻz",
+					"title": "Оʻz"
+				}
+			]
+		}
+	},
+	"hero_default": {
+		"image": {
+			"src": "tmp/default-hero/hero-category.jpg",
+			"alt": "image alt",
+			"fill": true,
+			"tab": {
+				"srcset": [
+					{
+						"scale": "1",
+						"src": "tmp/default-hero/hero-strategy-tab.jpg"
+					}
+				]
+			},
+			"mob": {
+				"srcset": [
+					{
+						"scale": "1",
+						"src": "tmp/default-hero/hero-strategy-mob.jpg"
+					}
+				]
+			}
+		},
+		"no_title": true,
+		"btn_play": {
+			"attr": "data-modal-video='modal-video-1'"
+		}
+	},
+	"block_nav": {
+		"title": "Artel Electronics — ведущий производитель на рынке бытовой электротехники",
+		"bg": "gray",
+		"layout": "2",
+		"icon": {
+			"name": "logos/decor",
+			"size": "fit"
+		},
+		"theme": "white",
+		"tabs": {
+			"layout": "3",
+			"items": [
+				{
+					"href": "!#",
+					"text": "Стратегия",
+					"title": "Стратегия",
+					"active": "true"
+				},
+				{
+					"href": "!#",
+					"text": "Миссия компании",
+					"title": "Миссия компании"
+				},
+				{
+					"href": "!#",
+					"text": "История группы",
+					"title": "История группы"
+				},
+				{
+					"href": "!#",
+					"text": "Партнеры",
+					"title": "Партнеры"
+				},
+				{
+					"href": "!#",
+					"text": "Наши продукты",
+					"title": "Наши продукты"
+				},
+				{
+					"href": "!#",
+					"text": "Предприятия",
+					"title": "Предприятия"
+				}
+			]
+		}
+	},
+	"video": {
+		"id": "video-main",
+		"src": "tmp/istockphoto-504807370-640_adpp_is.mp4"
+	},
+	"strategy_slider": {
+		"bg": "gray",
+		"autoplay": "10000",
+		"icon": {
+			"name": "328/circle",
+			"size": "fit"
+		},
+		"icon_back": {
+			"name": "328/circle-bg",
+			"size": "fit"
+		},
+
+		"slides": [
+			{
+				"title": "Стратегия компании и&nbsp;направления роста",
+				"note": "«Артель» обеспечит долгосрочный устойчивый рост за счет следующих действий:",
+				"text": "Сохранение и развитие нашей лидирующей позиции на внутреннем рынке, предлагая более широкий ассортимент продукции во всех сегментах",
+				"icon": {
+					"name": "88/trophy",
+					"size": "88"
+				}
+			},
+			{
+				"title": "Направления роста",
+				"note": "«Стратегия компании»",
+				"text": "«Артель» обеспечит долгосрочный устойчивый рост за счет следующих действий:",
+				"icon": {
+					"name": "88/trophy",
+					"size": "88"
+				}
+			}
+		]
+	},
+	"strategy": {
+		"bg": "black",
+		"colored": "Artel Electronics",
+		"lead": "была основана в 2011 году. Мы являемся одним из ведущих производителей на рынке бытовой электротехники и сохраняем хорошую репутацию в Узбекистане и во всем мире",
+		"icon": {
+			"name": "104/success",
+			"size": "104",
+			"text": "Стратегия составлена и утверждена в Q3 2021"
+		},
+		"text": "Чтобы воссоздать ценное предприятие для человека и окружающей среды, мы реформируем структуру бизнеса и повышаем производительность труда. Artel делает шаг вперед. Artel ускоряет исследования, разработки и техническое обновление, но также ищет новый высокодоходный бизнес."
+	}
+}

@@ -1,0 +1,685 @@
+{
+	"title": "Главная",
+	"pageHeading": "Some text",
+	"hero": {
+		"autoplay": "10000",
+		"slides": [
+			{
+				"title": "Artel — ведущий производитель бытовой техники и электроники в Центральной Азии",
+				"action": {
+					"href": "javascript:void(0);",
+					"text": "Подробнее о группе",
+					"title": "Подробнее о группе",
+					"icon": {
+						"name": "24/arrow-up-right"
+					}
+				},
+				"video": {
+					"attr": "data-video-main",
+					"src": "tmp/video/video-4.mp4",
+					"type": "video/mp4"
+				}
+			},
+			{
+				"title": "Компания Artel",
+				"action": {
+					"href": "javascript:void(0);",
+					"text": "Подробнее о группе",
+					"title": "Подробнее о группе",
+					"icon": {
+						"name": "24/arrow-up-right"
+					}
+				},
+				"video": {
+					"attr": "data-video-main",
+					"src": "tmp/video/video-1.mp4",
+					"type": "video/mp4"
+				},
+				"dark": true,
+				"overlay": true
+			},
+			{
+				"title": "Artel — ведущий производитель бытовой техники и электроники в&nbsp;Центральной Азии",
+				"action": {
+					"href": "javascript:void(0);",
+					"text": "Подробнее о группе",
+					"title": "Подробнее о группе",
+					"icon": {
+						"name": "24/arrow-up-right"
+					}
+				},
+				"image": {
+					"src": "tmp/main-hero/hero-3.jpg",
+					"alt": "image alt",
+					"fill": true
+				},
+				"dark": true,
+				"overlay": true
+			}
+		]
+	},
+	"block_info": {
+		"title": "Artel в цифрах — 2020",
+		"bg": "gray",
+		"tabs": {
+			"items": [
+				{
+					"text": "Продукты",
+					"attr": "data-attr",
+					"active": "true"
+				},
+				{
+					"text": "Финансовые показатели",
+					"href": "javascript:void(0);",
+					"attr": "data-attr"
+				}
+			]
+		},
+		"tabs_content": [
+			{
+				"active": true,
+				"cards": [
+					{
+						"text": "80",
+						"after": {
+							"txt": "млн"
+						},
+						"before": "≈$",
+						"label": "финансовые показатели",
+						"result": {
+							"num": "11,5",
+							"symbol": "%",
+							"icon": {
+								"name": "24/triangle",
+								"size": "24"
+							}
+						}
+					},
+					{
+						"text": "50",
+						"after": {
+							"txt": "млн"
+						},
+						"before": "≈$",
+						"label": "чистая выручка",
+						"result": {
+							"num": "11,5",
+							"symbol": "%",
+							"icon": {
+								"name": "24/triangle",
+								"size": "24"
+							}
+						}
+					},
+					{
+						"text": "20",
+						"after": {
+							"txt": "%"
+						},
+						"before": "≈",
+						"label": "маржа EBITDA",
+						"result": {
+							"num": "7,5",
+							"symbol": "%",
+							"icon": {
+								"name": "24/triangle",
+								"size": "24"
+							}
+						}
+					}
+				]
+			},
+			{
+				"cards": [
+					{
+						"text": "70",
+						"after": {
+							"txt": "млн"
+						},
+						"before": "≈$",
+						"label": "финансовые показатели",
+						"result": {
+							"num": "11,5",
+							"symbol": "%",
+							"icon": {
+								"name": "24/triangle",
+								"size": "24"
+							}
+						}
+					},
+					{
+						"text": "10",
+						"after": {
+							"txt": "млн"
+						},
+						"before": "≈$",
+						"label": "чистая выручка",
+						"result": {
+							"num": "11,5",
+							"symbol": "%",
+							"icon": {
+								"name": "24/triangle",
+								"size": "24"
+							}
+						}
+					},
+					{
+						"text": "20",
+						"after": {
+							"txt": "%"
+						},
+						"before": "≈",
+						"label": "маржа EBITDA",
+						"result": {
+							"num": "7,5",
+							"symbol": "%",
+							"icon": {
+								"name": "24/triangle",
+								"size": "24"
+							}
+						}
+					}
+				]
+			}
+		]
+	},
+	"block_appeal": {
+		"user": {
+			"name": "Жахонгир Абидович Артикходжаев",
+			"status": "Основатель группы",
+			"alt": "Здесь будет фото основателя группы"
+		},
+		"msg": {
+			"title": "Большое спасибо за посещение Artel Electronics",
+			"action": {
+				"info": "Artel Electronics была основана в 2011 году, и мы являемся одним из ведущих производителей на рынке бытовой электротехники и сохраняем хорошую репутацию в Узбекистане и во всем мире.",
+				"link": {
+					"href": "!#",
+					"text": "Читать далее"
+				}
+			},
+			"icon": {
+				"name": "104/quote",
+				"size": "104"
+			},
+			"read_more": {
+				"icon": {
+					"name": "24/triangle",
+					"size": "24"
+				},
+				"base": "Artel Electronics была основана в 2011 году, и мы являемся одним из ведущих производителей на рынке бытовой электротехники и сохраняем хорошую репутацию в Узбекистане и во всем мире.",
+				"items": [
+					"Artel Electronics была основана в 2011 году, и мы являемся одним из ведущих производителей на рынке бытовой электротехники и сохраняем хорошую репутацию в Узбекистане и во всем мире.",
+					"Artel Electronics была основана в 2011 году, и мы являемся одним из ведущих производителей на рынке бытовой электротехники и сохраняем хорошую репутацию в Узбекистане и во всем мире."
+				],
+				"link": {
+					"text": "Читать далее"
+				}
+			}
+		},
+		"link": {
+			"href": "tel:88007076644",
+			"text": "8 (800) 707-66-44"
+		}
+	},
+	"info_slider": {
+		"autoplay": "10000",
+		"slides": [
+			{
+				"title": "История Группы Artel",
+				"note": "Наши ключевые вехи за 10 лет",
+				"year": "2011",
+				"text": "Начало производства телевизоров, промышленных и бытовых кондиционеров",
+				"image": {
+					"src": "tmp/slider-history/1.jpg",
+					"alt": "image alt",
+					"fill": true,
+					"tab": {
+						"srcset": [
+							{
+								"scale": "1",
+								"src": "tmp/slider-history/1.jpg"
+							}
+						]
+					},
+					"mob": {
+						"srcset": [
+							{
+								"scale": "1",
+								"src": "tmp/slider-history/1.jpg"
+							}
+						]
+					}
+				},
+				"overlay": true,
+				"dark": true
+			},
+			{
+				"title": "История Группы Artel 2",
+				"note": "Наши ключевые вехи за 500 лет",
+				"year": "2012",
+				"text": "Начало производства телевизоров",
+				"image": {
+					"src": "tmp/main-hero/hero-desk-2.jpg",
+					"alt": "image alt",
+					"fill": true
+				},
+				"dark": true,
+				"overlay": true
+			},
+			{
+				"title": "История Группы Artel 2",
+				"note": "Наши ключевые вехи за 100 лет",
+				"year": "2013",
+				"text": "Test 3",
+				"image": {
+					"src": "tmp/card-news/news3.jpg",
+					"alt": "image alt",
+					"fill": true
+				},
+				"dark": true,
+				"overlay": true
+			},
+			{
+				"title": "История Группы Artel 2",
+				"note": "Наши ключевые вехи за 10 лет",
+				"year": "2014",
+				"text": "Test 4",
+				"image": {
+					"src": "tmp/card-news/news2.jpg",
+					"alt": "image alt",
+					"fill": true
+				},
+				"dark": true,
+				"overlay": true
+			},
+			{
+				"title": "История Группы Artel 2",
+				"note": "Наши ключевые вехи за 15 лет",
+				"year": "2015",
+				"text": "Test 5",
+				"image": {
+					"src": "tmp/card-news/news3.jpg",
+					"alt": "image alt",
+					"fill": true
+				},
+				"dark": true,
+				"overlay": true
+			},
+			{
+				"title": "История Группы Artel 2",
+				"note": "Наши ключевые вехи за 16 лет",
+				"year": "2016",
+				"text": "Test 6",
+				"image": {
+					"src": "tmp/main-hero/hero-desk-2.jpg",
+					"alt": "image alt",
+					"fill": true
+				},
+				"dark": true,
+				"overlay": true
+			},
+			{
+				"title": "История Группы Artel 2",
+				"note": "Наши ключевые вехи за 17 лет",
+				"year": "2017",
+				"text": "Test 7",
+				"image": {
+					"src": "tmp/card-news/news2.jpg",
+					"alt": "image alt",
+					"fill": true
+				},
+				"dark": true,
+				"overlay": true
+			},
+			{
+				"title": "История Группы Artel 2",
+				"note": "Наши ключевые вехи за 18 лет",
+				"year": "2018",
+				"text": "Test 8",
+				"image": {
+					"src": "tmp/main-hero/hero-desk-2.jpg",
+					"alt": "image alt",
+					"fill": true
+				},
+				"dark": true,
+				"overlay": true
+			},
+			{
+				"title": "История Группы Artel 2",
+				"note": "Наши ключевые вехи за 19 лет",
+				"year": "2019",
+				"text": "Test 9",
+				"image": {
+					"src": "tmp/card-news/news3.jpg",
+					"alt": "image alt",
+					"fill": true
+				},
+				"dark": true,
+				"overlay": true
+			},
+			{
+				"title": "История Группы Artel 2",
+				"note": "Наши ключевые вехи за 20 лет",
+				"year": "2020",
+				"text": "Test 10",
+				"image": {
+					"src": "tmp/main-hero/hero-desk-2.jpg",
+					"alt": "image alt",
+					"fill": true
+				},
+				"dark": true,
+				"overlay": true
+			},
+			{
+				"title": "История Группы Artel 2",
+				"note": "Наши ключевые вехи за 40 лет",
+				"year": "2021",
+				"text": "Test 11",
+				"image": {
+					"src": "tmp/card-news/news3.jpg",
+					"alt": "image alt",
+					"fill": true
+				},
+				"dark": true,
+				"overlay": true
+			}
+		]
+	},
+	"features": {
+		"title": "Годовые отчеты и стратегия для инвесторов",
+		"items": [
+			{
+				"theme": "green",
+				"href": "#",
+				"title": "Результаты и отчеты",
+				"text": "Стабильная производитель&shy;ность несмотря на некоторые ограничения COVID-19",
+				"icon": true
+			},
+			{
+				"theme": "black",
+				"href": "#!",
+				"title": "Инвесторам",
+				"text": "Мы строим доверительные отношения с заинтересован&shy;ными сторонами",
+				"icon": true
+			},
+			{
+				"href": "#!!",
+				"title": "ESG",
+				"text": "Высокие стандарты ESG — приоритет в нашей Группе",
+				"icon": true
+			}
+		]
+	},
+	"news": {
+		"title": "Последние новости",
+		"tabs": {
+			"items": [
+				{
+					"text": "Жизнь компании",
+					"title": "Жизнь компании",
+					"attr": "data-attr",
+					"active": "true"
+				},
+				{
+					"text": "Пресс-служба",
+					"title": "Пресс-служба",
+					"href": "javascript:void(0);",
+					"attr": "data-attr"
+				},
+				{
+					"text": "Истории успеха",
+					"title": "Истории успеха",
+					"href": "javascript:void(0);",
+					"attr": "data-attr"
+				},
+				{
+					"text": "Социальная ответственность",
+					"title": "Социальная ответственность",
+					"href": "javascript:void(0);",
+					"attr": "data-attr"
+				}
+			]
+		},
+		"tabs_content": [
+			{
+				"active": true,
+				"cards": [
+					{
+						"href": "#",
+						"date": "1 сен 2021",
+						"title": "Artel и Khan Academy Oʻzbek подписали меморандум",
+						"image": {
+							"src": "tmp/card-news/news1.jpg",
+							"alt": "alt"
+						}
+					},
+					{
+						"href": "#",
+						"date": "3 мая 2021",
+						"title": "Производственной мощности Artel достаточно для производства продукции",
+						"image": {
+							"src": "tmp/card-news/news2.jpg",
+							"alt": "alt"
+						}
+					},
+					{
+						"href": "#",
+						"date": "28 янв 2021",
+						"title": "Проводится обучение руководителей",
+						"image": {
+							"src": "tmp/card-news/news3.jpg",
+							"alt": "alt"
+						}
+					},
+					{
+						"href": "#",
+						"date": "3 мая 2021",
+						"title": "Компания Artel подарила стиральные машины детскому дому «Kichkintoy»",
+						"image": {
+							"src": "tmp/card-news/news4.jpg",
+							"alt": "alt"
+						}
+					}
+				]
+			},
+			{
+				"cards": [
+					{
+						"href": "#",
+						"date": "1 сен 2021",
+						"title": "Artel и Khan Academy Oʻzbek подписали меморандум",
+						"image": {
+							"src": "tmp/card-news/news1.jpg",
+							"alt": "alt"
+						}
+					},
+					{
+						"href": "#",
+						"date": "1 сен 2021",
+						"title": "Artel и Khan Academy Oʻzbek подписали меморандум",
+						"image": {
+							"src": "tmp/card-news/news3.jpg",
+							"alt": "alt"
+						}
+					},
+					{
+						"href": "#",
+						"date": "1 сен 2021",
+						"title": "Artel и Khan Academy Oʻzbek подписали меморандум",
+						"image": {
+							"src": "tmp/card-news/news2.jpg",
+							"alt": "alt"
+						}
+					},
+					{
+						"href": "#",
+						"date": "1 сен 2021",
+						"title": "Artel и Khan Academy Oʻzbek подписали меморандум",
+						"image": {
+							"src": "tmp/card-news/news4.jpg",
+							"alt": "alt"
+						}
+					}
+				]
+			},
+			{
+				"cards": [
+					{
+						"href": "#",
+						"date": "1 сен 2021",
+						"title": "Artel и Khan Academy Oʻzbek подписали меморандум",
+						"image": {
+							"src": "tmp/card-news/news4.jpg",
+							"alt": "alt"
+						}
+					},
+					{
+						"href": "#",
+						"date": "1 сен 2021",
+						"title": "Artel и Khan Academy Oʻzbek подписали меморандум",
+						"image": {
+							"src": "tmp/card-news/news2.jpg",
+							"alt": "alt"
+						}
+					},
+					{
+						"href": "#",
+						"date": "1 сен 2021",
+						"title": "Artel и Khan Academy Oʻzbek подписали меморандум",
+						"image": {
+							"src": "tmp/card-news/news3.jpg",
+							"alt": "alt"
+						}
+					},
+					{
+						"href": "#",
+						"date": "1 сен 2021",
+						"title": "Artel и Khan Academy Oʻzbek подписали меморандум",
+						"image": {
+							"src": "tmp/card-news/news1.jpg",
+							"alt": "alt"
+						}
+					}
+				]
+			},
+			{
+				"cards": [
+					{
+						"href": "#",
+						"date": "1 сен 2021",
+						"title": "Artel и Khan Academy Oʻzbek подписали меморандум",
+						"image": {
+							"src": "tmp/card-news/news1.jpg",
+							"alt": "alt"
+						}
+					},
+					{
+						"href": "#",
+						"date": "1 сен 2021",
+						"title": "Artel и Khan Academy Oʻzbek подписали меморандум",
+						"image": {
+							"src": "tmp/card-news/news3.jpg",
+							"alt": "alt"
+						}
+					},
+					{
+						"href": "#",
+						"date": "1 сен 2021",
+						"title": "Artel и Khan Academy Oʻzbek подписали меморандум",
+						"image": {
+							"src": "tmp/card-news/news4.jpg",
+							"alt": "alt"
+						}
+					},
+					{
+						"href": "#",
+						"date": "1 сен 2021",
+						"title": "Artel и Khan Academy Oʻzbek подписали меморандум",
+						"image": {
+							"src": "tmp/card-news/news2.jpg",
+							"alt": "alt"
+						}
+					}
+				]
+			}
+		]
+	},
+	"map": {
+		"url": "ajax/map-companies.json",
+		"heading": "География компании",
+		"zoom": true,
+		"tabs": {
+			"horizontal": true,
+			"items": [
+				{
+					"text": "Узбекистан",
+					"attr": "data-region='uz'",
+					"shift": true
+				},
+				{
+					"text": "Россия",
+					"active": true,
+					"attr": "data-region='ru'",
+					"shift": true
+				},
+				{
+					"text": "Украина",
+					"attr": "data-region='ua'",
+					"shift": true
+				},
+				{
+					"text": "Казахстан",
+					"attr": "data-region='kz'",
+					"shift": true
+				},
+				{
+					"text": "Кыргызстан",
+					"attr": "data-region='kg'",
+					"shift": true
+				},
+				{
+					"text": "Таджикистан",
+					"attr": "data-region='tj'",
+					"shift": true
+				},
+				{
+					"text": "Азербайджан",
+					"attr": "data-region='az'",
+					"shift": true
+				},
+				{
+					"text": "Армения",
+					"attr": "data-region='ar'",
+					"shift": true
+				}
+			]
+		},
+		"legend": [
+			{
+				"text": "Сервисные центры",
+				"icon": {
+					"name": "map-icons/map-pin",
+					"size": "fit"
+				},
+				"theme": "green"
+			},
+			{
+				"text": "Заводы",
+				"icon": {
+					"name": "map-icons/map-pin",
+					"size": "fit"
+				},
+				"theme": "black"
+			},
+			{
+				"text": "Экспорт",
+				"icon": {
+					"name": "map-icons/map-pin",
+					"size": "fit"
+				},
+				"theme": "purple"
+			}
+		]
+	}
+}

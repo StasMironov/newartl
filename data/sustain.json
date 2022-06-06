@@ -1,0 +1,404 @@
+{
+  "title": "Устойчивое развитие",
+  "header": {
+    "transparent": true,
+    "logo": {
+      "href": "main.html",
+      "name": "logos/main-logo",
+      "size": "fit"
+    },
+    "navigation": [
+      {
+        "text": "О группе",
+        "submenu": {
+          "title": "О группе",
+          "text": "Общая информация для инвесторов в формате отчетов, графиков и документов",
+          "links": [
+            {
+              "href": "javascript:void(0);",
+              "text": "Общая информация для инвесторов"
+            },
+            {
+              "href": "javascript:void(0);",
+              "text": "Презентации"
+            },
+            {
+              "href": "javascript:void(0);",
+              "text": "Соблюдение требований корпоративного управления"
+            },
+            {
+              "href": "javascript:void(0);",
+              "text": "Структура компании"
+            },
+            {
+              "href": "javascript:void(0);",
+              "text": "Совет директоров"
+            },
+            {
+              "href": "javascript:void(0);",
+              "text": "Руководство"
+            }
+          ]
+        }
+      },
+      {
+        "text": "Инвесторам",
+        "submenu": {
+          "title": "Инвесторам",
+          "text": "Общая информация для инвесторов в формате отчетов, графиков и документов",
+          "links": [
+            {
+              "href": "javascript:void(0);",
+              "text": "Общая информация для инвесторов"
+            },
+            {
+              "text": "Результаты и отчеты",
+              "active": true
+            },
+            {
+              "href": "javascript:void(0);",
+              "text": "Презентации"
+            },
+            {
+              "href": "javascript:void(0);",
+              "text": "Соблюдение требований корпоративного управления"
+            },
+            {
+              "href": "javascript:void(0);",
+              "text": "Структура компании"
+            },
+            {
+              "href": "javascript:void(0);",
+              "text": "Совет директоров"
+            },
+            {
+              "href": "javascript:void(0);",
+              "text": "Руководство"
+            },
+            {
+              "href": "javascript:void(0);",
+              "text": "Корпоративное управление"
+            },
+            {
+              "href": "javascript:void(0);",
+              "text": "Внутренние документы"
+            },
+            {
+              "href": "javascript:void(0);",
+              "text": "Каталог продукции"
+            },
+            {
+              "href": "javascript:void(0);",
+              "text": "Контакты для инвесторов"
+            }
+          ]
+        }
+      },
+      {
+        "href": "javascript:void(0);",
+        "text": "Партнерам"
+      },
+      {
+        "href": "javascript:void(0);",
+        "text": "Устойчивое развитие"
+      },
+      {
+        "href": "javascript:void(0);",
+        "text": "Пресс-центр"
+      },
+      {
+        "href": "javascript:void(0);",
+        "text": "Карьера"
+      },
+      {
+        "href": "javascript:void(0);",
+        "text": "Контакты"
+      }
+    ],
+    "lang": {
+      "action": {
+        "text": "Ру",
+        "title": "Ру"
+      },
+      "items": [
+        {
+          "href": "javascript:void(0);",
+          "text": "En",
+          "title": "En"
+        },
+        {
+          "href": "javascript:void(0);",
+          "text": "Оʻz",
+          "title": "Оʻz"
+        }
+      ]
+    }
+  },
+  "hero_default": {
+    "layout": "3",
+    "breadcrumbs": {
+      "theme": "white",
+      "items": [
+        {
+          "text": "Главная",
+          "href": "main.html"
+        }
+      ]
+    },
+    "title": "Команда мирового уровня",
+    "title_fullwidth": true,
+    "image": {
+      "src": "tmp/default-hero/hero-sustain.jpg",
+      "alt": "image alt",
+      "fill": true,
+      "tab": {
+        "srcset": [
+          {
+            "scale": "1",
+            "src": "tmp/default-hero/hero-sustain-tab.jpg"
+          }
+        ]
+      },
+      "mob": {
+        "srcset": [
+          {
+            "scale": "1",
+            "src": "tmp/default-hero/hero-sustain-mob.jpg"
+          }
+        ]
+      }
+    }
+  },
+  "block_nav": {
+    "desc": "Занимаемся поиском образцов лучших социальных программ и создаем предпосылки для обмена практиками и распространения информации в бизнес-среде.",
+    "bg": "green",
+    "icon": {
+      "name": "logos/decor",
+      "size": "fit"
+    },
+    "tabs": {
+      "layout": "3",
+      "items": [
+        {
+          "href": true,
+          "scroll_to": "#production",
+          "text": "Устойчивое производство",
+          "title": "Устойчивое производство",
+          "active": "true",
+          "theme": "white-2",
+          "unique": true
+        },
+        {
+          "href": true,
+          "scroll_to": "#rds",
+          "text": "R&D и Инновации",
+          "title": "R&D и Инновацииы",
+          "theme": "white-2"
+        },
+        {
+          "href": true,
+          "scroll_to": "#social",
+          "text": "Социальные инициативы",
+          "title": "Социальные инициативы",
+          "theme": "white-2"
+        },
+        {
+          "href": true,
+          "scroll_to": "#docs",
+          "text": "Отчеты и презентации",
+          "title": "Отчеты и презентации",
+          "theme": "white-2"
+        }
+      ]
+    }
+  },
+  "slider": {
+    "arrows_theme": "white",
+    "slider_block": true,
+    "items": [
+      {
+        "article": "Заключение партнерских отношений с «Baku Electronics» в&nbsp;Азербайджане",
+        "href": "test.html",
+        "text": "Наша основная задача — отыскать лучшие образцы социальных программ и создать предпосылки для обмена практиками и распространения информации.",
+        "img": {
+          "src": "tmp/press/img7.jpg",
+          "alt": "img"
+        },
+        "icon": {
+          "name": "24/pic"
+        },
+        "qty": "33"
+      },
+      {
+        "article": "2",
+        "href": "test2.html",
+        "img": {
+          "src": "tmp/card-news/news2.jpg",
+          "alt": "img"
+        },
+        "icon": {
+          "name": "24/pic"
+        },
+        "qty": "30"
+      },
+      {
+        "article": "3",
+        "href": "test.html",
+        "img": {
+          "src": "tmp/press/img1.jpg",
+          "alt": "img"
+        },
+        "icon": {
+          "name": "24/pic"
+        },
+        "qty": "33"
+      },
+      {
+        "article": "4",
+        "href": "test2.html",
+        "img": {
+          "src": "tmp/card-news/news2.jpg",
+          "alt": "img"
+        },
+        "icon": {
+          "name": "24/pic"
+        },
+        "qty": "30"
+      },
+      {
+        "article": "5",
+        "href": "test.html",
+        "img": {
+          "src": "tmp/press/img1.jpg",
+          "alt": "img"
+        },
+        "icon": {
+          "name": "24/pic"
+        },
+        "qty": "33"
+      }
+    ]
+  },
+  "sliderDocs": {
+    "heading": "Отчеты и презентации об&nbsp;устойчивом развитии",
+    "field": {
+      "select": true,
+      "id": "filter-form-select-1",
+      "name": "filter-form-select-1",
+      "placeholder": "Все года",
+      "options": [
+        {
+          "value": "all",
+          "text": "Все года",
+          "selected": "selected"
+        },
+        {
+          "value": "2021",
+          "text": "2021"
+        },
+        {
+          "value": "2020",
+          "text": "2020"
+        },
+        {
+          "value": "2019",
+          "text": "2019"
+        }
+      ],
+      "attr": "data-slider-docs-field"
+    },
+    "items": [
+      {
+        "layout": "2",
+        "href": "#!",
+        "title": "2021 Отчет об устойчивом развитии",
+        "text": "0,87 мб",
+        "date": {
+          "month": "Ноябрь",
+          "day": "2021"
+        },
+        "action": {
+          "title": "Скачать",
+          "text": "Скачать",
+          "icon": {
+            "name": "24/download"
+          }
+        },
+        "year": "2021"
+      },
+      {
+        "layout": "2",
+        "href": "#!!",
+        "title": "2021 Отчет об устойчивом развитии",
+        "text": "0,87 мб",
+        "date": {
+          "month": "Ноябрь",
+          "day": "2021"
+        },
+        "action": {
+          "title": "Скачать",
+          "text": "Скачать",
+          "icon": {
+            "name": "24/download"
+          }
+        },
+        "year": "2021"
+      },
+      {
+        "layout": "2",
+        "href": "#!",
+        "title": "2020 Отчет об устойчивом развитии",
+        "text": "0,87 мб",
+        "date": {
+          "month": "Ноябрь",
+          "day": "2021"
+        },
+        "action": {
+          "title": "Скачать",
+          "text": "Скачать",
+          "icon": {
+            "name": "24/download"
+          }
+        },
+        "year": "2020"
+      },
+      {
+        "layout": "2",
+        "href": "#!!",
+        "title": "2020 Отчет об устойчивом развитии",
+        "text": "0,87 мб",
+        "date": {
+          "month": "Ноябрь",
+          "day": "2021"
+        },
+        "action": {
+          "title": "Скачать",
+          "text": "Скачать",
+          "icon": {
+            "name": "24/download"
+          }
+        },
+        "year": "2020"
+      },
+      {
+        "layout": "2",
+        "href": "#!",
+        "title": "2019 Отчет об устойчивом развитии",
+        "text": "0,87 мб",
+        "date": {
+          "month": "Ноябрь",
+          "day": "2021"
+        },
+        "action": {
+          "title": "Скачать",
+          "text": "Скачать",
+          "icon": {
+            "name": "24/download"
+          }
+        },
+        "year": "2019"
+      }
+    ],
+    "scroll_target": "docs"
+  }
+}

@@ -1,0 +1,236 @@
+{
+  "title": "Карьера",
+  "header": {
+    "transparent": true,
+    "logo": {
+      "href": "main.html",
+      "name": "logos/main-logo",
+      "size": "fit"
+    },
+    "navigation": [
+      {
+        "text": "О группе",
+        "submenu": {
+          "title": "О группе",
+          "text": "Общая информация для инвесторов в формате отчетов, графиков и документов",
+          "links": [
+            {
+              "href": "javascript:void(0);",
+              "text": "Общая информация для инвесторов"
+            },
+            {
+              "href": "javascript:void(0);",
+              "text": "Презентации"
+            },
+            {
+              "href": "javascript:void(0);",
+              "text": "Соблюдение требований корпоративного управления"
+            },
+            {
+              "href": "javascript:void(0);",
+              "text": "Структура компании"
+            },
+            {
+              "href": "javascript:void(0);",
+              "text": "Совет директоров"
+            },
+            {
+              "href": "javascript:void(0);",
+              "text": "Руководство"
+            }
+          ]
+        }
+      },
+      {
+        "text": "Инвесторам",
+        "submenu": {
+          "title": "Инвесторам",
+          "text": "Общая информация для инвесторов в формате отчетов, графиков и документов",
+          "links": [
+            {
+              "href": "javascript:void(0);",
+              "text": "Общая информация для инвесторов"
+            },
+            {
+              "text": "Результаты и отчеты",
+              "active": true
+            },
+            {
+              "href": "javascript:void(0);",
+              "text": "Презентации"
+            },
+            {
+              "href": "javascript:void(0);",
+              "text": "Соблюдение требований корпоративного управления"
+            },
+            {
+              "href": "javascript:void(0);",
+              "text": "Структура компании"
+            },
+            {
+              "href": "javascript:void(0);",
+              "text": "Совет директоров"
+            },
+            {
+              "href": "javascript:void(0);",
+              "text": "Руководство"
+            },
+            {
+              "href": "javascript:void(0);",
+              "text": "Корпоративное управление"
+            },
+            {
+              "href": "javascript:void(0);",
+              "text": "Внутренние документы"
+            },
+            {
+              "href": "javascript:void(0);",
+              "text": "Каталог продукции"
+            },
+            {
+              "href": "javascript:void(0);",
+              "text": "Контакты для инвесторов"
+            }
+          ]
+        }
+      },
+      {
+        "href": "javascript:void(0);",
+        "text": "Партнерам"
+      },
+      {
+        "href": "javascript:void(0);",
+        "text": "Устойчивое развитие"
+      },
+      {
+        "href": "javascript:void(0);",
+        "text": "Пресс-центр"
+      },
+      {
+        "text": "Карьера",
+        "active": true
+      },
+      {
+        "href": "javascript:void(0);",
+        "text": "Контакты"
+      }
+    ],
+    "lang": {
+      "action": {
+        "text": "Ру",
+        "title": "Ру"
+      },
+      "items": [
+        {
+          "href": "javascript:void(0);",
+          "text": "En",
+          "title": "En"
+        },
+        {
+          "href": "javascript:void(0);",
+          "text": "Оʻz",
+          "title": "Оʻz"
+        }
+      ]
+    }
+  },
+  "hero_default": {
+    "layout": "6",
+    "breadcrumbs": {
+      "theme": "white",
+      "items": [
+        {
+          "text": "На главную",
+          "href": "main.html"
+        }
+      ]
+    },
+    "title": "Карьера в Artel",
+    "image": {
+      "src": "tmp/default-hero/hero-сareer.jpg",
+      "alt": "image alt",
+      "fill": true,
+      "tab": {
+        "srcset": [
+          {
+            "scale": "1",
+            "src": "tmp/default-hero/hero-career-tab.jpg"
+          }
+        ]
+      },
+      "mob": {
+        "srcset": [
+          {
+            "scale": "1",
+            "src": "tmp/default-hero/hero-сareer-mob.jpg"
+          }
+        ]
+      }
+    }
+  },
+  "block_offers": {
+    "title": "Вакансии",
+    "selects": [
+      {
+        "fill": true,
+        "fields": [
+          {
+            "select": true,
+            "id": "filter-form-select-1",
+            "name": "filter-form-select-1",
+            "attr": "data-form-select",
+            "placeholder": "Город",
+            "options": [
+              {
+                "value": "All",
+                "text": "Город",
+                "selected": "selected"
+              },
+              {
+                "value": "Город 1",
+                "text": "Город 1"
+              },
+              {
+                "value": "Город 2",
+                "text": "Город 2"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "fill": true,
+        "fields": [
+          {
+            "select": true,
+            "id": "filter-form-select-2",
+            "name": "filter-form-select-2",
+            "attr": "data-form-select",
+            "placeholder": "Направления",
+            "options": [
+              {
+                "value": "All",
+                "text": "Направления",
+                "selected": "selected"
+              },
+              {
+                "value": "Направление 1",
+                "text": "Направление 1"
+              },
+              {
+                "value": "Направление 2",
+                "text": "Направление 2"
+              },
+              {
+                "value": "Направление 3",
+                "text": "Направление 3"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "items": [],
+    "no_results": "К сожалению, поиск не дал результатов"
+  }
+}

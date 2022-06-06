@@ -1,0 +1,88 @@
+.block-icons {
+  &__top {
+		margin-bottom: rem(64);
+		@include media-breakpoint-up(md) {
+			margin-bottom: rem(96);
+		}
+	}
+  
+	&__items {
+		display: flex;
+		flex-wrap: wrap;
+	}
+  
+	&__item {
+		.icon {
+			width: rem(72);	
+			height: rem(72);
+			color: $color-green;
+			@include defaultTransition(color);
+			@at-root .animate & {
+				path {
+					stroke-dasharray: 280;
+					stroke-dashoffset: 280;
+					animation: dash 8.5s ease .5s forwards;
+				}
+			}
+
+			@include media-breakpoint-up(md) {	
+				width: rem(104);
+				height: rem(104);
+				@at-root .animate & {
+					path {
+						stroke-dasharray: 280;
+						stroke-dashoffset: 280;
+						animation: dash 9.5s ease .5s forwards;
+					}
+				}
+			}
+
+			@include media-breakpoint-up(lg) {	
+				@at-root .animate & {
+					path {
+						stroke-dasharray: 280;
+						stroke-dashoffset: 280;
+						animation: dash 4.5s ease .5s forwards;
+					}
+				}
+			}
+
+			svg{
+				width: rem(72);	
+				height: rem(72);
+				@include media-breakpoint-up(md) {	
+					width: rem(104);
+					height: rem(104);
+				}
+			}
+		}		
+
+		@include media-breakpoint-down(sm) {
+			&:not(:last-child) {
+				margin-bottom: rem(48);
+			}
+		} 
+
+		@include media-breakpoint-up(md) {
+			padding-right: rem(32);
+			margin-bottom: rem(96);
+			width: 50%;
+			@include last-row(2) {
+				margin-bottom: 0;
+			}
+		}
+		
+		@include media-breakpoint-up(lg) {
+			width: 25%;
+			@include last-row(4) {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	&__text{
+		margin-top: rem(16);
+		@include line-clamp(16, 1.4, 5);
+	}
+}
+  

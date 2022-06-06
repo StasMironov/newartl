@@ -1,0 +1,27 @@
+<div {% if block_event.scroll_target %}id="{{block_event.scroll_target}}"{% endif %} class="block-event" data-fade-in-up>
+    <div class="block-event__container container">
+        <div class="block-event__wrapper">
+            <div class="block-event__left">
+                {% if block_event.title %}
+                    <h2 class="block-event__title h2" >
+                        {{ block_event.title }}
+                    </h2>
+                {% endif %}
+            </div>
+            <div class="block-event__right">
+                {% if block_event.desc %}
+                    <div class="block-event__desc">
+                        {{ block_event.desc }}
+                    </div>
+                {% endif %}
+                {% if block_event.slider %}
+                    {% view '&slider-photo' with {
+                        slider: block_event.slider
+                    } %}
+                {% endif %}
+            </div>
+        </div>
+        
+        
+    </div>
+</div>

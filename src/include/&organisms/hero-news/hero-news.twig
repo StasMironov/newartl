@@ -1,0 +1,57 @@
+<div class="hero-news{% if hero_news.no_overlay %} hero_news--no-overlay{% endif %}{% if hero_news.bg %}hero_news--{% endif %}">
+
+    {% if hero_news.image %}
+        <div class="hero-news__bg">
+            {% if hero_news.image.tab or hero_news.image.mob %}
+                {% view '@image-adaptive' with {
+                        image: hero_news.image
+                } %}
+            {% else %}
+                {% view '@image' with {
+                    image: hero_news.image
+                } %}
+            {% endif %}
+        </div>
+    {% endif %}
+    <div class="hero-news__container container">
+        <div class="hero-news__wrapper">
+            {% if hero_news.breadcrumbs %}
+                <div class="hero-news__breadcrumbs">
+                    {% view '^breadcrumbs' with {
+                        breadcrumbs: hero_news.breadcrumbs
+                    } %}
+                </div>
+            {% endif %}
+            <div class="hero-news__box">
+                {% if hero_news.date %}
+                    <div class="hero-news__date" data-fade-in-up>
+                        <div class="hero-news__block hero-news__block--top">
+                            {% if hero_news.date.month %}
+                                <div class="hero-news__month">
+                                    {{hero_news.date.month}}
+                                </div>
+                            {% endif %}
+                            {% if hero_news.date.year %}
+                                <div class="hero-news__year">
+                                    {{hero_news.date.year}}
+                                </div>
+                            {% endif %}
+                        </div>
+                        <div class="hero-news__block hero-news__block--down">
+                            {% if hero_news.date.day %}
+                                <div class="hero-news__day">
+                                    {{hero_news.date.day}}
+                                </div>
+                            {% endif %}
+                        </div>
+                    </div>
+                {% endif %}
+                {% if hero_news.title %}
+                    <h1 class="hero-news__title h1" data-fade-in-up>
+                        {{ hero_news.title }}
+                    </h1>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>

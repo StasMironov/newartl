@@ -1,0 +1,17 @@
+<a class="card-partner" href="javascript:void(0);" {% if card.attr %} {{ card.attr }} {% endif %}>
+	<div class="card-partner__logo">
+
+		{% if card.icon %}
+			{% view '@icon' with {
+          icon: card.icon
+      } %}
+		{% endif %}
+
+		{% if card.img %}
+			{% view '@image' with {
+          image: card.img
+      } %}
+		{% endif %}
+
+	</div>
+</a>

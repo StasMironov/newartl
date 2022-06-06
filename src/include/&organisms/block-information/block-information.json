@@ -1,0 +1,31 @@
+{
+	"block_information": {
+		"title": "Работать с Artel",
+		"desc": "Расскажите о себе и начните работать с нами в ближайшее время",
+		"image": {
+			"src": "tmp/block-information/img1.jpg",
+			"alt": "image alt",
+			"fill": true
+		},
+		"action": [
+			{
+				"href": "javascript:void(0);",
+				"text": "Онлайн-заявка",
+				"title": "Онлайн-заявка",
+				"theme": "white",
+				"icon": {
+					"name": "24/arrow-up-right"
+				}
+			},
+			{
+				"href": "javascript:void(0);",
+				"text": "Отправить резюме",
+				"title": "Отправить резюме",
+				"theme": "outline-white",
+				"icon": {
+					"name": "24/file"
+				}
+			}
+		]
+	}
+}

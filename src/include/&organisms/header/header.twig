@@ -1,0 +1,64 @@
+<header class="header {% if header.transparent %}header--transparent{% endif %}" role="banner">
+	<div class="header__container container">
+		{% if header.logo.href %}
+			<a class="header__logo" href="{{ header.logo.href }}">
+				{% view '@icon' with {
+					icon: header.logo
+				} %}
+			</a>
+		{% else %}
+			<div class="header__logo header__logo--active">
+				{% view '@icon' with {
+					icon: header.logo
+				} %}
+			</div>
+		{% endif %}
+		<div class="header__content">
+			<nav class="header__navigation">
+				<ul class="header__list">
+					{% for link in header.navigation %}
+						<li class="header__item" {% if link.submenu %} data-submenu-trigger {% endif %}>
+							{% if link.submenu and link.href %}
+
+								<a href="{{ link.href }}" class="header__link {% if link.active %} header__link--active {% endif %}">{{ link.text }}</a>
+
+								<div class="header__submenu">
+									{% view '&submenu' with {
+										submenu: link.submenu
+									} %}
+								</div>
+
+							{% elseif link.submenu %}
+
+								<button type="button" class="header__link">{{ link.text }}</button>
+
+								<div class="header__submenu">
+									{% view '&submenu' with {
+										submenu: link.submenu
+									} %}
+								</div>
+
+							{% elseif link.active %}
+								<span class="header__link header__link--active">{{ link.text }}</span>
+							{% else %}
+								<a href="{{ link.href }}" class="header__link" {% if link.external %} target="_blank" {% endif %}>{{ link.text }}</a>
+							{% endif %}
+						</li>
+					{% endfor %}
+				</ul>
+			</nav>
+			{% if header.lang %}
+				<div class="header__lang">
+					{% view '@lang-toggle' with {
+						toggle: header.lang
+					} %}
+				</div>
+			{% endif %}
+			<button type="button" data-menu-burger class="header__toggle">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+		</div>
+	</div>
+</header>

@@ -1,0 +1,31 @@
+<div class="input-search-shell" style="--delay: {{0.2}}" data-search-input-wrap>
+	<input{% if field.id %} id="{{ field.id }}"{% endif %} type="search"
+		   class="input-search{% if field.class %} {{ field.class }}{% endif %}{% if field.theme %} input--{{ field.theme }}{% endif %}"{% if field.placeholder %} placeholder="{{ field.placeholder }}"{% endif %}
+		   {% if field.name %} name="{{ field.name }}"{% endif %}{% if field.attr %} {{ field.attr }}{% endif %}{% if field.autocomplete %} autocomplete="{{ field.autocomplete }}"{% endif %}{% if field.disabled %} disabled{% endif %}{% if field.value %} value="{{ field.value }}"{% endif %} data-input>
+	{% if field.icon %}
+		<div class="input-search__icon">
+			{% view '@icon' with {
+				icon: field.icon
+			} %}
+		</div>
+	{% endif %}
+	<button type="button" class="input-search__reset"{% if field.action.attr %} {{ field.action.attr }}{% endif %} data-reset>
+		{% view '@icon' with {
+			icon: {
+				name: "24/cross"
+			}
+		} %}
+	</button>
+	<div class="input-search__icon">
+		{% view '@icon' with {
+			icon: {
+				name: "24/magnifier"
+			}
+		} %}
+	</div>
+	{% if field.label %}
+		{% view '@field-label' with {
+			field: field
+		} %}
+	{% endif %}
+</div>

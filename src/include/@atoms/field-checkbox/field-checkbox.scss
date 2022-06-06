@@ -1,0 +1,214 @@
+.checkbox {
+	$root: &;
+
+	position: relative;
+	display: inline-block;
+	min-height: rem(24);
+	min-width: rem(24);
+	cursor: pointer;
+	
+
+	&__input {
+		@include visually-hidden;
+
+		#{$root}--on-white #{$root}__input:checked ~ .checkbox__box:after {
+			border-color: $color-green;
+		}
+	}
+
+	&__box {
+		position: absolute;
+		top: 0;
+		left: rem(2);
+		display: block;
+		height: rem(24);
+		width: rem(24);
+		background-color: white;
+		@include defaultTransition(border-color);
+
+		&:after {
+			position: absolute;
+			content: "";
+			opacity: 0;
+			@include defaultTransition(opacity);
+		}
+
+		#{$root}--radio & {
+			top: 2px;
+			left: 2px;
+			width: rem(20);
+			height: rem(20);
+			border-radius: 50%;
+
+			&:after {
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				width: rem(10);
+				height: rem(10);
+				border-radius: 50%;
+				background-color: $color-green;
+			}
+		}
+
+		#{$root}:not(#{$root}--radio) & {
+			&:after {
+				top: 45%;
+				left: 50%;
+				transform: translate(-50%, -50%) rotate(-45deg);
+				width: rem(12);
+				height: rem(7);
+				border-style: solid;
+				border-color: $color-white;
+				border-width: 0 0 2px 2px;
+			}
+		}
+
+		#{$root}__input:checked ~ & {
+			background: $color-green;
+
+			&:after {
+				opacity: 1;
+			}
+		}
+
+		#{$root}__input:disabled ~ & {
+			border-color: rgba($color-black, 0.3);
+		}
+
+		#{$root}:not(#{$root}--radio) #{$root}__input:disabled ~ & {
+			&:after {
+				border-color: rgba($color-black, 0.3);
+			}
+		}
+
+		#{$root}--radio #{$root}__input:disabled ~ & {
+			&:after {
+				background-color: rgba($color-black, 0.3);
+			}
+		}
+
+		#{$root}--on-white {
+		//	border: 1px solid $color-black;
+			background: transparent;
+		}
+
+		#{$root}--on-white #{$root}__input ~ & {
+			border: 1px solid $color-black;
+			border-radius: rem(2);
+		}
+
+		#{$root}--on-white #{$root}__input:checked ~ & {
+			background: transparent;
+			border: 2px solid $color-black;
+		
+		}
+		
+
+		#{$root}--on-white #{$root}__input:checked ~ & {
+			&:after {
+				border-color: $color-green;
+			}
+		}
+
+		// --white
+
+		#{$root}--white & {
+			border-color: $color-white;
+			background: $color-white;
+		}
+
+		#{$root}--white:not(#{$root}--radio) & {
+			&:after {
+				border-color: $color-green;
+			}
+		}
+
+		#{$root}--white #{$root}__input:checked ~ & {
+			background: $color-white;
+		}
+
+		#{$root}--white #{$root}__input:disabled ~ & {
+			border-color: rgba($color-white, 0.3);
+		}
+
+		#{$root}--white#{$root}:not(#{$root}--radio) #{$root}__input:checked:disabled ~ & {
+			&:after {
+				border-color: rgba($color-white, 0.3);
+			}
+		}
+
+		#{$root}--white#{$root}--radio #{$root}__input:checked:disabled ~ & {
+			&:after {
+				background-color: rgba($color-white, 0.3);
+			}
+		}
+	}
+
+	&__text {
+		display: block;
+		padding-left: rem(40);
+		@include text-body;
+		max-width: rem(460);
+		color: rgba($color-white, 0.6);
+		@include defaultTransition(color);
+
+		@include media-breakpoint-down(sm) {
+			padding-top: 2px;
+		}
+
+		#{$root}--on-white & {
+			color: rgba(0, 0, 0, 0.4);
+		}
+
+		
+		
+	}
+
+	
+
+
+	.link-content {
+		position: relative;
+		color: rgba($color-white, 0.6);
+		@include line-animate-in;
+		background-size: 100% 1px;
+		background-position: 100% 100%;
+		background-image: linear-gradient(rgba($color-white, 0.6), rgba($color-white, 0.6));
+		background-repeat: no-repeat;
+		text-decoration: none !important;
+	
+		transition-property: background-size, color;
+		transition-duration: $timing;
+		transition-timing-function: $easing;
+		will-change: background-size;
+	
+		@include touchLessHover {
+			background-image: linear-gradient(rgba($color-white, 1), rgba($color-white, 1));
+			background-position: 0 100%;
+			background-size: 0 1px;
+			color: $color-white;
+		}
+	}
+
+	&.parsley-error {
+		#{$root}__box {
+			border: 1px solid $color-red !important;
+		}
+	}
+
+
+	&--on-white .checkbox__input:checked ~ .checkbox__text  {
+		color: $color-black;
+	}
+
+	&--on-white {
+		@include touchLessHover {
+			.checkbox__text {
+				color: $color-black;
+			}
+		}
+	}
+
+	
+}

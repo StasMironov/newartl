@@ -1,0 +1,39 @@
+<div class="block-information {% if block_information.bg %} bg-{{ block_information.bg }}{% else %} bg-white{% endif %}" data-fade-in-up data-delay="0.5">
+    <div class="block-information__container container">
+        <div class="block-information__wrp">
+            <div class="block-information__left">
+                {% if block_information.title %}
+                    <h2 class="block-information__title h2" data-fade-in-up data-delay="0.7">
+                        {{ block_information.title }}
+                    </h2>
+                {% endif %}
+                {% if block_information.desc %}
+                    <div class="block-information__desc" data-fade-in-up data-delay="0.8">
+                        {{ block_information.desc}}
+                    </div>
+                {% endif %}
+                {% if block_information.action %}
+                    <div class="block-information__box" data-fade-in-up data-delay="0.9">
+                        {% for btn in block_information.action %}
+                            <div class="block-information__btn">
+                                {% view '@button' with {
+                                    button: btn
+                                } %}
+                            </div>
+                        {% endfor %}
+                    </div>
+                {% endif %}
+            </div>
+            <div class="block-information__right">
+                {% if block_information.image %}
+                    <div class="block-information__image">
+                        {% view '@image' with {
+                            image: block_information.image
+                        } %}
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+        
+    </div>
+</div>

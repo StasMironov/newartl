@@ -1,0 +1,257 @@
+.tab {
+	$root: &;
+
+	position: relative;
+	display: flex;
+	min-height: rem(22);
+	padding: 0;
+	color: rgba($color-black, 0.4);
+	background-color: transparent;
+	border: 0;
+	cursor: pointer;
+	@include defaultTransition(color);
+	outline: none;
+
+	@include touchLessHover {
+		&:not(:disabled):not(#{$root}__tab--disabled) {
+			color: $color-black;
+		}
+	}
+
+	&:before {
+		position: absolute;
+		top: 3px;
+		left: rem(-32);
+		width: rem(0);
+		height: rem(0);
+		background-color: $color-green;
+		border-radius: 50%;
+		transform: scale3d(0, 0, 0);
+		transition: transform 0.4s ease, margin-right 0.4s ease;
+		content: '';
+		will-change: margin-right;
+
+		@include media-breakpoint-down(md) {
+			position: static;
+			flex-shrink: 0;
+		}
+	}
+
+	&--active {
+		position: relative;
+		color: $color-black;
+		cursor: default;
+		pointer-events: none;
+
+		&::before {
+			width: rem(16);
+			height: rem(16);
+			transform: scale3d(1, 1, 1);
+
+			@include media-breakpoint-down(md) {
+				margin-right: rem(16);
+			}
+		}
+
+		@include media-breakpoint-down(md) {
+			display: inline-flex;
+			align-items: center;
+		}
+
+		&[data-scroll], &[data-scroll-unique]{
+			pointer-events:initial;
+			cursor: pointer !important;
+		}
+	}
+
+	&:disabled,
+	&--disabled {
+		color: rgba($color-black, 0.2);
+		cursor: not-allowed;
+	}
+
+	&__icon {
+		#{$root}--big#{$root}--active & {
+			color: $color-white;
+		}
+
+		@at-root .animate & {
+			path {
+				stroke-dasharray: 280;
+				stroke-dashoffset: 280;
+				animation: dash 2.5s ease .5s forwards;
+			}
+		}
+	}
+
+	&__text {
+		display: block;
+		#{$root}--big & {
+			max-width: rem(216);
+		}
+
+		#{$root}--shift#{$root}--active & {
+			padding-left: rem(32);
+		}
+	}
+
+	&--big {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: flex-start;
+		background-color: $color-white;
+		height: rem(194);
+		padding: rem(32) rem(40);
+		color: $color-black;
+		text-align: left;
+		@include defaultTransition(background-color, color);
+
+		@include touchLessHover {
+			background-color: $color-green;
+			color: $color-white;
+
+			&:before {
+				background-color: $color-green;
+			}
+
+			.icon {
+				color: $color-white;
+			}
+
+			#{$root}__text {
+				color: $color-white;
+			}
+		}
+
+		@include media-breakpoint-up(lg) {
+			&:before {
+				position: absolute;
+				top: 0;
+				right: 100%;
+				left: auto;
+				width: 50vw;
+				height: 100%;
+				background-color: $color-white;
+				transform: none;
+				border-radius: 0;
+				@include defaultTransition(background-color);
+			}
+		}
+		@include media-breakpoint-down(md) {
+			&:before {
+				content: none;
+			}
+		}
+
+		.icon {
+			color: $color-green;
+			@include defaultTransition(color);
+		}
+
+		@include media-breakpoint-up(md) {
+			padding: rem(40) rem(52);
+			height: rem(268);
+		}
+	}
+
+	&--big#{$root}--active {
+		background-color: $color-green;
+		color: $color-white;
+
+		.icon {
+			color: $color-white;
+		}
+
+		&:before {
+			background-color: $color-green;
+		}
+
+		@include touchLessHover {
+			&:not(:disabled):not(#{$root}__tab--disabled) {
+				color: $color-white;
+			}
+		}
+	}
+
+	// для табов расположенных по горизонтали
+	&--shift {
+		&:before {
+			position: absolute;
+			left: 0;
+			margin-right: 0;
+		}
+	}
+
+	&--white {
+		color: rgba(white, 0.6);
+
+		@include touchLessHover {
+			&:not(:disabled):not(#{$root}__tab--disabled) {
+				color: rgba(white, 1);
+			}
+		}
+
+		&:before {
+			background-color: $color-white;
+		}
+	}
+
+	&--white-2 {
+		color: rgba(white, 0.6);
+		@include touchLessHover {
+			&:not(:disabled):not(#{$root}__tab--disabled) {
+				color: rgba(white, 1);
+			}
+		}
+		@include media-breakpoint-only(sm) {
+			&::before{
+				//display: none;
+			}
+		}
+	}
+
+
+
+	&--white#{$root}--active {
+		cursor: default;
+		color: rgba(white, 1);
+
+		&::before {
+			width: rem(16);
+			height: rem(16);
+			transform: scale3d(1, 1, 1);
+
+			@include media-breakpoint-down(md) {
+				margin-right: rem(16);
+			}
+		}
+	}
+
+	&--white-2#{$root}--active {
+		cursor: default;
+		color: rgba(white, 1);
+
+		&::before {
+			width: rem(16);
+			height: rem(16);
+			transform: scale3d(1, 1, 1);
+			background-color: $color-white;
+
+			@include media-breakpoint-down(md) {
+				margin-right: rem(16);
+			}
+		}
+	}
+
+
+	
+
+}
+
+
+@keyframes dash {
+	to {
+	  stroke-dashoffset: 0;
+	}
+  }

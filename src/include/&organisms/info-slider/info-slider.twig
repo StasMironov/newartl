@@ -1,0 +1,80 @@
+<div class="info-slider" data-info-slider {% if info_slider.autoplay %} data-autoplay="{{ info_slider.autoplay }}"{% endif %}>
+	<div class="info-slider__wrap" data-slider>
+		{% for slide in info_slider.slides %}
+			<div class="info-slider__slide{{ slide.overlay ? ' has-overlay' : '' }}{{ slide.dark ? ' is-dark' : '' }}{% if loop.index == 1 %} is-active{% endif %}"
+			 	data-slide>
+				<div class="info-slider__shell">
+					<div class="info-slider__inner">
+						<div class="info-slider__image-wrap" data-image-wrap>
+							<div class="info-slider__image" data-image>
+								{% if slide.image.tab or slide.image.mob %}
+									{% view '@image-adaptive' with {
+										image: slide.image
+									} %}
+								{% else %}
+									{% view '@image' with {
+										image: slide.image
+									} %}
+								{% endif %}
+							</div>
+						</div>
+						<div class="info-slider__container container">
+							<div class="info-slider__content">
+                                <div class="info-slider__box"  data-fade-in-up>
+								    <h2 class="info-slider__title h2" data-title>{{ slide.title }}</h2>
+                                </div>
+                                <div class="info-slider__desc" data-fade-in-up>
+                                    {% if slide.note %}
+                                       <div class="info-slider__note" data-note >
+                                            {{ slide.note }}
+                                        </div> 
+                                    {% endif %}
+                                    <div class="info-slider__wrp" data-fade-in-up>
+                                        {% if slide.text %}
+                                            <div class="info-slider__text" data-text>
+                                                {{ slide.text }}
+                                            </div>
+                                        {% endif %}
+                                        {% if slide.year %}
+                                            <div class="info-slider__year" data-year>
+                                                {{ slide.year }}
+                                            </div>
+                                        {% endif %}
+                                    </div>
+                                </div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		{% endfor %} 
+	</div>
+	<div class="info-slider__bottom" data-pag>
+		<div class="info-slider__container container">
+			<div class="swiper-container info-slider__numbers" data-pag-slider>
+                <div class="swiper-wrapper">
+                    {% for slide in info_slider.slides %}
+                        <div class="swiper-slide info-slider__slide-pg" data-fade-in-up
+						 data-delay="{{ (loop.index0 / 16)|round(2, 'floor') }}">
+                            <button type="button"
+                                    class="info-slider__number{% if loop.index == 1 %} is-active{% endif %}"
+                                    data-number="{{ loop.index0 }}">
+                                <span class="info-slider__txt">{{ slide.year }}</span>
+                            </button>
+                        </div>
+                    {% endfor %}
+                </div>
+			</div>
+			{% if hero.autoplay %}
+				<div class="info-slider__progress">
+					<span data-progress></span>
+				</div>
+			{% endif %}
+			<div class="info-slider__arrows">
+				{% view '@nav-arrows' %}
+			</div>
+		</div>
+	</div>
+</div>
+
+

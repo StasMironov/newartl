@@ -1,0 +1,10 @@
+<div class="label{% if field.required %} is-required{% endif %} text-small">
+    {% if field.id %}
+        <label for="{{ field.id }}" class="label__text text-label">{{ field.label|raw }}</label>
+    {% else %}
+        <p class="label__text text-label">{{ field.label|raw }}</p>
+    {% endif %}
+    {% if field.caption %}
+        <p class="label__caption text-label-small">{{ field.caption|raw }}</p>
+    {% endif %}
+</div>

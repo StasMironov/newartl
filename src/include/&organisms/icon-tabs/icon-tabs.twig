@@ -1,0 +1,59 @@
+<div {% if block.scroll_target %}id="{{block.scroll_target}}"{% endif %}  class="icon-tabs" data-slider-icon-tabs>
+	<div class="container icon-tabs__container">
+		{% if block.heading or block.text %}
+			<div class="icon-tabs__top" data-fade-in-up>
+				{% if block.heading %}
+					<p class="icon-tabs__heading h2">{{ block.heading }}</p>
+				{% endif %}
+				{% if block.subtitle %}
+					<p class="icon-tabs__subtitle">{{ block.subtitle }}</p>
+				{% endif %}
+			</div>
+		{% endif %}
+		<div class="icon-tabs__content" data-fade-in-up>
+			<div class="icon-tabs__tabs">
+				<div class="swiper-container" data-slider>
+					<div class="swiper-wrapper">
+						{% for tab in block.items %}
+							<div class="icon-tabs__tab swiper-slide {% if tab.active %} icon-tabs__tab-active {% endif %} " data-slider-tab="{{ loop.index }}">
+								{% if tab.icon %}
+									<div class="icon-tabs__icon">
+										{% view '@icon' with {
+                      icon: tab.icon
+                    } %}
+									</div>
+								{% endif %}
+								{% if tab.caption %}
+									<p class="icon-tabs__caption">{{ tab.caption }}</p>
+								{% endif %}
+							</div>
+						{% endfor %}
+					</div>
+				</div>
+			</div>
+			<div class="icon-tabs__wrapper" data-fade-in-up data-delay="1">
+				{% for pane in block.items %}
+					<div class="icon-tabs__pane {% if pane.active %} is-active {% endif %}" data-tab-block="{{ loop.index }}">
+						{% if pane.content.suptitle %}
+							<p class="icon-tabs__suptitle">{{ pane.content.suptitle }}</p>
+						{% endif %}
+						{% if pane.content.title %}
+							<p class="icon-tabs__title h2">{{ pane.content.title }}</p>
+						{% endif %}
+						{% if pane.content.image %}
+							<div class="icon-tabs__img">
+								{% view '@image' with {
+                  image: pane.content.image
+                } %}
+							</div>
+						{% endif %}
+						{% if pane.content.text %}
+							<p class="icon-tabs__text">{{ pane.content.text }}</p>
+						{% endif %}
+					</div>
+				{% endfor %}
+			</div>
+
+		</div>
+	</div>
+</div>

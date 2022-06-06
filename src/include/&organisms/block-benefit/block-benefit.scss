@@ -1,0 +1,70 @@
+.block-benefit {
+	@include media-breakpoint-down(md) {
+		overflow: hidden;
+	}
+	&__container {
+		@include media-breakpoint-up(sm) {
+			padding-top: rem(65);
+			padding-bottom: rem(95);
+		}
+		@include media-breakpoint-up(md) {
+			padding-top: rem(112);
+			padding-bottom: rem(120);
+		}
+	}
+
+	&__wrapper {
+		display: flex;
+
+		@include media-breakpoint-up(sm) {
+			flex-direction: column;
+			margin-right: 0;
+			margin-left: 0;
+		}
+		@include media-breakpoint-up(lg) {
+			flex-direction: row;
+			margin-right: rem(-52);
+			margin-left: rem(-52);
+		}
+	}
+
+	&__left {
+		@include media-breakpoint-up(lg) {
+			width: rem(380);
+			margin-right: rem(120);
+		}
+		@include media-breakpoint-only(md) {
+			margin-bottom: rem(112);
+			margin-left: rem(-52);
+		}
+		@include media-breakpoint-down(sm) {
+			margin-bottom: rem(64);
+			margin-left: rem(-16);
+		}
+	}
+
+	&__right {
+		@include media-breakpoint-up(lg) {
+			width: rem(664);
+		}
+	}
+
+	&__pane {
+		opacity: 0;
+		&:not(.is-active) {
+			display: none;
+		}
+
+		&:first-child {
+			opacity: 1;
+		}
+	}
+
+	&__contents,
+	&__tabs-content,
+	&__pane,
+	&__cards,
+	&__card {
+		height: 100%;
+	}
+}

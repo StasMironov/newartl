@@ -1,0 +1,94 @@
+<div class="datepicker{% if field.theme %} datepicker--{{ field.theme }}{% endif %}" data-datepicker>
+	<input{% if field.id %} id="{{ field.id }}"{% endif %}{% if field.name %} name="{{ field.name }}"{% endif %}
+		type="text" class="datepicker__input"{% if field.pattern %} pattern="{{ field.pattern }}"{% endif %}{% if field.attr %} {{ field.attr }}{% endif %}{% if field.required %}data-field-check required{% endif %} data-datepicker-input data-parsley-trigger="change">
+	<div class="datepicker__toggle" data-datepicker-toggle>
+		{% if field.label %}
+			<span class="datepicker__field-select">{{ field.label }}</span>
+		{% endif %}
+		{% if field.label %}
+			<span class="datepicker__placeholder h3" data-datepicker-placeholder>
+				{{ field.label }}
+			</span>
+		{% endif %}
+		<span class="datepicker__icon">
+			{% view '@icon' with {
+				icon: {
+					name: "24/calendar"
+				}
+			} %}
+		</span>
+	</div>
+	<div class="datepicker__roll" data-datepicker-roll>
+		<div class="datepicker__box" data-datepicker-box>
+			<div class="datepicker__content" data-datepicker-content>
+				<div class="datepicker__base">
+					<div class="datepicker__side">
+						{% if field.startTitle %}
+							<p class="datepicker__title">{{ field.startTitle }}</p>
+						{% endif %}
+						<div class="datepicker__select">
+							{% view '@field' with {
+								field: field.dropdownStart
+							} %}
+						</div>
+						<div class="datepicker__months">
+							{% for month in field.months %}
+								<div class="datepicker__month">
+									<label class="datepicker__label">
+										<input name="{{ field.id }}-start" type="radio" class="datepicker__radio"
+											   value="{{ month.value }}" data-radion-index="{{ loop.index }}"
+											   data-radio-text="{{ month.text }}"
+											   data-datepicker-radio-start>
+										<span class="datepicker__caption">{{ month.text }}</span>
+									</label>
+								</div>
+							{% endfor %}
+						</div>
+					</div>
+					<div class="datepicker__side">
+						{% if field.endTitle %}
+							<p class="datepicker__title">{{ field.endTitle }}</p>
+						{% endif %}
+						<div class="datepicker__select">
+							{% view '@field' with {
+								field: field.dropdownEnd
+							} %}
+						</div>
+						<div class="datepicker__months">
+							{% for month in field.months %}
+								<div class="datepicker__month">
+									<label class="datepicker__label">
+										<input name="{{ field.id }}--end" type="radio" class="datepicker__radio"
+											   value="{{ month.value }}" data-radion-index="{{ loop.index }}"
+											   data-radio-text="{{ month.text }}"
+											   data-datepicker-radio-end>
+										<span class="datepicker__caption">{{ month.text }}</span>
+									</label>
+								</div>
+							{% endfor %}
+						</div>
+					</div>
+				</div>
+				{% if field.checkbox_date %}
+					<div class="datepicker__checkbox">
+						{% view '@field-checkbox' with {
+							field: field.checkbox_date|merge({attr: " data-datepicker-checkbox"})
+						} %}
+					</div>
+				{% endif %}
+				<div class="datepicker__actions">
+					{% for action in field.actions %}
+						<div class="datepicker__action">
+							{% view '@button' with {
+								button: action
+							} %}
+						</div>
+					{% endfor %}
+				</div>
+			</div>
+		</div>
+	</div>
+
+	
+	
+</div>

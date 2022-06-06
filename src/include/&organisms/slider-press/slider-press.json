@@ -1,0 +1,14 @@
+{
+	"slider": {
+		"title": "Приобрести продукцию",
+		"items": [
+			{
+				"href": "#",
+				"icon": {
+					"src": "tmp/catalog/logo3.svg",
+					"alt": "logo"
+				}
+			}
+		]
+	}
+}

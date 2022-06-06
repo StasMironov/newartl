@@ -1,0 +1,19 @@
+<div {% if block.scroll_target %}id="{{block.scroll_target}}"{% endif %} class="block-structure container" data-fade-in-up>
+
+	<div class="block-structure__heading">
+		{% if block.title %}
+			<p class="block-structure__title h2">{{ block.title }}</p>
+		{% endif %}
+		{% if block.subtitle %}
+			<p class="block-structure__subtitle">{{ block.subtitle }}</p>
+		{% endif %}
+	</div>
+
+	{% if block.img %}
+		<div class="block-structure__image">
+			{% view '@image-adaptive' with {
+				image: block.img
+			} %}
+		</div>
+	{% endif %}
+</div>

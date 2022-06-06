@@ -1,0 +1,35 @@
+.initiatives{
+    &__wrapper {		
+		display: flex;	
+		flex-wrap: wrap;
+		@include media-breakpoint-up(lg){
+			width: 100%;
+			flex-wrap: nowrap;
+			justify-content: space-between; 	
+			padding-bottom: rem(16);			
+		}       
+	}
+
+  &__left {		
+		width: 100%;
+		margin-bottom: rem(24);
+		@include media-breakpoint-up(lg) {
+			width: 50%;
+			margin-bottom: 0;
+    }
+	}
+	&__right {
+		p{
+			max-width: rem(440);
+		}
+		width: 100%;
+		@include media-breakpoint-up(lg) {	
+			width: 50%;
+		}	
+		@include media-breakpoint-up(md) {
+			p{
+					max-width: rem(440);
+			}
+		}
+	}
+}

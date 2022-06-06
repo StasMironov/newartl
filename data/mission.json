@@ -1,0 +1,338 @@
+{
+	"title": "Миссия",
+	"header": {
+		"transparent": true,
+		"logo": {
+			"href": "main.html",
+			"name": "logos/main-logo",
+			"size": "fit"
+		},
+		"navigation": [
+			{
+				"text": "О группе",
+				"submenu": {
+					"title": "О группе",
+					"text": "Общая информация для инвесторов в формате отчетов, графиков и документов",
+					"links": [
+						{
+							"href": "javascript:void(0);",
+							"text": "Общая информация для инвесторов"
+						},
+						{
+							"href": "javascript:void(0);",
+							"text": "Презентации"
+						},
+						{
+							"href": "javascript:void(0);",
+							"text": "Соблюдение требований корпоративного управления"
+						},
+						{
+							"href": "javascript:void(0);",
+							"text": "Структура компании"
+						},
+						{
+							"href": "javascript:void(0);",
+							"text": "Совет директоров"
+						},
+						{
+							"href": "javascript:void(0);",
+							"text": "Руководство"
+						}
+					]
+				}
+			},
+			{
+				"text": "Инвесторам",
+				"submenu": {
+					"title": "Инвесторам",
+					"text": "Общая информация для инвесторов в формате отчетов, графиков и документов",
+					"links": [
+						{
+							"href": "javascript:void(0);",
+							"text": "Общая информация для инвесторов"
+						},
+						{
+							"text": "Результаты и отчеты",
+							"active": true
+						},
+						{
+							"href": "javascript:void(0);",
+							"text": "Презентации"
+						},
+						{
+							"href": "javascript:void(0);",
+							"text": "Соблюдение требований корпоративного управления"
+						},
+						{
+							"href": "javascript:void(0);",
+							"text": "Структура компании"
+						},
+						{
+							"href": "javascript:void(0);",
+							"text": "Совет директоров"
+						},
+						{
+							"href": "javascript:void(0);",
+							"text": "Руководство"
+						},
+						{
+							"href": "javascript:void(0);",
+							"text": "Корпоративное управление"
+						},
+						{
+							"href": "javascript:void(0);",
+							"text": "Внутренние документы"
+						},
+						{
+							"href": "javascript:void(0);",
+							"text": "Каталог продукции"
+						},
+						{
+							"href": "javascript:void(0);",
+							"text": "Контакты для инвесторов"
+						}
+					]
+				}
+			},
+			{
+				"href": "javascript:void(0);",
+				"text": "Партнерам"
+			},
+			{
+				"href": "javascript:void(0);",
+				"text": "Устойчивое развитие"
+			},
+			{
+				"href": "javascript:void(0);",
+				"text": "Пресс-центр"
+			},
+			{
+				"text": "Карьера",
+				"active": true
+			},
+			{
+				"href": "javascript:void(0);",
+				"text": "Контакты"
+			}
+		],
+		"lang": {
+			"action": {
+				"text": "Ру",
+				"title": "Ру"
+			},
+			"items": [
+				{
+					"href": "javascript:void(0);",
+					"text": "En",
+					"title": "En"
+				},
+				{
+					"href": "javascript:void(0);",
+					"text": "Оʻz",
+					"title": "Оʻz"
+				}
+			]
+		}
+	},
+	"hero_default": {
+		"title": "Миссия компании",
+		"image": {
+			"src": "tmp/default-hero/hero-1.jpg",
+			"alt": "image alt",
+			"fill": true,
+			"tab": {
+				"srcset": [
+					{
+						"scale": "1",
+						"src": "tmp/default-hero/hero-tab.jpg"
+					}
+				]
+			},
+			"mob": {
+				"srcset": [
+					{
+						"scale": "1",
+						"src": "tmp/default-hero/hero-mob.jpg"
+					}
+				]
+			}
+		}
+	},
+	"block_nav": {
+		"desc": "Мы здесь, чтобы оставаться лидерами на&nbsp;рынке бытовой техники, создавая современную продукцию для каждого дома",
+		"bg": "green",
+		"icon": {
+			"name": "logos/decor",
+			"size": "fit"
+		},
+		"tabs": {
+			"layout": "3",
+			"items": [
+				{
+					"href": "!#",
+					"text": "Стратегия",
+					"title": "Стратегия",
+					"active": "true",
+					"theme": "white"
+				},
+				{
+					"href": "!#",
+					"text": "Миссия компании",
+					"title": "Миссия компании",
+					"theme": "white"
+				},
+				{
+					"href": "!#",
+					"text": "История группы",
+					"title": "История группы",
+					"theme": "white"
+				},
+				{
+					"href": "!#",
+					"text": "Партнеры",
+					"title": "Партнеры",
+					"theme": "white"
+				},
+				{
+					"href": "!#",
+					"text": "Наши продукты",
+					"title": "Наши продукты",
+					"theme": "white"
+				},
+				{
+					"href": "!#",
+					"text": "Предприятия",
+					"title": "Предприятия",
+					"theme": "white"
+				}
+			]
+		}
+	},
+	"block_benefit": {
+		"bg": "gray",
+		"tabs": {
+			"layout": "2",
+			"items": [
+				{
+					"text": "Сотрудничество",
+					"title": "Сотрудничество",
+					"attr": "data-attr",
+					"active": "true",
+					"icon": {
+						"name": "104/handshake",
+						"size": "104"
+					},
+					"theme": "big"
+				},
+				{
+					"text": "Ориентирование на&nbsp;клиента",
+					"title": "Ориентирование на клиента",
+					"attr": "data-attr",
+					"icon": {
+						"name": "104/usersquare",
+						"size": "104"
+					},
+					"theme": "big"
+				},
+				{
+					"text": "Трансформации",
+					"title": "Трансформации",
+					"attr": "data-attr",
+					"icon": {
+						"name": "104/sinusoid",
+						"size": "104"
+					},
+					"theme": "big"
+				},
+				{
+					"text": "Ответственность",
+					"title": "Ответственность",
+					"attr": "data-attr",
+					"icon": {
+						"name": "104/sleaves",
+						"size": "104"
+					},
+					"theme": "big"
+				},
+				{
+					"text": "Инновации",
+					"title": "Инновации",
+					"attr": "data-attr",
+					"icon": {
+						"name": "104/cpu",
+						"size": "104"
+					},
+					"theme": "big"
+				}
+			]
+		},
+		"tabs_content": [
+			{
+				"active": true,
+				"cards": [
+					{
+						"quote": "Ценности, которые мы преследуем",
+						"title": "Сотрудничество",
+						"image": {
+							"src": "tmp/block-benefit/1.jpg",
+							"alt": "Здесь будет фото основателя группы"
+						},
+						"desc": "Формируя одну большую команду, мы тесно работаем для оптимизации нашей деятельности в сотрудничестве с различными партнерами."
+					}
+				]
+			},
+			{
+				"cards": [
+					{
+						"quote": "Ценности, которые мы преследуем",
+						"title": "Ориентирование на&nbsp;клиента",
+						"image": {
+							"src": "tmp/card-news/news1.jpg",
+							"alt": "Здесь будет фото основателя группы"
+						},
+						"desc": "Формируя одну большую команду, мы тесно работаем для оптимизации нашей деятельности в сотрудничестве с различными партнерами."
+					}
+				]
+			},
+			{
+				"cards": [
+					{
+						"quote": "Ценности, которые мы преследуем",
+						"title": "Трансформации",
+						"image": {
+							"src": "tmp/card-news/news1.jpg",
+							"alt": "Здесь будет фото основателя группы"
+						},
+						"desc": "Формируя одну большую команду, мы тесно работаем для оптимизации нашей деятельности в сотрудничестве с различными партнерами."
+					}
+				]
+			},
+			{
+				"cards": [
+					{
+						"quote": "Ценности, которые мы преследуем",
+						"title": "Ответственность",
+						"image": {
+							"src": "tmp/card-news/news2.jpg",
+							"alt": "Здесь будет фото основателя группы"
+						},
+						"desc": "Формируя одну большую команду, мы тесно работаем для оптимизации нашей деятельности в сотрудничестве с различными партнерами."
+					}
+				]
+			},
+			{
+				"cards": [
+					{
+						"quote": "Ценности, которые мы преследуем",
+						"title": "Инновации",
+						"image": {
+							"src": "tmp/card-news/news1.jpg",
+							"alt": "Здесь будет фото основателя группы"
+						},
+						"desc": "Формируя одну большую команду, мы тесно работаем для оптимизации нашей деятельности в сотрудничестве с различными партнерами."
+					}
+				]
+			}
+		]
+	}
+}

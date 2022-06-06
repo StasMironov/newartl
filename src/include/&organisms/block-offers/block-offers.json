@@ -1,0 +1,94 @@
+{
+	"block_offers": {
+		"title": "Вакансии",
+		"filter_select": {
+			"fill": true,
+			"fields": [
+				{
+					"select": true,
+					"id": "filter-form-select-1",
+					"name": "filter-form-select-1",
+					"attr": "data-form-select",
+					"placeholder": "Все года",
+					"options": [
+						{
+							"value": "All",
+							"text": "Все года",
+							"selected": "selected"
+						},
+						{
+							"value": "2021",
+							"text": "2021"
+						},
+						{
+							"value": "2020",
+							"text": "2020"
+						},
+						{
+							"value": "2019",
+							"text": "2019"
+						},
+						{
+							"value": "2018",
+							"text": "2018"
+						},
+						{
+							"value": "2017",
+							"text": "2017"
+						}
+					]
+				},
+				{
+					"select": true,
+					"id": "filter-form-select-2",
+					"name": "filter-form-select-2",
+					"attr": "data-form-select",
+					"placeholder": "Все рубрики",
+					"options": [
+						{
+							"value": "All",
+							"text": "Все рубрики",
+							"selected": "selected"
+						},
+						{
+							"value": "Рубрика 1",
+							"text": "Рубрика 1"
+						},
+						{
+							"value": "Рубрика 2",
+							"text": "Рубрика 2"
+						},
+						{
+							"value": "Рубрика 3",
+							"text": "Рубрика 3"
+						},
+						{
+							"value": "Рубрика 4",
+							"text": "Рубрика 4"
+						},
+						{
+							"value": "Рубрика 5",
+							"text": "Рубрика 5"
+						}
+					]
+				}
+			]
+		},
+		"items": [
+			{
+				"href": "javascript:vpoid(0);",
+				"text": "Главный технолог",
+				"label": "Ташкент",
+				"icon": {
+					"name": "24/arrow-up-right",
+					"size": "24"
+				}
+			}
+		],
+		"action": {
+			"text": "Больше вакансий",
+			"title": "Больше вакансий",
+			"theme": "green"
+		}
+	}
+}

@@ -1,0 +1,128 @@
+.slider-docs {
+	$root: &;
+
+	&__top {
+		margin-bottom: rem(48);
+
+		@include media-breakpoint-up(lg) {
+			display: flex;
+			align-items: flex-start;
+			justify-content: space-between;
+		}
+		@include media-breakpoint-only(md) {
+			margin-bottom: rem(80);
+		}
+	}
+
+	&__heading {
+		@include media-breakpoint-up(lg) {
+			width: 33.3333%;
+		}
+		@include media-breakpoint-only(md) {
+			width: 58.3333%;
+
+			&:not(:last-child) {
+				margin-bottom: rem(32);
+			}
+		}
+		@include media-breakpoint-down(sm) {
+			&:not(:last-child) {
+				margin-bottom: rem(25);
+			}
+		}
+
+		&-fullwidth{
+			width: 100%;
+			margin-bottom: rem(32);
+		}
+	}
+
+	&__field {
+		padding-top: rem(0);
+
+		@include media-breakpoint-up(lg) {
+			width: 25%;
+		}
+		@include media-breakpoint-only(md) {
+			width: 50%;
+		}
+	}
+
+	&__content {
+		@include media-breakpoint-up(lg) {
+			margin-left: rem(-4);
+			margin-right: rem(-4);
+		}
+		@include media-breakpoint-down(sm) {
+			margin-left: rem(-16);
+			margin-right: rem(-16);
+			overflow: hidden;
+		}
+	}
+
+	.swiper-container {
+		@include media-breakpoint-down(sm) {
+			padding: 0 rem(8);
+		}
+	}
+
+	.swiper-wrapper {
+		@include media-breakpoint-up(md) {
+			flex-wrap: wrap;
+			transform: none !important;
+		}
+		@include media-breakpoint-down(sm) {
+			overflow: visible;
+		}
+	}
+
+	&__slide {
+		@include media-breakpoint-up(lg) {
+			width: 33.3333% !important;
+			padding-left: rem(4);
+			padding-right: rem(4);
+			margin-bottom: rem(8);
+
+			@include last-row(3) {
+				margin-bottom: 0;
+			}
+		}
+		@include media-breakpoint-only(md) {
+			&:not(:last-child) {
+				margin-bottom: rem(8);
+			}
+		}
+		@include media-breakpoint-down(sm) {
+			padding: 0 rem(8);
+		}
+
+		&.is-hidden {
+			display: none;
+		}
+	}
+
+	&__arrows {
+		display: flex;
+		justify-content: flex-end;
+		margin-top: rem(24);
+		padding: 0 rem(16);
+
+		@include media-breakpoint-up(md) {
+			display: none;
+		}
+	}
+
+	.card-features__circle{
+		transform: scale3d(1, 1, 1);
+	}
+
+  &__link{
+    display: flex;
+    justify-content: start;
+    padding: rem(32) 0 0 rem(16);
+    @include media-breakpoint-up(md) {
+			padding: rem(32) 0 0 0;
+      justify-content: end;
+		}
+  }
+}

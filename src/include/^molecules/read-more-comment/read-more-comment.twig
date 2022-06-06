@@ -1,0 +1,24 @@
+<div class="read-more-comment">
+	<div class="read-more-comment__text">
+		{% if card.base %}
+			<div class="read-more-comment__base">
+				{{ card.base }}
+			</div>
+		{% endif %}
+		{% if card.items %}
+			<div class="read-more-comment__hidden" data-text-hidden>
+				{% for item in card.items %}
+					<div class="read-more-comment__item">
+						{{ item }}
+					</div>
+				{% endfor %}
+			</div>
+		{% endif %}
+
+	</div>
+  {% if card.items %}
+    {% if card.link %}
+      <button class="read-more-comment__btn" data-show-more="Скрыть" data-show-text>{{ card.link.text }}</button>
+    {% endif %}
+  {% endif %}
+</div>

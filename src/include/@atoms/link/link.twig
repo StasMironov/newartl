@@ -1,0 +1,55 @@
+{% if link.text or link.icon %}
+    {% set class = link.class ?: '' %}
+    {% set class = class ~ ' ' ~ (link.color ? 'link-action--' ~ link.color) %}
+    {% set class = class ~ ' ' ~ (link.icon.right ? 'link-action--reverse') %}
+    {% set class = class ~ ' ' ~ (link.icon_transform ? 'link-action--icon-transform') %}
+
+    {% if link.href %}
+        <a href="{{ link.href }}"
+           class="link-action {{ class }}"
+            {% if link.title %} title="{{ link.title }}"{% endif %}
+            {% if link.external %} target="_blank"{% endif %}
+            {% if link.attr %} {{ link.attr }}{% endif %}
+            {% if link.popup_heading %} data-modal-heading="{{ link.popup_heading }}" {% endif %}
+        >
+            {% if link.icon.name %}
+				{% set icon_class = "link-action__icon " %}
+				{% if link.icon.right %}
+					{% set icon_class = icon_class ~ "link-action__icon--right" %}
+				{% endif %}
+                {% view '@icon' with {
+                    icon: {
+                        name: link.icon.name,
+                        size: link.icon.size,
+                        class: icon_class
+                    }
+                } %}
+            {% endif %}
+            {% if link.text %}
+                <span class="link-action__text text-menu {{ animate_class }}">{{ link.text }}</span>
+            {% endif %}
+        </a>
+    {% else %}
+        <button
+            type="{{ link.type?: 'button' }}"
+            class="link-action {{ class }}"
+            {% if link.popup %} data-modal="{{ link.popup }}"{% endif %}
+            {% if link.disabled %} disabled{% endif %}
+            {% if link.title %} title="{{ link.title }}"{% endif %}
+            {% if link.count %} data-tab="{{ loop.index }}" {% endif %}
+            {% if link.attr %} {{ link.attr }}{% endif %}>
+            {% if link.icon.name %}
+                {% view '@icon' with {
+                    icon: {
+                        name: link.icon.name,
+                        size: link.icon.size,
+                        class: "link-action__icon"
+                    }
+                } %}
+            {% endif %}
+            {% if link.text %}
+                <span class="link-action__text text-menu {{ animate_class }}">{{ link.text }}</span>
+            {% endif %}
+        </button>
+    {% endif %}
+{% endif %}

@@ -1,0 +1,25 @@
+{
+	"card": {
+		"title": "Контакты",
+		"phone": {
+			"text": "+998 (71) 123-45-67",
+			"href": "tel:+998(71)123-45-67"
+		},
+		"email": {
+			"text": "info@artel.uz",
+			"href": "info@artel.uz"
+		},
+		"icon": {
+			"name": "logos/contacts/map",
+			"size": "fit"
+		},
+		"action": {
+			"href": "javascript:void(0);",
+			"text": "Связаться с нами",
+			"title": "Связаться с нами",
+			"icon": {
+				"name": "24/arrow-up-right"
+			}
+		}
+	}
+}

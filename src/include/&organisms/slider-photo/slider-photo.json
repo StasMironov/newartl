@@ -1,0 +1,35 @@
+{
+	"slider": {
+		"title": "Приобрести продукцию",
+		"items": [
+			{
+				"href": "#",
+				"img": {
+					"src": "tmp/card-news/news5.jpg",
+					"alt": "logo"
+				}
+			},
+			{
+				"href": "#",
+				"img": {
+					"src": "tmp/slider-photo/1.png",
+					"alt": "logo"
+				}
+			},
+			{
+				"href": "#",
+				"img": {
+					"src": "tmp/slider-photo/2.png",
+					"alt": "logo"
+				}
+			},
+			{
+				"href": "#",
+				"img": {
+					"src": "tmp/slider-photo/2.png",
+					"alt": "logo"
+				}
+			}
+		]
+	}
+}

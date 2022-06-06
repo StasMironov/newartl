@@ -1,0 +1,127 @@
+{
+	"block_info": {
+		"title": "Artel в цифрах — 2020",
+		"bg": "gray",
+		"tabs": {
+			"items": [
+				{
+					"text": "Продукты",
+					"attr": "data-attr",
+					"active": "true"
+				},
+				{
+					"text": "Финансовые показатели",
+					"href": "javascript:void(0);",
+					"attr": "data-attr"
+				}
+			]
+		},
+		"tabs_content": [
+			{
+				"active": true,
+				"cards": [
+					{
+						"text": "80",
+						"after": {
+							"txt": "млн"
+						},
+						"before": "≈$",
+						"label": "финансовые показатели",
+						"result": {
+							"num": "11,5",
+							"symbol": "%",
+							"icon": {
+								"name": "24/triangle",
+								"size": "24"
+							}
+						}
+					},
+					{
+						"text": "50",
+						"after": {
+							"txt": "млн"
+						},
+						"before": "≈$",
+						"label": "чистая выручка",
+						"result": {
+							"num": "11,5",
+							"symbol": "%",
+							"icon": {
+								"name": "24/triangle",
+								"size": "24"
+							}
+						}
+					},
+					{
+						"text": "20",
+						"after": {
+							"txt": "%"
+						},
+						"before": "≈",
+						"label": "маржа EBITDA",
+						"result": {
+							"num": "7,5",
+							"symbol": "%",
+							"icon": {
+								"name": "24/triangle",
+								"size": "24"
+							}
+						}
+					}
+				]
+			},
+			{
+				"cards": [
+					{
+						"text": "70",
+						"after": {
+							"txt": "млн"
+						},
+						"before": "≈$",
+						"label": "финансовые показатели",
+						"result": {
+							"num": "11,5",
+							"symbol": "%",
+							"icon": {
+								"name": "24/triangle",
+								"size": "24"
+							}
+						}
+					},
+					{
+						"text": "10",
+						"after": {
+							"txt": "млн"
+						},
+						"before": "≈$",
+						"label": "чистая выручка",
+						"result": {
+							"num": "11,5",
+							"symbol": "%",
+							"icon": {
+								"name": "24/triangle",
+								"size": "24"
+							}
+						}
+					},
+					{
+						"text": "20",
+						"after": {
+							"txt": "%"
+						},
+						"before": "≈",
+						"label": "маржа EBITDA",
+						"result": {
+							"num": "7,5",
+							"symbol": "%",
+							"icon": {
+								"name": "24/triangle",
+								"size": "24"
+							}
+						}
+					}
+				]
+			}
+		]
+	}
+}

@@ -1,0 +1,156 @@
+.accordion {
+	$root: &;
+
+	position: relative;
+	z-index: 1;
+	display: block;
+	width: 100%;
+	border-radius: rem(8);
+    overflow: hidden;
+
+	&__toggle {
+		position: relative;
+		display: flex;
+		align-items: center;
+		text-align: left;
+		width: 100%;
+		height: rem(136);
+		border: 0;
+		padding: 0 rem(100) 0 rem(36);
+        background-color: $color-white;
+		color: $color-black;
+		@include defaultTransition(background-color, color);
+
+		// @include hover {
+		// 	background-color: $color-green;
+		// 	color: $color-white;
+		// }
+
+		@include media-breakpoint-up(md) {
+			height: rem(136);
+			padding: 0 rem(112) 0 rem(40);
+		}
+
+		@include media-breakpoint-up(sm) {
+			padding: 0 rem(86) 0 rem(22);
+			height: rem(128);
+		}
+
+		
+
+		#{$root}.is-active & {
+		//	background-color: $color-lightgray;
+		//	color: $color-green;
+		}
+
+		@include touchLessHover {
+			.accordion__icon {
+				background-color: $color-green;
+				color: $color-white;
+				border-color: $color-green;
+			}
+		}
+	}
+
+	&__title {
+		display: block;
+		font-size: rem(24);
+    max-width: 94%;
+
+		@include media-breakpoint-down(sm) {
+			font-size: rem(20);
+			max-width: 95%;
+			line-height: 1.2;
+		}
+	}
+
+	&__icon {
+		position: absolute;
+		top: calc(50% - #{rem(24)});
+		right: rem(36);
+		width: rem(48);
+		height: rem(48);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: $color-white;
+		color: $color-black;
+		border: 1px solid rgba($color-black, 0.1);
+		border-radius: 50%;
+		@include defaultTransition(background-color, color, border-color);
+		transform: rotate(90deg);
+
+		@include media-breakpoint-up(md) {
+			top: calc(50% - #{rem(32)});
+			right: rem(40);
+			width: rem(64);
+			height: rem(64);
+		}
+
+		@include media-breakpoint-up(sm) {
+			right: rem(26);
+		}
+
+		.icon {
+			@include defaultTransition(transform);
+		}
+
+		#{$root}.is-active & {
+			background-color: $color-green;
+			color: $color-white;
+			border-color: $color-green;
+
+			.icon {
+				transform: rotate(180deg);
+			}
+		}
+	}
+
+	&__roll {
+		height: 0;
+		min-height: 0;
+		overflow: hidden;
+	}
+
+	&__content {
+		padding: 0 rem(24) rem(32);
+		background-color: $color-white;
+	//	background-color: $color-lightgray;
+
+		@include media-breakpoint-up(md) {
+			padding: 0 rem(40) rem(54);
+		}
+
+		ul {
+			padding-left: rem(20);
+
+			@include media-breakpoint-down(sm) {
+				padding-left: rem(24);
+			}
+		}
+	}
+
+	&__text {
+	//	color: $color-text-darkgrey;
+
+		@include media-breakpoint-up(lg) {
+			max-width: rem(610);
+		}
+
+		ul > li::before {
+			@include media-breakpoint-down(sm) {
+				position: absolute;
+				top: 50%;
+				left: -1.5rem;
+			}
+		}
+
+		ul > li {
+			&:not(:last-child){
+				@include media-breakpoint-down(sm) {
+					margin-bottom: rem(16);
+				}
+			}
+		}
+	}
+}

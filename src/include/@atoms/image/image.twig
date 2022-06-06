@@ -1,0 +1,37 @@
+{% if image.type == 'bg' %}
+	{% if image.disable_lazy %}
+		<div class="image{% if image.class %} {{ image.class }}{% endif %}{{ image.fill ? ' fill' : '' }}"
+			 role="img"{% if image.attr %} {{ image.attr }}{% endif %}
+			 aria-label="{{ image.alt ?: image.caption ?: 'image' }}"
+			 style="background-image: url('{{ image.src }}');"></div>
+	{% elseif image.swiper_lazy %}
+		<div class="image swiper-lazy{% if image.class %} {{ image.class }}{% endif %}{{ image.fill ? ' fill' : '' }}"
+			 role="img"{% if image.attr %} {{ image.attr }}{% endif %}
+			 aria-label="{{ image.alt ?: image.caption ?: 'image' }}"
+			 data-background="{{ image.src }}"></div>
+		<div class="swiper-lazy-preloader"></div>
+	{% else %}
+		<div class="image is-lazy{% if image.class %} {{ image.class }}{% endif %}{{ image.fill ? ' fill' : '' }}"
+			 role="img"{% if image.attr %} {{ image.attr }}{% endif %}
+			 aria-label="{{ image.alt ?: image.caption ?: 'image' }}"
+			 data-bg="{{ image.src }}"></div>
+	{% endif %}
+{% else %}
+	{% if image.disable_lazy %}
+		<img class="image{% if image.class %} {{ image.class }}{% endif %}{{ image.fill ? ' fill' : '' }}"
+			 src="{{ image.src }}"{% if image.attr %} {{ image.attr }}{% endif %}
+			{% if image.width %} width="{{ image.width }}"{% endif %}{% if image.height %} height="{{ image.height }}"{% endif %}{% if image.srcset %} srcset="{{ image.srcset }}"{% endif %}
+			 alt="{{ image.alt ?: image.caption ?: 'image' }}">
+	{% elseif image.swiper_lazy %}
+		<img class="image swiper-lazy{% if image.class %} {{ image.class }}{% endif %}{{ image.fill ? ' fill' : '' }}"
+			 src="{{ placeholder?: 'data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==' }}"
+			 data-src="{{ image.src }}"{% if image.attr %} {{ image.attr }}{% endif %}{% if image.srcset %} data-srcset="{{ image.srcset }}"{% endif %}
+			{% if image.width %} width="{{ image.width }}"{% endif %}{% if image.height %} height="{{ image.height }}"{% endif %} alt="{{ image.alt ?: image.caption ?: 'image' }}">
+		<div class="swiper-lazy-preloader"></div>
+	{% else %}
+		<img class="image is-lazy{% if image.class %} {{ image.class }}{% endif %}{{ image.fill ? ' fill' : '' }}"
+			 src="{{ placeholder?: 'data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==' }}"
+			 data-src="{{ image.src }}"{% if image.attr %} {{ image.attr }}{% endif %}{% if image.srcset %} data-srcset="{{ image.srcset }}"{% endif %}
+			{% if image.width %} width="{{ image.width }}"{% endif %}{% if image.height %} height="{{ image.height }}"{% endif %} alt="{{ image.alt ?: image.caption ?: 'image' }}">
+	{% endif %}
+{% endif %}

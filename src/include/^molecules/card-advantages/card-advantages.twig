@@ -1,0 +1,14 @@
+<div href="#" class="card-advantages">
+    <div class="card-advantages__inner">
+        <div class="card-advantages__icon" data-icon="draw">
+            {% view '@icon' with {
+                icon: card.icon
+            } %}
+        </div>
+        <div class="card-advantages__text">
+            {% if card.text %}
+                {{ card.text }}
+            {% endif %}
+        </div>
+    </div>
+</div>

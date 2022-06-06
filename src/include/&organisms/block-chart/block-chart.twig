@@ -1,0 +1,34 @@
+<div {% if block.scroll_target %}id="{{block.scroll_target}}"{% endif %} class="block-chart"{% if block.chart.data %} data-chart='{{ block.chart.data }}'{% endif %} data-fade-in-up>
+	<div class="block-chart__container container">
+		{% if block.heading %}
+			<div class="block-chart__top">
+				<p class="block-chart__heading h2">{{ block.heading }}</p>
+			</div>
+		{% endif %}
+		<div class="block-chart__content">
+			{% if block.factoids %}
+				<div class="block-chart__factoids">
+					{% for factoid in block.factoids %}
+						<div class="block-chart__factoid">
+							{% view '^factoid' with {
+								factoid: factoid
+							} %}
+						</div>
+					{% endfor %}
+				</div>
+			{% endif %}
+			{% if block.chart %}
+				<div class="block-chart__box">
+					{% if block.chart.title %}
+						<p class="block-chart__title text-small">{{ block.chart.title }}</p>
+					{% endif %}
+					<div class="block-chart__frame" data-roll>
+						<div class="block-chart__roll">
+							<canvas class="block-chart__canvas" data-canvas></canvas>
+						</div>
+					</div>
+				</div>
+			{% endif %}
+		</div>
+	</div>
+</div>

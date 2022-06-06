@@ -1,0 +1,56 @@
+<div class="block-info {% if block_info.bg %} bg-{{ block_info.bg }}{% else %} bg-white{% endif %}" data-tab-container>
+    <div class="block-info__container container">
+        <div class="block-info__wrap" data-tabs-wrap>
+            <div class="block-info__left">
+                
+                {% if block_info.title %}
+                    <h2 class="block-info__title" data-fade-in-up>{{ block_info.title }}</h2>
+                {% endif %}
+
+                <div class="block-info__tabs">
+                    {% if block_info.tabs %}
+                        {% view '&tabs' with {
+                            tabs: block_info.tabs
+                        }%}
+                    {% endif %}
+                </div>
+            </div>
+
+            <div class="block-info__right">
+                <div class="block-info__contents">
+                    {% if block_info.tabs_content %}
+                        <div class="block-info__tabs-content">
+                            {% for item in block_info.tabs_content %}
+                                <div class="block-info__pane{{ item.active ? ' is-active' }}" data-tab-pane="{{ loop.index }}" data-fade-in-up-repeat>
+                                    {% if item.cards %}
+                                        <div class="block-info__cards">
+                                            {% for card in item.cards %}
+                                                <div class="block-info__card">
+                                                    <div class="block-info__row" data-fade-in-up data-delay="{{ (0.2 + loop.index0 / 5)|round(2, 'floor') }}">
+                                                        <div class="block-info__factoid">
+                                                            {% view '^factoid' with {
+                                                                factoid: card
+                                                            }%}
+                                                        </div>
+                                                        {% if card.result %}
+                                                            <div class="block-info__result">
+                                                                {% view '@result' with {
+                                                                    result: card.result
+                                                                }%}
+                                                            </div>
+                                                        {% endif %}
+                                                    </div>
+                                                    <div class="block-news__card-border" style="--delay: {{ (0.2 + loop.index0 / 5)|round(2, 'floor') }}"></div>
+                                                </div>
+                                            {% endfor %}
+                                        </div>
+                                    {% endif %}
+                                </div>
+                            {% endfor %}
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

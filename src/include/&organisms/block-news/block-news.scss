@@ -1,0 +1,272 @@
+.block-news {
+	$root: &;
+	overflow: hidden;
+
+	&__container {
+		padding-top: rem(64);
+		padding-bottom: rem(64);
+
+		@include media-breakpoint-up(md) {
+			padding-top: rem(112);
+			padding-bottom: rem(120);
+		}
+	}
+
+	&__title {
+		margin-bottom: rem(40);
+
+		@include media-breakpoint-up(md) {
+			margin-bottom: rem(48);
+		}
+		@include media-breakpoint-up(lg) {
+			position: absolute;
+			display: inline-block;
+			max-width: 25%;
+			margin-bottom: 0;
+		}
+	}
+
+	&__tabs {
+		margin-bottom: rem(32);
+		@include media-breakpoint-up(md) {
+			margin-bottom: rem(48);
+		}
+		@include media-breakpoint-up(lg) {
+			margin-bottom: 0;
+			display: flex;
+			align-items: center;
+		}
+	}
+
+	&__content {
+		@include media-breakpoint-up(lg) {
+			display: grid;
+			grid-template-columns: 1fr 2fr;
+		}
+	}
+
+	&__pane {
+		display: none;
+
+		&.is-active {
+			display: block;
+		}
+
+		opacity: 0;
+
+		&:first-child {
+			opacity: 1;
+		}
+
+		&.animate {
+			#{$root}__card-border {
+				transform: scaleX(1);
+			}
+		}
+	}
+
+	&__cards {
+
+		margin: 0 rem(-4);
+	
+		@include media-breakpoint-up(md) {
+			display: flex;
+			flex-wrap: wrap;
+		}
+	}
+
+	&__card-border {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: rem(8);
+		height: 1px;
+		background-color: rgba($color-black, .1);
+		transform-origin: left;
+		transition: transform 1s ease 5s,
+		background .5s ease;
+		transform: scaleX(1);
+	}
+
+	&__card {
+		position: relative;
+		margin-right: rem(4);
+		margin-left: rem(4);
+		padding-top: rem(32);
+		margin-bottom: rem(32);
+		@include last-row(1) {
+			margin-bottom: 0;
+		}
+
+		@include media-breakpoint-up(md) {
+			margin-bottom: rem(48);
+			width: calc(50% - #{rem(8)});
+			@include last-row(2) {
+				margin-bottom: 0;
+			}
+		}
+
+		@include touchLessHover {
+			#{$root}__card-border {
+				background-color: $color-green;
+			}
+		}
+	}
+
+	&__wrap {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	&--layout {
+		&-2 {
+			#{$root}__card {
+				&:nth-child(-n+2){
+					width: calc(50% - #{rem(8)});
+
+					.card-news__title {
+						max-width: rem(446);
+
+						@include media-breakpoint-down(sm) {
+							max-width: rem(271);
+						}
+					}
+					@include media-breakpoint-down(md) {
+						width: 100%;
+					}
+				}
+
+				width: calc(33.333% - #{rem(8)});
+				margin-bottom: rem(48);
+
+				.card-news__title {
+					max-width: rem(328);
+
+					@include media-breakpoint-down(md) {
+						max-width: rem(256);
+					}
+
+					@include media-breakpoint-down(sm) {
+						max-width: rem(271);
+					}
+				}
+
+				@include last-row(1) {
+					margin-bottom: rem(48);
+				}
+		
+				@include media-breakpoint-up(md) {
+					margin-bottom: rem(48);
+					@include last-row(2) {
+						margin-bottom: rem(48)
+					}
+				}
+
+				@include media-breakpoint-down(md) {
+					width: calc(50% - #{rem(8)});
+				}
+
+				@include media-breakpoint-down(sm) {
+					width: 100%;
+					margin-bottom: rem(32);
+				}
+			}
+
+			#{$root}__content {
+				grid-template-columns: 1fr;
+				margin-bottom: rem(48);
+
+				@include media-breakpoint-down(sm) {
+					margin-bottom: rem(80);
+				}
+			}
+
+			#{$root}__container {
+				padding-bottom: rem(48);
+				padding-top: rem(69);
+
+				@include media-breakpoint-down(md) {
+					padding-top: rem(80);
+				}
+
+				@include media-breakpoint-down(sm) {
+					padding-top: rem(64);
+				}
+			}
+
+			#{$root}{
+				&__title {
+					position: relative;
+					width: 16.6%;
+					margin-right: 14.4%;
+
+					@include media-breakpoint-down(md) {
+						width: 25%;
+						margin-right: 25%;
+					}
+
+					@include media-breakpoint-down(sm) {
+						width: 100%;
+						margin-right: 0;
+						margin-bottom: rem(22);
+					}
+				}
+
+				&__tabs {
+					margin-right: 7%;
+					width: auto;
+					padding-top: rem(10);
+
+					@include media-breakpoint-down(md) {
+						order: 1;
+						margin-top: rem(60);
+						margin-bottom: 0;
+						padding-top: 0;
+						width: 100%;
+						margin-right: 0;
+					}
+
+					@include media-breakpoint-down(sm) {
+						margin-top: rem(54);
+						padding: 0 rem(7);
+					}
+				}
+
+				&__wrapper {
+					display: flex;
+					align-items: center;
+					margin-bottom: rem(80);
+
+					@include media-breakpoint-down(md) {
+						flex-wrap: wrap;
+						align-items: normal;
+						margin-bottom: rem(48);
+					}
+
+					@include media-breakpoint-down(sm) {
+						margin-bottom: rem(32);
+					}
+
+					.filter-select {
+						padding-top: rem(4);
+
+						@include media-breakpoint-down(md) {
+							padding-top: 0;
+							margin-top: rem(-8);
+						}
+					}
+					
+				}
+
+				&__pane {
+					transform: translateY(0) !important;
+				}
+
+				&__cards {
+					margin-bottom: rem(-48);
+				}
+			}
+		}
+	}
+}

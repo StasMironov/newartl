@@ -1,0 +1,21 @@
+{% extends "layouts::_layout-sidebar.twig" %}
+
+{% block layout_aside %}
+    {% view '^breadcrumbs'%}
+{% endblock %}
+
+{% block layout_content %}
+    {% view '&news-detail' with {
+        news_detail: news_detail
+    } %}
+{% endblock %}
+
+{% block layout_sections %}
+    <!-- <div class="wrapper">
+        <div class="pt-md-112 pt-64 pb-md-112 pb-64 bg-white bg-wings">
+            {% view '&news-slider' with {
+                news_slider: news
+            } %}
+        </div>
+    </div> -->
+{% endblock %}

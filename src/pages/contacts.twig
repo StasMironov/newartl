@@ -1,0 +1,11 @@
+{% extends "layouts::_page.twig" %}
+
+{% block content %}
+    
+    {% view '&block-contacts' %}
+
+    {% view '&form' with {
+        form: contacts_form
+    }%}
+
+{% endblock %}

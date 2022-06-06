@@ -1,0 +1,393 @@
+{
+	"title": "Партнёры по продажам",
+	"header": {
+		"transparent": true,
+		"logo": {
+			"href": "main.html",
+			"name": "logos/main-logo",
+			"size": "fit"
+		},
+		"navigation": [
+			{
+				"text": "О группе",
+				"submenu": {
+					"title": "О группе",
+					"text": "Общая информация для инвесторов в формате отчетов, графиков и документов",
+					"links": [
+						{
+							"href": "javascript:void(0);",
+							"text": "Общая информация для инвесторов"
+						},
+						{
+							"href": "javascript:void(0);",
+							"text": "Презентации"
+						},
+						{
+							"href": "javascript:void(0);",
+							"text": "Соблюдение требований корпоративного управления"
+						},
+						{
+							"href": "javascript:void(0);",
+							"text": "Структура компании"
+						},
+						{
+							"href": "javascript:void(0);",
+							"text": "Совет директоров"
+						},
+						{
+							"href": "javascript:void(0);",
+							"text": "Руководство"
+						}
+					]
+				}
+			},
+			{
+				"text": "Инвесторам",
+				"submenu": {
+					"title": "Инвесторам",
+					"text": "Общая информация для инвесторов в формате отчетов, графиков и документов",
+					"links": [
+						{
+							"href": "javascript:void(0);",
+							"text": "Общая информация для инвесторов"
+						},
+						{
+							"text": "Результаты и отчеты",
+							"active": true
+						},
+						{
+							"href": "javascript:void(0);",
+							"text": "Презентации"
+						},
+						{
+							"href": "javascript:void(0);",
+							"text": "Соблюдение требований корпоративного управления"
+						},
+						{
+							"href": "javascript:void(0);",
+							"text": "Структура компании"
+						},
+						{
+							"href": "javascript:void(0);",
+							"text": "Совет директоров"
+						},
+						{
+							"href": "javascript:void(0);",
+							"text": "Руководство"
+						},
+						{
+							"href": "javascript:void(0);",
+							"text": "Корпоративное управление"
+						},
+						{
+							"href": "javascript:void(0);",
+							"text": "Внутренние документы"
+						},
+						{
+							"href": "javascript:void(0);",
+							"text": "Каталог продукции"
+						},
+						{
+							"href": "javascript:void(0);",
+							"text": "Контакты для инвесторов"
+						}
+					]
+				}
+			},
+			{
+				"href": "javascript:void(0);",
+				"text": "Партнерам"
+			},
+			{
+				"href": "javascript:void(0);",
+				"text": "Устойчивое развитие"
+			},
+			{
+				"href": "javascript:void(0);",
+				"text": "Пресс-центр"
+			},
+			{
+				"text": "Карьера",
+				"active": true
+			},
+			{
+				"href": "javascript:void(0);",
+				"text": "Контакты"
+			}
+		],
+		"lang": {
+			"action": {
+				"text": "Ру",
+				"title": "Ру"
+			},
+			"items": [
+				{
+					"href": "javascript:void(0);",
+					"text": "En",
+					"title": "En"
+				},
+				{
+					"href": "javascript:void(0);",
+					"text": "Оʻz",
+					"title": "Оʻz"
+				}
+			]
+		}
+	},
+	"hero_default": {
+		"layout": "3",
+		"breadcrumbs": {
+			"theme": "white",
+			"items": [
+				{
+					"text": "Главная",
+					"href": "main.html"
+				},
+				{
+					"href": "./",
+					"text": "Партнерам"
+				}
+			]
+		},
+		"title": "Партнеры по&nbsp;продажам",
+		"image": {
+			"src": "tmp/default-hero/hero-sale.jpg",
+			"alt": "image alt",
+			"fill": true,
+			"tab": {
+				"srcset": [
+					{
+						"scale": "1",
+						"src": "tmp/default-hero/hero-sale-tab.jpg"
+					}
+				]
+			},
+			"mob": {
+				"srcset": [
+					{
+						"scale": "1",
+						"src": "tmp/default-hero/hero-sale-mob.jpg"
+					}
+				]
+			}
+		}
+	},
+	"block_reach": {
+		"factoids": [
+			{
+				"text": "28",
+				"before": ">",
+				"label": "Общее кол-во дилеров&nbsp;Артель"
+			},
+			{
+				"text": "1500",
+				"before": ">",
+				"label": "Общее кол-во магазинов&nbsp;Артель",
+				"attr": "data-counter-nospace"
+			}
+		]
+	},
+	"map": {
+		"layout": "2",
+		"zoom": true,
+		"noClick": true,
+		"url": "ajax/map-country.json",
+		"heading": "Страны для экспорта",
+		"tabs": {
+			"horizontal": true,
+			"items": [
+				{
+					"text": "Узбекистан",
+					"attr": "data-region='uz'",
+					"shift": true
+				},
+				{
+					"text": "Россия",
+					"active": true,
+					"attr": "data-region='ru'",
+					"shift": true
+				},
+				{
+					"text": "Украина",
+					"attr": "data-region='ua'",
+					"shift": true
+				},
+				{
+					"text": "Казахстан",
+					"attr": "data-region='kz'",
+					"shift": true
+				},
+				{
+					"text": "Кыргызстан",
+					"attr": "data-region='kg'",
+					"shift": true
+				},
+				{
+					"text": "Таджикистан",
+					"attr": "data-region='tj'",
+					"shift": true
+				},
+				{
+					"text": "Азербайджан",
+					"attr": "data-region='az'",
+					"shift": true
+				}
+			]
+		}
+	},
+	"contacts_form": {
+		"layout": "2",
+		"id": "form-1",
+		"name": "form-1",
+		"method": "POST",
+		"action": "/ajax/contacts/?repo=artel.frontend&status=success",
+		"attr": "data-ajax-form data-scroll-target data-scroll-contacts",
+		"title": "Связаться с нами",
+		"bg": "green",
+		"fields": [
+			{
+				"input": true,
+				"id": "form-1-input-1",
+				"name": "form-1-input-1",
+				"theme": "white",
+				"required": true,
+				"label": "ФИО"
+			},
+			{
+				"input": true,
+				"id": "form-1-input-2",
+				"name": "form-1-input-2",
+				"theme": "white",
+				"required": true,
+				"label": "Компания"
+			},
+			{
+				"input": true,
+				"id": "form-1-input-3",
+				"name": "form-1-input-3",
+				"theme": "white",
+				"required": true,
+				"type": "tel",
+				"label": "Телефон",
+				"mask_list": [
+					"+998-##-###-####",
+					"+7(###)###-##-##",
+					"+380(##)###-##-##",
+					"+7(6##)###-##-##",
+					"+992-##-###-####",
+					"+994-##-###-##-##",
+					"+996-###-######"
+				]
+			},
+			{
+				"textarea": true,
+				"id": "form-1-textarea-1",
+				"name": "form-1-textarea-1",
+				"theme": "white",
+				"label": "Сообщение"
+			}
+		],
+		"agreement": [
+			{
+				"checkbox": true,
+				"id": "form-1-checkbox-1",
+				"name": "form-1-checkbox-1",
+				"text": "Настоящим даю согласие по установленной форме на обработку моих <a href='javascript:void(0);' class='link-content' target='_blank'>персональных данных</a> в порядке, установленном законом РУз от 27.07.2006 N 152-ФЗ 'О персональных данных'. Код подтверждения",
+				"required": true,
+				"theme": "white"
+			}
+		],
+		"submit": {
+			"type": "submit",
+			"text": "Отправить",
+			"title": "Отправить",
+			"theme": "white",
+			"icon": {
+				"name": "24/arrow-up-right"
+			}
+		}
+	},
+	"block_connection": {
+		"title": "Контакты для&nbsp;партнеров",
+		"items": [
+			{
+				"avatar": {
+					"src": "tmp/press/img4.jpg",
+					"alt": "img"
+				},
+				"name": "Yuldashev Xusan&nbsp;Lutfullayevich",
+				"location": {
+					"country": "Kazakhstan",
+					"icon": {
+						"name": "24/location",
+						"size": "24"
+					}
+				},
+				"comm": [
+					{
+						"title": "Телефон",
+						"text": "+998 (97) 723-25-36",
+						"href": "tel:+998(97)723-25-36"
+					},
+					{
+						"title": "E-mail",
+						"text": "khusan.yuldashev@artelgroup.org",
+						"href": "mailto:khusan.yuldashev@artelgroup.org"
+					}
+				]
+			},
+			{
+				"avatar": {
+					"src": "tmp/press/img5.jpg",
+					"alt": "img"
+				},
+				"name": "Yuldashev Xusan&nbsp;Lutfullayevich",
+				"location": {
+					"country": "Azerbaijan, Turkmenistan, Tadjikistan, Kirgizistan",
+					"icon": {
+						"name": "24/location",
+						"size": "24"
+					}
+				},
+				"comm": [
+					{
+						"title": "Телефон",
+						"text": "+998 (97) 761-68-86",
+						"href": "tel:+998(97)761-68-86"
+					},
+					{
+						"title": "E-mail",
+						"text": "timur.xodjaev@artelgroup.org",
+						"href": "mailto:kamola.sobirova@artelelectronics.com"
+					}
+				]
+			},
+			{
+				"avatar": {
+					"src": "tmp/press/img6.jpg",
+					"alt": "img"
+				},
+				"name": "Saloxutdinov Umid&nbsp;Furqatovich",
+				"location": {
+					"country": "Kazakhstan",
+					"icon": {
+						"name": "24/location",
+						"size": "24"
+					}
+				},
+				"comm": [
+					{
+						"title": "Телефон",
+						"text": "+998 (97) 783-08-88",
+						"href": "tel:+998(97)783-08-88"
+					},
+					{
+						"title": "E-mail",
+						"text": "umid.salokhutdinov@artelgroup.org",
+						"href": "mailto:umid.salokhutdinov@artelgroup.org"
+					}
+				]
+			}
+		]
+	}
+}

@@ -1,0 +1,174 @@
+{
+	"block_docs": {
+		"tabs": {
+			"layout": "4",
+			"horizontal": true,
+			"items": [
+				{
+					"text": "Все новости",
+					"title": "Все новости",
+					"attr": "data-attr",
+					"active": "true",
+					"shift": true
+				},
+				{
+					"text": "События",
+					"title": "События",
+					"attr": "data-attr",
+					"shift": true
+				},
+				{
+					"text": "Социальная ответственность",
+					"title": "Социальная ответственность",
+					"attr": "data-attr",
+					"shift": true
+				}
+			]
+		},
+		"tabs_content": [
+			{
+				"active": true,
+				"cards": [
+					{
+						"href": "#",
+						"date": "1 сен 2021",
+						"title": "Artel и Khan Academy Oʻzbek подписали меморандум",
+						"image": {
+							"src": "tmp/card-news/news1.jpg",
+							"alt": "alt"
+						},
+						"layout": "3"
+					},
+					{
+						"href": "#",
+						"date": "3 мая 2021",
+						"title": "Производственной мощности Artel достаточно для&nbsp;производства продукции",
+						"image": {
+							"src": "tmp/card-news/news2.jpg",
+							"alt": "alt"
+						},
+						"layout": "3"
+					},
+					{
+						"href": "#",
+						"date": "28 янв 2021",
+						"title": "Проводится обучение руководителей",
+						"image": {
+							"src": "tmp/card-news/news3.jpg",
+							"alt": "alt"
+						},
+						"layout": "3"
+					},
+					{
+						"href": "#",
+						"date": "3 мая 2021",
+						"title": "Компания Artel подарила стиральные машины детскому дому «Kichkintoy»",
+						"image": {
+							"src": "tmp/card-news/news4.jpg",
+							"alt": "alt"
+						},
+						"layout": "3"
+					},
+					{
+						"href": "#",
+						"date": "1 сен 2021",
+						"title": "Artel и Khan Academy Oʻzbek подписали меморандум",
+						"image": {
+							"src": "tmp/card-news/news1.jpg",
+							"alt": "alt"
+						},
+						"layout": "3"
+					}
+				]
+			},
+			{
+				"cards": [
+					{
+						"href": "#",
+						"date": "1 сен 2021",
+						"title": "Artel и Khan Academy Oʻzbek подписали меморандум",
+						"image": {
+							"src": "tmp/card-news/news1.jpg",
+							"alt": "alt"
+						},
+						"layout": "3"
+					},
+					{
+						"href": "#",
+						"date": "1 сен 2021",
+						"title": "Artel и Khan Academy Oʻzbek подписали меморандум",
+						"image": {
+							"src": "tmp/card-news/news3.jpg",
+							"alt": "alt"
+						},
+						"layout": "3"
+					},
+					{
+						"href": "#",
+						"date": "1 сен 2021",
+						"title": "Artel и Khan Academy Oʻzbek подписали меморандум",
+						"image": {
+							"src": "tmp/card-news/news2.jpg",
+							"alt": "alt"
+						},
+						"layout": "3"
+					},
+					{
+						"href": "#",
+						"date": "1 сен 2021",
+						"title": "Artel и Khan Academy Oʻzbek подписали меморандум",
+						"image": {
+							"src": "tmp/card-news/news4.jpg",
+							"alt": "alt"
+						},
+						"layout": "3"
+					}
+				]
+			},
+			{
+				"cards": [
+					{
+						"href": "#",
+						"date": "1 сен 2021",
+						"title": "Artel и Khan Academy Oʻzbek подписали меморандум",
+						"image": {
+							"src": "tmp/card-news/news4.jpg",
+							"alt": "alt"
+						},
+						"layout": "3"
+					},
+					{
+						"href": "#",
+						"date": "1 сен 2021",
+						"title": "Artel и Khan Academy Oʻzbek подписали меморандум",
+						"image": {
+							"src": "tmp/card-news/news2.jpg",
+							"alt": "alt"
+						},
+						"layout": "3"
+					},
+					{
+						"href": "#",
+						"date": "1 сен 2021",
+						"title": "Artel и Khan Academy Oʻzbek подписали меморандум",
+						"image": {
+							"src": "tmp/card-news/news3.jpg",
+							"alt": "alt"
+						},
+						"layout": "3"
+					},
+					{
+						"href": "#",
+						"date": "1 сен 2021",
+						"title": "Artel и Khan Academy Oʻzbek подписали меморандум",
+						"image": {
+							"src": "tmp/card-news/news1.jpg",
+							"alt": "alt"
+						},
+						"layout": "3"
+					}
+				]
+			}
+		]
+	}
+}

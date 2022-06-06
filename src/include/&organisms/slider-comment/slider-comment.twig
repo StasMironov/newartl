@@ -1,0 +1,96 @@
+<div {% if slider.scroll_target %}id="{{slider.scroll_target}}"{% endif %} class="slider-comment" data-slider-comment-wrap data-fade-in-up >
+    <div class="slider-comment__container container">
+        <div class="slider-comment__header">
+            {% if slider.title %}
+                <h3 class="slider-comment__title h2">
+                    {{ slider.title }}
+                </h3>
+            {% endif %}
+        </div>
+        
+        <div class="slider-comment__slider" >
+            <div class="swiper-container" data-slider-comment>
+                <div class="swiper-wrapper">
+                    {% for slide in slider.items %}
+                        <div class="slider-comment__item swiper-slide">
+                            <div class="slider-comment__wrapper">
+                              {% if slide.quote %}
+                                <div class="slider-comment__quote">
+                                    {{ slide.quote }}
+                                </div>
+                              {% endif %}
+
+                              <div class="slider-comment__content">
+                                <div class="slider-comment__left">
+                                    <div class="slider-comment__box">
+                                        {% if slide.avatar %}
+                                            <div class="slider-comment__avatar">
+                                                {% view '@image' with {
+                                                    image: slide.avatar
+                                                } %}
+                                            </div>
+
+                                            <div class="slider-comment__cover">
+                                                {% if slide.name %}
+                                                    <div class="slider-comment__name">
+                                                        {{ slide.name }}
+                                                    </div>
+                                                {% endif %}
+                                                {% if slide.job %}
+                                                    <div class="slider-comment__job">
+                                                        {{ slide.job }}
+                                                    </div>
+                                                {% endif %}
+                                            </div>
+
+                                        {% endif %}
+                                    </div>
+                                    {% if slide.factoid %}
+                                        <div class="slider-comment__factoid">
+                                            {% view '^factoid' with {
+                                               factoid: slide.factoid
+                                            } %}
+                                        </div>
+                                    {% endif %}
+                                </div>
+                                <div class="slider-comment__right">
+                                    {% if slide.icon %}
+                                        <div class="slider-comment__icon">
+                                            {% view '@icon' with {
+                                                icon: slide.icon
+                                            } %}
+                                        </div>
+                                    {% endif %}
+
+                                    {% if slide.desc_read_more %}
+                                        <div class="slider-comment__desc">
+                                              <div class="slider-comment__par" >
+                                                  {% view '^read-more-comment' with {
+                                                      card: slide.desc_read_more 
+                                                  }%}
+                                              </div> 
+                                        </div>
+                                    {% endif %}
+                                </div>
+                              </div>                                
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="slider-comment__bottom">
+                <div class="slider-comment__wrp">
+                    <div class="slider-comment__pag">
+                        {% view '@nav-pag' %}
+                    </div>
+                    <div class="progress" data-slider-progress>
+                        <div class="progress__bar"></div>
+                    </div>
+                    <div class="slider-comment__nav" data-fade-in-up>
+                        {% view '@nav-arrows' %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

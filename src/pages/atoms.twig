@@ -1,0 +1,195 @@
+{% extends "layouts::_page.twig" %}
+
+{% block content %}
+
+	<!--<editor-fold desc="Fields">-->
+
+	<div class="mt-120 py-24">
+		<div class="container">
+			<p class="h2 mb-24">Fields</p>
+
+			<div class="mb-24">
+				<p class="text-lead mb-16"><code>Datepicker</code></p>
+
+				<div class="py-24 px-24">
+					<div style="width: 27.5rem;">
+						{% view '@field' with {
+							field: datepicker1
+						} %}
+					</div>
+				</div>
+			</div>
+
+			<div class="mb-24">
+				<p class="text-lead mb-16"><code>Datepicker white</code></p>
+
+				<div class="py-64 px-24 bg-green">
+					<div style="width: 27.5rem;">
+						{% view '@field' with {
+							field: datepicker2
+						} %}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--</editor-fold>-->
+
+	<!--<editor-fold desc="Icons">-->
+
+	<div class="py-24">
+		<div class="container">
+			<p class="h2 mb-24">Icons</p>
+
+			<div class="mb-24">
+				<p class="text-lead mb-16"><code>24px</code></p>
+
+				<div style="display: flex; flex-wrap: wrap;">
+					{% for icon in icons.24px %}
+						<div class="py-8 px-8">
+							{% view '@icon' with {
+								icon: icon
+							} %}
+						</div>
+					{% endfor %}
+				</div>
+			</div>
+
+			<div class="mb-24">
+				<p class="text-lead mb-16"><code>104px</code></p>
+
+				<div style="display: flex; flex-wrap: wrap;">
+					{% for icon in icons.104px %}
+						<div class="py-8 px-8">
+							{% view '@icon' with {
+								icon: icon
+							} %}
+						</div>
+					{% endfor %}
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--</editor-fold>-->
+
+	<!--<editor-fold desc="Icon-text">-->
+
+	<div class="py-24">
+		<div class="container">
+			<p class="h2 mb-24">Icon-text</p>
+
+			<div class="mb-24">
+
+				<div style="display: flex; flex-wrap: wrap;">
+					{% for icon in icon_text %}
+						<div class="py-8 px-8">
+							{% view '@icon-text' with {
+								icon: icon
+							} %}
+						</div>
+					{% endfor %}
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--</editor-fold>-->
+
+	<!--<editor-fold desc="Buttons">-->
+
+	<div class="py-24">
+		<div class="container">
+			<p class="h2 mb-24">Buttons</p>
+
+			{% for button in buttons %}
+				<div class="mb-24">
+					{% view '@button' with {
+						button: button
+					} %}
+				</div>
+			{% endfor %}
+		</div>
+	</div>
+
+	<div class="py-24 bg-green">
+		<div class="container">
+			{% view '@button' with {
+				button: {
+					text: "Каталог",
+					title: "Каталог",
+					theme: "white",
+					icon: {
+						"name": "24/arrow-up-right"
+					}
+				}
+			} %}
+		</div>
+	</div>
+
+	<!--</editor-fold>-->
+
+	<!--<editor-fold desc="Nav arrows">-->
+
+	<div class="py-24">
+		<div class="container">
+			<p class="h2 mb-24">Nav arrows</p>
+
+			<div class="mb-24">
+				{% view '@nav-arrows' %}
+			</div>
+
+			<div class="py-24 px-16 bg-black">
+				{% view '@nav-arrows' with {
+					nav_arrows: {
+						theme: "on-black"
+					}
+				} %}
+			</div>
+		</div>
+	</div>
+
+	<!--</editor-fold>-->
+
+	<!--<editor-fold desc="Tab">-->
+
+	<div class="py-24">
+		<div class="container">
+			<p class="h2 mb-24">Tabs</p>
+
+			<div class="mb-48">
+				{% for tab in tabs %}
+					<div class="mb-24">
+						{% view '@tab' with {
+							tab: tab
+						} %}
+					</div>
+				{% endfor %}
+			</div>
+
+			<div class="mb-48">
+				{% for tab in tabs2 %}
+					<div class="mb-24">
+						{% view '@tab' with {
+							tab: tab
+						} %}
+					</div>
+				{% endfor %}
+			</div>
+
+			<div class="mb-24">
+				{% for tab in tabs3 %}
+					<div class="mb-24">
+						{% view '@tab' with {
+							tab: tab
+						} %}
+					</div>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+
+	<!--</editor-fold>-->
+
+{% endblock %}

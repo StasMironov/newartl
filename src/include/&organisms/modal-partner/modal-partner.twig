@@ -1,0 +1,26 @@
+<div class="modal-partner" data-wrap-scroll>
+	<div class="modal-partner__wrapper">
+		<div class="modal-partner__left">
+			{% if modal_partner.img %}
+				<div class="modal-partner__logo">
+					{% view '@image' with {
+						image: modal_partner.img
+					} %}
+				</div>
+			{% endif %}
+		</div>
+		<div class="modal-partner__right">
+			{% if modal_partner.description %}
+				<div class="modal-partner__description" data-ps>
+					<div class="modal-partner__info">
+						{% for item in modal_partner.description %}
+							<div class="modal-partner__text">
+								{{ item }}
+							</div>
+						{% endfor %}
+					</div>
+				</div>
+			{% endif %}
+		</div>
+	</div>
+</div>

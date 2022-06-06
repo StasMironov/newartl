@@ -1,0 +1,24 @@
+{
+    "block_image": {
+        "img": {
+            "src": "tmp/block-image/hero.jpg",
+            "alt": "image alt",
+            "tab": {
+                "srcset": [
+                    {
+                        "scale": "1",
+                        "src": "tmp/block-image/hero-tab.jpg"
+                    }
+                ]
+            },
+            "mob": {
+                "srcset": [
+                    {
+                        "scale": "1",
+                        "src": "tmp/block-image/hero-mob.jpg"
+                    }
+                ]
+            }
+        }
+    }
+}

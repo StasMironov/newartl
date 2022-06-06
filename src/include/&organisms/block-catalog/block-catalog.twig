@@ -1,0 +1,61 @@
+<div class="block-catalog{% if block.slider %} has-slider{% endif %}">
+	<div class="block-catalog__inner" data-fade-in-up>
+		<div class="block-catalog__content">
+			<div class="block-catalog__info">
+				{% if block.href %}
+					<a class="block-catalog__link" href="{{ block.href }}">{{ block.href }}</a>
+				{% endif %}
+				<div class="container">
+					{% if block.title or block.description %}
+						<div class="block-catalog__info-top" data-fade-in-up>
+							{% if block.title %}
+								<h2 class="block-catalog__title">{{ block.title }}</h2>
+							{% endif %}
+							{% if block.description %}
+								<div class="block-catalog__description">{{ block.description }}</div>
+							{% endif %}
+						</div>
+					{% endif %}
+					{% if block.text or block.action %}
+						<div class="block-catalog__info-bottom" data-fade-in-up>
+							{% if block.text %}
+								<div class="block-catalog__text">{{ block.text }}</div>
+							{% endif %}
+							{% if block.action %}
+								<div class="block-catalog__action">
+									{% view '@button' with {
+										button: block.action
+									} %}
+								</div>
+								<div class="block-catalog__hover">
+								</div>
+							{% endif %}
+						</div>
+					{% endif %}
+				</div>
+			</div>
+			{% if block.image or block.image_adaptive %}
+				<div class="block-catalog__image">
+					{% if block.image %}
+						{% view '@image' with {
+							image: block.image
+						} %}
+					{% elseif block.image_adaptive %}
+						{% view '@image-adaptive' with {
+							image: block.image_adaptive
+						} %}
+					{% endif %}
+				</div>
+			{% endif %}
+		</div>
+		{% if block.slider %}
+			<div class="block-catalog__slider">
+				<div class="block-catalog__slider-wrap container">
+					{% view '&slider-logos' with {
+						slider: block.slider
+					}%}
+				</div>
+			</div>
+		{% endif %}
+	</div>
+</div>

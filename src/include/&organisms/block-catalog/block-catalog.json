@@ -1,0 +1,63 @@
+{
+	"block": {
+		"href": "#",
+		"title": "Каталог продукции",
+		"description": "Август 2021 г",
+		"text": "Вся продукция и характеристики товаров в одном файле",
+		"action": {
+			"href": "#!",
+			"text": "Скачать",
+			"icon": {
+				"name": "24/download"
+			},
+			"theme": "white"
+		},
+		"image_adaptive": {
+			"src": "tmp/catalog/catalog.jpg",
+			"alt": "catalog",
+			"fill": true,
+			"tab": {
+				"srcset": [
+					{
+						"scale": "1",
+						"src": "tmp/catalog/catalog-tab.jpg"
+					}
+				]
+			},
+			"mob": {
+				"srcset": [
+					{
+						"scale": "1",
+						"src": "tmp/catalog/catalog-mob.jpg"
+					}
+				]
+			}
+		},
+		"slider": {
+			"title": "Приобрести продукцию",
+			"items": [
+				{
+					"href": "#",
+					"icon": {
+						"src": "tmp/catalog/logo.png",
+						"alt": "logo"
+					}
+				},
+				{
+					"href": "#",
+					"icon": {
+						"src": "tmp/catalog/catalog.jpg",
+						"alt": "logo"
+					}
+				},
+				{
+					"href": "#",
+					"icon": {
+						"src": "tmp/catalog/logo.png",
+						"alt": "logo"
+					}
+				}
+			]
+		}
+	}
+}

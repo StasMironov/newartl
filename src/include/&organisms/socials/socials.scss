@@ -1,0 +1,80 @@
+.socials {
+    $root: &;
+
+	&__icon {
+		display: block;
+		width: rem(48);
+		height: rem(48);
+		margin-right: rem(16);
+		color: $color-black;
+		font-size: 0;
+		line-height: rem(48);
+		text-align: center;
+		background-color: rgba($color-white, 1);
+		border-radius: 50%;
+		@include defaultTransition(background);
+
+		
+
+		@include media-breakpoint-up(sm) {
+			width: rem(56);
+			height: rem(56);
+			line-height: rem(56);
+		}
+	}
+
+	&__items {
+		display: flex;
+		align-items: center;
+
+		@include media-breakpoint-down(sm) {
+			flex-direction: column;
+			align-items: flex-start;
+		}
+	}
+
+	&__item {
+		&:not(:last-child) {
+			margin-right: rem(80);
+
+			@include media-breakpoint-down(sm) {
+				margin-bottom: rem(24);
+			}
+		}
+	}
+
+	&__link {
+		display: flex;
+		align-items: center;
+		color: $color-black;
+
+        @include touchLessHover {
+			#{$root}__icon {
+                background-color: $color-black;
+                color: $color-white;
+            }
+
+            
+		}
+	}
+
+	&__title {
+		max-width: rem(300);
+		margin-bottom: rem(40);
+
+		@include media-breakpoint-down(sm) {
+			max-width: rem(250);
+			margin-bottom: rem(32);
+		}
+	}
+
+	&__container {
+		padding-top: rem(48);
+		padding-bottom: rem(120);
+
+		@include media-breakpoint-down(sm) {
+			padding-top: rem(16);
+			padding-bottom: rem(80);
+		}
+	}
+}

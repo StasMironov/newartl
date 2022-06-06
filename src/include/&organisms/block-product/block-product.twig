@@ -1,0 +1,49 @@
+<div class="block-product" data-product-wrap>
+	<div class="block-product__inner">
+		<div class="block-product__top" data-pin-top data-fade-in-up>
+			<div class="container">
+				{% if block.title %}
+					<h2 class="block-product__title">{{ block.title }}</h2>
+				{% endif %}
+				<div class="block-product__progress"><span data-pin-progress></span></div>
+			</div>
+		</div>
+		<div class="block-product__content">
+			{% for section in block.content %}
+				<div class="block-product__section section" data-pin-section>
+					<div class="container">
+						<div class="section__top">
+							{% if section.title %}
+								<div class="section__title" data-pin-title data-fade-in-up>{{ section.title }}</div>
+							{% endif %}
+							{% if section.image %}
+								<div class="section__image" data-pin-image data-fade-in-up>{% view '@image' with {
+										image: section.image
+									} %}</div>
+							{% endif %}
+						</div>
+						<div class="section__content" data-pin-bottom>
+							{% if section.text %}
+								<div class="section__text" data-fade-in-up>{{ section.text }}</div>
+							{% endif %}
+							{% if section.features %}
+								<div class="section__features">
+									{% if section.features.title and section.features.items %}
+										<div class="section__features-title">{{ section.features.title }}</div>
+										<ul class="section__features-list">
+											{% for item in section.features.items %}
+												<li class="section__features-item" data-fade-in-up data-delay="{{ (0.2 + loop.index0 / 5)|round(2, 'floor') }}">{{ item }}</li>
+											{% endfor %}
+										</ul>
+									{% else %}
+										<div class="user-text">{{ section.features }}</div>
+									{% endif %}
+								</div>
+							{% endif %}
+						</div>
+					</div>
+				</div>
+			{% endfor %}
+		</div>
+	</div>
+</div>

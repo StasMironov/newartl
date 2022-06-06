@@ -1,0 +1,478 @@
+.info-slider {
+	$root: &;
+
+	position: relative;
+	overflow: hidden;
+
+	&__wrap {
+		position: relative;
+		display: flex;
+		min-height: rem(840);
+
+
+        @include media-breakpoint-up(sm) {
+			min-height: rem(640);
+		}
+
+		@include media-breakpoint-up(md) {
+			min-height: rem(840);
+		}
+
+        @include media-breakpoint-up(lg) {
+			height: 100vh;
+		}
+	}
+
+	&__slide {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		order: 3;
+
+		&.is-prev {
+			z-index: 1;
+			order: 2;
+		}
+
+		&.is-active {
+			z-index: 2;
+			order: 1;
+		}
+	}
+
+	&__shell {
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+	}
+
+	&__inner {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+	}
+
+	&__image-wrap {
+		position: absolute;
+		top: -25%;
+		left: 25%;
+		width: 150%;
+		height: 150%;
+	}
+
+	&__image {
+		position: absolute;
+		top: 16%;
+		left: -17%;
+		width: 69%;
+		height: 69%;
+		pointer-events: none;
+
+		#{$root}__slide.has-overlay & {
+			&:after {
+				position: absolute;
+				top: 0;
+				right: 0;
+				width: 100%;
+				height: 100%;
+				background-color: rgba($color-black, 0.4);
+				content: "";
+			}
+		}
+
+		.image {
+			height: 120%;
+		}
+	}
+
+	&__title {
+		opacity: 0;
+
+		#{$root}:not(.is-dirty) #{$root}__slide.is-active & {
+			opacity: 1;
+		}
+
+		#{$root}__slide.is-dark & {
+			color: $color-white;
+		}
+	}
+
+	&__action {
+		opacity: 0;
+
+		#{$root}:not(.is-dirty) #{$root}__slide.is-active & {
+			opacity: 1;
+		}
+	}
+
+	&__container {    
+        height: 100%;
+
+		#{$root}__inner & {
+			position: relative;
+			z-index: 1;
+			padding-top: rem(110);
+            padding-bottom: rem(142);
+
+
+            @include media-breakpoint-only(sm) {
+				padding-top: rem(65);
+                padding-bottom: rem(131);
+			}
+
+            @include media-breakpoint-only(md) {
+				padding-top: rem(110);
+                padding-bottom: rem(110);
+			}
+
+			@include media-breakpoint-up(lg) {
+				padding-top: rem(110);
+                padding-bottom: rem(142);
+			}
+			
+		}
+
+		#{$root}__bottom & {
+			display: flex;
+			align-items: center;
+		}
+	}
+
+    &__content {
+        height: 100%;
+        display: flex;
+        
+
+        @include media-breakpoint-up(sm) {
+			flex-direction: column;
+		}
+
+        @include media-breakpoint-up(lg) {
+			flex-direction: row;
+            justify-content: space-between;
+		}
+    }
+
+    &__box {
+
+        @include media-breakpoint-up(sm) {
+            width: initial;
+            margin-bottom: rem(11);
+        }
+        @include media-breakpoint-up(md) {
+            margin-bottom: rem(20);
+        }
+        @include media-breakpoint-up(lg) {
+            width: 41%;
+        }
+    }
+
+    &__desc {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 50%;
+        padding-top: rem(17);
+        padding-left: rem(6);
+
+        #{$root}__slide.is-dark & {
+			color: $color-white;
+		}
+
+        @include media-breakpoint-up(sm) {
+            width: initial;
+            padding: 0;
+            flex: 1;
+        }
+        @include media-breakpoint-up(lg) {
+            width: 50%;
+            flex: initial;
+            padding-top: rem(17);
+        }
+    }
+
+    &__note {
+        
+        opacity: 0;
+
+        @include media-breakpoint-up(sm) {
+            font-size: rem(20);
+        }
+
+        @include media-breakpoint-up(md) {
+            font-size: rem(24);
+        }
+
+        #{$root}:not(.is-dirty) #{$root}__slide.is-active & {
+			opacity: 1;
+		}
+    }
+
+    &__year {
+        font-size: rem(88);
+        line-height: 1.2;
+        font-weight: 600;
+        opacity: 0;
+
+        @include media-breakpoint-up(sm) {
+            font-size: rem(80);
+        }
+
+        @include media-breakpoint-up(md) {
+            font-size: rem(104);
+        }
+
+        @include media-breakpoint-up(lg) {
+            font-size: rem(88);
+        }
+
+        #{$root}:not(.is-dirty) #{$root}__slide.is-active & {
+			opacity: 1;
+		}
+    }
+
+    &__text {
+        max-width: rem(440);
+        @include line-clamp(16, 1.4, 3);
+        opacity: 0;
+
+        @include media-breakpoint-up(sm) {
+            margin-bottom: rem(6);
+        }
+
+        #{$root}:not(.is-dirty) #{$root}__slide.is-active & {
+			opacity: 1;
+		}
+    }
+	&__numbers {
+		display: flex;
+		align-items: center;
+        margin-left: 0;
+        height: rem(208);
+        transform: translateY(#{rem(-68)});
+
+        @include media-breakpoint-up(sm) {
+           width: 100vw;
+           transform: translateY(#{rem(-298)});
+           margin-left: 0;
+           margin-right: rem(-100);
+           height: auto;
+		   padding-bottom: rem(22);
+		}
+        
+        @include media-breakpoint-up(md) {
+			margin-right: rem(-125);
+            transform: translateY(#{rem(-228)});
+		}
+
+		@include media-breakpoint-up(lg) {
+			width: 16.6666%;
+			padding-bottom: rem(12);
+            transform: translateY(#{rem(-68)});
+            height: rem(208);
+            margin-left: rem(-66);
+		}
+	}
+
+    &__txt {
+        @include defaultTransition(padding);
+
+        @include media-breakpoint-up(sm) {
+            padding-left: 0;
+        }
+
+        @include media-breakpoint-up(lg) {
+            padding-left: rem(30);
+        }
+    }
+
+	&__number {
+        $b: &;
+        position: relative;
+		display: flex;
+        align-items: center;
+		background-color: transparent;
+		border: 0;
+		padding: 0;
+		color: rgba($color-black, 0.4);
+		cursor: pointer;
+		@include defaultTransition(color);
+        
+
+        &:before {
+            display: block;
+            position: absolute;
+            top: 3px;
+            left: 0;
+            width: rem(0);
+            height: rem(0);
+            background-color: $color-green;
+            border-radius: 50%;
+            transform: scale3d(0, 0, 0);
+            transition: transform 0.4s ease, margin-right 0.4s ease;
+            content: '';
+            will-change: margin-right;
+            z-index: 100;
+    
+            @include media-breakpoint-down(md) {
+                flex-shrink: 0;
+            }
+        }
+
+		&:not(:last-child) {
+			margin-right: rem(16);
+		}
+
+		#{$root}.in-transition & {
+			transition-delay: 0.6s;
+		}
+
+		@include touchLessHover {
+			color: $color-black;
+		}
+
+		&.is-active {
+			color: $color-black;
+			cursor: default;
+
+            &::before {
+                width: rem(16);
+                height: rem(16);
+                transform: scale3d(1, 1, 1);
+            }
+
+            #{$root}__txt {
+                padding-left: rem(30);
+            }
+
+		}
+        
+
+		@at-root .dark-slide-is-active & {
+			color: rgba($color-white, 0.4);
+
+			&.is-active {
+				color: $color-white;
+			}
+
+			@include touchLessHover {
+				color: $color-white;
+			}
+		}
+
+		@include media-breakpoint-up(md) {
+			&:not(:last-child) {
+				margin-right: rem(24);
+			}
+		}
+	}
+
+    &__slide-pg {
+        padding-left: rem(33);
+
+        @include media-breakpoint-up(sm) {
+			padding-left: 0;
+            width: auto;
+            height: max-content;
+		}
+
+        @include media-breakpoint-up(lg) {
+			padding-left: rem(33);
+            width: 100%;
+		}
+    }
+
+	&__bottom {
+		position: absolute;
+		z-index: 2;
+		left: 0;
+		bottom: rem(80);
+		width: 100%;
+
+        @include media-breakpoint-up(sm) {
+			bottom: rem(48);
+		}
+
+        @include media-breakpoint-up(md) {
+			bottom: rem(130);
+		}
+
+		@include media-breakpoint-up(lg) {
+			bottom: rem(80);
+		}
+
+        // #{$root}__slide.is-dark & {
+		// 	color: $color-white !;
+		// }
+	}
+
+	&__progress {
+		position: relative;
+		height: 2px;
+		margin-left: rem(4);
+		background-color: $color-gray;
+		overflow: hidden;
+		@include defaultTransition(background-color);
+        position: absolute;
+        bottom: rem(276);
+        right: 12%;
+        left: 49.9%;
+        width: 100%;
+        
+
+		#{$root}.in-transition & {
+			transition-delay: 0.3s;
+		}
+
+        @include media-breakpoint-up(sm) {
+            bottom: rem(296);
+            right: 0;
+            left: 0;
+            margin: auto;
+            max-width: calc(100% - #{rem(32)});
+		}
+
+        @include media-breakpoint-up(md) {
+            width: 100%;
+            bottom: rem(205);
+            max-width: calc(100% - #{rem(108)});
+		}
+
+        @include media-breakpoint-up(lg) {
+            bottom: rem(276);
+            right: 12%;
+            left: 49.9%;
+            width: 100%;
+            margin: initial;
+            max-width: rem(664);
+        }
+
+		span {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: $color-black;
+			transform: translateX(-100%);
+			@include defaultTransition(background-color);
+		}
+
+		@at-root .dark-slide-is-active & {
+			background-color: rgba($color-white, 0.4);
+
+			span {
+				background-color: $color-white;
+			}
+		}
+	}
+
+	&__arrows {
+		margin-left: auto;
+	}
+}

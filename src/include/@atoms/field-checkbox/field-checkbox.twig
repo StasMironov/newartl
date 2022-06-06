@@ -1,0 +1,10 @@
+<label class="checkbox{% if field.theme %} checkbox--{{ field.theme }}{% endif %}{% if field.class %} {{ field.class }}{% endif %}{% if field.radio %} checkbox--radio{% endif %}">
+	<input type="{% if field.checkbox %}checkbox{% else %}radio{% endif %}" {% if field.checked %} checked{% endif %}
+		   class="checkbox__input"
+		   name="{{ field.name }}"{% if field.id %} id="{{ field.id }}"{% endif %}{% if field.value %} value="{{ field.value }}"{% endif %}{% if field.required %} data-field-check required{% endif %}{% if field.disabled %} disabled{% endif %}{% if field.attr %}{{ field.attr }}{% endif %}
+		   data-parsley-trigger="click">
+	<span class="checkbox__box"></span>
+	{% if field.text %}
+		<span class="checkbox__text{% if field.no_sign %} no-sign{% endif %}">{{ field.text }}</span>
+	{% endif %}
+</label>

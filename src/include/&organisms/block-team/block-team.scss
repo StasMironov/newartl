@@ -1,0 +1,100 @@
+.block-team{
+  $root: &;
+    
+  .swiper-container {      
+		@include media-breakpoint-down(sm) {
+      margin-left: rem(-8);
+		}
+	}
+
+
+  .swiper-wrapper {
+    @include media-breakpoint-up(md) {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      transform: none !important;
+      margin-left: rem(-4);
+      margin-right: rem(-4);
+      width: auto !important;
+    }
+    @include media-breakpoint-down(sm) {
+      overflow: visible;
+    }
+  }
+
+
+  &__slide {
+    @include media-breakpoint-up(lg) {
+      width: 25% !important;
+      @include last-row(4) {
+        margin-bottom: 0;
+      }
+    }
+
+    @include media-breakpoint-up(md) {
+      margin-bottom: rem(40);
+      padding-left: rem(4);
+      padding-right: rem(4);
+    }
+
+    @include media-breakpoint-only(md) {
+      width: 50% !important;
+      @include last-row(2) {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+	&__arrows {
+		display: flex;
+		justify-content: flex-end;
+		margin-top: rem(24);
+		@include media-breakpoint-up(md) {
+			display: none;
+		}
+	}
+
+  &__heading{
+    margin-bottom: rem(48);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    @include media-breakpoint-up(md) {            
+      flex-direction: column;
+      margin-bottom: rem(60);
+    }
+    @include media-breakpoint-up(lg) {            
+      flex-direction: row;
+      margin-bottom: rem(64);
+    }
+  }
+
+  &__title{
+    width: 100%;
+    margin-bottom: rem(24);
+    @include media-breakpoint-up(md) {            
+      width: 100%;
+      margin-bottom: rem(24);
+    }
+    @include media-breakpoint-up(lg) {            
+      width: 50%;
+      margin-bottom: rem(0);
+    }
+  }
+
+  &__subtitle{
+    width: initial;
+    margin-right: 0;
+    @include media-breakpoint-up(md) {            
+      width: initial;
+      margin-right: 0;
+      padding-top: 0;
+  }
+    @include media-breakpoint-up(lg) {            
+      width: initial;
+      margin-right: rem(125);
+      padding-top: rem(8);
+    }
+  }
+}

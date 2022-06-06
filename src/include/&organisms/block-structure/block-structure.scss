@@ -1,0 +1,49 @@
+.block-structure{
+  $root: &;    
+  position: relative;
+  
+  &__heading{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    @include media-breakpoint-up(md) {            
+        margin-bottom: 0;   
+        flex-direction: column;
+    }
+    @include media-breakpoint-up(lg) {            
+        margin-bottom: rem(74);
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+  }
+  &__title{
+    width: 100%;
+    margin-bottom: rem(24);
+    @include media-breakpoint-up(md) {
+        width: 100%;
+        margin-bottom: rem(24);
+    }
+    @include media-breakpoint-up(lg) {
+        width: rem(440);
+        margin-bottom: 0;
+    }
+  }
+  &__subtitle{
+    width: rem(325);
+    margin-bottom: rem(46);
+    @include media-breakpoint-up(md) {
+        width: rem(440);
+        margin-right: 0;
+        margin-top: 0;
+        margin-bottom: rem(80);
+    }
+    @include media-breakpoint-up(lg) {
+        width: rem(440);
+        margin-right: rem(225);
+        margin-top: rem(8);
+        margin-bottom: 0;
+    }
+  }
+    
+}

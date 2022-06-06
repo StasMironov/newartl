@@ -1,0 +1,36 @@
+{% extends "layouts::_page.twig" %}
+
+{% block content %}
+	{% if pageHeading %}
+		<h1 class="visually-hidden">{{ pageHeading }}</h1>
+	{% endif %}
+
+	{% view '&main-hero' with {
+		hero: hero
+	} %}
+
+	{% view '&block-info' %}
+
+	{% view '&block-appeal' %}
+
+	<div>
+		{% view '&info-slider' %}
+	</div>
+
+	<div class="mb-md-120 mb-64 mt-md-112 mt-64">
+		{% view '&features' with {
+			features: features
+		} %}
+	</div>
+
+	<div class="mb-md-112 mb-64">
+		{% view '&block-news' with {
+			block: news
+		} %}
+	</div>
+
+	{% view '&map' with {
+		map: map
+	} %}
+
+{% endblock %}

@@ -1,0 +1,10 @@
+{
+	"card": {
+		"href": "#",
+		"attr": "data-modal-ajax=\"ajax/ajax-test2.html\"",
+		"icon": {
+			"name": "logos/partners/samsung",
+			"size": "fit"
+		}
+	}
+}

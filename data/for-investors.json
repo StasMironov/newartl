@@ -1,0 +1,651 @@
+{
+  "title": "Инвесторам",
+  "header": {
+    "transparent": true,
+    "logo": {
+      "href": "main.html",
+      "name": "logos/main-logo",
+      "size": "fit"
+    },
+    "navigation": [
+      {
+        "text": "О группе",
+        "submenu": {
+          "title": "О группе",
+          "text": "Общая информация для инвесторов в формате отчетов, графиков и документов",
+          "links": [
+            {
+              "href": "javascript:void(0);",
+              "text": "Общая информация для инвесторов"
+            },
+            {
+              "href": "javascript:void(0);",
+              "text": "Презентации"
+            },
+            {
+              "href": "javascript:void(0);",
+              "text": "Соблюдение требований корпоративного управления"
+            },
+            {
+              "href": "javascript:void(0);",
+              "text": "Структура компании"
+            },
+            {
+              "href": "javascript:void(0);",
+              "text": "Совет директоров"
+            },
+            {
+              "href": "javascript:void(0);",
+              "text": "Руководство"
+            }
+          ]
+        }
+      },
+      {
+        "text": "Инвесторам",
+        "href": "javascript:void(0);",
+        "active": true,
+        "submenu": {
+          "title": "Инвесторам",
+          "text": "Общая информация для инвесторов в формате отчетов, графиков и документов",
+          "links": [
+            {
+              "text": "Общая информация для инвесторов",
+              "active": true
+            },
+            {
+              "href": "javascript:void(0);",
+              "text": "Результаты и отчеты"
+            },
+            {
+              "href": "javascript:void(0);",
+              "text": "Презентации"
+            },
+            {
+              "href": "javascript:void(0);",
+              "text": "Соблюдение требований корпоративного управления"
+            },
+            {
+              "href": "javascript:void(0);",
+              "text": "Структура компании"
+            },
+            {
+              "href": "javascript:void(0);",
+              "text": "Совет директоров"
+            },
+            {
+              "href": "javascript:void(0);",
+              "text": "Руководство"
+            },
+            {
+              "href": "javascript:void(0);",
+              "text": "Корпоративное управление"
+            },
+            {
+              "href": "javascript:void(0);",
+              "text": "Внутренние документы"
+            },
+            {
+              "href": "javascript:void(0);",
+              "text": "Каталог продукции"
+            },
+            {
+              "href": "javascript:void(0);",
+              "text": "Контакты для инвесторов"
+            }
+          ]
+        }
+      },
+      {
+        "href": "javascript:void(0);",
+        "text": "Партнерам"
+      },
+      {
+        "href": "javascript:void(0);",
+        "text": "Устойчивое развитие"
+      },
+      {
+        "href": "javascript:void(0);",
+        "text": "Пресс-центр"
+      },
+      {
+        "href": "javascript:void(0);",
+        "text": "Карьера"
+      },
+      {
+        "href": "javascript:void(0);",
+        "text": "Контакты"
+      }
+    ],
+    "lang": {
+      "action": {
+        "text": "Ру",
+        "title": "Ру"
+      },
+      "items": [
+        {
+          "href": "javascript:void(0);",
+          "text": "En",
+          "title": "En"
+        },
+        {
+          "href": "javascript:void(0);",
+          "text": "Оʻz",
+          "title": "Оʻz"
+        }
+      ]
+    }
+  },
+  "hero_default": {
+    "layout": "3",
+    "breadcrumbs": {
+      "theme": "white",
+      "items": [
+        {
+          "text": "Главная",
+          "href": "main.html"
+        }
+      ]
+    },
+    "title": "Инвесторам",
+    "image": {
+      "src": "tmp/default-hero/hero-for-investors.jpg",
+      "alt": "image alt",
+      "fill": true,
+      "tab": {
+        "srcset": [
+          {
+            "scale": "1",
+            "src": "tmp/default-hero/hero-for-investors-tab.jpg"
+          }
+        ]
+      },
+      "mob": {
+        "srcset": [
+          {
+            "scale": "1",
+            "src": "tmp/default-hero/hero-for-investors-mob.jpg"
+          }
+        ]
+      }
+    },
+    "scroll_target": "investor"
+  },
+  "block_nav": {
+    "desc": "Наши акционеры имеют точное представление о кратко-срочных и долгосрочных перспективах бизнеса. Благодаря специальной модели владения существует триединство доверия, подотчетности и автономии.",
+    "bg": "gray",
+    "layout": "4",
+    "icon": {
+      "name": "logos/decor",
+      "size": "fit"
+    },
+    "theme": "white",
+    "tabs": {
+      "layout": "3",
+      "items": [
+        {
+          "href": true,
+          "scroll_to": "#investor",
+          "text": "Инвесторам",
+          "title": "Инвесторам",
+          "active": "true"
+        },
+        {
+          "href": true,
+          "scroll_to": "#management",
+          "text": "Корпоративное управление",
+          "title": "Корпоративное управление"
+        },
+        {
+          "href": true,
+          "scroll_to": "#structure",
+          "text": "Структура компании",
+          "title": "Структура компании"
+        },
+        {
+          "href": true,
+          "scroll_to": "#directors",
+          "text": "Совет директоров",
+          "title": "Совет директоров"
+        },
+        {
+          "href": true,
+          "scroll_to": "#team",
+          "text": "Руководство",
+          "title": "Руководство"
+        },
+        {
+          "href": true,
+          "scroll_to": "#internal-control",
+          "text": "Внутренний контроль",
+          "title": "Внутренний контроль"
+        },
+        {
+          "href": true,
+          "scroll_to": "#docs",
+          "text": "Внутренние документы",
+          "title": "Внутренние документы"
+        },
+        {
+          "href": true,
+          "scroll_to": "#contacts",
+          "text": "Контакты",
+          "title": "Контакты"
+        }
+      ]
+    }
+  },
+  "info_docs": {
+    "heading": "Информация для&nbsp;акционеров",
+    "items": [
+      {
+        "theme": "green",
+        "href": "#!!",
+        "title": "Результаты и отчеты",
+        "text": "Прозрачность и полноценное раскрытие финансовой и нефи-нансовой информации для всех заинтересованных сторон",
+        "icon": true
+      },
+      {
+        "theme": "black",
+        "href": "#!",
+        "title": "Презентации",
+        "text": "Высокие стандарты ESG - приоритет в нашей Группе",
+        "icon": true
+      }
+    ]
+  },
+  "block_tabs": {
+    "heading": "Соблюдение требований корпоративного управления",
+    "subtitle": "Наша компания придерживается высоких стандартов корпоративного&nbsp;управления",
+    "items": [
+      {
+        "icon": {
+          "name": "104/codex",
+          "size": 104
+        },
+        "active": true,
+        "caption": "Кодекс корпоративной этики",
+        "content": {
+          "active": true,
+          "suptitle": "Ценности, которые мы преследуем",
+          "title": "Кодекс корпоративной этики",
+          "image": {
+            "src": "tmp/icon-tabs/img1.jpg",
+            "alt": "image alt"
+          },
+          "text": "Этические принципы, которые регулируют решения и поведение внутри компании"
+        }
+      },
+      {
+        "icon": {
+          "name": "104/stop",
+          "size": 104
+        },
+        "caption": "Политика противодей&shy;ствия взяточничеству и коррупции",
+        "attr": "data-attr",
+        "content": {
+          "suptitle": "Ценности, которые мы преследуем 2",
+          "title": "Кодекс корпоративной этики",
+          "image": {
+            "src": "tmp/icon-tabs/img1.jpg",
+            "alt": "image alt"
+          },
+          "text": "Кодекс корпоративной этики 2"
+        }
+      },
+      {
+        "icon": {
+          "name": "104/check-correct",
+          "size": 104
+        },
+        "caption": "Внутренний Аудит/Контроль и Политика вознаграждений",
+        "content": {
+          "suptitle": "Ценности, которые мы преследуем 3",
+          "title": "Кодекс корпоративной этики 3",
+          "image": {
+            "src": "tmp/icon-tabs/img1.jpg",
+            "alt": "image alt"
+          },
+          "text": "Этические принципы, которые регулируют решения и поведение внутри компании. Этические принципы, которые регулируют решения и поведение внутри компании"
+        }
+      },
+      {
+        "icon": {
+          "name": "104/eye",
+          "size": 104
+        },
+        "caption": "Политика о наблюда&shy;тельном совете",
+        "content": {
+          "suptitle": "Ценности, которые мы преследуем 4",
+          "title": "Кодекс корпоративной этики 4",
+          "image": {
+            "src": "tmp/icon-tabs/img1.jpg",
+            "alt": "image alt"
+          },
+          "text": "Этические принципы, которые регулируют решения и поведение внутри компании"
+        }
+      },
+      {
+        "icon": {
+          "name": "104/document-folder",
+          "size": 104
+        },
+        "caption": "Политика Правления",
+        "content": {
+          "suptitle": "Ценности, которые мы преследуем 5",
+          "title": "Кодекс корпоративной этики",
+          "image": {
+            "src": "tmp/icon-tabs/img1.jpg",
+            "alt": "image alt"
+          },
+          "text": "Этические принципы, которые регулируют решения и поведение внутри компании"
+        }
+      },
+      {
+        "icon": {
+          "name": "104/balance-two",
+          "size": 104
+        },
+        "caption": "Равенство возможностей",
+        "content": {
+          "suptitle": "Ценности, которые мы преследуем 6",
+          "title": "Кодекс корпоративной этики",
+          "image": {
+            "src": "tmp/icon-tabs/img1.jpg",
+            "alt": "image alt"
+          },
+          "text": "Этические принципы, которые регулируют решения и поведение внутри компании"
+        }
+      }
+    ],
+    "scroll_target": "management"
+  },
+  "block_structure": {
+    "title": "Структура компании",
+    "subtitle": "Наша cильная организационная структура, которая продолжает повышать производительность",
+    "img": {
+      "src": "img/structure/desc.svg",
+      "alt": "image alt",
+      "tab": {
+        "srcset": [
+          {
+            "scale": "1",
+            "src": "img/structure/tab.svg"
+          }
+        ]
+      },
+      "mob": {
+        "srcset": [
+          {
+            "scale": "1",
+            "src": "img/structure/mob.svg"
+          }
+        ]
+      }
+    },
+    "scroll_target": "structure"
+  },
+  "block_reports": {
+    "layout": "3",
+    "tabs_content": [
+      {
+        "active": true,
+        "cards": [
+          {
+            "layout": "2",
+            "href": "#!!",
+            "title": "Отчет о корпоративном управлении",
+            "text": "0,87 мб",
+            "date": {
+              "month": "Ноябрь",
+              "day": "2021"
+            },
+            "action": {
+              "title": "Скачать",
+              "text": "Скачать",
+              "icon": {
+                "name": "24/download"
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "block_directors": {
+    "title": "Совет директоров",
+    "subtitle": "Наш Совет директоров использует свой опыт и навыки в различных областях для обеспечения эффективного и стратегического принятия решений",
+    "items": [
+      {
+        "title": "Ким Уи Так",
+        "text": "Независимый директор",
+        "attr": "data-modal=\"modal-director\" data-modal-ajax=\"ajax/modal-director.html\"",
+        "icon": true
+      },
+      {
+        "title": "Абдуллаев Баходир",
+        "text": "Неисполнительный директор",
+        "attr": "data-modal=\"modal-director\" data-modal-ajax=\"ajax/modal-director.html\"",
+        "icon": true
+      },
+      {
+        "title": "Рузикулов Шохрух",
+        "text": "Неисполнительный директор",
+        "attr": "data-modal=\"modal-director\" data-modal-ajax=\"ajax/modal-director.html\"",
+        "icon": true
+      },
+      {
+        "title": "Гаипов Дилмурод",
+        "text": "Неисполнительный директор",
+        "attr": "data-modal=\"modal-director\" data-modal-ajax=\"ajax/modal-director.html\"",
+        "icon": true
+      },
+      {
+        "title": "Аблакулов Уктам",
+        "text": "Неисполнительный директор",
+        "attr": "data-modal=\"modal-director\" data-modal-ajax=\"ajax/modal-director.html\"",
+        "icon": true
+      }
+    ],
+    "scroll_target": "directors"
+  },
+  "block_team": {
+    "title": "Наша команда",
+    "subtitle": "Руководство нацелено на достижение больших&nbsp;результатов и отдачи",
+    "items": [
+      {
+        "title": "Бектемир Муродов",
+        "text": "Председатель Правления",
+        "img": {
+          "src": "tmp/block-team/img1.jpg",
+          "alt": "img"
+        }
+      },
+      {
+        "title": "Бектемир Муродов",
+        "text": "Председатель Правления",
+        "img": {
+          "src": "tmp/block-team/img2.jpg",
+          "alt": "img"
+        }
+      },
+      {
+        "title": "Бектемир Муродов",
+        "text": "Председатель Правления",
+        "img": {
+          "src": "tmp/block-team/img3.jpg",
+          "alt": "img"
+        }
+      },
+      {
+        "title": "Киванч Ишик",
+        "text": "Председатель Правления",
+        "img": {
+          "src": "tmp/block-team/img4.jpg",
+          "alt": "img"
+        }
+      },
+      {
+        "title": "Бектемир Муродов",
+        "text": "Председатель Правления",
+        "img": {
+          "src": "tmp/block-team/img3.jpg",
+          "alt": "img"
+        }
+      },
+      {
+        "title": "Киванч Ишик",
+        "text": "Председатель Правления",
+        "img": {
+          "src": "tmp/block-team/img4.jpg",
+          "alt": "img"
+        }
+      },
+      {
+        "title": "Бектемир Муродов",
+        "text": "Председатель Правления",
+        "img": {
+          "src": "tmp/block-team/img1.jpg",
+          "alt": "img"
+        }
+      },
+      {
+        "title": "Бектемир Муродов",
+        "text": "Председатель Правления",
+        "img": {
+          "src": "tmp/block-team/img2.jpg",
+          "alt": "img"
+        }
+      }
+    ],
+    "scroll_target": "team"
+  },
+  "block_management": {
+    "heading": "Корпоративное управление ",
+    "descriptions": [
+      {
+        "title": "Система внутреннего контроля и аудита",
+        "read_more": {
+          "fullwidth": true,
+          "base": "<p>Созданная в Компании система внутреннего контроля ориентирована на выявление и оценку рисков, разработку рекомендаций по снижению их негативного влияния на деятельность Компании, внедрение и совершенствование процедур внутреннего контроля.</p> <img alt='' src='tmp/block-management/block-management.jpg'> <p>Эта деятельность входит в сферу ответственности руководителей функциональных направлений Компании, директоров входящих в нее организаций. Важным элементом системы внутреннего контроля являются независимая оценка эффективности процедур внутреннего контроля и разработка рекомендаций по совершенствованию системы внутреннего контроля. Эта деятельность входит в сферу ответственности внутреннего аудита.</p>",
+          "items": [
+            "Artel 2",
+            "Artel Electronics была основана в 2011 году, и мы являемся одним из ведущих производителей на рынке бытовой электротехники и сохраняем хорошую репутацию в Узбекистане и во всем мире."
+          ],
+          "link": {
+            "text": "Читать далее"
+          }
+        }
+      }
+    ],
+    "scroll_target": "internal-control"
+  },
+  "sliderDocs": {
+    "heading": "Отчеты об устойчивом развитии",
+    "heading_fullwidth": true,
+    "items": [
+      {
+        "layout": "2",
+        "href": "#!",
+        "title": "2021 Отчет об устойчивом развитии",
+        "text": "0,87 мб",
+        "date": {
+          "month": "Ноябрь",
+          "day": "2021"
+        },
+        "action": {
+          "title": "Скачать",
+          "text": "Скачать",
+          "icon": {
+            "name": "24/download"
+          }
+        }
+      },
+      {
+        "layout": "2",
+        "href": "#!!",
+        "title": "2020 Отчет об устойчивом развитии",
+        "text": "0,87 мб",
+        "date": {
+          "month": "Ноябрь",
+          "day": "2020"
+        },
+        "action": {
+          "title": "Скачать",
+          "text": "Скачать",
+          "icon": {
+            "name": "24/download"
+          }
+        }
+      },
+      {
+        "layout": "2",
+        "href": "#!!!",
+        "title": "2019 Отчет об устойчивом развитии",
+        "text": "0,87 мб",
+        "date": {
+          "month": "Ноябрь",
+          "day": "2019"
+        },
+        "action": {
+          "title": "Скачать",
+          "text": "Скачать",
+          "icon": {
+            "name": "24/download"
+          }
+        }
+      }
+    ],
+    "button": {
+      "href": "#!!",
+      "text": "Смотреть все",
+      "title": "Смотреть все",
+      "icon": {
+        "name": "24/arrow-up-right"
+      }
+    },
+    "scroll_target": "docs"
+  },
+  "block_comm": {
+    "bg": "gray",
+    "title": "Контакты для инвесторов",
+    "items": [
+      {
+        "img": {
+          "src": "tmp/block-forinvestors/comm-img.jpg",
+          "alt": "img"
+        },
+        "name": "Кобил Ташмухамедов",
+        "position": "Заместитель председателя<br/>по производству",
+        "comm": [
+          {
+            "title": "E-mail",
+            "text": "info@artel.uz",
+            "href": "mailto:info@artel.uz"
+          },
+          {
+            "title": "Телефон",
+            "text": "+998 (71) 123-45-67",
+            "href": "tel:+998(71)123-45-67"
+          }
+        ]
+      },
+      {
+        "img": {
+          "src": "tmp/press/img3.jpg",
+          "alt": "img"
+        },
+        "name": "Элеанор Крамерс",
+        "position": "Руководитель по&nbsp;международным коммуникациям",
+        "comm": [
+          {
+            "title": "E-mail",
+            "text": "eleanor.kramers@artelelectronics.com",
+            "href": "mailto:eleanor.kramers@artelelectronics.com"
+          }
+        ]
+      }
+    ],
+    "scroll_target": "contacts"
+  }
+}

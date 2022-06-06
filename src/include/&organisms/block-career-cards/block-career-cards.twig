@@ -1,0 +1,44 @@
+<div class="block_career_cards container" {% if block_career_cards.scroll_target %}id="{{block_career_cards.scroll_target}}"{% endif %}>
+	<div class="block_career_cards__wrapper ">
+		{% if block_career_cards.items|length > 0 %}
+			<div class="block_career_cards__left">
+			{% if block_career_cards.heading %}
+				<div class="block_career_cards__top" data-fade-in-up>
+					<p class="block_career_cards__heading h2">
+						{{ block_career_cards.heading }}
+					</p>
+				</div>
+			{% endif %}
+		</div>
+		<div class="block_career_cards__right">
+			<div class="block_career_cards__items">
+				{% for item in block_career_cards.items %}
+					<div class="block_career_cards__item" {% if item.attr %} {{ item.attr }} {% endif %} data-fade-in-up data-delay="{{ (0.2 + loop.index0 / 5)|round(2, 'floor') }}">
+						{% if item.icon %}
+							<div class="block_career_cards__icon" data-icon="draw">
+								{% view '@icon' with {
+									icon: item.icon
+								} %}
+							</div>
+						{% endif %}
+
+						{% if item.text %}
+							<p class="block_career_cards__text">{{ item.text }}</p>
+						{% endif %}
+					</div>
+				{% endfor %}
+			</div>
+		</div>
+		{% endif %}
+		
+	</div>
+
+
+	{% if block_career_cards.button %}
+		<div class="block_career_cards__button" data-fade-in-up>
+			{% view '@button' with {
+				button: block_career_cards.button
+			} %}
+		</div>
+	{% endif %}
+</div>

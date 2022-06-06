@@ -1,0 +1,129 @@
+.breadcrumbs {
+	$b: #{&};
+
+	&__list {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		display: flex;
+		align-items: center;
+		line-height: rem(16);
+
+		@include media-breakpoint-down(md) {
+			line-height: rem(21);
+			flex-wrap: wrap;
+			//overflow-x: auto;
+		}
+
+		@include media-breakpoint-up(lg) {
+			flex-wrap: wrap;
+		}
+	}
+
+	&__crumb {
+		position: relative;
+		display: flex;
+		align-items: center;
+
+		&[aria-current="page"] {
+			#{$b}__text {
+				color: rgba($color-black, 0.4);
+
+				#{$b}--light & {
+					color: rgba($color-white, 0.4);
+				}
+			}
+
+			
+		}
+
+		&:not(:first-child) {
+			&:before {
+				content: '';
+				display: inline-block;
+				width: 1px;
+				height: 12px;
+				border-radius: 0;
+				margin-left: rem(11);
+				margin-right: rem(11);
+				background-color: rgba($color-black, 0.4);
+
+				#{$b}--light & {
+					background-color: rgba($color-white, 0.4);
+				}
+
+				#{$b}--white & {
+					background-color: rgba($color-white, 1.0);
+				}
+			}
+		}
+
+		&:last-child{
+			&:before {
+				content: none;
+			}
+
+			.breadcrumbs__text {
+				white-space: normal;
+			}
+		}
+
+		&:nth-last-child(2){
+			&:after {
+				content: '';
+				display: inline-block;
+				width: 1px;
+				height: 12px;
+				border-radius: 0;
+				margin-left: rem(11);
+				margin-right: rem(11);
+				background-color: rgba($color-black, 0.4);
+
+				#{$b}--light & {
+					background-color: rgba($color-white, 0.4);
+				}
+
+				#{$b}--white & {
+					background-color: rgba($color-white, 1.0);
+				}
+			}
+		}
+	}
+
+	&__text {
+		display: inline-block;
+		max-width: 100%;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		color: rgba($color-black, 0.4);
+		@include defaultTransition(color);
+		line-height: rem(20);
+		@include text-body;
+
+		#{$b}--light & {
+			color: rgba($color-white, 0.4);
+		}
+
+		#{$b}--white & {
+			color: rgba($color-white, 1);
+		}
+	}
+
+	&__link {
+		&:hover {
+			color: rgba($color-black, 1);
+			text-decoration: none;
+
+			#{$b}--light & {
+				color: rgba($color-white, 1);
+			}
+
+			#{$b}--white & {
+				color: rgba($color-white, 0.4);
+			}
+		}
+
+		
+	}
+}

@@ -1,0 +1,19 @@
+<div class="block-reach" data-fade-in-up>
+    <div class="block-reach__container container">
+        {% if block_reach %}
+            <div class="block-reach__wrapper">
+                <div class="block-reach__border"></div>
+                <div class="block-reach__items">
+                    {% for item in block_reach.factoids %}
+                        <div class="block-reach__item" data-fade-in-up
+						 data-delay="{{ (loop.index0 / 2.5)|round(2, 'floor') }}">
+                            {% view '^factoid' with {
+                                factoid: item
+                            } %}
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        {% endif %}
+    </div>
+</div>

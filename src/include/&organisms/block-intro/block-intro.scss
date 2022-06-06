@@ -1,0 +1,146 @@
+.block-intro {
+	$root: &;
+	margin-bottom: rem(64);
+
+	@include media-breakpoint-down(sm) {
+		margin-bottom: rem(36);
+	}
+
+	&__wrapper {
+		display: flex;
+		padding-right: 16.6%;
+
+		@include media-breakpoint-down(md) {
+			flex-direction: column-reverse;
+			padding-right: 0;
+		}
+	}
+
+	&__right {
+		width: 75%;
+		max-width: rem(667);
+		margin-left: auto;
+
+		@include media-breakpoint-down(md) {
+			width: 100%;
+			margin-bottom: rem(64);
+			padding-right: rem(72);
+			max-width: initial;
+		}
+
+		@include media-breakpoint-down(sm) {
+			margin-bottom: rem(32);
+			padding-right: 0;
+		}
+	}
+
+	&__left {
+		display: flex;
+		flex-direction: column;
+		width: 37%;
+		margin-right: 10.5%;
+
+		@include media-breakpoint-down(md) {
+			flex-direction: row;
+			justify-content: space-between;
+			width: 100%;
+			margin-right: rem(-5);
+			margin-left: rem(-5);
+		}
+
+		@include media-breakpoint-down(sm) {
+			flex-direction: column;
+		}
+	}
+
+	&__factoid {
+		position: relative;
+		width: 100%;
+		padding-top: rem(32);
+		padding-bottom: rem(40);
+
+		&:after,
+		&:before {
+			position: absolute;
+			left: 0;
+			width: 0%;
+			height: 1px;
+			margin: auto;
+			background-color: rgba($color-black, 0.1);
+			transition: width 1s ease 0.3s;
+			content: '';
+		}
+
+		&:after {
+			top: 0;
+		}
+
+		&:before {
+			bottom: 0;
+		}
+
+		@include media-breakpoint-down(md) {
+			width: 50%;
+			margin-right: rem(5);
+			margin-left: rem(5);
+		}
+
+		@include media-breakpoint-down(sm) {
+			width: 100%;
+			padding-top: rem(20);
+			padding-bottom: rem(32);
+		}
+
+		&:last-child {
+			padding-top: 0;
+
+			@include media-breakpoint-down(md) {
+				padding-top: rem(32);
+			}
+
+			@include media-breakpoint-down(sm) {
+				padding-top: rem(16);
+			}
+
+			&:after {
+				content: none;
+
+				@include media-breakpoint-down(md) {
+					content: '';
+				}
+
+				@include media-breakpoint-down(sm) {
+					content: none;
+				}
+			}
+		}
+
+		&:not(:last-child) {
+			margin-bottom: rem(40);
+
+			@include media-breakpoint-down(md) {
+				margin-bottom: 0;
+			}
+		}
+
+		&.animate {
+			&:after,
+			&:before {
+				width: 100%;
+			}
+		}
+	}
+
+	&__item {
+		&:not(:last-child) {
+			margin-bottom: rem(24);
+		}
+
+		&:nth-child(2) {
+			@include media-breakpoint-down(md) {
+				font-size: rem(16);
+				line-height: 1.4;
+			}
+		}
+	}
+}

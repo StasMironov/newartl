@@ -1,0 +1,71 @@
+.lang-toggle {
+	$root: &;
+
+	position: relative;
+	display: block;
+	min-width: rem(44);
+
+	&__action {
+		position: relative;
+		display: block;
+		background-color: transparent;
+		border: 0;
+		height: rem(22);
+		padding: 0 rem(24) 0 0;
+		color: $color-black;
+		@include defaultTransition(color);
+
+		.icon {
+			position: absolute;
+			top: calc(50% - #{rem(8)});
+			right: 0;
+			color: currentColor;
+			@include defaultTransition(transform);
+		}
+
+		@include touchLessHover {
+			color: rgba($color-black, 0.4);
+		}
+
+		#{$root}.is-active & {
+			.icon {
+				transform: rotate(180deg);
+			}
+		}
+
+		@at-root .header--transparent & {
+			color: $color-white;
+
+			@include touchLessHover {
+				color: rgba($color-white, 0.4);
+			}
+		}
+	}
+
+	&__list {
+		#{$root}:not(.is-active) & {
+			display: none;
+		}
+
+		position: absolute;
+		top: calc(100% + #{rem(16)});
+		left: rem(-16);
+		display: block;
+		width: rem(60);
+		background-color: $color-white;
+		box-shadow: 0 0 rem(16) rgba(0, 0, 0, 0.1);
+		border-radius: rem(8);
+		padding: rem(8);
+	}
+
+	&__link {
+		display: block;
+		padding: rem(8);
+		color: $color-black;
+		@include defaultTransition(color);
+
+		@include touchLessHover {
+			color: rgba($color-black, 0.4);
+		}
+	}
+}

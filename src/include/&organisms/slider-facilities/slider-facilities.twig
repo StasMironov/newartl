@@ -1,0 +1,72 @@
+<div class="slider-facilities" data-slider-facilities-wrap>
+	<div class="swiper-container" data-slider-facilities data-fade-in-up>
+			<div class="swiper-wrapper">
+				{% for slide in slider.items %}
+					<div class="slider-facilities__item swiper-slide">
+                        <div class="slider-facilities__wrapper">
+                            <div class="slider-facilities__left">
+                            {% if slide.title %}
+                                <h2 class="slider-facilities__title h2">
+                                    {{ slide.title }}
+                                </h2>
+                            {% endif %}
+                            {% if slide.location  %}
+                                <div class="slider-facilities__location">
+                                    <div class="slider-facilities__icon"> 
+                                        {% view '@icon' with {
+                                            icon: slide.location.icon
+                                        } %}
+                                    </div>
+                                    <div class="slider-facilities__city"> 
+                                        {{ slide.location.country }}
+                                    </div>
+                                </div>
+                            {% endif %}
+                            {% if slide.activity %}
+                                <div class="slider-facilities__activity">
+                                    {% if slide.activity.label %}
+                                        <div class="slider-facilities__label">
+                                            {{ slide.activity.label }}
+                                        </div>
+                                    {% endif %}
+                                    {% if slide.activity.info %}
+                                        <div class="slider-facilities__info">
+                                            {{ slide.activity.info }}
+                                        </div>
+                                    {% endif %}
+                                </div>
+                            {% endif %}   
+                        </div>
+                        <div class="slider-facilities__right">
+                            {% if slide.img %}
+                                <div class="slider-facilities__img">
+                                     {% view '@image' with {
+                                        image: slide.img|merge({
+                                            disable_lazy: true
+                                        })
+						            } %}
+                                </div>
+                            {% endif %}
+                            {% if slide.factoids %}
+                                <div class="slider-facilities__factoids">
+                                    {% for factoid in slide.factoids %}
+                                        <div class="slider-facilities__factoid">
+                                            {% view '^factoid' with {
+                                                factoid: factoid
+                                            } %}
+                                        </div>
+                                    {% endfor %}
+                                    <div class="slider-facilities__border" style="--delay: {{ (0.2 + loop.index0 / 5)|round(2, 'floor') }}"></div>
+                                </div>
+                            {% endif %}
+                        </div>
+                        </div>
+					</div>
+				{% endfor %}
+			</div>
+		</div>
+		<div class="slider-facilities__nav" data-fade-in-up>
+			{% view '@nav-arrows' %}
+		</div>
+</div>
+

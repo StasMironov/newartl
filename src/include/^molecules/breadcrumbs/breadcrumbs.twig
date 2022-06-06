@@ -1,0 +1,21 @@
+<nav class="breadcrumbs {% if breadcrumbs.theme %}breadcrumbs--{{breadcrumbs.theme}}{% endif %}" aria-label="breadcrumb" data-animate>
+	<ul class="breadcrumbs__list"
+		itemscope itemtype="https://schema.org/BreadcrumbList">
+		{% for crumb in breadcrumbs.items %}
+			<li class="breadcrumbs__crumb"{% if crumb.current %} aria-current="page"{% endif %}
+				itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+				{% if crumb.href %}
+					<a href="{{ crumb.href }}" class="breadcrumbs__text breadcrumbs__link"
+					   itemprop="item">
+						<span itemprop="name">{{ crumb.text }}</span>
+					</a>
+				{% else %}
+					<span class="breadcrumbs__text" itemprop="name">{{ crumb.text }}</span>
+				{% endif %}
+				<meta itemprop="position" content="{{ loop.index }}"/>
+			</li>
+		{% endfor %}
+	</ul>
+</nav>
+
+{# https://search.google.com/structured-data/testing-tool?utm_campaign=devsite&utm_medium=microdata&utm_source=breadcrumb #}

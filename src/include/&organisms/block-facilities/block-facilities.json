@@ -1,0 +1,162 @@
+{
+	"block_facilities": {
+		"tabs": {
+			"horizontal": true,
+			"items": [
+				{
+					"text": "Производство",
+					"attr": "data-attr",
+					"active": "true",
+					"shift": true
+				},
+				{
+					"text": "Обслуживающие компании",
+					"attr": "data-attr",
+					"shift": true
+				}
+			]
+		},
+		"tabs_content": [
+			{
+				"active": true,
+				"slider": {
+					"items": [
+						{
+							"title": "Завод по производству кондиционеров",
+							"location": {
+								"country": "г. Ташкент",
+								"icon": {
+									"name": "24/location",
+									"size": "24"
+								}
+							},
+							"activity": {
+								"label": "Деятельность",
+								"info": "производство промышленных кондиционеров"
+							},
+							"img": {
+								"src": "tmp/slider-facilities/1.jpg",
+								"alt": "img"
+							},
+							"factoids": [
+								{
+									"text": "2012",
+									"label": "Год основания завода"
+								},
+								{
+									"text": "1236",
+									"after": {
+										"txt": "м",
+										"sup": "2"
+									},
+
+									"label": "Общая площадь"
+								}
+							]
+						},
+						{
+							"title": "Завод по производству 2",
+							"location": {
+								"country": "г. Москва",
+								"icon": {
+									"name": "24/location",
+									"size": "24"
+								}
+							},
+							"activity": {
+								"label": "Деятельность",
+								"info": "производство телевизоров"
+							},
+							"img": {
+								"src": "tmp/slider-facilities/1.jpg",
+								"alt": "img"
+							},
+							"factoids": [
+								{
+									"text": "2013",
+									"label": "Год основания завода"
+								},
+								{
+									"text": "1233",
+									"after": {
+										"txt": "м",
+										"sup": "2"
+									},
+									"label": "Общая площадь"
+								}
+							]
+						}
+					]
+				}
+			},
+			{
+				"slider": {
+					"items": [
+						{
+							"title": "Завод по производству кондиционеров",
+							"location": {
+								"country": "г. Ташкент",
+								"icon": {
+									"name": "24/location",
+									"size": "24"
+								}
+							},
+							"activity": {
+								"label": "Деятельность",
+								"info": "производство промышленных кондиционеров"
+							},
+							"img": {
+								"src": "tmp/slider-facilities/1.jpg",
+								"alt": "img"
+							},
+							"factoids": [
+								{
+									"text": "2012",
+									"label": "Год основания завода"
+								},
+								{
+									"text": "1236",
+									"after": {
+										"txt": "м2"
+									},
+									"label": "Общая площадь"
+								}
+							]
+						},
+						{
+							"title": "Завод по производству 2",
+							"location": {
+								"country": "г. Москва",
+								"icon": {
+									"name": "24/location",
+									"size": "24"
+								}
+							},
+							"activity": {
+								"label": "Деятельность",
+								"info": "производство телевизоров"
+							},
+							"img": {
+								"src": "tmp/slider-facilities/1.jpg",
+								"alt": "img"
+							},
+							"factoids": [
+								{
+									"text": "2013",
+									"label": "Год основания завода"
+								},
+								{
+									"text": "1233",
+									"after": {
+										"txt": "м2"
+									},
+									"label": "Общая площадь"
+								}
+							]
+						}
+					]
+				}
+			}
+		]
+	}
+}

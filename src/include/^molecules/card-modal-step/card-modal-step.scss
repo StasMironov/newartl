@@ -1,0 +1,188 @@
+.card-modal-step {
+    $b: &;
+
+    &__info {
+        margin-top: rem(18);
+    }
+
+    &__title {
+        color: $color-white;
+        margin-bottom: rem(16);
+
+        @include media-breakpoint-down(sm) {
+            font-size: rem(24);
+        }
+    }
+
+    &__select {
+        margin-bottom: rem(28);
+    }
+
+    &__article {
+        margin-bottom: rem(20);
+
+        @include media-breakpoint-down(sm) {
+            font-size: rem(16);
+        }
+    }
+
+    &__block {
+        background-color: $color-white;
+        border-radius: rem(8);
+        padding: rem(40);
+        min-height: rem(284);
+
+        @include media-breakpoint-down(sm) {
+            padding: rem(32);
+            min-height: rem(260);
+        }
+    }
+
+    &__formats {
+        display: flex;
+        align-items: center;
+        margin-bottom: rem(8);
+    }
+
+    &__format {
+        color: rgba($color-black, 0.4);
+        font-size: rem(24);
+
+        @include media-breakpoint-down(sm) {
+            font-size: rem(20);
+        }
+
+        &:not(:last-child){
+            margin-right: rem(18);
+        }
+    }
+
+    &__text {
+        max-width: rem(271);
+        width: 100%;
+        color: rgba($color-black, 0.4);
+        margin-bottom: rem(32);
+
+        @include media-breakpoint-down(sm) {
+            margin-bottom: rem(24);
+        }
+
+        &.error {
+            color: red;
+        }
+    }
+
+    .filter-select {
+        opacity: 1 !important;
+        transform: none !important;
+
+        // &__label {
+        //     position: absolute;
+        //     transform: translateY(#{rem(23));
+        //     font-size: rem(24);
+        // }
+    }
+
+    .form__field {
+        padding: 0;
+    }
+
+    // .select2-container--white .select2-selection__rendered {
+    //     color: rgba($color-white, 0.6);
+
+    //     &:hover {
+    //         color: rgba($color-white, 0.4) !important;
+    //     }
+    // }
+
+    // .select-shell .select--white .select2-selection:hover {
+    //     .select2-selection__rendered {
+    //         color: rgba($color-white, 0.4) !important;
+    //     }
+        
+    //     color: rgba($color-white, 0.4) !important;
+    // }
+
+    // .select-shell .select2-container--white {
+    //     border-color: rgba($color-white, 0.6);
+
+    //     &:hover {
+    //         border-color: rgba($color-white, 1.0);
+    //     }
+    // }
+
+    // .select-shell .select2-container--white .select2-selection__arrow b {
+    //     background-image: $icon-arrow-white;
+    //     transform: rotate(0deg);
+    // }
+
+    // .select2-container--white .select2-selection__placeholder {
+    //    color: rgba($color-white, 0.6) !important; 
+    // }
+
+
+
+    div[data-box-ed]{
+        margin-top: rem(64);
+    }
+
+    .datepicker--white {
+        color: rgba($color-white, 0.6);
+    }
+
+
+
+    &__actions {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: rem(24);
+       }
+    
+        &__btn {
+            flex-shrink: 0;
+            margin-right: rem(16);
+            position: relative;
+            background-color: $color-white;
+            width: rem(56);
+            min-width: auto;
+            height: rem(56);
+            padding: 0;
+            border-radius: 50%;
+            @include defaultTransition(background-color);
+    
+            &:after, &:before {
+                position: absolute;
+                content: "";
+                width: rem(16);
+                height: rem(2);
+                background-color: $color-black;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+            }
+    
+            &:after {
+                transform: rotate(90deg);
+            }
+        }
+    
+        &__txt {
+            color: $color-white;
+        }
+    
+        &__trigger {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+           
+    
+            @include touchLessHover {
+                #{$b}__btn {
+                    background-color: $color-gray-light;
+                }
+            }
+        }
+}

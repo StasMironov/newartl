@@ -1,0 +1,28 @@
+<div class="block-intro">
+    <div class="block-intro__container">
+        <div class="block-intro__wrapper">
+            {% if block_intro.factoids %}
+                <div class="block-intro__left">
+                    {% for factoid in block_intro.factoids %}
+                        <div class="block-intro__factoid" data-fade-in-up data-delay="{{ (loop.index0 / 2.5)|round(2, 'floor') }}">
+                            {% view '^factoid' with {
+                                factoid: factoid
+                            } %}
+                        </div>
+                        
+                    {% endfor %}
+                </div>
+            {% endif %}
+            {% if block_intro.items %}
+                <div class="block-intro__right">
+                    {% for item in block_intro.items %}
+                        <div class="block-intro__item h3" data-fade-in-up
+						 data-delay="{{ (loop.index0 / 1)|round(2, 'floor') }}">
+                            {{item}}
+                        </div>
+                    {% endfor %}
+                </div>
+            {% endif %}
+        </div>
+    </div>
+</div>

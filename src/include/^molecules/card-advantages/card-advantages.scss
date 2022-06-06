@@ -1,0 +1,52 @@
+.card-advantages {
+	width: 100%;
+	height: 100%;
+
+	&__icon {
+		@at-root .animate & {
+			path {
+				animation: dash 2.5s ease 0.5s forwards;
+				stroke-dasharray: 324;
+				stroke-dashoffset: 324;
+			}
+		}
+	}
+
+	&__inner {
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+		padding: rem(44) rem(44) rem(32);
+
+		@include media-breakpoint-down(md) {
+			padding: rem(44) rem(44) rem(36);
+		}
+
+		@include media-breakpoint-down(sm) {
+			padding: rem(30) 2rem rem(30);
+		}
+	}
+
+	&__text {
+		margin-top: auto;
+		color: $color-black;
+		@include defaultTransition(color);
+	}
+
+	&__icon {
+		width: max-content;
+		width: rem(104);
+		height: rem(104);
+		color: $color-green;
+		@include defaultTransition(color);
+
+		@include media-breakpoint-down(sm) {
+			width: rem(72);
+			height: rem(72);
+		}
+	}
+
+	@include touchLessHover {
+		background-color: $color-green;
+	}
+}

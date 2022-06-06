@@ -1,0 +1,40 @@
+<div class="card-user {% if card.theme %} card-user--theme-{{card.theme}} {% endif %}" data-scroll-sticky>
+    <div class="card-user__bg  {% if not card.image is defined %} is-noImage {% endif %}">
+        {% if card.image %}
+            {% view '@image' with {
+                image: card.image
+            } %}
+        {% else %}
+             {% view '@image' with {
+                image: {
+                    "src": 'tmp/card-user/unknown.png',
+                    "alt": "user"
+                }
+            } %}
+        {% endif %}
+    </div>
+    <div class="card-user__content">
+        <div class="card-user-head">
+            {% if card.name %}
+                <div class="card-user-head__name" data-fade-in-up>
+                    {{ card.name }}
+                </div>
+            {% endif %}
+
+            {% if card.status %}
+                <div class="card-user-head__status" data-fade-in-up data-delay="0.5">
+                    {{ card.status }}
+                </div>
+            {% endif %}
+        </div>
+        <div class="card-user-bottom">
+             {% if card.alt and not card.image is defined %}
+                <div class="card-user-bottom__alt" data-fade-in-up data-delay="1">
+                    {{ card.alt }}
+                </div>
+            {% endif %}
+        </div>
+    </div>
+    <div>
+    </div>
+</div>

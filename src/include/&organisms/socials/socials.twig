@@ -1,0 +1,32 @@
+
+<div class="socials{% if socials.bg %} bg-{{ socials.bg }}{% else %} bg-white{% endif %}">
+    <div class="socials__container container">
+        {% if socials.title %}
+            <h3 class="socials__title h3">
+                {{socials.title}}
+            </h3>
+        {% endif %}
+        {% if socials.items %}
+            <ul class="socials__items">
+                {% for item in socials.items %}
+                    <li class="socials__item" data-fade-in-up
+                        data-delay="{{ (loop.index0 / 10)|round(2, 'floor') }}">
+                        <a href="{{ item.href }}" class="socials__link" target="_blank"
+                            rel="nofollow">
+                            <div class="socials__icon">
+                                {% view '@icon' with {
+                                    icon: item.icon
+                                } %}
+                            </div>
+                            {% if item.title %} 
+                                <span class="socials__text">
+                                    {{ item.title }}
+                                </span>
+                            {% endif %}
+                        </a>
+                    </li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    </div>
+</div>

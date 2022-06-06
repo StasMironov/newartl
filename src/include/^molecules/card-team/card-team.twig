@@ -1,0 +1,16 @@
+<div class="card-team">
+	{% if card.img %}
+		<div class="card-team__img">
+			{% view '@image-adaptive' with {
+        image: card.img
+      } %}
+		</div>
+	{% endif %}
+
+	{% if card.title %}
+		<div class="card-team__title">{{ card.title }}</div>
+	{% endif %}
+	{% if card.text %}
+		<div class="card-team__text">{{ card.text }}</div>
+	{% endif %}
+</div>

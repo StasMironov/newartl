@@ -1,0 +1,22 @@
+{% set header = header|merge({
+	transparent: true
+}) %}
+{% extends "layouts::_page.twig" %}
+
+{% block content %}
+
+    {% view '&hero-default' with {
+		hero_default: hero
+	}%}
+
+    {% view '&block-nav' with {
+		block_nav: nav
+	} %}
+
+	{% view '&block-product' %}
+
+	<div class="mb-64 mb-md-120">
+		{% view '&block-catalog' %}
+	</div>
+
+{% endblock %}

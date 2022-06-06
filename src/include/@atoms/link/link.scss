@@ -1,0 +1,134 @@
+.link {
+}
+.link-action {
+    $b: #{&};
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    text-decoration: none !important;
+    background-color: transparent;
+  
+    &__icon {
+      flex-shrink: 0;
+      pointer-events: none;
+          color: currentColor;
+  
+          .is-ie & {
+              width: rem(24);
+              height: rem(24);
+  
+              svg {
+                  width: 100%;
+              }
+          }
+  
+          @include defaultTransition(color, transform);
+  
+          svg {
+              overflow: visible;
+          }
+  
+          & path  {
+              @include defaultTransition;
+              stroke: currentColor;
+          }
+  
+          &--right {
+              order: 0;
+  
+              & ~ #{$b}__text {
+                  &:not(:first-child) {
+                      margin-left: 0;
+  
+                      @include media-breakpoint-down(md) {
+                          margin-left: 0;
+                      }
+                  }
+              }
+          }
+    }
+  
+    &__text {
+      color: currentColor;
+      text-decoration: none !important;
+          text-align: left;
+      @include defaultTransition;
+      will-change: transform;
+  
+      &:not(:first-child) {
+  
+              @include media-breakpoint-down(md) {
+              }
+      }
+  
+          @include media-breakpoint-down(md) {
+              position: relative;
+              top: 1px;
+          }
+    }
+  
+    &:hover {
+    }
+  
+      &#{$b}--icon-transform {
+  
+          &:hover {
+  
+              &#{$b}--white {
+              }
+  
+              .icon {
+                  opacity: 1;
+              }
+  
+              #{$b}__icon {
+                  transform: translateX(#{rem(-10)});
+  
+                  @include media-breakpoint-down(md) {
+                      transform: translateX(#{rem(-8)});
+                  }
+              }
+          }
+      }
+  
+  
+    // Зеркальное отображение
+    &--reverse {
+  
+      #{$b}__text {
+              order: -1;
+        &:not(:first-child) {
+          margin-left: 0;
+  
+                  @include media-breakpoint-down(md) {
+                  }
+        }
+      }
+  
+  
+          &#{$b}--icon-transform {
+  
+              &:hover {
+  
+                  &#{$b}--white {
+                  }
+  
+                  .icon {
+                      opacity: 1;
+                  }
+  
+                  #{$b}__icon {
+                      transform: translateX(#{rem(10)});
+  
+                      @include media-breakpoint-down(md) {
+                          transform: translateX(#{rem(8)});
+                      }
+                  }
+              }
+          }
+    }
+  }
+  

@@ -1,0 +1,69 @@
+<div class="block-contacts {% if block_contacts.bg %} bg-{{ block_contacts.bg }}{% else %} bg-white{% endif %} {% if block_contacts.layout %} block-contacts--layout-{{block_contacts.layout}}{% endif %}" data-tab-container>
+    <div class="block-contacts__container container">
+        {% if block_contacts.title_hidden %}
+            <h1 class="visually-hidden">{{ block_contacts.title_hidden }}</h1>
+        {% endif %}
+        <div class="block-contacts__wrapper" data-tabs-wrap>
+            <div class="block-contacts__left">
+                {% if block_contacts.breadcrumbs %}
+                    <div class="block-contacts__breadcrumbs">
+                        {% view '^breadcrumbs' with {
+                            breadcrumbs:block_contacts.breadcrumbs
+                        } %}
+                    </div>
+                {% endif %}
+
+                <div class="block-contacts__tabs">
+                    {% if block_contacts.tabs %}
+                        {% view '&tabs' with {
+                            tabs: block_contacts.tabs
+                        }%}
+                    {% endif %}
+                </div>
+            </div>
+            <div class="block-contacts__right">
+                <div class="block-contacts__contents">
+                     {% if block_contacts.title %}
+                        <div class="block-contacts__title h1" data-fade-in-up>{{block_contacts.title}}</div>
+                     {% endif %}
+                    {% if block_contacts.tabs_content %}
+                        <div class="block-contacts__tabs-content">
+                            {% for item in block_contacts.tabs_content %}
+                               <div class="block-contacts__pane{{ item.active ? ' is-active' }}" data-tab-pane="{{ loop.index }}">
+                                    {% if item.card %}
+                                         <div class="block-contacts__card">  
+                                                {% view '^card-contacts' with {
+                                                    card: item.card
+                                                }%}                                    
+                                        </div>
+                                    {% endif %}
+                                </div>
+                            {% endfor %}
+                        </div> 
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+        <div class="block-contacts__block" data-tabs-wrap>
+             {% if block_contacts.tabs_content2 %}
+                <div class="block-contacts__tabs-content">
+                    {% for item in block_contacts.tabs_content2 %}
+                        <div class="block-contacts__pane{{ item.active ? ' is-active' }}" data-tab-pane="{{ loop.index }}">
+                            <div class="block-contacts__items">
+                                {% if item.cards %}
+                                    {% for card in  item.cards %}
+                                        <div class="block-contacts__item">  
+                                            {% view '^card-contact' with {
+                                                card: card
+                                            }%}                                    
+                                        </div>
+                                    {% endfor %}
+                                {% endif %}
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div> 
+            {% endif %}
+        </div>
+    </div>
+</div>

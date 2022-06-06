@@ -1,0 +1,28 @@
+<div class="slider-similar{% if slider_similar.bg %} bg-{{ slider_similar.bg }}{% else %} bg-white{% endif %}" data-slider-similar-wrap>
+    <div class="slider-similar__container container">
+        {% if slider_similar.title %}
+            <div class="slider-similar__title h2"  data-fade-in-up>
+                {{slider_similar.title}}
+            </div>
+        {% endif %}
+		<div class="swiper-container" data-slider-similar data-fade-in-up>
+			<div class="swiper-wrapper">
+				{% for slide in slider_similar.items %}
+					<div class="swiper-slide slider-similar__item">
+                        {% view '^card-news' with {
+                            card: slide|merge({
+								disable_lazy: true
+							})
+                        }%}
+                        <div class="slider-similar__border"></div>
+					</div>
+				{% endfor %}
+			</div>
+		</div>
+        <div class="slider-similar__navigation">
+            <div class="slider-similar__nav" data-fade-in-up>
+                {% view '@nav-arrows' %}
+            </div>
+        </div>	
+    </div>
+</div>

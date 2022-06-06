@@ -1,0 +1,70 @@
+.nav-arrows {
+	$root: &;
+
+	position: relative;
+	display: flex;
+	align-items: center;
+
+	&__buttons {
+		display: flex;
+		align-items: center;
+	}
+
+	&__button {
+		display: block;
+		font-size: 0;
+		width: rem(48);
+		height: rem(48);
+		line-height: rem(46);
+		text-align: center;
+		border: 1px solid rgba($color-black, 0.1);
+		padding: 0;
+		border-radius: 50%;
+		background-color: transparent;
+		color: $color-black;
+		overflow: hidden;
+		@include defaultTransition(background-color, color, border-color);
+
+		&:not(:last-child) {
+			margin-right: rem(8);
+		}
+
+		&:disabled,
+		&--disabled {
+			opacity: 0.4;
+			cursor: not-allowed;
+		}
+
+		@include touchLessHover {
+			&:not(:disabled):not(#{$root}__button--disabled) {
+				background-color: $color-green;
+				color: $color-white;
+				border-color: $color-green;
+			}
+		}
+
+		@include media-breakpoint-up(md) {
+			width: rem(56);
+			height: rem(56);
+			line-height: rem(54);
+		}
+
+		#{$root}--on-black & {
+			color: $color-white;
+			border-color: rgba($color-white, 0.4);
+		}
+
+		#{$root}--on-white & {
+			color: $color-white;
+			border-color: rgba($color-white, 0.4);
+
+			@include touchLessHover {
+				&:not(:disabled):not(#{$root}__button--disabled) {
+					background-color: $color-white;
+					color: $color-black;
+					border-color: $color-white;
+				}
+			}
+		}
+	}
+}

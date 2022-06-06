@@ -1,0 +1,7 @@
+{% if block_image.img %}
+	<div class="block__image">
+		{% view '@image-adaptive' with {
+            image: block_image.img
+        } %}
+	</div>
+{% endif %}

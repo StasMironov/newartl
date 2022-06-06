@@ -1,0 +1,72 @@
+{% if button.non_interactive %}
+	<div  class="button button--non-interactive
+		{% if button.class %} {{ button.class }}{% endif %}
+		{% if button.size %} button--{{ button.size }}{% endif %}
+		{% if button.theme %} button--{{ button.theme }}{% endif %}
+		{{ button.fit ? " button--fit" : "" }}
+		{{ button.mobFit ? " button--mob-fit" : "" }}
+		{{ button.outline ? " button--outline" : "" }}
+		{{ button.loading ? "is-loading" : "" }}
+		{{ button.icon ? " button--has-icon" : "" }}">
+		{% if button.text %}
+			<span class="button__text">{{ button.text }}</span>
+		{% endif %}
+		{% if button.icon %}
+			<span class="button__icon">
+				{% view '@icon' with {
+					icon: button.icon
+				} %}
+			</span>
+		{% endif %}
+	</div>
+{% else %}
+	{% if button.href %}
+		<a {% if button.scroll_to %}data-scroll{% endif %} href="{{ button.href }}"
+		   class="button
+			{% if button.class %} {{ button.class }}{% endif %}
+			{% if button.size %} button--{{ button.size }}{% endif %}
+			{% if button.theme %} button--{{ button.theme }}{% endif %}
+			{% if button.disabled %} button--disabled{% endif %}
+			{{ button.fit ? " button--fit" : "" }}
+			{{ button.mobFit ? " button--mob-fit" : "" }}
+			{{ button.loading ? "is-loading" : "" }}{{ button.icon ? " button--has-icon" : "" }}"
+			{% if button.attr %} {{ button.attr }}{% endif %}
+			{% if button.title %} title="{{ button.title }}"{% endif %}>
+			{% if button.text %}
+				<span class="button__text">{{ button.text }}</span>
+			{% endif %}
+			{% if button.icon %}
+				<span class="button__icon">
+				{% view '@icon' with {
+					icon: button.icon
+				} %}
+			</span>
+			{% endif %}
+		</a>
+	{% else %}
+		<button type="{{ button.type?: 'button' }}"
+				class="button
+					{% if button.class %} {{ button.class }}{% endif %}
+					{% if button.size %} button--{{ button.size }}{% endif %}
+					{% if button.theme %} button--{{ button.theme }}{% endif %}
+					{{ button.fit ? " button--fit" : "" }}
+					{{ button.mobFit ? " button--mob-fit" : "" }}
+					{{ button.loading ? "is-loading" : "" }}
+					{{ button.icon ? " button--has-icon" : "" }}"
+			{% if button.attr %} {{ button.attr }}{% endif %}
+			{% if button.title %} title="{{ button.title }}"{% endif %}
+			{% if button.disabled %} disabled{% endif %}>
+			{% if button.text %}
+				<span class="button__text">{{ button.text }}</span>
+			{% endif %}
+			{% if button.icon %}
+				<span class="button__icon">
+				{% view '@icon' with {
+					icon: button.icon
+				} %}
+			</span>
+			{% endif %}
+		</button>
+	{% endif %}
+{% endif %}
+

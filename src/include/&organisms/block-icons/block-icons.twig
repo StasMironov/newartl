@@ -1,0 +1,26 @@
+<div {% if block_icons.scroll_target %}id="{{block_icons.scroll_target}}"{% endif %} class="block-icons">
+	<div class="block-icons container">
+		{% if block_icons.heading %}
+			<div class="block-icons__top" data-fade-in-up>
+				<p class="block-icons__heading h2">{{ block_icons.heading }}</p>
+			</div>
+		{% endif %}
+		<div class="block-icons__items" data-fade-in-up>
+			{% for item in block_icons.items %}
+				<div class="block-icons__item" {% if item.attr %} {{ item.attr }} {% endif %} data-fade-in-up data-delay="{{ (0.1 + loop.index0 / 5)|round(2, 'floor') }}">
+					{% if item.icon %}
+						<div class="block-icons__icon" data-icon="draw">
+							{% view '@icon' with {
+									icon: item.icon
+							} %}
+						</div>
+					{% endif %}
+
+					{% if item.text %}
+						<p class="block-icons__text">{{ item.text }}</p>
+					{% endif %}
+				</div>
+			{% endfor %}
+		</div>
+	</div>
+</div>

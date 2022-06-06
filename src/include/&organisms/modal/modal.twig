@@ -1,0 +1,21 @@
+<div class="modal
+	{% if modal.component == '&modal-question' %}modal--question{% endif %}
+	{% if modal.component == '&modal-location' %}modal--location{% endif %}
+	{% if modal.component == '&modal-form' %}modal--form{% endif %}
+	{% if modal.component == '&modal-adress' %}modal--adress{% endif %}
+	{% if modal.component == '&modal-media' %}modal--media{% endif %}
+	{% if modal.modificator %}modal--{{ modal.modificator }}{% endif %}"
+	 id="{{ modal.id }}"
+	 aria-hidden="true">
+	<div class="modal__overlay" tabindex="-1" data-modal-close>
+		<button class="modal__close" aria-label='Close modal' data-modal-close>
+		</button>
+		<div class="modal__container" role="dialog" aria-modal="true">
+			<div class='modal__inner' {% if modal.ajax %}data-modal-ajax-container{% endif %}>
+				{% if modal.component and modal.data %}
+					{% view modal.component with modal.data %}
+				{% endif %}
+			</div>
+		</div>
+	</div>
+</div>

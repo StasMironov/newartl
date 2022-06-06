@@ -1,0 +1,13 @@
+<div class="filter-select {% if filter_select.color %}filter-select--color {% endif %}{% if filter_select.fill %}filter-select--fill{% endif %} {% if filter_select.theme %}filter-select--{{filter_select.theme}}{% endif %}"  data-fade-in-up>
+    {% for field in filter_select.fields %}
+        <div class="filter-select__field">
+            {% if filter_select.label %}
+                <span class="filter-select__label">{{ filter_select.label }}</span>
+            {% endif %}
+            
+            {% view '@field' with {
+                field: field
+            } %}
+        </div>
+    {% endfor %}
+</div>

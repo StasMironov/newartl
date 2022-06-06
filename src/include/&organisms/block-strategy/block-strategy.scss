@@ -1,0 +1,406 @@
+.block-strategy {
+    $root: &;
+
+    position: relative;
+    overflow: hidden;
+
+    &__circle {
+        position: absolute;
+        right: 0;
+        left: 0;
+        bottom: 0;
+    }
+
+    &__text {
+        font-size: rem(24);
+        line-height: rem(32);
+        max-width: rem(620);
+        width: 100%;
+        opacity: 0;
+        @include line-clamp(24, 1.4, 5);
+
+        @include media-breakpoint-down(sm) {
+            font-size: rem(20);
+            line-height: rem(27);
+            @include line-clamp(20, 1.4, 7);
+        }
+
+        #{$root}__slide.is-active & {
+            opacity: 1;
+        }
+    }
+
+    &__content {
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        @include media-breakpoint-down(md) {
+			display: block;
+		}
+    }
+
+    &__note {
+        max-width: rem(400);
+        width: 100%;
+        color: rgba($color-black, 0.4);
+        opacity: 0;
+
+        #{$root}__slide.is-active & {
+            opacity: 1;
+        }
+    }
+
+    &__img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: rem(327);
+        height: rem(327);
+        opacity: 0;
+
+        @include media-breakpoint-down(sm) {
+			width: rem(272);
+            height: rem(272)
+		}
+        
+        #{$root}__slide.is-active & {
+            opacity: 1;
+
+            path {
+				stroke-dasharray: 280;
+				stroke-dashoffset: 280;
+				animation: dash 2.5s ease 1s forwards;
+			}
+        }
+
+        .icon {
+            color: $color-green;
+        }
+    }
+
+    &__block {
+        margin-bottom: rem(73);
+
+        @include media-breakpoint-down(sm) {
+            margin-bottom: rem(45);
+        }
+
+        @include media-breakpoint-only(md) {
+            margin-bottom: rem(83);
+        }
+    }
+
+    &__left {
+        width: 33.333%;
+        margin-right: 16%;
+        min-height: rem(176);
+
+        @include media-breakpoint-down(md) {
+			width: 58%;
+            margin-right: auto;
+            margin-bottom: rem(60);
+            min-height: rem(176);
+		}
+
+        @include media-breakpoint-down(sm) {
+			width: 100%;
+            min-height: rem(150);
+		}
+    }
+
+    &__right {
+        width: 50%;
+        padding-left: rem(6);
+
+        @include media-breakpoint-down(md) {
+			padding-left: 0;
+            width: 100%;
+		}
+    }
+
+    &__wrap {
+        position: relative;
+        display: flex;
+
+        @include media-breakpoint-up(sm) {
+            min-height: rem(832);
+        }
+
+        @include media-breakpoint-up(md) {
+            min-height: rem(1024);
+        }
+
+        @include media-breakpoint-up(lg) {
+            min-height: rem(800);
+        }
+    }
+
+    &__slide {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        order: 3;
+
+        &.is-prev {
+            z-index: 1;
+            order: 2;
+        }
+
+        &.is-active {
+            z-index: 2;
+            order: 1;
+        }
+
+
+        &.is-active & {
+            // background-color: red;
+			// path {
+			// 	stroke-dasharray: 280;
+			// 	stroke-dashoffset: 280;
+			// 	animation: dash 2.5s ease .5s forwards;
+			// }
+		}
+    }
+
+    &__shell {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    &__inner {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    &__title {
+        opacity: 0;
+        margin-bottom: rem(32);
+
+        #{$root}:not(.is-dirty) #{$root}__slide.is-active & {
+            opacity: 1;
+        }
+
+        @include media-breakpoint-up(md) {
+            margin-bottom: rem(48);
+        }
+
+        @include media-breakpoint-down(sm) {
+            margin-bottom: rem(24);
+        }
+
+        #{$root}__slide.is-dark & {
+            color: $color-white;
+        }
+    }
+
+    &__container {
+        height: 100%;
+
+
+        #{$root}__inner & {
+            position: relative;
+            z-index: 1;
+            padding-top: rem(40);
+
+            @include media-breakpoint-down(lg) {
+                padding-top: rem(40);
+                padding-bottom: rem(91);
+            }
+
+            @include media-breakpoint-down(md) {
+                padding-top: rem(48);
+                padding-bottom: rem(64);
+            }
+
+            @include media-breakpoint-down(sm) {
+                padding-top: rem(8);
+                padding-bottom: rem(64);
+            }
+        }
+
+        #{$root}__bottom & {
+            display: flex;
+            padding-top: rem(44);
+            flex-direction: column;
+            justify-content: space-between;
+            padding-bottom: rem(112);
+
+            @include media-breakpoint-down(md) {
+                padding-top: rem(285);
+                padding-bottom: rem(67);
+            }
+
+            @include media-breakpoint-down(sm) {
+                padding-top: rem(223);
+                padding-bottom: rem(30);
+            }
+            
+        }
+    }
+
+
+    &__numbers {
+        display: flex;
+        align-items: center;
+        width: 60%;
+
+        @include media-breakpoint-up(lg) {
+            width: 60%;
+        }
+        @include media-breakpoint-up(md) {
+            margin-right: rem(4);
+        }
+        @include media-breakpoint-only(md) {
+            width: 25%;
+            padding-bottom: rem(8);
+        }
+    }
+
+    &__number {
+        display: block;
+        background-color: transparent;
+        border: 0;
+        padding: 0;
+        color: rgba($color-black, 0.4);
+        cursor: pointer;
+        @include defaultTransition(color);
+
+        &:not(:last-child) {
+            margin-right: rem(16);
+        }
+
+        #{$root}.in-transition & {
+            transition-delay: 0.6s;
+        }
+
+        @include touchLessHover {
+            color: $color-black;
+        }
+
+        &.is-active {
+            color: $color-black;
+            cursor: default;
+        }
+
+        @at-root .dark-slide-is-active & {
+            color: rgba($color-white, 0.4);
+
+            &.is-active {
+                color: $color-white;
+            }
+
+            @include touchLessHover {
+                color: $color-white;
+            }
+        }
+
+        @include media-breakpoint-up(md) {
+            &:not(:last-child) {
+                margin-right: rem(24);
+            }
+        }
+    }
+
+    &__bottom {
+        position: absolute;
+        z-index: 2;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        bottom: 0;
+        top: 0;
+        
+    }
+
+    &__progress {
+        position: relative;
+        height: 2px;
+        width: calc(33.3333% - #{rem(12)});
+        margin-left: rem(4);
+        background-color: $color-gray;
+        overflow: hidden;
+        @include defaultTransition(background-color);
+
+        #{$root}.in-transition & {
+            transition-delay: 0.3s;
+        }
+
+        span {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: $color-black;
+            transform: translateX(-100%);
+            @include defaultTransition(background-color);
+        }
+
+        @at-root .dark-slide-is-active & {
+            background-color: rgba($color-white, 0.4);
+
+            span {
+                background-color: $color-white;
+            }
+        }
+
+        @include media-breakpoint-up(md) {
+            width: 50%;
+        }
+    }
+
+    &__box {
+        left: 0;
+        position: relative;
+        margin-left: 50.5%;
+        width: rem(327);
+        height: rem(327);
+        pointer-events: none;
+
+        @include media-breakpoint-down(md) {
+            bottom: 0;
+            left: 0;
+            margin-right: auto;
+            margin-left: 0;
+        }
+
+        @include media-breakpoint-down(sm) {
+            width: rem(272);
+            height: rem(272);
+        }
+    }
+
+    &__arrows {
+        margin-left: 50%;
+
+        @include media-breakpoint-down(md) {
+            margin-left: initial;
+            margin-right: auto;
+        }
+    }
+
+    .circle {
+        opacity: 1;
+    }
+
+    .circle-back {
+        stroke: $color-black;
+        opacity: 0.2;
+    }
+
+}
+
+@keyframes dash {
+	to {
+	  stroke-dashoffset: 0;
+	}
+}
+    

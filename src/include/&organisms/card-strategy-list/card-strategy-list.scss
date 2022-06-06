@@ -1,0 +1,57 @@
+.card-strategy-list {
+
+	&__inner {
+		margin: 0 calc((100vw - 100%) / -2);
+		position: relative;
+		overflow: hidden;
+	}
+
+	&__items {
+	}
+
+	&__item {
+
+		.is-no-touch & {
+			@include media-breakpoint-up(lg) {
+				.card-strategy__factoid {
+					@include defaultTransition(opacity);
+				}
+				.card-strategy__image {
+					position: relative;
+					z-index: 1;
+					opacity: 1 !important;
+					transform: none !important;
+				}
+				&:first-child {
+					position: relative;
+				}
+				&.is-active {
+					.card-strategy__factoid {
+						opacity: 1;
+					}
+				}
+				&:not(.is-active) {
+					.card-strategy {
+						&__factoid {
+							opacity: 0 !important;
+						}
+					}
+				}
+				&:not(:first-child) {
+					position: absolute;
+					top: 100%;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					.card-strategy {
+						background-color: white;
+						height: 100%;
+						&__top {
+							//opacity: 0 !important;
+						}
+					}
+				}
+			}
+		}
+	}
+}

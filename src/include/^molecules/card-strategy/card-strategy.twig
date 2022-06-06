@@ -1,0 +1,58 @@
+<div class="card-strategy" data-card-strategy>
+	<div class="card-strategy__info">
+		{% if card.suptitle or card.title %}
+			<div class="card-strategy__top">
+				{% if card.suptitle %}
+					<p class="card-strategy__suptitle"
+						data-fade-in-up
+						data-delay="0.2"
+					>
+						{{ card.suptitle }}
+					</p>
+				{% endif %}
+
+				{% if card.title %}
+					<h2 class="card-strategy__title"
+						data-fade-in-up
+						data-delay="0.4"
+					>
+						{{ card.title }}
+					</h2>
+				{% endif %}
+			</div>
+		{% endif %}
+
+		{% if card.factoid %}
+			<div class="card-strategy__factoid"
+				data-fade-in-up
+				data-delay="0.6"
+			>
+				{% view '^factoid' with {
+					factoid: card.factoid
+				} %}
+			</div>
+		{% endif %}
+	</div>
+
+	{% if card.image %}
+		{% if card.image.mob or card.image.tab %}
+			<div class="card-strategy__image"
+				data-fade-in-up
+				data-image
+			>
+				{% view '@image-adaptive' with {
+					image: card.image
+				} %}
+			</div>
+		{% else %}
+			<div class="card-strategy__image"
+				data-fade-in-up
+				data-image
+			>
+				{% view '@image' with {
+					image: card.image
+				} %}
+			</div>
+		{% endif %}
+	{% endif %}
+</div>

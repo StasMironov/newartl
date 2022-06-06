@@ -1,0 +1,22 @@
+<div class="read-more {% if card.fullwidth %} read-more__fullwidth {% endif %}" data-fade-in-up data-delay="1">
+	<div class="read-more__text">
+		{% if card.base %}
+			<div class="read-more__base">
+				{{ card.base }}
+			</div>
+		{% endif %}
+		{% if card.items %}
+			<div class="read-more__hidden" data-text-hidden>
+				{% for item in card.items %}
+					<div class="read-more__item">
+						{{ item }}
+					</div>
+				{% endfor %}
+			</div>
+		{% endif %}
+
+	</div>
+	{% if card.link %}
+		<button class="read-more__btn" data-show-more="Скрыть" data-text-btn>{{ card.link.text }}</button>
+	{% endif %}
+</div>

@@ -1,0 +1,314 @@
+{
+	"title": "История группы",
+	"header": {
+		"transparent": true,
+		"logo": {
+			"href": "main.html",
+			"name": "logos/main-logo",
+			"size": "fit"
+		},
+		"navigation": [
+			{
+				"text": "О группе",
+				"submenu": {
+					"title": "О группе",
+					"text": "Общая информация для инвесторов в формате отчетов, графиков и документов",
+					"links": [
+						{
+							"href": "javascript:void(0);",
+							"text": "Общая информация для инвесторов"
+						},
+						{
+							"href": "javascript:void(0);",
+							"text": "Презентации"
+						},
+						{
+							"href": "javascript:void(0);",
+							"text": "Соблюдение требований корпоративного управления"
+						},
+						{
+							"href": "javascript:void(0);",
+							"text": "Структура компании"
+						},
+						{
+							"href": "javascript:void(0);",
+							"text": "Совет директоров"
+						},
+						{
+							"href": "javascript:void(0);",
+							"text": "Руководство"
+						}
+					]
+				}
+			},
+			{
+				"text": "Инвесторам",
+				"submenu": {
+					"title": "Инвесторам",
+					"text": "Общая информация для инвесторов в формате отчетов, графиков и документов",
+					"links": [
+						{
+							"href": "javascript:void(0);",
+							"text": "Общая информация для инвесторов"
+						},
+						{
+							"text": "Результаты и отчеты",
+							"active": true
+						},
+						{
+							"href": "javascript:void(0);",
+							"text": "Презентации"
+						},
+						{
+							"href": "javascript:void(0);",
+							"text": "Соблюдение требований корпоративного управления"
+						},
+						{
+							"href": "javascript:void(0);",
+							"text": "Структура компании"
+						},
+						{
+							"href": "javascript:void(0);",
+							"text": "Совет директоров"
+						},
+						{
+							"href": "javascript:void(0);",
+							"text": "Руководство"
+						},
+						{
+							"href": "javascript:void(0);",
+							"text": "Корпоративное управление"
+						},
+						{
+							"href": "javascript:void(0);",
+							"text": "Внутренние документы"
+						},
+						{
+							"href": "javascript:void(0);",
+							"text": "Каталог продукции"
+						},
+						{
+							"href": "javascript:void(0);",
+							"text": "Контакты для инвесторов"
+						}
+					]
+				}
+			},
+			{
+				"href": "javascript:void(0);",
+				"text": "Партнерам"
+			},
+			{
+				"href": "javascript:void(0);",
+				"text": "Устойчивое развитие"
+			},
+			{
+				"href": "javascript:void(0);",
+				"text": "Пресс-центр"
+			},
+			{
+				"text": "Карьера",
+				"active": true
+			},
+			{
+				"href": "javascript:void(0);",
+				"text": "Контакты"
+			}
+		],
+		"lang": {
+			"action": {
+				"text": "Ру",
+				"title": "Ру"
+			},
+			"items": [
+				{
+					"href": "javascript:void(0);",
+					"text": "En",
+					"title": "En"
+				},
+				{
+					"href": "javascript:void(0);",
+					"text": "Оʻz",
+					"title": "Оʻz"
+				}
+			]
+		}
+	},
+	"hero_default": {
+		"title": "История группы",
+		"image": {
+			"src": "tmp/default-hero/hero-history.jpg",
+			"alt": "image alt",
+			"fill": true,
+			"tab": {
+				"srcset": [
+					{
+						"scale": "1",
+						"src": "tmp/default-hero/hero-history-tab.jpg"
+					}
+				]
+			},
+			"mob": {
+				"srcset": [
+					{
+						"scale": "1",
+						"src": "tmp/default-hero/hero-history-mob.jpg"
+					}
+				]
+			}
+		}
+	},
+	"block_nav": {
+		"desc": "Артель имеет широкую историю: от&nbsp;обширного сотрудничества с партнерами до открытия 11 заводов",
+		"bg": "gray",
+		"layout": "3",
+		"icon": {
+			"name": "logos/decor",
+			"size": "fit"
+		},
+		"theme": "white",
+		"tabs": {
+			"layout": "3",
+			"items": [
+				{
+					"href": "!#",
+					"text": "Стратегия",
+					"title": "Стратегия",
+					"active": "true"
+				},
+				{
+					"href": "!#",
+					"text": "Миссия компании",
+					"title": "Миссия компании"
+				},
+				{
+					"href": "!#",
+					"text": "История группы",
+					"title": "История группы"
+				},
+				{
+					"href": "!#",
+					"text": "Партнеры",
+					"title": "Партнеры"
+				},
+				{
+					"href": "!#",
+					"text": "Наши продукты",
+					"title": "Наши продукты"
+				},
+				{
+					"href": "!#",
+					"text": "Предприятия",
+					"title": "Предприятия"
+				}
+			]
+		}
+	},
+	"block_history": {
+		"tabs": {
+			"layout": "5",
+			"items": [
+				{
+					"text": "2011",
+					"title": "2011",
+					"attr": "data-attr",
+					"active": "true"
+				},
+				{
+					"text": "2012",
+					"title": "2012",
+					"attr": "data-attr"
+				},
+				{
+					"text": "2013",
+					"title": "2013",
+					"attr": "data-attr"
+				},
+				{
+					"text": "2014",
+					"title": "2014",
+					"attr": "data-attr"
+				},
+				{
+					"text": "2015",
+					"title": "2015",
+					"attr": "data-attr"
+				},
+				{
+					"text": "2025",
+					"title": "2025",
+					"attr": "data-attr"
+				}
+			]
+		},
+		"tabs_content": [
+			{
+				"active": true,
+				"card": {
+					"layout": "2",
+					"title": "Артель имеет широкую историю: от&nbsp;обширного сотрудничества с&nbsp;партнерами до открытия 11 заводов",
+					"image": {
+						"src": "tmp/card-news/news1.jpg",
+						"alt": "Здесь будет фото основателя группы"
+					},
+					"desc": "Компания открыла свой первый завод в 2011 году и приступила к производству электрических пылесосов, газовых и электрических плит, а также термопластов."
+				}
+			},
+			{
+				"card": {
+					"layout": "2",
+					"title": "Артель 2",
+					"image": {
+						"src": "tmp/card-news/news1.jpg",
+						"alt": "Здесь будет фото основателя группы 2"
+					},
+					"desc": "Описание 2"
+				}
+			},
+			{
+				"card": {
+					"layout": "2",
+					"title": "Артель 3",
+					"image": {
+						"src": "tmp/card-news/news1.jpg",
+						"alt": "Здесь будет фото основателя группы"
+					},
+					"desc": "Описание 3"
+				}
+			},
+			{
+				"card": {
+					"layout": "2",
+					"title": "Артель имеет широкую историю: от обширного сотрудничества с партнерами до открытия 11 заводов",
+					"image": {
+						"src": "tmp/card-news/news1.jpg",
+						"alt": "Здесь будет фото основателя группы"
+					},
+					"desc": "Формируя одну большую команду, мы тесно работаем для оптимизации нашей деятельности в сотрудничестве с различными партнерами."
+				}
+			},
+			{
+				"card": {
+					"layout": "2",
+					"title": "Артель 4",
+					"image": {
+						"src": "tmp/card-news/news1.jpg",
+						"alt": "Здесь будет фото основателя группы"
+					},
+					"desc": "Описание 4"
+				}
+			},
+			{
+				"card": {
+					"layout": "2",
+					"title": "Артель 5",
+					"image": {
+						"src": "tmp/card-news/news1.jpg",
+						"alt": "Здесь будет фото основателя группы"
+					},
+					"desc": "Описание 5"
+				}
+			}
+		]
+	}
+}

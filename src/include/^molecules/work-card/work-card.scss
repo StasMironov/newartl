@@ -1,0 +1,74 @@
+.work-card {
+    $b: &;
+
+    &:not(:first-child) {
+        margin-bottom: rem(-64);
+        margin-top: rem(64);
+    }
+
+   &__actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: rem(48);
+   }
+
+    &__btn {
+        margin-right: rem(16);
+        position: relative;
+		background-color: $color-white;
+		width: rem(56);
+		min-width: auto;
+		height: rem(56);
+		padding: 0;
+        border-radius: 50%;
+        @include defaultTransition(background-color);
+
+		&:after, &:before {
+			position: absolute;
+			content: "";
+			width: rem(16);
+			height: rem(2);
+			background-color: $color-black;
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			margin: auto;
+		}
+
+		&:after {
+			transform: rotate(90deg);
+		}
+    }
+
+    &__text {
+        color: $color-white;
+    }
+
+    &__trigger {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+       
+
+        @include touchLessHover {
+            #{$b}__btn {
+				background-color: $color-gray-light;
+            }
+        }
+    }
+
+    &__delete {
+        color: $color-white;
+        margin-left: auto;
+        cursor: pointer;
+    }
+    
+
+    .form {
+        &__agreement {
+            margin-bottom: rem(40);
+        }
+    }
+}

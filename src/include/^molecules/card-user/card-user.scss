@@ -1,0 +1,133 @@
+.card-user {
+    $root: &;
+    position: sticky;
+    top: 0;
+    background-color: $color-gray-dark;
+
+
+		&:before {
+			position: absolute;
+			top: 0;
+			right: 100%;
+			left: auto;
+			width: 50vw;
+			height: 100%;
+			background-color: $color-gray-dark;
+			border-radius: 0;
+			transform: none;
+			transition-timing-function: ease;
+			transition-duration: 0.3s;
+			transition-property: background-color;
+			content: '';
+		}
+
+    @include media-breakpoint-up(sm) {
+        height: rem(300);
+        padding-left: rem(16);
+        padding-right: rem(16);
+        padding-top: rem(30);
+        padding-bottom: rem(23);
+    }
+
+    @include media-breakpoint-up(md) {
+        padding-right: rem(56);
+	    padding-left: rem(56);
+        padding-top: rem(56);
+        padding-bottom: rem(54);
+        height: rem(588);
+    }
+
+    @include media-breakpoint-up(lg) {
+        padding-right: rem(40);
+	    padding-left: rem(40); 
+    }
+
+	&__bg {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+        overflow: hidden;
+       
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+            transform-origin: center;
+            transform: scale(1.3);
+            transition: transform 1.2s ease calc(0.2 * 1s);
+
+            @at-root .animate & {
+                transform: scale(1);
+            }
+		}
+
+        &.is-noImage {
+            display: flex;
+            justify-content: center;
+
+            img {
+                width: auto;
+                object-fit: initial;
+                height: rem(448);
+                margin-top: auto;
+
+                @include media-breakpoint-up(sm) {
+                    height: rem(204);
+                }
+
+                @include media-breakpoint-up(md) {
+                    height: rem(448);
+                }
+            }
+        }
+	}
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        z-index: 1;
+        position: relative;
+    }
+
+    &-head {
+        $b: &;
+
+        #{$b}__name {
+            font-weight: 500;
+            font-size: rem(16);
+
+            #{$root}--theme-white & {
+                color: rgba($color-white, 1.0);
+            }
+        }
+
+        #{$b}__status {
+            color: rgba($color-black, 0.4);
+
+            #{$root}--theme-white & {
+                color: rgba($color-white, 0.4);
+            }
+        }
+    }
+    &-bottom {
+        $b: &; 
+        
+        #{$b}__alt {
+            font-weight: 500;
+            font-size: rem(16); 
+            text-align: center;
+        }
+    }
+
+    &--theme-white {
+        &:before{
+            background-color: transparent;
+        }
+    }
+}

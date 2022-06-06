@@ -1,0 +1,50 @@
+{
+    "card": {
+        
+        "fields": [
+            {
+                "input": true,
+                "id": "form-1-input-1",
+                "name": "form-1-input-1",
+                "theme": "white",
+                "required": true,
+                "label": "ФИО"
+            },
+            {
+                "input": true,
+                "id": "form-1-input-2",
+                "name": "form-1-input-2",
+                "theme": "white",
+                "required": true,
+                "label": "Адрес проживания"
+            },
+            {
+                "input": true,
+                "id": "form-1-input-4",
+                "name": "form-1-input-4",
+                "theme": "white",
+                "required": true,
+                "type": "tel",
+                "label": "Телефон",
+                "mask_list": [
+                    "+998-##-###-####",
+                    "+7(###)###-##-##",
+                    "+380(##)###-##-##",
+                    "+7(6##)###-##-##",
+                    "+992-##-###-####",
+                    "+994-##-###-##-##",
+                    "+996-###-######"
+                ]
+            },
+            {
+                "input": true,
+                "id": "form-1-input-5",
+                "name": "form-1-input-5",
+                "theme": "white",
+                "required": true,
+                "type": "email",
+                "label": "E-mail"
+            }
+        ]
+    }
+}

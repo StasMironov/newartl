@@ -1,0 +1,340 @@
+.user-text {
+	// break-word не ставить, если ставить, то нужно в исключении добавить таблицы
+
+	h1,
+	.h1 {
+		@include h1;
+		margin-bottom: rem(40);
+
+		@include media-breakpoint-down(sm) {
+			margin-bottom: rem(24);
+		}
+	}
+
+	h2,
+	.h2 {
+		@include h2;
+		margin-top: rem(80);
+		margin-bottom: rem(48);
+
+		@include media-breakpoint-down(sm) {
+			margin-top: rem(48);
+			margin-bottom: rem(32);
+		}
+	}
+
+	h3,
+	.h3 {
+		@include h3;
+		margin-top: rem(64);
+		margin-bottom: rem(32);
+
+		@include media-breakpoint-down(sm) {
+			margin-top: rem(48);
+			margin-bottom: rem(16);
+		}
+	}
+
+	h4,
+	.h4 {
+		@include h4;
+		margin-top: rem(32);
+		margin-bottom: rem(16);
+
+		@include media-breakpoint-down(sm) {
+			margin-top: rem(48);
+		}
+	}
+
+	h5,
+	.h5 {
+		margin-top: rem(32);
+		margin-bottom: rem(16);
+
+		@include media-breakpoint-down(sm) {
+			margin-top: rem(48);
+		}
+	}
+
+	ol,
+	ul {
+		margin-top: rem(32);
+		margin-bottom: rem(16);
+	}
+
+	p {
+		margin-bottom: rem(24);
+	}
+
+	a {
+		position: relative;
+		display: inline;
+		@include defaultTransition(color);
+		color: rgba($color-black, 0.4);
+
+		&:hover {
+			color: rgba($color-black, 1);
+			text-decoration: none;
+		}
+	}
+
+	img:not([width]):not([height]),
+	figure,
+	video,
+	.video,
+	.plyr {
+		height: rem(370);
+		display: block;
+		width: 100%;
+		max-width: 100%;
+		margin-top: rem(80);
+		margin-bottom: rem(80);object-fit: cover;
+
+		@include media-breakpoint-only(md) {
+			margin-top: rem(80);
+			margin-bottom: rem(80);
+		}
+
+		@include media-breakpoint-down(sm) {
+			margin-top: rem(40);
+			margin-bottom: rem(40);
+			height: rem(180);
+		}
+	}
+
+	.swiper-container img:not([width]):not([height]) {
+		margin: 0;
+		height: 100%;
+	}
+
+	p + h4,
+	ul + h4,
+	ol + h4,
+	p + blockquote,
+	ul + blockquote,
+	ol + blockquote {
+		margin-top: rem(72);
+
+		@include media-breakpoint-down(sm) {
+			margin-top: rem(48);
+		}
+	}
+
+	h4 + p {
+		margin-top: rem(16);
+	}
+
+	& > :first-child {
+		margin-top: 0 !important;
+	}
+
+	& > :last-child {
+		margin-bottom: 0 !important;
+	}
+
+	blockquote {
+		position: relative;
+		@include h4;
+
+		@include media-breakpoint-down(md) {
+			padding-right: rem(40);
+			padding-left: rem(26);
+		}
+
+		@include media-breakpoint-down(sm) {
+			padding-right: 0;
+		}
+
+		&::before {
+			position: absolute;
+			top: rem(7);
+			bottom: rem(7);
+			left: rem(-34);
+			display: block;
+			width: rem(2);
+			background-color: green;
+			content: '';
+
+			@include media-breakpoint-down(md) {
+				left: 0;
+			}
+		}
+	}
+
+	.special {
+		position: relative;
+		width: 73vw;
+		margin-top: rem(64);
+		margin-bottom: rem(80);
+		margin-left: -16.6%;
+		padding: rem(80) rem(164) rem(88) rem(112);
+		color: $color-white;
+		
+		&:after {
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			z-index: -1;
+			width: 100%;
+			height: 100%;
+			background-color: $color-green;
+			content: '';
+
+			@include media-breakpoint-down(md) {
+				right: 50%;
+				left: 50%;
+				width: 104vw;
+				margin-right: -50vw;
+				margin-left: -50vw;
+			}
+
+			@include media-breakpoint-down(sm) {
+				width: 100vw;
+			}
+		}
+
+		@include media-breakpoint-down(md) {
+			width: 100%;
+			margin-left: 0;
+			padding: rem(80) 0 rem(88) 0;
+		}
+
+		@include media-breakpoint-down(sm) {
+			margin-top: rem(38);
+			margin-bottom: rem(48);
+		//	margin-left: calc((100% - 100vw) / 2);
+			padding: rem(56) 0 rem(64);
+		}
+	}
+
+	.citation {
+		position: relative;
+		margin-top: rem(80);
+		margin-right: -11.6%;
+		padding: rem(80) rem(0) rem(80) rem(0);
+
+		@include media-breakpoint-down(md) {
+			margin-right: 0;
+			padding: rem(198) 0 rem(81);
+		}
+
+		@include media-breakpoint-down(sm) {
+			margin-top: rem(48);
+			padding: rem(144) 0 rem(64);
+		}
+
+		&:before {
+			position: absolute;
+			top: rem(60);
+			left: 0;
+			left: rem(-168);
+			width: rem(104);
+			height: rem(104);
+			background-image: $icon-slider-quote;
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: contain;
+			content: '';
+
+			@include media-breakpoint-down(md) {
+				top: rem(55);
+				left: 0;
+			}
+
+			@include media-breakpoint-down(sm) {
+				top: rem(32);
+				width: rem(80);
+				height: rem(80);
+			}
+		}
+
+		&:after {
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			z-index: -1;
+			width: 100vw;
+			height: 100%;
+			margin-left: calc((57.8% - 100vw) / 2);
+			background-color: $color-white;
+			content: '';
+
+			@include media-breakpoint-down(md) {
+				right: 50%;
+				left: 50%;
+				width: 104vw;
+				margin-right: -50vw;
+				margin-left: -50vw;
+			}
+
+			@include media-breakpoint-down(sm) {
+				width: 100vw;
+			}
+		}
+
+		span {
+			display: block;
+			margin-top: 1rem;
+			margin-bottom: 1rem;
+			font-weight: 400;
+			font-size: 1rem;
+			line-height: 1.625;
+		}
+
+		.name {
+			margin-top: rem(48);
+			margin-bottom: 0;
+
+			@include media-breakpoint-down(sm) {
+				margin-top: rem(28);
+			}
+		}
+
+		.status {
+			margin: 0;
+			color: rgba($color-black, 0.4);
+		}
+	}
+
+	.slider-photo {
+		display: block;
+		width: 131%;
+		margin-top: rem(64);
+		margin-bottom: rem(80);
+
+		@include media-breakpoint-only(md) {
+			width: 110%;
+			margin-bottom: rem(80);
+		}
+
+		@include media-breakpoint-down(sm) {
+			width: 100%;
+			margin-top: rem(38);
+			margin-bottom: rem(40);
+		}
+	}
+
+	.table {
+		margin-top: rem(64);
+		margin-bottom: rem(80);
+
+		@include media-breakpoint-down(md) {
+			right: 50%;
+			left: 50%;
+			width: 102vw;
+			margin-right: -50vw;
+			margin-left: -8vw;
+		}
+
+		@include media-breakpoint-down(sm) {
+			width: 102vw;
+			margin-left: -5vw;
+			margin-top: rem(38);
+			margin-bottom: rem(40);
+		}
+	}
+}

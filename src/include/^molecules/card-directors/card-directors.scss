@@ -1,0 +1,76 @@
+.card-directors{
+  $root: &;
+  width: 100%;
+  color: $color-black;
+  display: block;
+
+  &__icon {
+    width: rem(56);
+    height: rem(56);
+    border-radius: 50%;
+    background-color: $color-white;
+    transition: 0.8s; 
+
+    @include media-breakpoint-up(md) {
+       margin-right: rem(48);
+    }
+    span{
+      display: flex;
+      width: rem(56);
+      height: rem(56);
+      align-items: center;
+      justify-content: center;
+    }
+	}
+
+  &__item{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding-top: rem(32);
+    padding-bottom: rem(48);
+    margin-right: rem(0);
+    transition: 0.3s;
+    &::after{
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 1px;
+      width: 100%;
+      background: rgba($color-black, 0.1);
+      background: linear-gradient(to left, rgba($color-black, 0.1) 50%, $color-green 50%) right;
+      background-size: 200%; 
+      transition: 1s;
+      content: '';
+    } 
+
+    @include media-breakpoint-up(md) {
+        padding-top: rem(56);
+        padding-bottom: rem(80);
+        margin-right: rem(8);
+    }
+
+    @include media-breakpoint-up(lg) {
+        padding-top: rem(56);
+        padding-bottom: rem(80);
+        margin-right: rem(8);
+    } 
+
+    @include touchLessHover {
+      &:after{
+        background-position: left;
+      }
+      color: $color-green;
+      .card-directors__icon{
+        background-color: $color-green;
+        color: $color-white;
+      }
+    }
+  }
+
+  &__text{
+    color: rgba($color-black, 0.4);
+    margin-top: rem(8);
+  }
+    
+}

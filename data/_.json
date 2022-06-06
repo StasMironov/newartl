@@ -1,0 +1,1568 @@
+{
+  "preloader": {
+    "icon": {
+      "name": "104/preloader",
+      "size": "fit"
+    }
+  },
+  "page_transition": true,
+  "colors": [
+    "white",
+    "black"
+  ],
+  "breakpoints": {
+    "md": 640,
+    "lg": 990
+  },
+  "placeholder": "data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==",
+  "header": {
+    "logo": {
+      "href": "main.html",
+      "name": "logos/main-logo",
+      "size": "fit"
+    },
+    "navigation": [
+      {
+        "text": "О группе",
+        "submenu": {
+          "title": "О группе",
+          "text": "Общая информация для инвесторов в формате отчетов, графиков и документов",
+          "links": [
+            {
+              "href": "javascript:void(0);",
+              "text": "Общая информация для инвесторов"
+            },
+            {
+              "href": "javascript:void(0);",
+              "text": "Презентации"
+            },
+            {
+              "href": "javascript:void(0);",
+              "text": "Соблюдение требований корпоративного управления"
+            },
+            {
+              "href": "javascript:void(0);",
+              "text": "Структура компании"
+            },
+            {
+              "href": "javascript:void(0);",
+              "text": "Совет директоров"
+            },
+            {
+              "href": "javascript:void(0);",
+              "text": "Руководство"
+            }
+          ]
+        }
+      },
+      {
+        "text": "Инвесторам",
+        "href": "javascript:void(0);",
+        "submenu": {
+          "title": "Инвесторам",
+          "text": "Общая информация для инвесторов в формате отчетов, графиков и документов",
+          "links": [
+            {
+              "href": "javascript:void(0);",
+              "text": "Общая информация для инвесторов"
+            },
+            {
+              "text": "Результаты и отчеты",
+              "active": true
+            },
+            {
+              "href": "javascript:void(0);",
+              "text": "Презентации"
+            },
+            {
+              "href": "javascript:void(0);",
+              "text": "Соблюдение требований корпоративного управления"
+            },
+            {
+              "href": "javascript:void(0);",
+              "text": "Структура компании"
+            },
+            {
+              "href": "javascript:void(0);",
+              "text": "Совет директоров"
+            },
+            {
+              "href": "javascript:void(0);",
+              "text": "Руководство"
+            },
+            {
+              "href": "javascript:void(0);",
+              "text": "Корпоративное управление"
+            },
+            {
+              "href": "javascript:void(0);",
+              "text": "Внутренние документы"
+            },
+            {
+              "href": "javascript:void(0);",
+              "text": "Каталог продукции"
+            },
+            {
+              "href": "javascript:void(0);",
+              "text": "Контакты для инвесторов"
+            }
+          ]
+        }
+      },
+      {
+        "href": "javascript:void(0);",
+        "text": "Партнерам"
+      },
+      {
+        "href": "javascript:void(0);",
+        "text": "Устойчивое развитие"
+      },
+      {
+        "href": "javascript:void(0);",
+        "text": "Пресс-центр"
+      },
+      {
+        "text": "Карьера",
+        "active": true
+      },
+      {
+        "href": "javascript:void(0);",
+        "text": "Контакты"
+      }
+    ],
+    "lang": {
+      "action": {
+        "text": "Ру",
+        "title": "Ру"
+      },
+      "items": [
+        {
+          "href": "javascript:void(0);",
+          "text": "En",
+          "title": "En"
+        },
+        {
+          "href": "javascript:void(0);",
+          "text": "Оʻz",
+          "title": "Оʻz"
+        }
+      ]
+    }
+  },
+  "menu": {
+    "navigation": [
+      {
+        "text": "Ссылка",
+        "href": "!#"
+      },
+      {
+        "text": "О группе",
+        "attr": "data-trigger",
+        "back": {
+          "icon": {
+            "name": "24/arrow-next-right",
+            "size": "24"
+          }
+        },
+        "sublist": [
+          {
+            "href": "mission.html",
+            "text": "Общая информация для инвесторов"
+          },
+          {
+            "href": "javascript:void(0);",
+            "text": "Презентации"
+          },
+          {
+            "href": "javascript:void(0);",
+            "text": "Соблюдение требований корпоративного управления"
+          },
+          {
+            "href": "javascript:void(0);",
+            "text": "Структура компании"
+          },
+          {
+            "href": "javascript:void(0);",
+            "text": "Совет директоров"
+          },
+          {
+            "href": "javascript:void(0);",
+            "text": "Руководство"
+          }
+        ]
+      },
+      {
+        "text": "Инвесторам",
+        "attr": "data-trigger",
+        "back": {
+          "icon": {
+            "name": "24/arrow-next-right",
+            "size": "24"
+          }
+        },
+        "sublist": [
+          {
+            "href": "javascript:void(0);",
+            "text": "Общая информация для инвесторов"
+          },
+          {
+            "href": "javascript:void(0);",
+            "text": "Презентации"
+          },
+          {
+            "href": "javascript:void(0);",
+            "text": "Соблюдение требований корпоративного управления"
+          },
+          {
+            "href": "javascript:void(0);",
+            "text": "Структура компании"
+          },
+          {
+            "href": "javascript:void(0);",
+            "text": "Совет директоров"
+          },
+          {
+            "href": "javascript:void(0);",
+            "text": "Руководство"
+          }
+        ]
+      },
+      {
+        "text": "Партнерам",
+        "attr": "data-trigger",
+        "back": {
+          "icon": {
+            "name": "24/arrow-next-right",
+            "size": "24"
+          }
+        },
+        "sublist": [
+          {
+            "href": "javascript:void(0);",
+            "text": "Общая информация для инвесторов"
+          },
+          {
+            "href": "javascript:void(0);",
+            "text": "Презентации"
+          },
+          {
+            "href": "javascript:void(0);",
+            "text": "Соблюдение требований корпоративного управления"
+          },
+          {
+            "href": "javascript:void(0);",
+            "text": "Структура компании"
+          },
+          {
+            "href": "javascript:void(0);",
+            "text": "Совет директоров"
+          },
+          {
+            "href": "javascript:void(0);",
+            "text": "Руководство"
+          }
+        ]
+      },
+      {
+        "attr": "data-trigger",
+        "text": "Устойчивое развитие",
+        "back": {
+          "icon": {
+            "name": "24/arrow-next-right",
+            "size": "24"
+          }
+        },
+        "sublist": [
+          {
+            "href": "javascript:void(0);",
+            "text": "Общая информация для инвесторов"
+          },
+          {
+            "href": "javascript:void(0);",
+            "text": "Презентации"
+          },
+          {
+            "href": "javascript:void(0);",
+            "text": "Соблюдение требований корпоративного управления"
+          },
+          {
+            "href": "javascript:void(0);",
+            "text": "Структура компании"
+          },
+          {
+            "href": "javascript:void(0);",
+            "text": "Совет директоров"
+          },
+          {
+            "href": "javascript:void(0);",
+            "text": "Руководство"
+          }
+        ]
+      },
+      {
+        "text": "Ссылка",
+        "href": "!#"
+      },
+      {
+        "text": "Ссылка2",
+        "href": "!#"
+      },
+      {
+        "text": "Ссылка",
+        "href": "!#"
+      },
+      {
+        "text": "Ссылка",
+        "href": "!#"
+      },
+      {
+        "text": "Ссылка",
+        "href": "!#"
+      }
+    ]
+  },
+  "footer": {
+    "logo": {
+      "href": "./",
+      "name": "logos/main-logo",
+      "size": "fit"
+    },
+    "form": {
+      "id": "footer-form-id",
+      "method": "GET",
+      "action": "/",
+      "name": "footer-form-name",
+      "search": {
+        "theme": "white-2",
+        "id": "form-1-search-1",
+        "search": true,
+        "label": "Поиск по сайту",
+        "name": "search",
+        "autocomplete": "off",
+        "action": {
+          "type": "submit",
+          "icon": {
+            "name": "24/magnifier"
+          }
+        }
+      },
+      "url": "ajax/search-result-ajax.html"
+    },
+    "contacts": {
+      "title": "Справочный центр",
+      "items": [
+        {
+          "href": "tel:+998781488888",
+          "text": "+998 (78) 148-88-88"
+        },
+        {
+          "href": "mailto:info@artelelectronics.com",
+          "text": "info@artelelectronics.com"
+        }
+      ]
+    },
+    "links": [
+      {
+        "href": "javascript:void(0);",
+        "text": "Карьера"
+      },
+      {
+        "href": "javascript:void(0);",
+        "text": "Пресс-центр"
+      },
+      {
+        "href": "javascript:void(0);",
+        "text": "Устойчивое развитие"
+      },
+      {
+        "href": "javascript:void(0);",
+        "text": "Контакты"
+      }
+    ],
+    "groups": [
+      {
+        "headLink": {
+          "text": "О группе"
+        },
+        "items": [
+          {
+            "href": "javascript:void(0);",
+            "text": "Стратегия"
+          },
+          {
+            "href": "javascript:void(0);",
+            "text": "Миссия компании"
+          },
+          {
+            "href": "/history.html",
+            "text": "История группы"
+          },
+          {
+            "href": "javascript:void(0);",
+            "text": "Партнеры"
+          },
+          {
+            "href": "javascript:void(0);",
+            "text": "Наши продукты"
+          },
+          {
+            "href": "javascript:void(0);",
+            "text": "Предприятия"
+          },
+          {
+            "href": "javascript:void(0);",
+            "text": "Наши рынки"
+          }
+        ]
+      },
+      {
+        "headLink": {
+          "href": "javascript:void(0);",
+          "text": "Инвесторам"
+        },
+        "items": [
+          {
+            "href": "javascript:void(0);",
+            "text": "Акционерам"
+          },
+          {
+            "href": "javascript:void(0);",
+            "text": "Результаты и отчеты"
+          },
+          {
+            "href": "javascript:void(0);",
+            "text": "Презентации"
+          },
+          {
+            "href": "javascript:void(0);",
+            "text": "Структура компании"
+          },
+          {
+            "href": "javascript:void(0);",
+            "text": "Совет директоров"
+          },
+          {
+            "href": "javascript:void(0);",
+            "text": "Руководство"
+          },
+          {
+            "href": "javascript:void(0);",
+            "text": "Управление рисками"
+          },
+          {
+            "href": "javascript:void(0);",
+            "text": "Контакты инвесторам"
+          },
+          {
+            "href": "javascript:void(0);",
+            "text": "Корпоративное управление"
+          }
+        ]
+      },
+      {
+        "headLink": {
+          "href": "javascript:void(0);",
+          "text": "Партнерам"
+        },
+        "items": [
+          {
+            "href": "javascript:void(0);",
+            "text": "Наши сервис центры"
+          },
+          {
+            "href": "javascript:void(0);",
+            "text": "Преимущества"
+          },
+          {
+            "href": "javascript:void(0);",
+            "text": "Стать партнером Artel"
+          },
+          {
+            "href": "javascript:void(0);",
+            "text": "Контакты для партнеров"
+          }
+        ]
+      }
+    ],
+    "socials": [
+      {
+        "href": "javascript:void(0);",
+        "title": "facebook",
+        "icon": {
+          "name": "32/socials/fb",
+          "size": "32"
+        }
+      },
+      {
+        "href": "javascript:void(0);",
+        "title": "telegram",
+        "icon": {
+          "name": "32/socials/tg",
+          "size": "32"
+        }
+      },
+      {
+        "href": "javascript:void(0);",
+        "title": "instagram",
+        "icon": {
+          "name": "32/socials/inst",
+          "size": "32"
+        }
+      }
+    ],
+    "copyright": "© 2021 Artel",
+    "creator": {
+      "href": "https://www.uplab.ru/",
+      "text": "Сделано в",
+      "icon": {
+        "name": "logos/uplab",
+        "size": "fit"
+      }
+    }
+  },
+  "modals": [
+    {
+      "id": "modal-video-1",
+      "component": "&modal-media",
+      "data": {
+        "modal": {}
+      }
+    },
+    {
+      "id": "modal-ajax",
+      "ajax": true,
+      "modificator": "partners"
+    },
+    {
+      "id": "modal-director",
+      "ajax": true,
+      "modificator": "director"
+    },
+    {
+      "id": "modal-warning",
+      "component": "&modal-warning",
+      "data": {
+        "modal": {
+          "title": "Сайт находится в&nbsp;стадии разработки",
+          "desc": "В данный момент сайт работает в&nbsp;тестовом режиме, спасибо за понимание",
+          "action": {
+            "text": "Продолжить",
+            "title": "Продолжить",
+            "theme": "white",
+            "attr": "data-modal-close"
+          }
+        }
+      }
+    },
+    {
+      "id": "modal-person",
+      "component": "&modal-person",
+      "data": {
+        "modal": {
+          "title": "Стать поставщиком",
+          "action": {
+            "text": "Отправить",
+            "title": "Отправить",
+            "theme": "white",
+            "attr": "data-modal-close"
+          },
+          "form": {
+            "id": "form-1",
+            "name": "form-1",
+            "method": "POST",
+            "action": "/ajax/contacts/?repo=artel.frontend&status=success",
+            "attr": "data-ajax-form",
+            "title": "Стать поставщиком",
+            "bg": "green",
+            "layout": "3",
+            "fields": [
+              {
+                "input": true,
+                "id": "form-1-input-1",
+                "name": "form-1-input-1",
+                "theme": "white",
+                "required": true,
+                "label": "ФИО"
+              },
+              {
+                "input": true,
+                "id": "form-1-input-2",
+                "name": "form-1-input-2",
+                "theme": "white",
+                "required": true,
+                "label": "Компания"
+              },
+              {
+                "input": true,
+                "id": "form-1-input-3",
+                "name": "form-1-input-3",
+                "theme": "white",
+                "required": true,
+                "label": "Должность"
+              },
+              {
+                "input": true,
+                "id": "form-1-input-4",
+                "name": "form-1-input-4",
+                "theme": "white",
+                "required": true,
+                "type": "tel",
+                "label": "Телефон",
+                "mask_list": [
+                  "+998-##-###-####",
+                  "+7(###)###-##-##",
+                  "+380(##)###-##-##",
+                  "+7(6##)###-##-##",
+                  "+992-##-###-####",
+                  "+994-##-###-##-##",
+                  "+996-###-######"
+                ]
+              },
+              {
+                "input": true,
+                "id": "form-1-input-5",
+                "name": "form-1-input-5",
+                "theme": "white",
+                "required": true,
+                "type": "email",
+                "label": "E-mail"
+              },
+              {
+                "textarea": true,
+                "id": "form-1-textarea-1",
+                "name": "form-1-textarea-1",
+                "theme": "white",
+                "label": "Сообщение"
+              }
+            ],
+            "agreement": [
+              {
+                "checkbox": true,
+                "id": "form-1-checkbox-1",
+                "name": "form-1-checkbox-1",
+                "text": "Я согласен/на с <a href='javascript:void(0);' class='link-content' target='_blank'>политикой конфиденциальности</a> и&nbsp;даю добро на обработку <a href='javascript:void(0);' class='link-content' target='_blank'>моих персональных данных</a>",
+                "required": true,
+                "theme": "white"
+              },
+              {
+                "checkbox": true,
+                "id": "form-1-checkbox-2",
+                "name": "form-1-checkbox-2",
+                "text": "Я не робот",
+                "required": true,
+                "theme": "white"
+              }
+            ],
+            "submit": {
+              "type": "submit",
+              "text": "Отправить",
+              "title": "Отправить",
+              "theme": "white",
+              "icon": {
+                "name": "24/arrow-up-right"
+              }
+            }
+          }
+        }
+      },
+      "modificator": "right"
+    },
+    {
+      "id": "modal-career",
+      "component": "&modal-career",
+      "data": {
+        "modal": {
+          "title": "Онлайн-анкета",
+          "attr": "data-steps-career",
+          "form": {
+            "id": "form-career",
+            "name": "form-career",
+            "action": "/ajax/contacts/?repo=artel.frontend&status=success",
+            "method": "POST",
+            "attr": "data-ajax-form",
+            "fields": [
+              {
+                "type": "hidden",
+                "name": "education-hidden",
+                "input": true,
+                "id": "education-hidden",
+                "attr":"data-education-field"
+              },
+              {
+                "type": "hidden",
+                "name": "profession-hidden",
+                "input": true,
+                "id": "profession-hidden",
+                "attr":"data-profession-field"
+              },
+              {
+                "type": "hidden",
+                "name": "certificate-hidden",
+                "input": true,
+                "id": "certificate-hidden",
+                "attr":"data-certificate-field"
+              },
+              {
+                "type": "hidden",
+                "name": "date-hidden",
+                "input": true,
+                "id": "date-hidden",
+                "attr":"data-eddate-field"
+              },
+              {
+                "type": "hidden",
+                "name": "work-hidden",
+                "input": true,
+                "id": "work-hidden",
+                "attr":"data-work-field"
+              },
+              {
+                "type": "hidden",
+                "name": "post-hidden",
+                "input": true,
+                "id": "post-hidden",
+                "attr":"data-post-field"
+              },
+              {
+                "type": "hidden",
+                "name": "work-date-hidden",
+                "input": true,
+                "id": "work-date-hidden",
+                "attr":"data-workdate-field"
+              }
+            ],
+            "tabs": [
+              {
+                "component": "^card-modal-step",
+                "pag": "<h3></h3>",
+                "data": {
+                  "fields": [
+                    {
+                      "input": true,
+                      "id": "form-1-input-11",
+                      "name": "form-1-input-11",
+                      "theme": "white",
+                      "required": true,
+                      "label": "ФИО",
+                      "autocomplete": "off"
+                    },
+                    {
+                      "input": true,
+                      "id": "form-1-input-22",
+                      "name": "form-1-input-22",
+                      "theme": "white",
+                      "required": true,
+                      "label": "Адрес проживания",
+                      "autocomplete": "off"
+                    },
+                    {
+                      "input": true,
+                      "id": "form-1-input-44",
+                      "name": "form-1-input-44",
+                      "theme": "white",
+                      "required": true,
+                      "type": "tel",
+                      "label": "Телефон",
+                      "mask_list": [
+                        "+998-##-###-####",
+                        "+7(###)###-##-##",
+                        "+380(##)###-##-##",
+                        "+7(6##)###-##-##",
+                        "+992-##-###-####",
+                        "+994-##-###-##-##",
+                        "+996-###-######"
+                      ],
+                      "autocomplete": "off"
+                    },
+                    {
+                      "input": true,
+                      "id": "form-1-input-55",
+                      "name": "form-1-input-55",
+                      "theme": "white",
+                      "required": true,
+                      "type": "email",
+                      "label": "E-mail",
+                      "autocomplete": "off"
+                    }
+                  ]
+                }
+              },
+              {
+                "component": "^card-modal-step",
+                "pag": "<h3></h3>",
+                "data": {
+                  "select_city": {
+                    "fill": true,
+                    "fields": [
+                      {
+                        "select": true,
+                        "id": "filter-form-select-m-11",
+                        "name": "filter-form-select-m-11",
+                        "attr": "data-form-select",
+                        "theme": "on-green",
+                        "required": true,
+                        "placeholder": "В каком городе хотите работать?",
+                        "autocomplete": "off",
+                        "options": [
+                          {
+                            "value": "Город 1",
+                            "text": "Город 1"
+                          },
+                          {
+                            "value": "Город 2",
+                            "text": "Город 2"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "fields": [
+                    {
+                      "input": true,
+                      "id": "form-1-input-66",
+                      "name": "form-1-input-66",
+                      "theme": "white",
+                      "required": true,
+                      "label": "Знание компьютерных программ",
+                      "autocomplete": "off"
+                    }
+                  ],
+                  "select_lng": {
+                    "fill": true,
+                    "theme": "on-green",
+                    "label": "Знание языков",
+                    "fields": [
+                      {
+                        "select": true,
+                        "label": "Марка стали",
+                        "multiple": true,
+                        "required": true,
+                        "theme": "on-green",
+                        "layout": "multi",
+                        "id": "filter-form-select-m-22",
+                        "name": "filter-form-select-m-22",
+                        "attr": "data-form-select",
+                        "placeholder": "Выбрано",
+                        "autocomplete": "off",
+                        "options": [
+                          {
+                            "value": "Язык 1",
+                            "text": "Язык 1",
+                            "selected": true
+                          },
+                          {
+                            "value": "Язык 2",
+                            "text": "Язык 2"
+                          },
+                          {
+                            "value": "Язык 3",
+                            "text": "Язык 3"
+                          },
+                          {
+                            "value": "Язык 4",
+                            "text": "Язык 4"
+                          },
+                          {
+                            "value": "Язык 5",
+                            "text": "Язык 5"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "fields_after": [
+                    {
+                      "input": true,
+                      "id": "form-1-input-77",
+                      "name": "form-1-input-77",
+                      "theme": "white",
+                      "required": true,
+                      "label": "Кем работаете сейчас или ранее?",
+                      "autocomplete": "off"
+                    }
+                  ]
+                }
+              },
+              {
+                "component": "^card-modal-step",
+                "pag": "<h3></h3>",
+                "data": {
+                  "url": "ajax/education-card-ajax.html",
+                  "component": "^education-card",
+                  "attr": "data-education-ajax",
+                  "attr_container": "data-container-frame",
+                  "actions_attr": "data-btn-education",
+                  "trigger": {
+                    "attr": "data-add-education",
+                    "button": {
+                      "theme": "circle-white"
+                    },
+                    "text": "Добавить образование"
+                  },
+                  "data": {
+                    "select_education": {
+                      "fill": true,
+                      "fields": [
+                        {
+                          "select": true,
+                          "required": true,
+                          "theme": "on-green",
+                          "id": "filter-form-select-m-33",
+                          "name": "filter-form-select-m-33",
+                          "attr": "data-education-select",
+                          "placeholder": "Образование",
+                          "autocomplete": "off",
+                          "options": [
+                            {
+                              "value": "Образование 1",
+                              "text": "Образование 1"
+                            },
+                            {
+                              "value": "Образование 2",
+                              "text": "Образование 2"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    "field_job": {
+                      "input": true,
+                      "id": "form-1-input-88",
+                      "name": "form-1-input-88",
+                      "theme": "white",
+                      "required": true,
+                      "label": "Специальность",
+                      "autocomplete": "off",
+                      "attr": "data-profession"
+                    },
+                    "datepicker": {
+                      "datepicker": true,
+                      "id": "datepicker-2",
+                      "name": "datepicker-name-2",
+                      "theme": "white",
+                      "label": "Годы обучения",
+                      "attr": "data-date",
+                      "dropdownStart": {
+                        "select": true,
+                        "id": "datepicker22-select-1",
+                        "name": "datepicker22-select-1",
+                        "placeholder": "Выберите год",
+                        "size": "small",
+                        "attr": "data-datepicker-select-start",
+                        "options": [
+                          {
+                            "text": "2008",
+                            "value": "2008"
+                          },
+                          {
+                            "text": "2009",
+                            "value": "2009"
+                          },
+                          {
+                            "text": "2010",
+                            "value": "2010"
+                          },
+                          {
+                            "text": "2011",
+                            "value": "2011"
+                          },
+                          {
+                            "text": "2012",
+                            "value": "2012"
+                          },
+                          {
+                            "text": "2013",
+                            "value": "2013"
+                          },
+                          {
+                            "text": "2014",
+                            "value": "2014"
+                          },
+                          {
+                            "text": "2015",
+                            "value": "2015"
+                          },
+                          {
+                            "text": "2016",
+                            "value": "2016"
+                          },
+                          {
+                            "text": "2017",
+                            "value": "2017"
+                          },
+                          {
+                            "text": "2018",
+                            "value": "2018"
+                          },
+                          {
+                            "text": "2019",
+                            "value": "2019"
+                          },
+                          {
+                            "text": "2020",
+                            "value": "2020"
+                          },
+                          {
+                            "text": "2021",
+                            "value": "2021"
+                          },
+                          {
+                            "text": "2022",
+                            "value": "2022"
+                          }
+                        ]
+                      },
+                      "dropdownEnd": {
+                        "select": true,
+                        "id": "datepicker22-select-2",
+                        "name": "datepicker22-select-2",
+                        "placeholder": "Выберите год",
+                        "size": "small",
+                        "attr": "data-datepicker-select-end",
+                        "options": [
+                          {
+                            "text": "2008",
+                            "value": "2008"
+                          },
+                          {
+                            "text": "2009",
+                            "value": "2009"
+                          },
+                          {
+                            "text": "2010",
+                            "value": "2010"
+                          },
+                          {
+                            "text": "2011",
+                            "value": "2011"
+                          },
+                          {
+                            "text": "2012",
+                            "value": "2012"
+                          },
+                          {
+                            "text": "2013",
+                            "value": "2013"
+                          },
+                          {
+                            "text": "2014",
+                            "value": "2014"
+                          },
+                          {
+                            "text": "2015",
+                            "value": "2015"
+                          },
+                          {
+                            "text": "2016",
+                            "value": "2016"
+                          },
+                          {
+                            "text": "2017",
+                            "value": "2017"
+                          },
+                          {
+                            "text": "2018",
+                            "value": "2018"
+                          },
+                          {
+                            "text": "2019",
+                            "value": "2019"
+                          },
+                          {
+                            "text": "2020",
+                            "value": "2020"
+                          },
+                          {
+                            "text": "2021",
+                            "value": "2021"
+                          },
+                          {
+                            "text": "2022",
+                            "value": "2022"
+                          }
+                        ]
+                      },
+                      "startTitle": "Начало",
+                      "endTitle": "Окончание",
+                      "months": [
+                        {
+                          "text": "Янв",
+                          "value": "jan"
+                        },
+                        {
+                          "text": "Фев",
+                          "value": "feb"
+                        },
+                        {
+                          "text": "Мар",
+                          "value": "mar"
+                        },
+                        {
+                          "text": "Апр",
+                          "value": "apr"
+                        },
+                        {
+                          "text": "Май",
+                          "value": "may"
+                        },
+                        {
+                          "text": "Июн",
+                          "value": "jun"
+                        },
+                        {
+                          "text": "Июл",
+                          "value": "jul"
+                        },
+                        {
+                          "text": "Авг",
+                          "value": "aug"
+                        },
+                        {
+                          "text": "Сен",
+                          "value": "sep"
+                        },
+                        {
+                          "text": "Окт",
+                          "value": "oct"
+                        },
+                        {
+                          "text": "Ноя",
+                          "value": "nov"
+                        },
+                        {
+                          "text": "Дек",
+                          "value": "dec"
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "text": "Применить",
+                          "attr": "data-datepicker-apply"
+                        },
+                        {
+                          "text": "Отмена",
+                          "theme": "outline",
+                          "attr": "data-datepicker-reset"
+                        }
+                      ]
+                    },
+                    "field_certificate": {
+                      "input": true,
+                      "id": "form-1-input-99",
+                      "name": "form-1-input-99",
+                      "theme": "white",
+                      "required": false,
+                      "label": "Наличие сертификатов",
+                      "autocomplete": "off",
+                      "attr": "data-certificate"
+                    },
+                    "trigger": {
+                      "attr": "data-add-education",
+                      "button": {
+                        "theme": "circle-white"
+                      },
+                      "text": "Добавить образование"
+                    }
+                  }
+                }
+              },
+              {
+                "component": "^card-modal-step",
+                "pag": "<h3></h3>",
+                "data": {
+                  "url": "ajax/work-card-ajax.html",
+                  "component": "^work-card",
+                  "attr": "data-work-ajax",
+                  "attr_container": "data-container-works",
+                  "actions_attr": "data-add-work",
+                  "trigger": {
+                    "attr": "data-add-work",
+                    "button": {
+                      "theme": "circle-white"
+                    },
+                    "text": "Добавить место работы"
+                  },
+                  "data": {
+                    "field_company": {
+                      "input": true,
+                      "id": "form-1-input-111",
+                      "name": "form-1-input-111",
+                      "theme": "white",
+                      "label": "Место работы",
+                      "autocomplete": "off",
+                      "attr": "data-work"
+                    },
+                    "field_post": {
+                      "input": true,
+                      "id": "form-1-input-222",
+                      "name": "form-1-input-222",
+                      "theme": "white",
+                      "label": "Должность",
+                      "autocomplete": "off",
+                      "attr": "data-post"
+                    },
+                    "datepicker": {
+                      "datepicker": true,
+                      "id": "datepicker-3",
+                      "name": "datepicker-name-3",
+                      "theme": "white",
+                      "label": "Время работы",
+                      "attr": "data-date-work",
+                      "checkbox_date": {
+                        "checkbox": true,
+                        "id": "date-work-1",
+                        "name": "date-work-1",
+                        "text": "По настоящее время",
+                        "theme": "on-white"
+                      },
+                      "dropdownStart": {
+                        "select": true,
+                        "id": "datepicker2-select-111",
+                        "name": "datepicker2-select-111",
+                        "placeholder": "Выберите год",
+                        "size": "small",
+                        "attr": "data-datepicker-select-start",
+                        "options": [
+                          {
+                            "text": "2008",
+                            "value": "2008"
+                          },
+                          {
+                            "text": "2009",
+                            "value": "2009"
+                          },
+                          {
+                            "text": "2010",
+                            "value": "2010"
+                          },
+                          {
+                            "text": "2011",
+                            "value": "2011"
+                          },
+                          {
+                            "text": "2012",
+                            "value": "2012"
+                          },
+                          {
+                            "text": "2013",
+                            "value": "2013"
+                          },
+                          {
+                            "text": "2014",
+                            "value": "2014"
+                          },
+                          {
+                            "text": "2015",
+                            "value": "2015"
+                          },
+                          {
+                            "text": "2016",
+                            "value": "2016"
+                          },
+                          {
+                            "text": "2017",
+                            "value": "2017"
+                          },
+                          {
+                            "text": "2018",
+                            "value": "2018"
+                          },
+                          {
+                            "text": "2019",
+                            "value": "2019"
+                          },
+                          {
+                            "text": "2020",
+                            "value": "2020"
+                          },
+                          {
+                            "text": "2021",
+                            "value": "2021"
+                          },
+                          {
+                            "text": "2022",
+                            "value": "2022"
+                          }
+                        ]
+                      },
+                      "dropdownEnd": {
+                        "select": true,
+                        "id": "datepicker2-select-222",
+                        "name": "datepicker2-select-222",
+                        "placeholder": "Выберите год",
+                        "size": "small",
+                        "attr": "data-datepicker-select-end",
+                        "options": [
+                          {
+                            "text": "2008",
+                            "value": "2008"
+                          },
+                          {
+                            "text": "2009",
+                            "value": "2009"
+                          },
+                          {
+                            "text": "2010",
+                            "value": "2010"
+                          },
+                          {
+                            "text": "2011",
+                            "value": "2011"
+                          },
+                          {
+                            "text": "2012",
+                            "value": "2012"
+                          },
+                          {
+                            "text": "2013",
+                            "value": "2013"
+                          },
+                          {
+                            "text": "2014",
+                            "value": "2014"
+                          },
+                          {
+                            "text": "2015",
+                            "value": "2015"
+                          },
+                          {
+                            "text": "2016",
+                            "value": "2016"
+                          },
+                          {
+                            "text": "2017",
+                            "value": "2017"
+                          },
+                          {
+                            "text": "2018",
+                            "value": "2018"
+                          },
+                          {
+                            "text": "2019",
+                            "value": "2019"
+                          },
+                          {
+                            "text": "2020",
+                            "value": "2020"
+                          },
+                          {
+                            "text": "2021",
+                            "value": "2021"
+                          },
+                          {
+                            "text": "2022",
+                            "value": "2022"
+                          }
+                        ]
+                      },
+                      "startTitle": "Начало",
+                      "endTitle": "Окончание",
+                      "months": [
+                        {
+                          "text": "Янв",
+                          "value": "jan"
+                        },
+                        {
+                          "text": "Фев",
+                          "value": "feb"
+                        },
+                        {
+                          "text": "Мар",
+                          "value": "mar"
+                        },
+                        {
+                          "text": "Апр",
+                          "value": "apr"
+                        },
+                        {
+                          "text": "Май",
+                          "value": "may"
+                        },
+                        {
+                          "text": "Июн",
+                          "value": "jun"
+                        },
+                        {
+                          "text": "Июл",
+                          "value": "jul"
+                        },
+                        {
+                          "text": "Авг",
+                          "value": "aug"
+                        },
+                        {
+                          "text": "Сен",
+                          "value": "sep"
+                        },
+                        {
+                          "text": "Окт",
+                          "value": "oct"
+                        },
+                        {
+                          "text": "Ноя",
+                          "value": "nov"
+                        },
+                        {
+                          "text": "Дек",
+                          "value": "dec"
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "text": "Применить",
+                          "attr": "data-datepicker-apply"
+                        },
+                        {
+                          "text": "Отмена",
+                          "theme": "outline",
+                          "attr": "data-datepicker-reset"
+                        }
+                      ]
+                    },
+                    "trigger": {
+                      "attr": "data-add-education",
+                      "button": {
+                        "theme": "circle-white"
+                      },
+                      "text": "Добавить место работы"
+                    }
+                  }
+                }
+              },
+              {
+                "component": "^card-modal-step",
+                "pag": "<h3></h3>",
+                "data": {
+                  "info": {
+                    "title": "Загрузить резюме",
+                    "block": {
+                      "article": "Формат файла: ",
+                      "formats": [
+                        ".doc",
+                        ".docx",
+                        ".odt",
+                        ".txt",
+                        ".pdf"
+                      ],
+                      "text": "Файл не должен превышать 2Mb. или добавьте ссылку",
+                      "field": {
+                        "input": true,
+                        "theme": "white",
+                        "name": "file",
+                        "id": "file",
+                        "type": "file",
+                        "accept": ".doc,.docx,.txt,.pdf",
+                        "placeholder": "",
+                        "max_size": 2,
+                        "filetext": "Файл не должен превышать 2Mb. или добавьте ссылку",
+                        "typeErrorMessage": "Неверный тип файла",
+                        "sizeMessage": "Файл превышает 2Mb, пожалуйста, загрузите другой файл",
+                        "icon": {
+                          "name": "24/download-2",
+                          "size": "24"
+                        },
+                        "button_upload": {
+                          "text": "Загрузить",
+                          "aria": "удалить загруженные данные"
+                        },
+                        "text": "Файл в формате doc, pdf или txt"
+                      }
+                    }
+                  },
+                  "agreement": [
+                    {
+                      "checkbox": true,
+                      "id": "form-1-checkbox-22",
+                      "name": "form-1-checkbox-22",
+                      "text": "Настоящим даю согласие по установленной форме на обработку моих <a href='javascript:void(0);' class='link-content' target='_blank'>персональных данных</a> в порядке, установленном законом РУз от 27.07.2006 N 152-ФЗ 'О персональных данных'. Код подтверждения",
+                      "required": true,
+                      "theme": "white"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      },
+      "modificator": "right"
+    },
+    {
+      "id": "modal-resume",
+      "component": "&modal-resume",
+      "modificator": "right",
+      "data": {
+        "modal": {
+          "form": {
+            "id": "form-modal-100",
+            "name": "form-modal-100",
+            "method": "POST",
+            "action": "/ajax/contacts/?repo=artel.frontend&status=success",
+            "attr": "data-ajax-form data-scroll-target data-scroll-contacts",
+            "title": "Отправить резюме",
+            "bg": "green",
+            "layout": "modal-resume",
+            "info": {
+              "title": "Загрузить резюме",
+              "block": {
+                "article": "Формат файла: ",
+                "formats": [
+                  ".doc",
+                  ".docx",
+                  ".odt",
+                  ".txt",
+                  ".pdf"
+                ],
+                "text": "Файл не должен превышать 2Mb. или добавьте ссылку",
+                "fields": [
+                  {
+                    "input": true,
+                    "required": true,
+                    "theme": "white",
+                    "name": "file-resume",
+                    "id": "file-resume",
+                    "type": "file",
+                    "accept": ".doc,.docx,.txt,.pdf",
+                    "placeholder": "",
+                    "max_size": 2,
+                    "filetext": "Файл не должен превышать 2Mb. или добавьте ссылку",
+                    "typeErrorMessage": "Неверный тип файла",
+                    "sizeMessage": "Файл превышает 2Mb, пожалуйста, загрузите другой файл",
+                    "icon": {
+                      "name": "24/download-2",
+                      "size": "24"
+                    },
+                    "button_upload": {
+                      "text": "Загрузить",
+                      "aria": "удалить загруженные данные"
+                    },
+                    "text": "Файл в формате doc, pdf или txt"
+                  }
+                ]
+              }
+            },
+            "agreement": [
+              {
+                "checkbox": true,
+                "id": "form-1-checkbox-33",
+                "name": "form-1-checkbox-33",
+                "text": "Настоящим даю согласие по установленной форме на обработку моих <a href='javascript:void(0);' class='link-content' target='_blank'>персональных данных</a> в порядке, установленном законом РУз от 27.07.2006 N 152-ФЗ 'О персональных данных'. Код подтверждения",
+                "required": true,
+                "theme": "white"
+              }
+            ],
+            "submit": {
+              "type": "submit",
+              "text": "Отправить",
+              "title": "Отправить",
+              "theme": "white",
+              "icon": {
+                "name": "24/arrow-up-right"
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}

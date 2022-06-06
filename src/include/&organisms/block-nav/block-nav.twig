@@ -1,0 +1,75 @@
+<div class="block-nav{% if block_nav.slim %} block-nav--slim{% endif %}{% if block_nav.layout %} block-nav--layout-{{block_nav.layout}}{% endif %}{% if block_nav.bg %} bg-{{ block_nav.bg }}{% else %} bg-white{% endif %}{% if block_nav.theme %} block-nav--{{block_nav.theme}}{% endif %}" data-nav-wrap>
+    <div class="block-nav__container container">
+        <div class="block-nav__wrap">
+            <div class="block-nav__left">
+                {% if block_nav.tabs %}
+                    {% view '&tabs' with {
+                        tabs:block_nav.tabs
+                    }%}
+                {% endif %}
+            </div>
+            <div class="block-nav__right">
+                <div class="block-nav__decor">
+                    {% view '@icon' with {
+                        icon: block_nav.icon
+                    } %}
+                </div>
+                <div class="block-nav__info">
+                    {% if block_nav.title  %}
+                        <h1 class="block-nav__title h1" data-fade-in-up data-delay="0.5">
+                            {{ block_nav.title}}
+                        </h1>
+                    {% endif %}
+                    {% if block_nav.desc %}
+                        <div class="block-nav__desc h3" data-fade-in-up data-delay="0.5">
+                            {{ block_nav.desc }}
+                        </div>
+                    {% endif %}
+                    {% if block_nav.factoids %} 
+                        {% set count = 0 %}
+                        {% set res = [] %}
+                        {% set items = [] %}
+
+                        {% for item in block_nav.factoids %}
+                                {% if count <= 1 %}
+                                    {% set items = items|merge([item]) %}
+                                    {% set count = count + 1 %}
+                                {% else %}
+                                    {% set res = res|merge([items]) %}
+                                    {% set items = []  %}
+                                    {% set items = items|merge([item]) %}
+                                    {% set count = 1 %}
+                                {% endif %}
+                        {% endfor %}
+
+                        {% set res = res|merge([items]) %}
+
+                        {% for elem in res %}
+                            <div class="block-nav__row">
+                                {% for card in elem %}
+                                    <div class="block-nav__factoid">
+                                        {% view '^factoid' with {
+                                            factoid: card
+                                        } %}
+                                        <div class="block-nav__factoid-border" style="--delay: {{ (0.2 + loop.index0 / 5)|round(2, 'floor') }}"></div>
+                                    </div>
+                                {% endfor %}
+                            </div>
+                        {% endfor %}
+                    {% endif %}
+                    {% if block_nav.action %}
+                        <div class="block-nav__box" data-fade-in-up data-delay="0.5">
+                            {% for btn in block_nav.action %}
+                                <div class="block-nav__btn">
+                                    {% view '@button' with {
+                                        button: btn
+                                    } %}
+                                </div>
+                            {% endfor %}
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

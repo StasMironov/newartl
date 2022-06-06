@@ -1,0 +1,13 @@
+<div class="search-result">
+	<ul class="search-result__list" data-content>
+		{% for item in result.items %}
+			<li class="search-result__item">
+				{% if item.href %}
+					<a href="{{ item.href }}" class="search-result__link">{{ item.text }}</a>
+				{% else %}
+					<span class="search-result__link">{{ item.text }}</span>
+				{% endif %}
+			</li>
+		{% endfor %}
+	</ul>
+</div>

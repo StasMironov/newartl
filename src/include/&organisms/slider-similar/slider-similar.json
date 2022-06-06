@@ -1,0 +1,51 @@
+{
+	"slider_similar": {
+		"items": [
+			{
+				"href": "#",
+				"date": "1 сен 2021",
+				"title": "Artel и Khan Academy Oʻzbek подписали меморандум",
+				"image": {
+					"src": "tmp/card-news/news1.jpg",
+					"alt": "alt"
+				}
+			},
+			{
+				"href": "#",
+				"date": "3 мая 2021",
+				"title": "Производственной мощности Artel достаточно для производства продукции",
+				"image": {
+					"src": "tmp/card-news/news2.jpg",
+					"alt": "alt"
+				}
+			},
+			{
+				"href": "#",
+				"date": "28 янв 2021",
+				"title": "Проводится обучение руководителей",
+				"image": {
+					"src": "tmp/card-news/news3.jpg",
+					"alt": "alt"
+				}
+			},
+			{
+				"href": "#",
+				"date": "3 мая 2021",
+				"title": "Компания Artel подарила стиральные машины детскому дому «Kichkintoy»",
+				"image": {
+					"src": "tmp/card-news/news4.jpg",
+					"alt": "alt"
+				}
+			},
+			{
+				"href": "#",
+				"date": "1 сен 2021",
+				"title": "Artel и Khan Academy Oʻzbek подписали меморандум",
+				"image": {
+					"src": "tmp/card-news/news1.jpg",
+					"alt": "alt"
+				}
+			}
+		]
+	}
+}

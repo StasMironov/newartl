@@ -1,0 +1,20 @@
+<div class="lang-toggle" data-lang-toggle>
+	<button type="button" class="lang-toggle__action"
+			title="{% if toggle.action.title %}{{ toggle.action.title }}{% else %}{{ toggle.action.text }}{% endif %}"
+			data-action>{{ toggle.action.text }}
+			{% view '@icon' with {
+				icon: {
+					name: "16/arrow",
+					size: "16"
+				}
+			} %}
+	</button>
+	<ul class="lang-toggle__list">
+		{% for item in toggle.items %}
+			<li class="lang-toggle__item">
+				<a href="{{ item.href }}" class="lang-toggle__link"
+				   title="{% if item.title %}{{ item.title }}{% else %}{{ item.text }}{% endif %}">{{ item.text }}</a>
+			</li>
+		{% endfor %}
+	</ul>
+</div>
